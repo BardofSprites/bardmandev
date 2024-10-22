@@ -1,0 +1,9 @@
+#+TITLE: Contact Me
+#+
+#+type: section
+
+*Email:* develop.bard at gmail dot com
+
+I get a lot of emails, but I will try to respond within 48 hours.
+
+I do not use much social media.

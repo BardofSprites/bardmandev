@@ -2,20 +2,355 @@
   <channel>
 	<title>bardman&#39;s website</title>
 	<link>http://localhost:1313/</link>
-	<description>Recent content in &#34;Bardmandev&#34; on bardman&#39;s website</description>
+	<description>Recent content in Bardman&#39;s website on bardman&#39;s website</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Wed, 22 Nov 2023 00:00:00 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 	
 	
 	<item>
-		<title>Programs I Use</title>
-		<link>http://localhost:1313/programs/</link>
-		<pubDate>Thu, 23 Nov 2023 22:58:34 -0500</pubDate>
+		<title>EMMS: Emacs Multimedia System</title>
+		<link>http://localhost:1313/coding/emms/</link>
+		<pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/programs/</guid>
+		<guid>http://localhost:1313/coding/emms/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Description
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;From the official page: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Emms is the Emacs Multimedia System. Emms displays and plays multimedia from within GNU/Emacs using a variety of external players and from different sources.&lt;/p&gt;
+&lt;p&gt;
+…&lt;/p&gt;
+&lt;p&gt;
+Emms can run as a minimalist player and controlled with a handful of M-x Emacs commands, or a fully-fledged, interactive media browser. Emms can display album art, play streaming audio, tag music files, search for lyrics, provide MPD connectivity, control the volume, and more. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I cannot describe it better, this tool exemplifies the Emacs golden standard for extensibility and practicality.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Installation
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;EMMS is official GNU software, which means that it is available through the &lt;a href=&#34;https://elpa.gnu.org/&#34;&gt;GNU ELPA&lt;/a&gt; repository.&lt;/p&gt;
+&lt;p&gt;
+EMMS uses an external player, so you will need one. MPV is what I use, but you can use VLC, MPD, and others (as described in the manual).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Example Configuration
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;This is a simple &lt;code&gt;use-package&lt;/code&gt; declaration that sets up some simple keybinds.&lt;/p&gt;
+&lt;div class=&#34;src src-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#a6e22e&#34;&gt;use-package&lt;/span&gt; emms
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;:ensure&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;:bind&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#e6db74&#34;&gt;:map&lt;/span&gt; emms-playlist-mode-map
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;M-&amp;lt;f8&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-browser)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-add-directory)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;T&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-add-directory-tree)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;F&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-add-file)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;U&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-add-url)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;L&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-toggle-repeat-track)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;mouse-3&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-pause)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;SPC&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-pause))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;:bind&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;f8&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+How I Like To Use It
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I have my music saved as mp3 files. Sometimes I download longer mixes from YouTube with &lt;code&gt;yt-dlp&lt;/code&gt; as mp4 or webm (usually mp4). I don&amp;#39;t need much in a multimedia player, and EMMS provides it.&lt;/p&gt;
+&lt;p&gt;
+Normally my process for playing music is like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open emms with &lt;code&gt;&amp;lt;f8&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;code&gt;A&lt;/code&gt; key to add a subdirectory in from my music library.&lt;/li&gt;
+&lt;li&gt;Then I pick the song I want to listen to and start working.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/emms-demo.gif&#34;&gt;&lt;figcaption&gt;EMMS Browser in action, sorry for the FFMPEG artifacts.&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+References and Documentation
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/emms/&#34;&gt;Official Manual&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>My Emacs Workflow For Programming, Notetaking, and Much More</title>
+		<link>http://localhost:1313/coding/workflow/</link>
+		<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/coding/workflow/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Prefrace
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I use Emacs everyday on all of my computers. It is my favorite program on my computer. I use it for school and personal use, and only on Linux. I have a separate configuration on my &lt;a href=&#34;https://github.com/BardofSprites/.emacs.d&#34;&gt;Emacs repository&lt;/a&gt; on the minimal branch that is lighter weight for my school computer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+General Packages
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Editing Extensions
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;&lt;strong&gt;expand-region:&lt;/strong&gt; This extension is really useful for selecting text. It&amp;#39;s like a dwim solution for selecting text. You can repeatedly run the same key-sequence (I use C-=) and select a larger amount of text for every tool.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/expand-region.gif&#34; title=&#34;expand-region&#34;&gt;&lt;figcaption&gt;expand-region&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;tempel:&lt;/strong&gt; This is a package for snippets. You can define text snippets in a lisp-like syntax. It&amp;#39;s very conventient for quick snippets like this:&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/snippet.gif&#34; title=&#34;tempel snippets&#34;&gt;&lt;figcaption&gt;tempel snippets&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Refractoring Tools with wgrep and substitute
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;My workflow for large text operations was completely copied from &lt;a href=&#34;https://irreal.org/blog/?p=3638&#34;&gt;this irreal post&lt;/a&gt;. Basically the idea is this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Call grep/rgrep/consult-grep to get a list of every occurrence of the function name. If consult-grep, use embark to export to buffer.&lt;/li&gt;
+&lt;li&gt;Call wgrep so that you can edit the rgrep output and have the results reflected in the original files.&lt;/li&gt;
+&lt;li&gt;Call substitute or query-replace-regexp to change every instance of the function name at once.&lt;/li&gt;
+&lt;li&gt;Quit wgrep, writing the changes back to the files.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Snippets with tempel
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Snippets are a really helpful way of reducing time spent retyping the same things over and over again. I use snippets for common phrases and elisp functions that I type often.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+File Management with dired
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Window Management
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-8&#34;&gt;
+Programming
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-9&#34;&gt;
+Languages
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-10&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Major Modes
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;I have a few packages installed for the various programming languauges that I like to dabble in. Here they are in list format, because they don&amp;#39;t a lot to talk about.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;clojure-mode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;haskell-mode&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ada-mode&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-11&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Repl - Cider, Sly, Geiser
+&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-12&#34;&gt;
+Language Server (LSP)
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Eglot just works, and it&amp;#39;s built into Emacs. I mainly use it with clangd for C++. I don&amp;#39;t really need it for other langs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-13&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Completion
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-14&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Git
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-15&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Writing
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-16&#34;&gt;
+org-mode
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Org mode is one of the pillars of Emacs. It is not just a markdown clone&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-17&#34;&gt;
+denote
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-18&#34;&gt;
+denote-menu and denote-explore
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-19&#34;&gt;
+Editing extensions
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-20&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Time Management and Scheduling
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-20&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-21&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-21&#34;&gt;
+todo.org file
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-22&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-22&#34;&gt;
+&lt;code&gt;tmr&lt;/code&gt;
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-22&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;&lt;code&gt;tmr&lt;/code&gt; is a simple package for managing timers. I use it to tell when I need to get up and walk around after studying for around 60 min.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-23&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-23&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Media
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-23&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-24&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-24&#34;&gt;
+Multimedia with EMMS
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-25&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-25&#34;&gt;
+RSS Feeds with elfeed
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-25&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;elfeed-org and goodies&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-26&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-26&#34;&gt;
+Emails with notmuch 
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-27&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-27&#34;&gt;
+IRC
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-28&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-28&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+&amp;#34;Frivoulous&amp;#34; Items
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-28&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-29&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-29&#34;&gt;
+Modus and Ef Themes
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-29&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;As I stated in my &lt;a href=&#34;http://localhost:1313/enjoy/programs&#34;&gt;opinionated list of programs&lt;/a&gt;, I like to &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-30&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-30&#34;&gt;
+Fontaine
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-31&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-31&#34;&gt;
+Spacious Padding
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-32&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-32&#34;&gt;
+Cursory
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Programs I Use</title>
+		<link>http://localhost:1313/coding/programs/</link>
+		<pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/coding/programs/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -236,80 +571,6 @@ Image Viewer - nsxiv
 	</item>
 	
 	<item>
-		<title>My Computing Journey</title>
-		<link>http://localhost:1313/coding/journey/</link>
-		<pubDate>Wed, 22 Nov 2023 23:04:16 -0500</pubDate>
-		
-		<guid>http://localhost:1313/coding/journey/</guid>
-		<description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-The Beginning: IDE phase
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;When I was a baby developer on Windows 10, I started development for a python course using their online editor. After getting past the basics of the programming language, my teacher let me begin using a real IDE for my homework and projects.&lt;/p&gt;
-&lt;p&gt;
-Because I was working with python, I started using pycharm. It was good for what I needed. At one point, I even thought that I would need to buy the commercial version of the software.&lt;/p&gt;
-&lt;p&gt;
-
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/gruvbox_pycharm.png&#34; title=&#34;pycharm&#34;&gt;&lt;figcaption&gt;the gruvbox theme that I used back then (not my code/image)&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-The Middle: Neovim
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;In the spring of my freshman year of high school, I started looking at Linux as a possible rabbit hole to go down. My friend showed me screenshots of desktop configurations from the r/unixporn subreddit. &lt;a href=&#34;https://www.reddit.com/r/unixporn/comments/uoskpi/qtile_i_know_it_isnt_groundbreaking_but_this_is/&#34;&gt;This post&lt;/a&gt; is what I looked at when starting to customize my Linux desktop.&lt;/p&gt;
-&lt;p&gt;
-
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/original_rice.png&#34; title=&#34;r/unixporn&#34;&gt;&lt;figcaption&gt;the screenshot the started it all&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;
-I was like:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Woah, that&amp;#39;s pretty cool. I want a desktop like that.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-My friend guided me through the Pop!_OS installation. I used it for a while and am still nostalgic for those early discover days where I would be looking up:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;how to install window manager in gnome.&lt;/p&gt;
-&lt;p&gt;
-what is mutter.&lt;/p&gt;
-&lt;p&gt;
-why can&amp;#39;t I install another window manager in gnome&lt;/p&gt;
-&lt;p&gt;
-how to remove mutter window manager&lt;/p&gt;
-&lt;p&gt;
-can i switch mutter window manager for awesome window manager qtile&lt;/p&gt;
-&lt;p&gt;
-qtile window manager&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-After learning the basics of apt with the power of google, I had begun using desktop Linux for studying/doing homework.&lt;/p&gt;
-&lt;p&gt;
-In the screenshot, I saw that there was a program called neovim, but I didn&amp;#39;t understand its purpose for a long period of time. Nonetheless, I hopped to neovim for the same reason I hopped to Linux: the themes. In particular, it was &lt;a href=&#34;https://github.com/rebelot/kanagawa.nvim&#34;&gt;the kanagawa theme&lt;/a&gt;. &lt;a href=&#34;https://www.reddit.com/r/unixporn/comments/vctu8a/2bwm_kanagawa_is_probably_one_of_the_best_color/&#34;&gt;Here&lt;/a&gt; is the post that piqued my interest in this theme.&lt;/p&gt;
-&lt;p&gt;
-The kanagawa theme was for a program called neovim, and I wanted to use the theme so bad that I learned how to use it.&lt;/p&gt;
-&lt;p&gt;
-I found a configuration framework called NvChad and I used this during my Computer Science classes for a while.&lt;/p&gt;
-&lt;p&gt;
-After certain frustrations with keybinds and defaults, I went down the vanilla neovim rabbit hole with the Primagen and started configurating stuff on my own.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-3&#34;&gt;
-The End?: Emacs
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;My first taste of Emacs was when I saw Distrotube make videos of DOOM Emacs.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-	</item>
-	
-	<item>
 		<title>About</title>
 		<link>http://localhost:1313/about/</link>
 		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -332,7 +593,7 @@ I enjoy free and open source software, a nice cup of tea, and sweaters.&lt;/p&gt
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
-Socials
+Contact Me
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
@@ -346,326 +607,17 @@ Socials
 	</item>
 	
 	<item>
-		<title>EMMS: Emacs Multimedia System</title>
-		<link>http://localhost:1313/coding/emms/</link>
+		<title>Contact Me</title>
+		<link>http://localhost:1313/contact/</link>
 		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/coding/emms/</guid>
-		<description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Description
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;From the official page: &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Emms is the Emacs Multimedia System. Emms displays and plays multimedia from within GNU/Emacs using a variety of external players and from different sources.&lt;/p&gt;
+		<guid>http://localhost:1313/contact/</guid>
+		<description>&lt;p&gt;
+&lt;strong&gt;Email:&lt;/strong&gt; develop.bard at gmail dot com&lt;/p&gt;
 &lt;p&gt;
-…&lt;/p&gt;
+I get a lot of emails, but I will try to respond within 48 hours.&lt;/p&gt;
 &lt;p&gt;
-Emms can run as a minimalist player and controlled with a handful of M-x Emacs commands, or a fully-fledged, interactive media browser. Emms can display album art, play streaming audio, tag music files, search for lyrics, provide MPD connectivity, control the volume, and more. &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I cannot describe it better, this tool exemplifies the Emacs golden standard for extensibility and practicality.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-Installation
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;EMMS is official GNU software, which means that it is available through the &lt;a href=&#34;https://elpa.gnu.org/&#34;&gt;GNU ELPA&lt;/a&gt; repository.&lt;/p&gt;
-&lt;p&gt;
-EMMS uses an external player, so you will need one. MPV is what I use, but you can use VLC, MPD, and others (as described in the manual).&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-3&#34;&gt;
-Example Configuration
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;This is a simple &lt;code&gt;use-package&lt;/code&gt; declaration that sets up some simple keybinds.&lt;/p&gt;
-&lt;div class=&#34;src src-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#a6e22e&#34;&gt;use-package&lt;/span&gt; emms
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;:ensure&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;t&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;:bind&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#e6db74&#34;&gt;:map&lt;/span&gt; emms-playlist-mode-map
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;M-&amp;lt;f8&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-browser)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-add-directory)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;T&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-add-directory-tree)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;F&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-add-file)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;U&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-add-url)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;L&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-toggle-repeat-track)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;mouse-3&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-pause)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;SPC&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms-pause))
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;:bind&lt;/span&gt; (&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;f8&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; emms))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-4&#34;&gt;
-How I Like To Use It
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;I have my music saved as mp3 files. Sometimes I download longer mixes from YouTube with &lt;code&gt;yt-dlp&lt;/code&gt; as mp4 or webm (usually mp4). I don&amp;#39;t need much in a multimedia player, and EMMS provides it.&lt;/p&gt;
-&lt;p&gt;
-Normally my process for playing music is like this:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Open emms with &lt;code&gt;&amp;lt;f8&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Click the &lt;code&gt;A&lt;/code&gt; key to add a subdirectory in from my music library.&lt;/li&gt;
-&lt;li&gt;Then I pick the song I want to listen to and start working.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/emms-demo.gif&#34;&gt;&lt;figcaption&gt;EMMS Browser in action, sorry for the FFMPEG artifacts.&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-5&#34;&gt;
-References and Documentation
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/emms/&#34;&gt;Official Manual&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-	</item>
-	
-	<item>
-		<title>My Emacs Workflow For Programming, Notetaking, and Much More</title>
-		<link>http://localhost:1313/coding/workflow/</link>
-		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-		
-		<guid>http://localhost:1313/coding/workflow/</guid>
-		<description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Prefrace
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;I use Emacs everyday on all of my computers. It is my favorite program on my computer. I use it for school and personal use, and only on Linux. I have a separate configuration on my &lt;a href=&#34;https://github.com/BardofSprites/.emacs.d&#34;&gt;Emacs repository&lt;/a&gt; on the minimal branch that is lighter weight for my school computer.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-General Packages
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-3&#34;&gt;
-Editing Extensions
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;&lt;strong&gt;expand-region:&lt;/strong&gt; This extension is really useful for selecting text. It&amp;#39;s like a dwim solution for selecting text. You can repeatedly run the same key-sequence (I use C-=) and select a larger amount of text for every tool.&lt;/p&gt;
-&lt;p&gt;
-
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/expand-region.gif&#34; title=&#34;expand-region&#34;&gt;&lt;figcaption&gt;expand-region&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;tempel:&lt;/strong&gt; This is a package for snippets. You can define text snippets in a lisp-like syntax. It&amp;#39;s very conventient for quick snippets like this:&lt;/p&gt;
-&lt;p&gt;
-
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/snippet.gif&#34; title=&#34;tempel snippets&#34;&gt;&lt;figcaption&gt;tempel snippets&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-4&#34;&gt;
-Refractoring Tools with wgrep and substitute
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;My workflow for large text operations was completely copied from &lt;a href=&#34;https://irreal.org/blog/?p=3638&#34;&gt;this irreal post&lt;/a&gt;. Basically the idea is this:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;Call grep/rgrep/consult-grep to get a list of every occurrence of the function name. If consult-grep, use embark to export to buffer.&lt;/li&gt;
-&lt;li&gt;Call wgrep so that you can edit the rgrep output and have the results reflected in the original files.&lt;/li&gt;
-&lt;li&gt;Call substitute to change every instance of the function name at once.&lt;/li&gt;
-&lt;li&gt;Quit wgrep, writing the changes back to the files.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-5&#34;&gt;
-Snippets with tempel
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;Snippets are a really helpful way of reducing time spent retyping the same things over and over again. I use snippets for common phrases and elisp functions that I type often.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-6&#34;&gt;
-File Management with dired
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-7&#34;&gt;
-Window Management
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-8&#34;&gt;
-Programming
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-9&#34;&gt;
-Languages
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-4&#34;&gt;
-&lt;h4 id=&#34;headline-10&#34;&gt;
-Major Modes
-&lt;/h4&gt;
-&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-4&#34;&gt;
-&lt;p&gt;I have a few packages installed for the various programming languauges that I like to dabble in. Here they are in list format, because they don&amp;#39;t a lot to talk about.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;clojure-mode&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;haskell-mode&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ada-mode&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-4&#34;&gt;
-&lt;h4 id=&#34;headline-11&#34;&gt;
-Repl - Cider, Sly, Geiser
-&lt;/h4&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-12&#34;&gt;
-Language Server (LSP)
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;Eglot just works, and it&amp;#39;s built into Emacs. I mainly use it with clangd for C++. I don&amp;#39;t really need it for other langs.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-13&#34;&gt;
-Completion
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-14&#34;&gt;
-Git
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-15&#34;&gt;
-Writing
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-16&#34;&gt;
-org-mode
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;Org mode is one of the pillars of Emacs. It is not just a markdown clone&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-17&#34;&gt;
-denote
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-18&#34;&gt;
-denote-menu and denote-explore
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-19&#34;&gt;
-Editing extensions
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-20&#34;&gt;
-Time Management and Scheduling
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-20&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-21&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-21&#34;&gt;
-todo.org file
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-22&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-22&#34;&gt;
-&lt;code&gt;tmr&lt;/code&gt;
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-22&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;&lt;code&gt;tmr&lt;/code&gt; is a simple package for managing timers. I use it to tell when I need to get up and walk around after studying for around 60 min.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-23&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-23&#34;&gt;
-Media
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-23&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-24&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-24&#34;&gt;
-Multimedia with EMMS
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-25&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-25&#34;&gt;
-RSS Feeds with elfeed
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-25&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;elfeed-org and goodies&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-26&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-26&#34;&gt;
-Emails with notmuch 
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-27&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-27&#34;&gt;
-IRC
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-28&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-28&#34;&gt;
-&amp;#34;Frivoulous&amp;#34; Items
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-28&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-29&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-29&#34;&gt;
-Modus and Ef Themes
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-29&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;As I stated in my &lt;a href=&#34;http://localhost:1313/enjoy/programs&#34;&gt;opinionated list of programs&lt;/a&gt;, I like to &lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-30&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-30&#34;&gt;
-Fontaine
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-31&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-31&#34;&gt;
-Spacious Padding
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-32&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-32&#34;&gt;
-Cursory
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+I do not use much social media.&lt;/p&gt;
 </description>
 	</item>
 	

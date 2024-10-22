@@ -1,8 +1,7 @@
----
-title: "Programs I Use"
-author: "Daniel Pinkston"
-date: 2023-11-23T22:58:34-05:00
----
+#+title: Programs I Use
+#+author: Daniel Pinkston
+#+date: [2023-11-23 Thu 22:58]
+#+type: publication
 
 * Philosophy For Programs
 ** 1. Functionality

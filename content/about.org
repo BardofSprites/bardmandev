@@ -8,7 +8,7 @@ I enjoy free and open source software, a nice cup of tea, and sweaters.
 {{< img class="about-image" src="/img/catwithscarf.jpg" caption="" mouse="not my image">}}
 
 
-* Socials
+* Contact Me
 + =Matrix: @bardman:matrix.org=
 + =IRC: bardman@irc.libera.chat=
 

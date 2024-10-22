@@ -1,5 +1,6 @@
-#+title: EMMS: Emacs Multimedia System
-#+date: 2024-08-04 Sun 22:37
+#+TITLE: EMMS: Emacs Multimedia System
+#+DATE: [2024-08-04 Sun 22:37]
+#+type: publication
 
 * Description
 From the official page: 
