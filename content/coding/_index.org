@@ -1,0 +1,6 @@
+#+title: Coding
+#+author: Daniel Pinkston
+
+* Latest updates
++ 2024-05-22: [[/coding/workflow][My Emacs Workflow For Programming, Notetaking, and Much More]]
++ 2024-03-03: [[/coding/emms][Emacs: EMMS media player]]

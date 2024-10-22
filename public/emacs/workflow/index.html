@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<title>My Emacs Workflow for Programming, Notetaking, and Much More | bardman&#39;s website</title>
+	<link rel="canonical" href="http://localhost:1313/">
+	<link rel='alternate' type='application/rss+xml' title="bardman&#39;s website RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content="Prefrace I use Emacs everyday on all of my computers. It is my favorite program on my computer. I use it for school and personal use, and only on Linux.
+General Packages Editing Extensions expand-region: This extension is really useful for selecting text. It&#39;s like a dwim solution for selecting text. You can repeatedly run the same key-sequence (I use C-=) and select a larger amount of text for every tool.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+<main>
+<header><h1 id="tag_My Emacs Workflow For Programming, Notetaking, and Much More">My Emacs Workflow For Programming, Notetaking, and Much More</h1></header>
+<article>
+
+
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Prefrace
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>I use Emacs everyday on all of my computers. It is my favorite program on my computer. I use it for school and personal use, and only on Linux.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+General Packages
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Editing Extensions
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p><strong>expand-region:</strong> This extension is really useful for selecting text. It&#39;s like a dwim solution for selecting text. You can repeatedly run the same key-sequence (I use C-=) and select a larger amount of text for every tool.</p>
+<p>
+
+<figure class="centered-image"><img src="/img/expand-region.gif" title="expand-region"><figcaption>expand-region</figcaption></figure>
+</p>
+<p>
+<strong>tempel:</strong> This is a package for snippets. You can define text snippets in a lisp-like syntax. It&#39;s very conventient for quick snippets like this:</p>
+<p>
+
+<figure class="centered-image"><img src="/img/snippet.gif" title="tempel snippets"><figcaption>tempel snippets</figcaption></figure>
+</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Refractoring Tools with wgrep and iedit
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>My workflow for large text operations was completely copied from <a href="https://irreal.org/blog/?p=3638">this irreal post</a>. Basically the idea is this</p>
+<blockquote>
+<ol>
+<li>Call grep/rgrep/consult-grep to get a list of every occurrence of the function name. If consult-grep, use embark to export to buffer.</li>
+<li>Call wgrep so that you can edit the rgrep output and have the results reflected in the original files.</li>
+<li>Call iedit to change every instance of the function name at once.</li>
+<li>Quit iedit.</li>
+<li>Quit wgrep, writing the changes back to the files.</li>
+</ol>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+Snippets with tempel
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>Snippets are a really helpful way of reducing time spent retyping the same things over and over again. I use snippets for common phrases and elisp functions that I type often.</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+File Management with dired
+</h3>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Window Management
+</h3>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Programming
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
+Languages
+</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<div id="outline-container-headline-10" class="outline-4">
+<h4 id="headline-10">
+Major Modes
+</h4>
+<div id="outline-text-headline-10" class="outline-text-4">
+<p>I have a few packages installed for the various programming languauges that I like to dabble in. Here they are in list format, because they don&#39;t a lot to talk about.</p>
+<ol>
+<li>clojure-mode</li>
+<li>haskell-mode</li>
+<li>ada-mode</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-4">
+<h4 id="headline-11">
+Repl - Cider, Sly, Geiser
+</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+Language Server (LSP)
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<p>For LSP, I usually use a </p>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
+<h3 id="headline-13">
+Completion
+</h3>
+</div>
+<div id="outline-container-headline-14" class="outline-3">
+<h3 id="headline-14">
+Git
+</h3>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
+Writing
+</h2>
+<div id="outline-text-headline-15" class="outline-text-2">
+<div id="outline-container-headline-16" class="outline-3">
+<h3 id="headline-16">
+org-mode
+</h3>
+<div id="outline-text-headline-16" class="outline-text-3">
+<p>Org mode is one of the pillars of Emacs. It is not just a markdown clone</p>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-3">
+<h3 id="headline-17">
+denote
+</h3>
+</div>
+<div id="outline-container-headline-18" class="outline-3">
+<h3 id="headline-18">
+denote-menu and denote-explore
+</h3>
+</div>
+<div id="outline-container-headline-19" class="outline-3">
+<h3 id="headline-19">
+Editing extensions
+</h3>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-2">
+<h2 id="headline-20">
+Time Management and Scheduling
+</h2>
+<div id="outline-text-headline-20" class="outline-text-2">
+<div id="outline-container-headline-21" class="outline-3">
+<h3 id="headline-21">
+todo.org file
+</h3>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-22" class="outline-2">
+<h2 id="headline-22">
+Media
+</h2>
+<div id="outline-text-headline-22" class="outline-text-2">
+<div id="outline-container-headline-23" class="outline-3">
+<h3 id="headline-23">
+Multimedia with EMMS
+</h3>
+</div>
+<div id="outline-container-headline-24" class="outline-3">
+<h3 id="headline-24">
+RSS Feeds with elfeed
+</h3>
+<div id="outline-text-headline-24" class="outline-text-3">
+<p>elfeed-org and goodies</p>
+</div>
+</div>
+<div id="outline-container-headline-25" class="outline-3">
+<h3 id="headline-25">
+Emails with notmuch 
+</h3>
+</div>
+<div id="outline-container-headline-26" class="outline-3">
+<h3 id="headline-26">
+IRC
+</h3>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-27" class="outline-2">
+<h2 id="headline-27">
+&#34;Frivoulous&#34; Items
+</h2>
+<div id="outline-text-headline-27" class="outline-text-2">
+<div id="outline-container-headline-28" class="outline-3">
+<h3 id="headline-28">
+Modus and Ef Themes
+</h3>
+<div id="outline-text-headline-28" class="outline-text-3">
+<p>As I stated in my <a href="/enjoy/programs">opinionated list of programs</a>, I like to </p>
+</div>
+</div>
+<div id="outline-container-headline-29" class="outline-3">
+<h3 id="headline-29">
+Fontaine
+</h3>
+</div>
+<div id="outline-container-headline-30" class="outline-3">
+<h3 id="headline-30">
+Spacious Padding
+</h3>
+</div>
+</div>
+</div>
+
+
+</article>
+</main>
+
+<footer>
+        <a href="http://localhost:1313/">http://localhost:1313/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+</body>
+</html>

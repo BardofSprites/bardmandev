@@ -1,0 +1,113 @@
+body {
+    font-family: sans-serif;
+    background: #000000;
+    color: #ffffff;
+}
+
+a:link {color: #79a8ff}
+a:visited {color: #feacd0}
+
+main {
+    max-width: 1000px ;
+    margin: auto ;
+}
+
+img {
+    max-width: 100% ;
+    text-align: center;
+}
+
+.centered-image {
+    text-align: center;
+}
+
+.about-image {
+    text-align: center;
+    width: 20%;
+}
+
+
+.landing-image {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+header h1 {
+    text-align: center;
+    /* font-size: 35 px; */
+    color: #6ae4b9;
+    /* text-decoration: underline; */
+}
+
+h3 {
+    color: #d2b580;
+}
+
+h4 {
+    color: #82b0ec;
+}
+
+h5 {
+    color: #feacd0;
+}
+
+h6 {
+    color: #ff9580;
+}
+
+h7 {
+    color: #9ac8e0;
+}
+
+p {
+    font-size: 18px;
+}
+
+code {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center ;
+    clear: both ;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    padding: 10px;
+}
+
+/* For TAGLIST.HTML */
+.taglist {
+    text-align: center ;
+    clear: both ;
+    padding: 20px ;
+}
+
+/* For NEXTPREV.HTML */
+#nextprev {
+    /* The container for both the previous and next articles. */
+}
+#prevart {
+    float: left ;
+    text-align: left ;
+}
+#nextart {
+    float: right ;
+    text-align: right ;
+}
+#nextart,#prevart {
+    max-width: 33% ;
+}
+
+.basictitle {
+    font-size: 20px;
+}
+
+.includetitle {
+    font-size: 20px;
+}

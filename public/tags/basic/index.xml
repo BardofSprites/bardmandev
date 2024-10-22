@@ -1,0 +1,562 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+	<title>bardman&#39;s website</title>
+	<link>http://localhost:1313/tags/basic/</link>
+	<description>Recent content in Basic on bardman&#39;s website</description>
+	<generator>Hugo -- gohugo.io</generator>
+	<language>en-us</language>
+	<lastBuildDate>Wed, 22 Nov 2023 22:53:17 -0500</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/tags/basic/index.xml" rel="self" type="application/rss+xml" />
+	
+	
+	<item>
+		<title>Programs I Use</title>
+		<link>http://localhost:1313/enjoy/programs/</link>
+		<pubDate>Thu, 23 Nov 2023 22:58:34 -0500</pubDate>
+		
+		<guid>http://localhost:1313/enjoy/programs/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Philosophy For Programs
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+1. Functionality
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I want my programs to be minimal, but not the point of being completely featureless. I&amp;#39;m can&amp;#39;t use a TTY for browsing the modern web. I&amp;#39;m also don&amp;#39;t need to use the behemoth that is the Gnome desktop environment. I use something in between these two.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+2. Bloat
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.reddit.com/r/emacs/comments/zkn7ab/a_coworker_sent_this/&#34;&gt;https://www.reddit.com/r/emacs/comments/zkn7ab/a_coworker_sent_this/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+Chrome, VSCode, Electron are too slow and I have no patience.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;But what about Emacs?!?! Isn&amp;#39;t it bloated?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+It may be &amp;#34;bloated&amp;#34;, but not as much as a full IDE running in an electron (really just a web browser) app. I&amp;#39;m sure that it has its use for other people, but it&amp;#39;s just not for me&lt;/p&gt;
+&lt;p&gt;
+I use man of its features, and it is basically like a secondary operating system. It does make computing fun and efficient so I will continue using it despite its few flaws.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+3. Aesthetically Pleasing
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;The main reason why I got into Linux was to make my desktop look nice (no really). I stayed because of the utilities that are commonly associated with it. The programs I use should not be ugly and clunky.&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t go as extreme as the average hyprland zoomer and make my windows 30% opacity with rounded corners and animations, or the boomer with default themes for everything. I like to keep my programs functionally aesthetic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Why Choose These Tools Over Windows/MacOS
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;It makes computing more fun. I find the Windows and Mac desktops depressing. Flat ui, ads in the menus, slow, not extensible, etc. If I didn&amp;#39;t have a choice, like in a work environment, I would have to comply. However, my preference would still be for Linux.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
+Main Programs
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Operating System
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;GNU/Linux is my favorite choice for desktop computing. In the past I have used: PopOs!, Manjaro, ArcoLinux, Debian, Ubuntu Server.&lt;/p&gt;
+&lt;p&gt;
+I settled with Debian and Gentoo as my main choices. Debian 12 for my desktop and Gentoo for my laptop.&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Pros of Debian:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;quick to setup and easy to maintain&lt;/li&gt;
+&lt;li&gt;wide range of avaiable software/drivers&lt;/li&gt;
+&lt;li&gt;stable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons of Debian&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;not as fast as Gentoo&lt;/li&gt;
+&lt;li&gt;not as minimal as Gentoo&lt;/li&gt;
+&lt;li&gt;outdated versions of some packages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Pros of Gentoo:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ability to meticulously control everything about your system → how unstable/stable it is, how minimal it is, and so on&lt;/li&gt;
+&lt;li&gt;good for battery life due to ease of kernel/package binary customization with use flags&lt;/li&gt;
+&lt;li&gt;more benefits &lt;a href=&#34;https://wiki.gentoo.org/wiki/Benefits_of_Gentoo&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons of Gentoo&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;not easy to setup/maintain for most people&lt;/li&gt;
+&lt;li&gt;a pretty significant time investment for most people&lt;/li&gt;
+&lt;li&gt;compiling packages can take a long time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
+Web Browsing: Firefox and Librewolf
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;These are easy to use and don&amp;#39;t eat up as much RAM as chromium. They are also both free and open source which makes it easier to install them on linux.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-9&#34;&gt;
+Extensions/Addons
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;I don&amp;#39;t use many extensions. Bitwarden is a password manager that I highly recommend. I also really like Tridactyl, a vim browsing extension. It provides vim bindings for actions like clicking on links, switching tabs, scrolling, etc. It&amp;#39;s great because I never have to touch my mouse &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-10&#34;&gt;
+Aesthetics
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;Both browsers can use a userChrome.css for customizing the interface. I use the &lt;a href=&#34;https://github.com/Dook97/firefox-qutebrowser-userchrome&#34;&gt;i3wm lookalike theme&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-11&#34;&gt;
+Why Do I Have Two Browsers?
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;I like to seperate school/home browsing. Also some websites, like twitch.tv, don&amp;#39;t allow Librewolf users to log in because the browser is &lt;em&gt;&amp;#34;unsupported&amp;#34;&lt;/em&gt; even though I can watch streams perfectly fine. In this case I just use Firefox as a backup.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-12&#34;&gt;
+Text Editor: GNU Emacs
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;This has been text editor of choice since I found DOOM emacs in 2022. I really like the extensible nature of Emacs lisp and the packages that are avaiable. If you want to here more about my Emacs workflow, click &lt;a href=&#34;http://localhost:1313/emacs/workflow&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-13&#34;&gt;
+Window Manager - DWM
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have jumped between different WMs. First preconfigured dwm on arcolinux, then i3, then xmonad, and then to Luke Smith&amp;#39;s dwm with my own configurations.&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t see myself moving away from dwm anytime soon. Every feature that Luke patched in was exactly what I needed. The only things I changed were the keybinds because a lot of them were overly redundant.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/dwm.png&#34; title=&#34;dwm window manager&#34;&gt;&lt;figcaption&gt;open windows: Emacs and Librewolf editing this article&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-14&#34;&gt;
+Media
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-14&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;&lt;strong&gt;MPV:&lt;/strong&gt; I use this to play video files that I download from the internet/produce myself. It never lags and the UI is functionally minimal. I don&amp;#39;t customize it or script it with the Lua programming language. I use mpv to play video files from the command line.&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Emacs:&lt;/strong&gt; Emacs has a package called EMMS (Emacs Multi Media System) that I have been using since my start with DOOM Emacs. It uses MPV to play music/videos with Emacs. It&amp;#39;s very convenient as a music player because you can create playlists with Emacs text buffers. &lt;a href=&#34;http://localhost:1313/emacs/emms&#34;&gt;Here&lt;/a&gt; is a more extensive description of my multimedia workflow with Emacs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-15&#34;&gt;
+Utilities
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-16&#34;&gt;
+Terminal - ST Suckless Terminal
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Suckless terminal (st): It is fast, never crashes, minimal, and full of features. Since it is a suckless tool, you start with the original codebase and can add patches to it.&lt;/p&gt;
+&lt;p&gt;
+I never really felt the need to deeply customize it from the ground up as people have already done the hard work for me. I just cloned Luke Smith&amp;#39;s fork and changed the fonts and colors. It is patched to have support for Xresources themeing, changing font scale, scrolling, and much more.&lt;/p&gt;
+&lt;p&gt;
+I also have URxvt installed and customized as a backup incase something breaks one day because it offers almost the same experience. They look identical with certain customizations. The reaason I don&amp;#39;t use it is because I don&amp;#39;t know perl make it more extensible with scripts.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/stterm.png&#34; title=&#34;st terminal&#34;&gt;&lt;figcaption&gt;dired with hidden mode on to reduce clutter&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-17&#34;&gt;
+File Manager - Emacs Dired
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-17&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;It&amp;#39;s pretty basic and easy to use. It is just a text buffer in Emacs that you can manipulate with its built-in functions. You can even generate thumbnails with it if you are in a directory with pictures with image-dired. Because its part of Emacs, it benefits from the extensibility of it.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/dired.png&#34; title=&#34;st terminal&#34;&gt;&lt;figcaption&gt;tmux windows: terminal, btop, and plain terminal&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-18&#34;&gt;
+dmenu
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-18&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;dmenu stands for dynamic menu. A user can input options with stdin and select one with dmenu and get an output to stdout.&lt;/p&gt;
+&lt;p&gt;
+This is useful for scripts like my dired_selector scripts that gives me a selection of predefined directories and when I choose one, it opens a dired buffer in Emacs with that directory.&lt;/p&gt;
+&lt;p&gt;
+dmenu can also be used as a launcher for programs in a minimalist window manager. The options are nearly limitless.&lt;/p&gt;
+&lt;p&gt;
+Because this is suckless software, features can be added in. The only patches I have added are the Xresources, center, and lineheight patches that make it look nice.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-19&#34;&gt;
+Notification Daemon - dunst
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-19&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;dunst is a minimal notification daemon. I don&amp;#39;t really get a lot of notifications, but it&amp;#39;s there for when I do. You can add sounds to it, rice it, script it and much more. Check out &lt;a href=&#34;https://dunst-project.org/&#34;&gt;the dunst project website&lt;/a&gt; to learn about more of its features.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-20&#34;&gt;
+Image Viewer - nsxiv
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-20&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;nsxiv is a pretty basic image viewer. It has a nice gallery mode and I made it able to select/set my wallpaper with a feh script. It has stdin/stdout capabilities as many other suckless software do.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>My Journey with GNU Emacs</title>
+		<link>http://localhost:1313/enjoy/emacs/</link>
+		<pubDate>Wed, 22 Nov 2023 23:04:16 -0500</pubDate>
+		
+		<guid>http://localhost:1313/enjoy/emacs/</guid>
+		<description>&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/saint-button.png&#34;
+    alt=&#34;An example image&#34;&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;the-beginning&#34;&gt;The Beginning&lt;/h1&gt;
+&lt;p&gt;My first taste of emacs was when I saw Distrotube make videos of DOOM Emacs.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Contact Me</title>
+		<link>http://localhost:1313/basic/contact/</link>
+		<pubDate>Wed, 22 Nov 2023 22:53:17 -0500</pubDate>
+		
+		<guid>http://localhost:1313/basic/contact/</guid>
+		<description>&lt;h1 id=&#34;socials&#34;&gt;Socials&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Matrix: @bardman:matrix.org&lt;/li&gt;
+&lt;li&gt;IRC: &lt;a href=&#34;mailto:bardman@irc.libera.chat&#34;&gt;bardman@irc.libera.chat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;matrix is probably more reliable way to reach me&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>About</title>
+		<link>http://localhost:1313/about/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/about/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Introduction
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+I am known as bardman online. I am a 17 year old student/programmer hobbyist.
+I enjoy free and open source software, a nice cup of tea, and sweaters.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Socials
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&#34;verbatim&#34;&gt;Matrix: @bardman:matrix.org&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&#34;verbatim&#34;&gt;IRC: bardman@irc.libera.chat&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;matrix is probably more reliable way to reach me&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>EMMS: Emacs Multimedia System</title>
+		<link>http://localhost:1313/emacs/emms/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/emacs/emms/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Description
+&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Installation
+&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+How I Use It
+&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+References and Documentation
+&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>My Emacs Workflow For Programming, Notetaking, and Much More</title>
+		<link>http://localhost:1313/emacs/workflow/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/emacs/workflow/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Prefrace
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I use Emacs everyday on all of my computers. It is my favorite program on my computer. I use it for school and personal use, and only on Linux.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+General Packages
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Editing Extensions
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;&lt;strong&gt;expand-region:&lt;/strong&gt; This extension is really useful for selecting text. It&amp;#39;s like a dwim solution for selecting text. You can repeatedly run the same key-sequence (I use C-=) and select a larger amount of text for every tool.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/expand-region.gif&#34; title=&#34;expand-region&#34;&gt;&lt;figcaption&gt;expand-region&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;tempel:&lt;/strong&gt; This is a package for snippets. You can define text snippets in a lisp-like syntax. It&amp;#39;s very conventient for quick snippets like this:&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/snippet.gif&#34; title=&#34;tempel snippets&#34;&gt;&lt;figcaption&gt;tempel snippets&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Refractoring Tools with wgrep and iedit
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;My workflow for large text operations was completely copied from &lt;a href=&#34;https://irreal.org/blog/?p=3638&#34;&gt;this irreal post&lt;/a&gt;. Basically the idea is this&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Call grep/rgrep/consult-grep to get a list of every occurrence of the function name. If consult-grep, use embark to export to buffer.&lt;/li&gt;
+&lt;li&gt;Call wgrep so that you can edit the rgrep output and have the results reflected in the original files.&lt;/li&gt;
+&lt;li&gt;Call iedit to change every instance of the function name at once.&lt;/li&gt;
+&lt;li&gt;Quit iedit.&lt;/li&gt;
+&lt;li&gt;Quit wgrep, writing the changes back to the files.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Snippets with tempel
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Snippets are a really helpful way of reducing time spent retyping the same things over and over again. I use snippets for common phrases and elisp functions that I type often.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+File Management with dired
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Window Management
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-8&#34;&gt;
+Programming
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-9&#34;&gt;
+Languages
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-10&#34;&gt;
+Major Modes
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;I have a few packages installed for the various programming languauges that I like to dabble in. Here they are in list format, because they don&amp;#39;t a lot to talk about.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;clojure-mode&lt;/li&gt;
+&lt;li&gt;haskell-mode&lt;/li&gt;
+&lt;li&gt;ada-mode&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-11&#34;&gt;
+Repl - Cider, Sly, Geiser
+&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-12&#34;&gt;
+Language Server (LSP)
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;For LSP, I usually use a &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-13&#34;&gt;
+Completion
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-14&#34;&gt;
+Git
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-15&#34;&gt;
+Writing
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-16&#34;&gt;
+org-mode
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Org mode is one of the pillars of Emacs. It is not just a markdown clone&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-17&#34;&gt;
+denote
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-18&#34;&gt;
+denote-menu and denote-explore
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-19&#34;&gt;
+Editing extensions
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-20&#34;&gt;
+Time Management and Scheduling
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-20&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-21&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-21&#34;&gt;
+todo.org file
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-22&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-22&#34;&gt;
+Media
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-22&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-23&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-23&#34;&gt;
+Multimedia with EMMS
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-24&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-24&#34;&gt;
+RSS Feeds with elfeed
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-24&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;elfeed-org and goodies&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-25&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-25&#34;&gt;
+Emails with notmuch 
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-26&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-26&#34;&gt;
+IRC
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-27&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-27&#34;&gt;
+&amp;#34;Frivoulous&amp;#34; Items
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-27&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-28&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-28&#34;&gt;
+Modus and Ef Themes
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-28&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;As I stated in my &lt;a href=&#34;http://localhost:1313/enjoy/programs&#34;&gt;opinionated list of programs&lt;/a&gt;, I like to &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-29&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-29&#34;&gt;
+Fontaine
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-30&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-30&#34;&gt;
+Spacious Padding
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	</channel>
+</rss>

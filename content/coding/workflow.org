@@ -1,0 +1,77 @@
+#+title: My Emacs Workflow For Programming, Notetaking, and Much More
+#+date: 2024-05-22 Wed 16:09
+
+* Prefrace
+I use Emacs everyday on all of my computers. It is my favorite program on my computer. I use it for school and personal use, and only on Linux. I have a separate configuration on my [[https://github.com/BardofSprites/.emacs.d][Emacs repository]] on the minimal branch that is lighter weight for my school computer.
+
+* General Packages
+** Editing Extensions
+*expand-region:* This extension is really useful for selecting text. It's like a dwim solution for selecting text. You can repeatedly run the same key-sequence (I use C-=) and select a larger amount of text for every tool.
+
+{{< img class="centered-image" src="/img/expand-region.gif" caption="expand-region" mouse="expand-region">}}
+
+*tempel:* This is a package for snippets. You can define text snippets in a lisp-like syntax. It's very conventient for quick snippets like this:
+
+{{< img class="centered-image" src="/img/snippet.gif" caption="tempel snippets" mouse="tempel snippets">}}
+
+** Refractoring Tools with wgrep and substitute
+My workflow for large text operations was completely copied from [[https://irreal.org/blog/?p=3638][this irreal post]]. Basically the idea is this:
+
+#+begin_quote
+
+    1. Call grep/rgrep/consult-grep to get a list of every occurrence of the function name. If consult-grep, use embark to export to buffer.
+    2. Call wgrep so that you can edit the rgrep output and have the results reflected in the original files.
+    3. Call substitute to change every instance of the function name at once.
+    4. Quit wgrep, writing the changes back to the files.
+
+#+end_quote
+
+** Snippets with tempel
+Snippets are a really helpful way of reducing time spent retyping the same things over and over again. I use snippets for common phrases and elisp functions that I type often.
+
+** File Management with dired
+
+** Window Management
+
+* Programming
+** Languages
+*** Major Modes
+I have a few packages installed for the various programming languauges that I like to dabble in. Here they are in list format, because they don't a lot to talk about.
+
+1. ~clojure-mode~
+2. ~haskell-mode~
+3. ~ada-mode~
+
+*** Repl - Cider, Sly, Geiser
+
+** Language Server (LSP)
+Eglot just works, and it's built into Emacs. I mainly use it with clangd for C++. I don't really need it for other langs.
+
+** Completion
+
+** Git
+
+* Writing
+** org-mode
+Org mode is one of the pillars of Emacs. It is not just a markdown clone
+** denote
+** denote-menu and denote-explore
+** Editing extensions
+
+* Time Management and Scheduling
+** todo.org file
+** ~tmr~
+~tmr~ is a simple package for managing timers. I use it to tell when I need to get up and walk around after studying for around 60 min.
+
+* Media
+** Multimedia with EMMS
+** RSS Feeds with elfeed
+elfeed-org and goodies
+** Emails with notmuch 
+** IRC
+* "Frivoulous" Items
+** Modus and Ef Themes
+As I stated in my [[/enjoy/programs][opinionated list of programs]], I like to 
+** Fontaine
+** Spacious Padding
+** Cursory

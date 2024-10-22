@@ -1,0 +1,16 @@
+#+title: About
+
+* Introduction
+
+I am known as bardman online. I am a 17 year old student/programmer hobbyist.
+I enjoy free and open source software, a nice cup of tea, and sweaters.
+
+{{< img class="about-image" src="/img/catwithscarf.jpg" caption="" mouse="not my image">}}
+
+
+* Socials
++ =Matrix: @bardman:matrix.org=
++ =IRC: bardman@irc.libera.chat=
+
+matrix is probably more reliable way to reach me
+

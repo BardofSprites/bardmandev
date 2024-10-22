@@ -1,0 +1,20 @@
+{{ define "title" -}}
+{{ .Title | title }}
+{{- end }}
+{{ define "main" -}}
+{{ .Content }}
+<ul>
+  {{range.Site.RegularPages.ByDate}}{{ if in .Params.tags "basic" }}
+  {{- end }}
+<li>
+	<a class="basictitle" href="{{ .RelPermalink }}">{{ .Title }}</a>
+	{{- if .Param "authorsinlist" }}
+	{{ with .Params.authors }}
+		by 
+		{{ delimit . ", " " and " }}
+	{{end}}
+	{{ end -}}
+</li>
+{{- end }}
+</ul>
+{{- end }}

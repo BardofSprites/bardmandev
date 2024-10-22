@@ -1,0 +1,16 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "bardman's website"
+
+theme = 'lugo'
+
+[params]
+    relatedtext = "Related"
+    favicon = "/favicon.ico"
+
+    datesinlist = true
+    authorinlist = true
+
+    nextprev = false
+    taglist = false
+    showrss = true

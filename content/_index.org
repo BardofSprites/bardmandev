@@ -1,0 +1,16 @@
+#+title: "Bardmandev"
+#+date: [2023-11-22 22:49]
+
+* Important pages
++ [[about][About Me]]
++ [[programs][Programs That I Use]]
+  
+* Latest updates
++ 2024-05-22: [[/coding/workflow][My Emacs Workflow For Programming, Notetaking, and Much More]]
++ 2024-03-03: [[/coding/emms][Emacs: EMMS media player]]
+* Main content indices
+** [[/coding/][Coding]]
+#+begin_quote
+articles pertaining to GNU Emacs, programming, and general computing
+#+end_quote
+** [[/mind/][Mind]]
