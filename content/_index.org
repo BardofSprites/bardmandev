@@ -1,8 +1,6 @@
----
-title: Bardman's website
-author: Bardman
-layout: index
----
+#+title: Bardman's website
+#+author: Bardman
+#+tags: hugo bruh
 
 * Important pages
 + [[about][About Me]]
