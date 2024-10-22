@@ -2,36 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://bardman.dev/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/coding/</loc>
+    <loc>https://bardman.dev/tags/coding/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/coding/</loc>
+    <loc>https://bardman.dev/coding/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo-bruh/</loc>
+    <loc>https://bardman.dev/tags/hugo-bruh/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://bardman.dev/tags/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/coding/emms/</loc>
+    <loc>https://bardman.dev/coding/emms/</loc>
     <lastmod>2024-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/coding/workflow/</loc>
+    <loc>https://bardman.dev/coding/workflow/</loc>
     <lastmod>2024-05-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/coding/programs/</loc>
+    <loc>https://bardman.dev/coding/programs/</loc>
     <lastmod>2023-11-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://bardman.dev/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://bardman.dev/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://bardman.dev/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/mind/</loc>
+    <loc>https://bardman.dev/mind/</loc>
   </url>
 </urlset>
