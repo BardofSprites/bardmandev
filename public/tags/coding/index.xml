@@ -1,21 +1,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
 	<title>bardman&#39;s website</title>
-	<link>https://bardman.dev/tags/coding/</link>
+	<link>http://localhost:1313/tags/coding/</link>
 	<description>Recent content in Coding on bardman&#39;s website</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
 	<lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://bardman.dev/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/coding/index.xml" rel="self" type="application/rss+xml" />
 	
 	
 	<item>
 		<title>EMMS: Emacs Multimedia System</title>
-		<link>https://bardman.dev/coding/emms/</link>
+		<link>http://localhost:1313/coding/emms/</link>
 		<pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
 		
-		<guid>https://bardman.dev/coding/emms/</guid>
+		<guid>http://localhost:1313/coding/emms/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -80,7 +80,7 @@ Normally my process for playing music is like this:&lt;/p&gt;
 &lt;li&gt;Then I pick the song I want to listen to and start working.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;https://bardman.dev/img/emms-demo.gif&#34;&gt;&lt;figcaption&gt;EMMS Browser in action, sorry for the FFMPEG artifacts.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/emms-demo.gif&#34;&gt;&lt;figcaption&gt;EMMS Browser in action, sorry for the FFMPEG artifacts.&lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -99,10 +99,10 @@ References and Documentation
 	
 	<item>
 		<title>My Emacs Workflow For Programming, Notetaking, and Much More</title>
-		<link>https://bardman.dev/coding/workflow/</link>
+		<link>http://localhost:1313/coding/workflow/</link>
 		<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
 		
-		<guid>https://bardman.dev/coding/workflow/</guid>
+		<guid>http://localhost:1313/coding/workflow/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -125,13 +125,13 @@ Editing Extensions
 &lt;p&gt;&lt;strong&gt;expand-region:&lt;/strong&gt; This extension is really useful for selecting text. It&amp;#39;s like a dwim solution for selecting text. You can repeatedly run the same key-sequence (I use C-=) and select a larger amount of text for every tool.&lt;/p&gt;
 &lt;p&gt;
 
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;https://bardman.dev/img/expand-region.gif&#34; title=&#34;expand-region&#34;&gt;&lt;figcaption&gt;expand-region&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/expand-region.gif&#34; title=&#34;expand-region&#34;&gt;&lt;figcaption&gt;expand-region&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
 &lt;strong&gt;tempel:&lt;/strong&gt; This is a package for snippets. You can define text snippets in a lisp-like syntax. It&amp;#39;s very conventient for quick snippets like this:&lt;/p&gt;
 &lt;p&gt;
 
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;https://bardman.dev/img/snippet.gif&#34; title=&#34;tempel snippets&#34;&gt;&lt;figcaption&gt;tempel snippets&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/snippet.gif&#34; title=&#34;tempel snippets&#34;&gt;&lt;figcaption&gt;tempel snippets&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -322,7 +322,7 @@ IRC
 Modus and Ef Themes
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-29&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;As I stated in my &lt;a href=&#34;https://bardman.dev/enjoy/programs&#34;&gt;opinionated list of programs&lt;/a&gt;, I like to &lt;/p&gt;
+&lt;p&gt;As I stated in my &lt;a href=&#34;http://localhost:1313/enjoy/programs&#34;&gt;opinionated list of programs&lt;/a&gt;, I like to &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-30&#34; class=&#34;outline-3&#34;&gt;
@@ -347,10 +347,10 @@ Cursory
 	
 	<item>
 		<title>Programs I Use</title>
-		<link>https://bardman.dev/coding/programs/</link>
+		<link>http://localhost:1313/coding/programs/</link>
 		<pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
 		
-		<guid>https://bardman.dev/coding/programs/</guid>
+		<guid>http://localhost:1313/coding/programs/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -473,7 +473,7 @@ Why Do I Have Two Browsers?
 Text Editor: GNU Emacs
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;This has been text editor of choice since I found DOOM emacs in 2022. I really like the extensible nature of Emacs lisp and the packages that are avaiable. If you want to here more about my Emacs workflow, click &lt;a href=&#34;https://bardman.dev/coding/workflow&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This has been text editor of choice since I found DOOM emacs in 2022. I really like the extensible nature of Emacs lisp and the packages that are avaiable. If you want to here more about my Emacs workflow, click &lt;a href=&#34;http://localhost:1313/coding/workflow&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
@@ -486,7 +486,7 @@ Window Manager - DWM
 I don&amp;#39;t see myself moving away from dwm anytime soon. Every feature that Luke patched in was exactly what I needed. The only things I changed were the keybinds because a lot of them were overly redundant.&lt;/p&gt;
 &lt;p&gt;
 
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;https://bardman.dev/img/dwm.png&#34; title=&#34;dwm window manager&#34;&gt;&lt;figcaption&gt;open windows: Emacs and Librewolf editing this article&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/dwm.png&#34; title=&#34;dwm window manager&#34;&gt;&lt;figcaption&gt;open windows: Emacs and Librewolf editing this article&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -499,7 +499,7 @@ Media
 &lt;div id=&#34;outline-text-headline-14&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;&lt;strong&gt;MPV:&lt;/strong&gt; I use this to play video files that I download from the internet/produce myself. It never lags and the UI is functionally minimal. I don&amp;#39;t customize it or script it with the Lua programming language. I use mpv to play video files from the command line.&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;Emacs:&lt;/strong&gt; Emacs has a package called EMMS (Emacs Multi Media System) that I have been using since my start with DOOM Emacs. It uses MPV to play music/videos with Emacs. It&amp;#39;s very convenient as a music player because you can create playlists with Emacs text buffers. &lt;a href=&#34;https://bardman.dev/emacs/emms&#34;&gt;Here&lt;/a&gt; is a more extensive description of my multimedia workflow with Emacs.&lt;/p&gt;
+&lt;strong&gt;Emacs:&lt;/strong&gt; Emacs has a package called EMMS (Emacs Multi Media System) that I have been using since my start with DOOM Emacs. It uses MPV to play music/videos with Emacs. It&amp;#39;s very convenient as a music player because you can create playlists with Emacs text buffers. &lt;a href=&#34;http://localhost:1313/emacs/emms&#34;&gt;Here&lt;/a&gt; is a more extensive description of my multimedia workflow with Emacs.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-2&#34;&gt;
@@ -519,7 +519,7 @@ I never really felt the need to deeply customize it from the ground up as people
 I also have URxvt installed and customized as a backup incase something breaks one day because it offers almost the same experience. They look identical with certain customizations. The reaason I don&amp;#39;t use it is because I don&amp;#39;t know perl make it more extensible with scripts.&lt;/p&gt;
 &lt;p&gt;
 
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;https://bardman.dev/img/stterm.png&#34; title=&#34;st terminal&#34;&gt;&lt;figcaption&gt;dired with hidden mode on to reduce clutter&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/stterm.png&#34; title=&#34;st terminal&#34;&gt;&lt;figcaption&gt;dired with hidden mode on to reduce clutter&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -531,7 +531,7 @@ File Manager - Emacs Dired
 &lt;p&gt;It&amp;#39;s pretty basic and easy to use. It is just a text buffer in Emacs that you can manipulate with its built-in functions. You can even generate thumbnails with it if you are in a directory with pictures with image-dired. Because its part of Emacs, it benefits from the extensibility of it.&lt;/p&gt;
 &lt;p&gt;
 
-&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;https://bardman.dev/img/dired.png&#34; title=&#34;st terminal&#34;&gt;&lt;figcaption&gt;tmux windows: terminal, btop, and plain terminal&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/dired.png&#34; title=&#34;st terminal&#34;&gt;&lt;figcaption&gt;tmux windows: terminal, btop, and plain terminal&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -572,10 +572,10 @@ Image Viewer - nsxiv
 	
 	<item>
 		<title>About</title>
-		<link>https://bardman.dev/about/</link>
+		<link>http://localhost:1313/about/</link>
 		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 		
-		<guid>https://bardman.dev/about/</guid>
+		<guid>http://localhost:1313/about/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -587,7 +587,7 @@ I am known as bardman online. I am a 17 year old student/programmer hobbyist.
 I enjoy free and open source software, a nice cup of tea, and sweaters.&lt;/p&gt;
 &lt;p&gt;
 
-&lt;figure class=&#34;about-image&#34;&gt;&lt;img src=&#34;https://bardman.dev/img/catwithscarf.jpg&#34; title=&#34;not my image&#34;&gt;&lt;/figure&gt;
+&lt;figure class=&#34;about-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/catwithscarf.jpg&#34; title=&#34;not my image&#34;&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -608,10 +608,10 @@ Contact Me
 	
 	<item>
 		<title>Contact Me</title>
-		<link>https://bardman.dev/contact/</link>
+		<link>http://localhost:1313/contact/</link>
 		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 		
-		<guid>https://bardman.dev/contact/</guid>
+		<guid>http://localhost:1313/contact/</guid>
 		<description>&lt;p&gt;
 &lt;strong&gt;Email:&lt;/strong&gt; develop.bard at gmail dot com&lt;/p&gt;
 &lt;p&gt;

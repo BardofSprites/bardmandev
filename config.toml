@@ -14,3 +14,5 @@ theme = 'lugo'
     nextprev = false
     taglist = false
     showrss = true
+    timezone = "America/New_York"
+    dateFormat = "January 2, 2006"

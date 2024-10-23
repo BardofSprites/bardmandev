@@ -1,13 +1,12 @@
 #+title: Bardman's website
 #+author: Bardman
-#+tags: hugo bruh
 
 * Important pages
 + [[about][About Me]]
 + [[programs][Programs That I Use]]
   
 * Latest publications
-{{< latest_publications >}}
+{{< publications >}}
 * Main content indices
 ** [[/coding/][Coding]]
 #+begin_quote

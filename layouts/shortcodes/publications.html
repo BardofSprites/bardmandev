@@ -1,0 +1,19 @@
+{{ $pubs := where .Site.RegularPages "Type" "publication" }}
+{{ $recent := first 10 (sort $pubs "Date" "desc") }}
+<div class="recent-publications">
+  <ul class="publication-list">
+    {{ range $recent }}
+      <li class="publication-item">
+        <article>
+          {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+          <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Params.authors }}
+            <div class="authors">
+              {{ delimit . ", " " and " }}
+            </div>
+          {{ end }}
+        </article>
+      </li>
+    {{ end }}
+  </ul>
+</div>

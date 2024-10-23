@@ -1,6 +1,5 @@
 #+title: Programs I Use
-#+author: Daniel Pinkston
-#+date: [2023-11-23 Thu 22:58]
+#+date: 2023-11-23T00:00:00+00:00
 #+type: publication
 
 * Philosophy For Programs

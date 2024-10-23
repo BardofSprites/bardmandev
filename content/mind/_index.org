@@ -1,5 +1,4 @@
 #+title: Mind
-#+author: Daniel Pinkston
 
 {{< img class="landing-image" src="/img/japanesetearoom.jpg" caption="Quick poems/thoughts written when I am bored, or as a form of creative expression" mouse="not my image">}}
 

@@ -1,5 +1,4 @@
 #+TITLE: Contact Me
-#+
 #+type: section
 
 *Email:* develop.bard at gmail dot com
