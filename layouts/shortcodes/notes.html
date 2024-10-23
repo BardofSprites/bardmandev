@@ -1,0 +1,66 @@
+<!-- {{ $notes := where .Site.RegularPages "Type" "note" }} -->
+<!-- {{ $sortedNotes := sort $notes "Date" "desc" }} -->
+<!-- <div class="all-notes"> -->
+<!--   <ul class="note-list"> -->
+<!--     {{ range $sortedNotes }} -->
+<!--       <li class="note-item"> -->
+<!--         <article> -->
+<!--           {{ $formattedDate := .Date.Format "2006-01-02 Monday" }} -->
+<!--           <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
+<!--           {{ with .Params.authors }} -->
+<!--             <div class="authors"> -->
+<!--               {{ delimit . ", " " and " }} -->
+<!--             </div> -->
+<!--           {{ end }} -->
+<!--         </article> -->
+<!--       </li> -->
+<!--     {{ end }} -->
+<!--   </ul> -->
+<!-- </div> -->
+
+{{ $notes := where .Site.RegularPages "Type" "note" }}
+{{ $allTags := slice }}
+
+<!-- Collect all unique tags from notes -->
+{{ range $notes }}
+  {{ with .Params.tags }}
+    {{ $tags := split . "," }} <!-- Split the tags string by commas -->
+    {{ range $tags }}
+      {{ $cleanTag := trim . "[] " }} <!-- Trim brackets and spaces -->
+      {{ $allTags = $allTags | append $cleanTag | uniq }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<!-- Sort the notes by date -->
+{{ $sortedNotes := sort $notes "Date" "desc" }}
+
+<!-- Loop through all unique tags -->
+{{ range $tag := $allTags }}
+  <section class="note-section">
+    <h2>{{ $tag | title }} Notes</h2>
+    <ul class="note-list">
+      <!-- Loop through notes and check if the note has the current tag -->
+      {{ range $sortedNotes }}
+        {{ $tags := split (.Params.tags | default "") "," }} <!-- Split and default to empty string -->
+        {{ $cleanedTags := slice }}
+        {{ range $tags }}
+          {{ $cleanedTags = $cleanedTags | append (trim . "[] ") }} <!-- Clean tags -->
+        {{ end }}
+        {{ if in $cleanedTags $tag }}
+          <li class="note-item">
+            <article>
+              {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+              <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.authors }}
+                <div class="authors">
+                  {{ delimit . ", " " and " }}
+                </div>
+              {{ end }}
+            </article>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}

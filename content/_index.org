@@ -3,7 +3,7 @@
 
 * Important pages
 + [[about][About Me]]
-+ [[programs][Programs That I Use]]
++ [[/contact][Contact me]]
   
 * Latest publications
 {{< publications >}}
@@ -13,5 +13,4 @@
 articles pertaining to GNU Emacs, programming, and general computing
 #+end_quote
 ** [[/mind/][Mind]]
-
-
+** [[/notes/][Notes]]

@@ -5,15 +5,29 @@
 	<description>Recent content in Tags on bardman&#39;s website</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 23 Oct 2024 18:43:25 -0400</lastBuildDate>
     
         <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
 	
 	
 	<item>
+		<title>Center of Mass Notes</title>
+		<link>http://localhost:1313/notes/center-of-mass/</link>
+		<pubDate>Wed, 23 Oct 2024 18:43:25 -0400</pubDate>
+		
+		<guid>http://localhost:1313/notes/center-of-mass/</guid>
+		<description>&lt;p&gt;
+Here are the notes for Center of Mass as of 2024-10-23 Wed 19:02.&lt;/p&gt;
+&lt;p&gt;
+&lt;iframe src=&#34;http://localhost:1313/pdfs/center-of-mass.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; style=&#34;border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>EMMS: Emacs Multimedia System</title>
 		<link>http://localhost:1313/coding/emms/</link>
-		<pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
+		<pubDate>Sun, 04 Aug 2024 22:37:00 +0000</pubDate>
 		
 		<guid>http://localhost:1313/coding/emms/</guid>
 		<description>
@@ -100,7 +114,7 @@ References and Documentation
 	<item>
 		<title>My Emacs Workflow For Programming, Notetaking, and Much More</title>
 		<link>http://localhost:1313/coding/workflow/</link>
-		<pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+		<pubDate>Wed, 22 May 2024 16:09:00 +0000</pubDate>
 		
 		<guid>http://localhost:1313/coding/workflow/</guid>
 		<description>
@@ -591,18 +605,6 @@ I enjoy free and open source software, a nice cup of tea, and sweaters.&lt;/p&gt
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-2&#34;&gt;
-Contact Me
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&#34;verbatim&#34;&gt;Matrix: @bardman:matrix.org&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class=&#34;verbatim&#34;&gt;IRC: bardman@irc.libera.chat&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;matrix is probably more reliable way to reach me&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
 	</item>
 	
@@ -618,6 +620,12 @@ Contact Me
 I get a lot of emails, but I will try to respond within 48 hours.&lt;/p&gt;
 &lt;p&gt;
 I do not use much social media.&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Matrix:&lt;/strong&gt; @bardman:matrix.org&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;IRC:&lt;/strong&gt; bardman@irc.libera.chat&lt;/p&gt;
+&lt;p&gt;
+matrix or email is probably more reliable way to reach me, i don&amp;#39;t check irc often.&lt;/p&gt;
 </description>
 	</item>
 	
