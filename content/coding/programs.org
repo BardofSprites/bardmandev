@@ -1,6 +1,7 @@
 #+title: Programs I Use
 #+date: 2023-11-23T00:00:00+00:00
 #+type: publication
+#+tags: [Coding]
 
 * Philosophy For Programs
 ** 1. Functionality

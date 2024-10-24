@@ -1,0 +1,236 @@
+<!-- <\!-- layouts/shortcodes/landing-content.html -\-> -->
+<!-- {{ $targetTag := .Get "tag" }} -->
+<!-- {{ $notes := where .Site.RegularPages "Type" "note" }} -->
+<!-- {{ $pubs := where .Site.RegularPages "Type" "publication" }} -->
+
+<!-- <section class="tagged-content"> -->
+<!--   {{ $foundPubs := false }} -->
+<!--   <h2>{{ $targetTag | title }} Publications</h2> -->
+<!--   <ul class="publication-list"> -->
+<!--     {{ range (sort $pubs "Date" "desc") }} -->
+<!--       {{ $tags := split (.Params.tags | default "") "," }} -->
+<!--       {{ $cleanedTags := slice }} -->
+<!--       {{ range $tags }} -->
+<!--         {{ $cleanedTags = $cleanedTags | append (trim . "[] ") }} -->
+<!--       {{ end }} -->
+<!--       {{ if in $cleanedTags $targetTag }} -->
+<!--         {{ $foundPubs = true }} -->
+<!--         <li class="publication-item"> -->
+<!--           <article> -->
+<!--             {{ $formattedDate := .Date.Format "2006-01-02 Monday" }} -->
+<!--             <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
+<!--             {{ with .Params.authors }} -->
+<!--               <div class="authors"> -->
+<!--                 {{ delimit . ", " " and " }} -->
+<!--               </div> -->
+<!--             {{ end }} -->
+<!--           </article> -->
+<!--         </li> -->
+<!--       {{ end }} -->
+<!--     {{ end }} -->
+<!--     {{ if not $foundPubs }} -->
+<!--       <li>No publications found with tag "{{ $targetTag }}"</li> -->
+<!--     {{ end }} -->
+<!--   </ul> -->
+
+<!--   {{ $foundNotes := false }} -->
+<!--   <h2>{{ $targetTag | title }} Notes</h2> -->
+<!--   <ul class="note-list"> -->
+<!--     {{ range (sort $notes "Date" "desc") }} -->
+<!--       {{ $tags := split (.Params.tags | default "") "," }} -->
+<!--       {{ $cleanedTags := slice }} -->
+<!--       {{ range $tags }} -->
+<!--         {{ $cleanedTags = $cleanedTags | append (trim . "[] ") }} -->
+<!--       {{ end }} -->
+<!--       {{ if in $cleanedTags $targetTag }} -->
+<!--         {{ $foundNotes = true }} -->
+<!--         <li class="note-item"> -->
+<!--           <article> -->
+<!--             {{ $formattedDate := .Date.Format "2006-01-02 Monday" }} -->
+<!--             <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
+<!--             {{ with .Params.authors }} -->
+<!--               <div class="authors"> -->
+<!--                 {{ delimit . ", " " and " }} -->
+<!--               </div> -->
+<!--             {{ end }} -->
+<!--           </article> -->
+<!--         </li> -->
+<!--       {{ end }} -->
+<!--     {{ end }} -->
+<!--     {{ if not $foundNotes }} -->
+<!--       <li>No notes found with tag "{{ $targetTag }}"</li> -->
+<!--     {{ end }} -->
+<!--   </ul> -->
+<!-- </section> -->
+
+<!-- layouts/shortcodes/landing-content.html -->
+{{ $targetTag := .Get "tag" }}
+{{ $notes := where .Site.RegularPages "Type" "note" }}
+{{ $pubs := where .Site.RegularPages "Type" "publication" }}
+
+<section class="tagged-content">
+  {{ $foundPubs := false }}
+  {{ $subTags := slice }}
+
+  <!-- First collect all subtags that appear with the target tag -->
+  {{ range (sort $pubs "Date" "desc") }}
+    {{ $tags := split (.Params.tags | default "") "," }}
+    {{ $cleanedTags := slice }}
+    {{ range $tags }}
+      {{ $cleanedTags = $cleanedTags | append (trim . "[] ") }}
+    {{ end }}
+    {{ if in $cleanedTags $targetTag }}
+      {{ range $cleanedTags }}
+        {{ if and (ne . $targetTag) (not (in $subTags .)) }}
+          {{ $subTags = $subTags | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <h2>{{ $targetTag | title }} Publications</h2>
+  <!-- First show items that only have the target tag -->
+  <ul class="publication-list">
+    {{ range (sort $pubs "Date" "desc") }}
+      {{ $tags := split (.Params.tags | default "") "," }}
+      {{ $cleanedTags := slice }}
+      {{ range $tags }}
+        {{ $cleanedTags = $cleanedTags | append (trim . "[] ") }}
+      {{ end }}
+      {{ if and (in $cleanedTags $targetTag) (eq (len $cleanedTags) 1) }}
+        {{ $foundPubs = true }}
+        <li class="publication-item">
+          <article>
+            {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+            <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ with .Params.authors }}
+              <div class="authors">
+                {{ delimit . ", " " and " }}
+              </div>
+            {{ end }}
+          </article>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+
+  <!-- Then show subsections for each additional tag -->
+  {{ range $subTag := sort $subTags }}
+    <h3>With {{ $subTag }}</h3>
+    <ul class="publication-list">
+      {{ $foundSubPubs := false }}
+      {{ range (sort $pubs "Date" "desc") }}
+        {{ $tags := split (.Params.tags | default "") "," }}
+        {{ $cleanedTags := slice }}
+        {{ range $tags }}
+          {{ $cleanedTags = $cleanedTags | append (trim . "[] ") }}
+        {{ end }}
+        {{ if and (in $cleanedTags $targetTag) (in $cleanedTags $subTag) }}
+          {{ $foundPubs = true }}
+          {{ $foundSubPubs = true }}
+          <li class="publication-item">
+            <article>
+              {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+              <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.authors }}
+                <div class="authors">
+                  {{ delimit . ", " " and " }}
+                </div>
+              {{ end }}
+            </article>
+          </li>
+        {{ end }}
+      {{ end }}
+      {{ if not $foundSubPubs }}
+        <li>No publications found with tags "{{ $targetTag }}" and "{{ $subTag }}"</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  {{ if not $foundPubs }}
+    <p>No publications found with tag "{{ $targetTag }}"</p>
+  {{ end }}
+
+  <!-- Notes section with similar structure -->
+  {{ $foundNotes := false }}
+  {{ $noteSubTags := slice }}
+
+  <!-- Collect subtags for notes -->
+  {{ range (sort $notes "Date" "desc") }}
+    {{ $tags := split (.Params.tags | default "") "," }}
+    {{ $cleanedTags := slice }}
+    {{ range $tags }}
+      {{ $cleanedTags = $cleanedTags | append (trim . "[] ") }}
+    {{ end }}
+    {{ if in $cleanedTags $targetTag }}
+      {{ range $cleanedTags }}
+        {{ if and (ne . $targetTag) (not (in $noteSubTags .)) }}
+          {{ $noteSubTags = $noteSubTags | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <h2>{{ $targetTag | title }} Notes</h2>
+  <!-- Show notes with only the target tag -->
+  <ul class="note-list">
+    {{ range (sort $notes "Date" "desc") }}
+      {{ $tags := split (.Params.tags | default "") "," }}
+      {{ $cleanedTags := slice }}
+      {{ range $tags }}
+        {{ $cleanedTags = $cleanedTags | append (trim . "[] ") }}
+      {{ end }}
+      {{ if and (in $cleanedTags $targetTag) (eq (len $cleanedTags) 1) }}
+        {{ $foundNotes = true }}
+        <li class="note-item">
+          <article>
+            {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+            <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ with .Params.authors }}
+              <div class="authors">
+                {{ delimit . ", " " and " }}
+              </div>
+            {{ end }}
+          </article>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+
+  <!-- Show subsections for notes -->
+  {{ range $subTag := sort $noteSubTags }}
+    <h3>With {{ $subTag }}</h3>
+    <ul class="note-list">
+      {{ $foundSubNotes := false }}
+      {{ range (sort $notes "Date" "desc") }}
+        {{ $tags := split (.Params.tags | default "") "," }}
+        {{ $cleanedTags := slice }}
+        {{ range $tags }}
+          {{ $cleanedTags = $cleanedTags | append (trim . "[] ") }}
+        {{ end }}
+        {{ if and (in $cleanedTags $targetTag) (in $cleanedTags $subTag) }}
+          {{ $foundNotes = true }}
+          {{ $foundSubNotes = true }}
+          <li class="note-item">
+            <article>
+              {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+              <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.authors }}
+                <div class="authors">
+                  {{ delimit . ", " " and " }}
+                </div>
+              {{ end }}
+            </article>
+          </li>
+        {{ end }}
+      {{ end }}
+      {{ if not $foundSubNotes }}
+        <li>No notes found with tags "{{ $targetTag }}" and "{{ $subTag }}"</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  {{ if not $foundNotes }}
+    <p>No notes found with tag "{{ $targetTag }}"</p>
+  {{ end }}
+</section>

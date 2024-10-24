@@ -1,6 +1,7 @@
 #+title:      Currying
-#+date:       2023-10-28T21:20-0400
-#+type: publication
+#+date:       2023-10-28T21:20:00-0400
+#+type: note
+#+tags: [Coding, Haskell]
 
 * Currying
 #+begin_src haskell
@@ -30,7 +31,7 @@ addCurry 1 2 = 3
 2. then your pin
 3. then your amount of money as a request
 #+begin_src haskell
--- Always gives £ 100 
+-- Always gives £ 100
 cm card pin request = 100
 -- also defined with lambda expressions
 cm = \card -> (\pin -> (\request -> 100))

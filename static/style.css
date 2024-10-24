@@ -1,34 +1,15 @@
 @font-face {
-    font-family: GentiumPlusW;
-    src: url(GentiumPlus-Regular.woff2);
+    font-family: Rubik Regular;
+    src: url(/fonts/Rubik/Rubik-Regular.ttf);
 }
 
 @font-face {
-    font-family: GentiumPlusW;
-    font-style: italic;
-    src: url(GentiumPlus-Italic.woff2);
+    font-family: Roboto Slab;
+    src: url(/fonts/RobotoSlab/RobotoSlab-all.ttf);
 }
 
-@font-face {
-    font-family: GentiumPlusW;
-    font-weight: bold;
-    src: url(GentiumPlus-Bold.woff2);
-}
-
-@font-face {
-    font-family: GentiumPlusW;
-    font-weight: bold;
-    font-style: italic;
-    src: url(GentiumPlus-BoldItalic.woff2);
-}
-
-@font-face {
-    font-family: LinBiolinum;
-    src: url(/fonts/LinBiolinum_R.woff);
-}
-
-body {
-    font-family: Linux Biolinum;
+body{ 
+    font-family: Rubik Regular;
     background: #000000;
     color: #ffffff;
 }
@@ -64,6 +45,7 @@ img {
 }
 
 header h1 {
+    font-family: Roboto Slab;
     text-align: center;
     /* font-size: 35 px; */
     color: #6ae4b9;
@@ -71,6 +53,7 @@ header h1 {
 }
 
 h3 {
+    font-family: Roboto Slab;
     color: #d2b580;
 }
 

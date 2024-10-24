@@ -1,0 +1,5 @@
+#+TITLE: Robotics
+
+Welcome to the VEX Robotics Resources page! This guide is designed to help underclassmen quickly access tools, tutorials, and information to build a strong foundation in VEX Robotics.
+
+{{< landing-content tag="Robotics" >}}

@@ -16,3 +16,8 @@ theme = 'lugo'
     showrss = true
     timezone = "America/New_York"
     dateFormat = "January 2, 2006"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

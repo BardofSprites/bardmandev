@@ -1,7 +1,0 @@
-<ul>
-    {{ range first 10 (where (sort .Site.Pages "Date" "desc") "Type" "=" "publication") }}
-        <li>
-            <a href="{{ .RelPermalink }}">{{ .Date.Format "2006-01-02" }}: {{ .Title }}</a>
-        </li>
-    {{ end }}
-</ul>

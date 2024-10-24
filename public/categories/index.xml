@@ -10,6 +10,15 @@
 	
 	
 	<item>
+		<title>Git Version Control</title>
+		<link>http://localhost:1313/robotics/git/</link>
+		<pubDate>Thu, 24 Oct 2024 11:42:24 -0400</pubDate>
+		
+		<guid>http://localhost:1313/robotics/git/</guid>
+		<description></description>
+	</item>
+	
+	<item>
 		<title>Projects</title>
 		<link>http://localhost:1313/projects/</link>
 		<pubDate>Wed, 23 Oct 2024 19:24:06 -0400</pubDate>
@@ -653,57 +662,9 @@ Image Viewer - nsxiv
 	</item>
 	
 	<item>
-		<title>About</title>
-		<link>http://localhost:1313/about/</link>
-		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-		
-		<guid>http://localhost:1313/about/</guid>
-		<description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Introduction
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;
-I am known as bardman online. I am a 17 year old student/programmer hobbyist.
-I enjoy free and open source software, a nice cup of tea, and sweaters.&lt;/p&gt;
-&lt;p&gt;
-
-&lt;figure class=&#34;about-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/catwithscarf.jpg&#34; title=&#34;not my image&#34;&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-	</item>
-	
-	<item>
-		<title>Contact Me</title>
-		<link>http://localhost:1313/contact/</link>
-		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-		
-		<guid>http://localhost:1313/contact/</guid>
-		<description>&lt;p&gt;
-&lt;strong&gt;Email:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;develop.bard at gmail dot com is my main public email&lt;/li&gt;
-&lt;li&gt;For classmates, please use my school email; if you are supposed to know, you know.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I get a lot of emails, but I will try to respond within 48 hours.&lt;/p&gt;
-&lt;p&gt;
-I do not use much social media.&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Matrix:&lt;/strong&gt; @bardman:matrix.org&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;IRC:&lt;/strong&gt; bardman@irc.libera.chat&lt;/p&gt;
-&lt;p&gt;
-matrix or email is probably more reliable way to reach me, i don&amp;#39;t check irc often.&lt;/p&gt;
-</description>
-	</item>
-	
-	<item>
 		<title>Currying</title>
 		<link>http://localhost:1313/coding/currying/</link>
-		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		<pubDate>Sat, 28 Oct 2023 21:20:00 -0400</pubDate>
 		
 		<guid>http://localhost:1313/coding/currying/</guid>
 		<description>
@@ -763,7 +724,7 @@ Think of it like a cash machine
 &lt;li&gt;then your amount of money as a request&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;src src-haskell&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-haskell&#34; data-lang=&#34;haskell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- Always gives £ 100 &lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-haskell&#34; data-lang=&#34;haskell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- Always gives £ 100&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cm&lt;/span&gt; card pin request &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- also defined with lambda expressions&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cm&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;\&lt;/span&gt;card &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;\&lt;/span&gt;pin &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;\&lt;/span&gt;request &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -774,6 +735,54 @@ Think of it like a cash machine
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>About</title>
+		<link>http://localhost:1313/about/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/about/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Introduction
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+I am known as bardman online. I am a 17 year old student/programmer hobbyist.
+I enjoy free and open source software, a nice cup of tea, and sweaters.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;about-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/catwithscarf.jpg&#34; title=&#34;not my image&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Contact Me</title>
+		<link>http://localhost:1313/contact/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/contact/</guid>
+		<description>&lt;p&gt;
+&lt;strong&gt;Email:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;develop.bard at gmail dot com is my main public email&lt;/li&gt;
+&lt;li&gt;For classmates, please use my school email; if you are supposed to know, you know.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I get a lot of emails, but I will try to respond within 48 hours.&lt;/p&gt;
+&lt;p&gt;
+I do not use much social media.&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Matrix:&lt;/strong&gt; @bardman:matrix.org&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;IRC:&lt;/strong&gt; bardman@irc.libera.chat&lt;/p&gt;
+&lt;p&gt;
+matrix or email is probably more reliable way to reach me, i don&amp;#39;t check irc often.&lt;/p&gt;
 </description>
 	</item>
 	

@@ -13,6 +13,7 @@
 #+begin_quote
 articles pertaining to GNU Emacs, programming, and general computing
 #+end_quote
+
 ** [[/mind/][Mind]]
 #+begin_quote
 Serendipitous thoughts
@@ -21,4 +22,9 @@ Serendipitous thoughts
 ** [[/notes/][Notes]]
 #+begin_quote
 Text or PDF notes for various classes or topics ranging from programming to what I'm covering in school.
+#+end_quote
+
+** [[/robotics][Robotics]]
+#+begin_quote
+Content for school VEX robotics team for 2024-2025
 #+end_quote
