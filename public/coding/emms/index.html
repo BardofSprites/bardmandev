@@ -53,19 +53,19 @@ Example Configuration
 <div id="outline-text-headline-3" class="outline-text-2">
 <p>This is a simple <code>use-package</code> declaration that sets up some simple keybinds.</p>
 <div class="src src-lisp">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>  (<span style="color:#a6e22e">use-package</span> emms
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">:ensure</span> <span style="color:#66d9ef">t</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">:bind</span>
-</span></span><span style="display:flex;"><span>    (<span style="color:#e6db74">:map</span> emms-playlist-mode-map
-</span></span><span style="display:flex;"><span>          (<span style="color:#e6db74">&#34;M-&lt;f8&gt;&#34;</span> <span style="color:#f92672">.</span> emms-browser)
-</span></span><span style="display:flex;"><span>          (<span style="color:#e6db74">&#34;A&#34;</span> <span style="color:#f92672">.</span> emms-add-directory)
-</span></span><span style="display:flex;"><span>          (<span style="color:#e6db74">&#34;T&#34;</span> <span style="color:#f92672">.</span> emms-add-directory-tree)
-</span></span><span style="display:flex;"><span>          (<span style="color:#e6db74">&#34;F&#34;</span> <span style="color:#f92672">.</span> emms-add-file)
-</span></span><span style="display:flex;"><span>          (<span style="color:#e6db74">&#34;U&#34;</span> <span style="color:#f92672">.</span> emms-add-url)
-</span></span><span style="display:flex;"><span>          (<span style="color:#e6db74">&#34;L&#34;</span> <span style="color:#f92672">.</span> emms-toggle-repeat-track)
-</span></span><span style="display:flex;"><span>          (<span style="color:#e6db74">&#34;&lt;mouse-3&gt;&#34;</span> <span style="color:#f92672">.</span> emms-pause)
-</span></span><span style="display:flex;"><span>          (<span style="color:#e6db74">&#34;&lt;SPC&gt;&#34;</span> <span style="color:#f92672">.</span> emms-pause))
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">:bind</span> (<span style="color:#e6db74">&#34;&lt;f8&gt;&#34;</span> <span style="color:#f92672">.</span> emms))</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>  (<span style="color:#feacd0">use-package</span> <span style="color:#00d3d0">emms</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#79a8ff">:ensure</span> t
+</span></span><span style="display:flex;"><span>    <span style="color:#79a8ff">:bind</span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#79a8ff">:map</span> <span style="color:#00d3d0">emms-playlist-mode-map</span>
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;M-&lt;f8&gt;&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-browser</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;A&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-add-directory</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;T&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-add-directory-tree</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;F&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-add-file</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;U&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-add-url</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;L&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-toggle-repeat-track</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;&lt;mouse-3&gt;&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-pause</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;&lt;SPC&gt;&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-pause</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#79a8ff">:bind</span> (<span style="color:#79a8ff">&#34;&lt;f8&gt;&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms</span>))</span></span></code></pre></div>
 </div>
 </div>
 </div>

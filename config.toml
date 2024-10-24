@@ -2,6 +2,9 @@ baseURL = 'https://bardman.dev/'
 languageCode = 'en-us'
 title = "bardman's website"
 
+pygmentsUseClasses = false
+pygmentsCodefences = true
+pygmentsStyle = "modus-vivendi"
 theme = 'lugo'
 
 [params]
@@ -18,6 +21,12 @@ theme = 'lugo'
     dateFormat = "January 2, 2006"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = false
+        hl_Lines = ""
+        lineNoStart = 1
+        lineNos = false
+        lineNumbersInTable = true
+        noClasses = true
+        tabWidth = 2

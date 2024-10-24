@@ -24,17 +24,17 @@ Currying
 </h2>
 <div id="outline-text-headline-1" class="outline-text-2">
 <div class="src src-haskell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#a6e22e">inc</span> x <span style="color:#f92672">=</span> x<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inc</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inc</span> <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inc</span> <span style="color:#ae81ff">3</span>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#feacd0">inc</span> x <span style="color:#00d3d0">=</span> x<span style="color:#00d3d0">+</span><span style="color:#00bcff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">inc</span> <span style="color:#00bcff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">inc</span> <span style="color:#00bcff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">inc</span> <span style="color:#00bcff">3</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">-- input of a function and a parameter</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span> inc [<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a8a8a8">-- input of a function and a parameter</span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">map</span> inc [<span style="color:#00bcff">1</span><span style="color:#00d3d0">..</span><span style="color:#00bcff">10</span>]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">add</span> (x,y) <span style="color:#f92672">=</span> x<span style="color:#f92672">+</span>y
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">add</span> (<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>) <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span></span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">add</span> (x,y) <span style="color:#00d3d0">=</span> x<span style="color:#00d3d0">+</span>y
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">add</span> (<span style="color:#00bcff">2</span>,<span style="color:#00bcff">3</span>) <span style="color:#00d3d0">=</span> <span style="color:#00bcff">5</span></span></span></code></pre></div>
 </div>
 <div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
@@ -47,8 +47,8 @@ Takes inputs just like add, but takes arguments one at a time rather than in a p
 </h4>
 <div id="outline-text-headline-3" class="outline-text-4">
 <div class="src src-haskell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#a6e22e">addCurry</span> x y <span style="color:#f92672">=</span> x<span style="color:#f92672">+</span>y
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">addCurry</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#feacd0">addCurry</span> x y <span style="color:#00d3d0">=</span> x<span style="color:#00d3d0">+</span>y
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">addCurry</span> <span style="color:#00bcff">1</span> <span style="color:#00bcff">2</span> <span style="color:#00d3d0">=</span> <span style="color:#00bcff">3</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -74,10 +74,10 @@ Think of it like a cash machine
 <li>then your amount of money as a request</li>
 </ol>
 <div class="src src-haskell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Always gives £ 100</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cm</span> card pin request <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">-- also defined with lambda expressions</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cm</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">\</span>card <span style="color:#f92672">-&gt;</span> (<span style="color:#a6e22e">\</span>pin <span style="color:#f92672">-&gt;</span> (<span style="color:#a6e22e">\</span>request <span style="color:#f92672">-&gt;</span> <span style="color:#ae81ff">100</span>))</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#a8a8a8">-- Always gives £ 100</span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">cm</span> card pin request <span style="color:#00d3d0">=</span> <span style="color:#00bcff">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#a8a8a8">-- also defined with lambda expressions</span>
+</span></span><span style="display:flex;"><span><span style="color:#feacd0">cm</span> <span style="color:#00d3d0">=</span> <span style="color:#feacd0">\</span>card <span style="color:#00d3d0">-&gt;</span> (<span style="color:#feacd0">\</span>pin <span style="color:#00d3d0">-&gt;</span> (<span style="color:#feacd0">\</span>request <span style="color:#00d3d0">-&gt;</span> <span style="color:#00bcff">100</span>))</span></span></code></pre></div>
 </div>
 </div>
 </div>

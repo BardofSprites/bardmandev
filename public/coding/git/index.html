@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<title>Learning to Use Git Version Control | bardman&#39;s website</title>
+	<link rel="canonical" href="http://localhost:1313/">
+	<link rel='alternate' type='application/rss+xml' title="bardman&#39;s website RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content="Basics of Git What is Git? Git is used to track different versions of files. It is useful for group projects, ensuring that everyone can work on it without overwriting each other. Think of it as the tracker of the multiverse versions of your files; it can manipulate the timelines. Why Learn it? It makes it a lot easier to keep track of changes between people. Easy to back up You can rollback changes that broke something Essential Git Concepts Repository (Repo) A project folder that Git watches.">
+	<meta name="keywords" content="91, 67, 111, 100, 105, 110, 103, 44, 32, 82, 111, 98, 111, 116, 105, 99, 115, 93">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+<main>
+<header><h1 id="tag_Learning to use Git Version Control">Learning to use Git Version Control</h1></header>
+<article>
+
+
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Basics of Git
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+What is Git?
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>Git is used to track different versions of files. It is useful for group projects, ensuring that everyone can work on it without overwriting each other. <strong>Think of it as the tracker of the multiverse versions of your files; it can manipulate the timelines</strong>. </p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Why Learn it?
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<ol>
+<li>It makes it a lot easier to keep track of changes between people.</li>
+<li>Easy to back up</li>
+<li>You can rollback changes that broke something</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Essential Git Concepts
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<div id="outline-container-headline-5" class="outline-4">
+<h4 id="headline-5">
+Repository (Repo)
+</h4>
+<div id="outline-text-headline-5" class="outline-text-4">
+<p>A project folder that Git watches. It contains all the files in your project and their histories. Can be local or put on remote platform like GitHub/GitLab.</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-4">
+<h4 id="headline-6">
+Commits
+</h4>
+<div id="outline-text-headline-6" class="outline-text-4">
+<p>A commit is a snapshot that you make of committed files at a specific point in time. The basic structure of a commit contains:</p>
+<ul>
+<li>unique identifier (hash)</li>
+<li>timestamp/author</li>
+<li>commit message describing what was changed (<strong>VERY IMPORTANT</strong>)</li>
+</ul>
+<p>You can think of them as saves in the video game that can go back to.</p>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-4">
+<h4 id="headline-7">
+Branches
+</h4>
+<div id="outline-text-headline-7" class="outline-text-4">
+<p>Branches work exactly like the parallel universes you see in movies. When you want to work on a major feature (by adding commits), you would typically create a new branch.</p>
+<p>
+Create new branches to:</p>
+<ul>
+<li>add a new feature</li>
+<li>fix a lot of bugs</li>
+<li>experiment with something</li>
+</ul>
+<p>There is a bit more specifics of branches later.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Common Workflows
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<p>This section describes the general overview of how git would be used without getting into the specifics on commands, those will come later.</p>
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
+Starting a new project
+</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<ol>
+<li>Create a repo on GitHub</li>
+<li>Clone it to your computer (follow instructions it shows you)</li>
+<li>Add your files</li>
+<li>Commit and push changes to remote repo</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-3">
+<h3 id="headline-10">
+Working on existing project
+</h3>
+<div id="outline-text-headline-10" class="outline-text-3">
+<ol>
+<li>Clone repo</li>
+<li>Create a new branch for your feature</li>
+<li>Make your changes, commit regularly</li>
+<li>Push your branch to remote</li>
+<li>Create pull request to merge into master</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">
+Best Practices
+</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<ol>
+<li>Commit often, this allows for rolling back changes
+This is still within reason, like don&#39;t commit grammar changes to comments separately</li>
+<li>Write clear commit messages
+Explain what you did so the owner of the repo can tell what&#39;s going on</li>
+<li>Use branches in a group setting
+Don&#39;t work directly on master, it&#39;s only for stable features</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+</article>
+</main>
+
+<footer>
+        <a href="http://localhost:1313/">http://localhost:1313/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+</body>
+</html>

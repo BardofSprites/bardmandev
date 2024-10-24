@@ -1,8 +1,0 @@
-#+TITLE: Git Version Control
-#+DATE: 2024-10-24T11:42:24-0400
-#+type: publication
-#+tags: [Coding, Robotics]
-
-* Basics of Git
-** What is Git?
-Git is used to track different versions of files. It is useful for group projects, ensuring that everyone can work on it without overwriting each other. Git 
