@@ -4,6 +4,7 @@
 * Important pages
 + [[about][About Me]]
 + [[/contact][Contact me]]
++ [[/projects][Projects]]
   
 * Latest publications
 {{< publications >}}
@@ -13,4 +14,11 @@
 articles pertaining to GNU Emacs, programming, and general computing
 #+end_quote
 ** [[/mind/][Mind]]
+#+begin_quote
+Serendipitous thoughts
+#+end_quote
+
 ** [[/notes/][Notes]]
+#+begin_quote
+Text or PDF notes for various classes or topics ranging from programming to what I'm covering in school.
+#+end_quote

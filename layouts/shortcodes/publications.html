@@ -1,8 +1,12 @@
 {{ $pubs := where .Site.RegularPages "Type" "publication" }}
-{{ $recent := first 10 (sort $pubs "Date" "desc") }}
-<div class="recent-publications">
+{{ $notes := where .Site.RegularPages "Type" "note" }}
+{{ $recentPubs := first 10 (sort $pubs "Date" "desc") }}
+{{ $recentNotes := first 10 (sort $notes "Date" "desc") }}
+
+<div class="recent-publications-and-notes">
+  <h2>Recent Publications</h2>
   <ul class="publication-list">
-    {{ range $recent }}
+    {{ range $recentPubs }}
       <li class="publication-item">
         <article>
           {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
@@ -12,6 +16,18 @@
               {{ delimit . ", " " and " }}
             </div>
           {{ end }}
+        </article>
+      </li>
+    {{ end }}
+  </ul>
+
+  <h2>Recent Notes</h2>
+  <ul class="note-list">
+    {{ range $recentNotes }}
+      <li class="note-item">
+        <article>
+          {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+          <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </article>
       </li>
     {{ end }}

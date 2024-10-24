@@ -1,0 +1,37 @@
+#+title:      Currying
+#+date:       2023-10-28T21:20-0400
+#+type: publication
+
+* Currying
+#+begin_src haskell
+inc x = x+1
+inc 1
+inc 2
+inc 3
+
+-- input of a function and a parameter
+map inc [1..10]
+
+
+add (x,y) = x+y
+add (2,3) = 5
+#+end_src
+** Curried function
+*** Takes inputs just like add, but takes arguments one at a time rather than in a pair
+#+begin_src haskell 
+addCurry x y = x+y
+addCurry 1 2 = 3
+#+end_src
+** Purpose
++ Don't need to give all inputs when calling, so you can partially apply it
++ add won't work with only one input, but addCurry will
+*** Think of it like a cash machine
+1. Cash machine needs your debit card
+2. then your pin
+3. then your amount of money as a request
+#+begin_src haskell
+-- Always gives £ 100 
+cm card pin request = 100
+-- also defined with lambda expressions
+cm = \card -> (\pin -> (\request -> 100))
+#+end_src

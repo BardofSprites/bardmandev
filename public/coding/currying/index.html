@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<title>Currying | bardman&#39;s website</title>
+	<link rel="canonical" href="http://localhost:1313/">
+	<link rel='alternate' type='application/rss+xml' title="bardman&#39;s website RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content=" Currying inc x = x&#43;1 inc 1 inc 2 inc 3 -- input of a function and a parameter map inc [1..10] add (x,y) = x&#43;y add (2,3) = 5 Curried function Takes inputs just like add, but takes arguments one at a time rather than in a pair addCurry x y = x&#43;y addCurry 1 2 = 3 Purpose Don&#39;t need to give all inputs when calling, so you can partially apply it add won&#39;t work with only one input, but addCurry will Think of it like a cash machine Cash machine needs your debit card then your pin then your amount of money as a request -- Always gives £ 100 cm card pin request = 100 -- also defined with lambda expressions cm = \card -&gt; (\pin -&gt; (\request -&gt; 100)) ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+<main>
+<header><h1 id="tag_Currying">Currying</h1></header>
+<article>
+
+
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Currying
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div class="src src-haskell">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#a6e22e">inc</span> x <span style="color:#f92672">=</span> x<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inc</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inc</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">inc</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- input of a function and a parameter</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span> inc [<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span><span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">add</span> (x,y) <span style="color:#f92672">=</span> x<span style="color:#f92672">+</span>y
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">add</span> (<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>) <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span></span></span></code></pre></div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+Curried function
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<div id="outline-container-headline-3" class="outline-4">
+<h4 id="headline-3">
+Takes inputs just like add, but takes arguments one at a time rather than in a pair
+</h4>
+<div id="outline-text-headline-3" class="outline-text-4">
+<div class="src src-haskell">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#a6e22e">addCurry</span> x y <span style="color:#f92672">=</span> x<span style="color:#f92672">+</span>y
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">addCurry</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span></span></span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Purpose
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<ul>
+<li>Don&#39;t need to give all inputs when calling, so you can partially apply it</li>
+<li>add won&#39;t work with only one input, but addCurry will</li>
+</ul>
+<div id="outline-container-headline-5" class="outline-4">
+<h4 id="headline-5">
+Think of it like a cash machine
+</h4>
+<div id="outline-text-headline-5" class="outline-text-4">
+<ol>
+<li>Cash machine needs your debit card</li>
+<li>then your pin</li>
+<li>then your amount of money as a request</li>
+</ol>
+<div class="src src-haskell">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Always gives £ 100 </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cm</span> card pin request <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- also defined with lambda expressions</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cm</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">\</span>card <span style="color:#f92672">-&gt;</span> (<span style="color:#a6e22e">\</span>pin <span style="color:#f92672">-&gt;</span> (<span style="color:#a6e22e">\</span>request <span style="color:#f92672">-&gt;</span> <span style="color:#ae81ff">100</span>))</span></span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</article>
+</main>
+
+<footer>
+        <a href="http://localhost:1313/">http://localhost:1313/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+</body>
+</html>

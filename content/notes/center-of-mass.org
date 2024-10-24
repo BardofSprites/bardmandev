@@ -1,5 +1,5 @@
 #+TITLE: Center of Mass Notes
-#+date: 2024-10-23T18:43:25-0400
+#+date: 2024-10-18T21:31:32-0400
 #+type: note
 #+tags: [AP Physics]
 

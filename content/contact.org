@@ -1,7 +1,9 @@
 #+TITLE: Contact Me
 #+type: section
 
-*Email:* develop.bard at gmail dot com
+*Email:*
++ develop.bard at gmail dot com is my main public email
++ For classmates, please use my school email; if you are supposed to know, you know.
 
 I get a lot of emails, but I will try to respond within 48 hours.
 
@@ -12,5 +14,3 @@ I do not use much social media.
 *IRC:* bardman@irc.libera.chat
 
 matrix or email is probably more reliable way to reach me, i don't check irc often.
-
-

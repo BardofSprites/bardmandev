@@ -1,0 +1,7 @@
+#+TITLE: Projects
+#+date: 2024-10-23T19:24:06-0400
+
+Welcome to my collection of open-source projects. Beware, not all of these projects are suitable for production use; I thought it would be beneficial to feature them on my site for anyone interested or didactic purposes.
+
+
+Article in progress, for now check out [[https://github.com/BardofSprites][my GitHub]]

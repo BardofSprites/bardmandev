@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<title>Graph Neural Networks | bardman&#39;s website</title>
+	<link rel="canonical" href="http://localhost:1313/">
+	<link rel='alternate' type='application/rss+xml' title="bardman&#39;s website RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content="Resources https://www.youtube.com/watch?v=GXhBEj1ZtE8 https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications https://distill.pub/2021/gnn-intro/ What is a Graph Graphs consist of nodes and edges. They are useful for showing relationships between things/people.
+Think of graph as social network on FaceBook (spooky 👻). You have certain attributes/data about you that is contained in your node, and you have groups of friends (also nodes with attributes).
+The relationships shown in the edges can be directional (for example direction of hatred, this person hates this person) or can be undirectional (both nodes are colleagues/friends).">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+<main>
+<header><h1 id="tag_Graph Neural Networks">Graph Neural Networks</h1></header>
+<article>
+
+
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Resources
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GXhBEj1ZtE8">https://www.youtube.com/watch?v=GXhBEj1ZtE8</a></li>
+<li><a href="https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications">https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications</a></li>
+<li><a href="https://distill.pub/2021/gnn-intro/">https://distill.pub/2021/gnn-intro/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+What is a Graph
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>Graphs consist of <code class="verbatim">nodes</code> and <code class="verbatim">edges</code>. They are useful for showing relationships between things/people.</p>
+<p>
+Think of graph as social network on FaceBook (spooky 👻). You have certain attributes/data about you that is contained in your node, and you have groups of friends (also nodes with attributes).</p>
+<p><img src="Images/What_is_a_Graph/org_20240703-130811_screenshot.png" alt="Images/What_is_a_Graph/org_20240703-130811_screenshot.png" title="Images/What_is_a_Graph/org_20240703-130811_screenshot.png" /></p>
+<p>
+The relationships shown in the edges can be directional (for example direction of hatred, this person hates this person) or can be undirectional (both nodes are colleagues/friends).</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
+<h2 id="headline-3">
+Disadvantages
+</h2>
+<div id="outline-text-headline-3" class="outline-text-2">
+<p>Most deep learning algorithms aren&#39;t great at analyzing graph data because it is not structure like a sentence/image/numerical data is.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
+<h2 id="headline-4">
+How We Make It Work
+</h2>
+<div id="outline-text-headline-4" class="outline-text-2">
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+CNN Implementation
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>First they analyzed <a href="denote:20240703T133612::#h:5178b5b1-fa84-4502-98a8-51f11af545cb">how CNN works</a>. Notice how it <code class="verbatim">convolves</code> around the extracted information in an image. When it convolves, it is taking in a <code class="verbatim">relationship</code> between a pixel and its relatives (8 if it is non-border pixel).</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Introduction to Message Passing
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>The thing earlier about the relationships between the pixels in the CNN. Guess what, it&#39;s a grid like graph. Ever node is a pixel connected to 8 neighbor pixels.</p>
+<pre class="example">
+  Each person is assigned a color.
+  For the first round they pass on their message (their color) all of the immediate nodes around them.
+  Imagine that your color mixes with the colors that you receive from your neighbor.
+  This is essentially how the algorithm determines the structure of the graph.
+  Every time you do a round of message passing, it&#39;s like another convolutional layer added to the algorithm for analysis.
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-2">
+<h2 id="headline-7">
+Node Embeddings
+</h2>
+<div id="outline-text-headline-7" class="outline-text-2">
+<div id="outline-container-headline-8" class="outline-3">
+<h3 id="headline-8">
+Introduction
+</h3>
+<div id="outline-text-headline-8" class="outline-text-3">
+<p><code class="verbatim">Embedding</code> is numerical representation of the node&#39;s data. The <code class="verbatim">embedding space</code> the space of all possible numerical representations of the nodes.</p>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
+Learning and Loss Functions
+</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<p>The embeddings have to be assigned based on a certain property. For example, the people who you spend the most time with chatting online should be <span style="text-decoration: underline;">closer</span> to you in the social network. This creates a <code class="verbatim">measurable objective</code> which can allow the model to quantify the difference between the nodes.</p>
+<p><img src="Images/Node_Embeddings/org_20240703-140442_screenshot.png" alt="Images/Node_Embeddings/org_20240703-140442_screenshot.png" title="Images/Node_Embeddings/org_20240703-140442_screenshot.png" /></p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-2">
+<h2 id="headline-10">
+Use Cases
+</h2>
+<div id="outline-text-headline-10" class="outline-text-2">
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">
+Link Prediction
+</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<p>Using the node data to make a prediction about new possible edges. Example: finding new friends to add to your social network based on mutual friends and interests/hobbies</p>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+Node Classification
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<p>Use a node representation to predict something about the nodes. Example: Is the node in the social network an eldest child?</p>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
+<h3 id="headline-13">
+Clustering
+</h3>
+<div id="outline-text-headline-13" class="outline-text-3">
+<p>Breaking up the embedding space into different groups based on certain properties of the nodes. Example: extrovert/introvert.</p>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-3">
+<h3 id="headline-14">
+Graph Classification
+</h3>
+<div id="outline-text-headline-14" class="outline-text-3">
+<p>Comparing two graphs (e.g. two people and their relationships).</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</article>
+</main>
+
+<footer>
+        <a href="http://localhost:1313/">http://localhost:1313/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+</body>
+</html>
