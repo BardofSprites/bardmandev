@@ -11,11 +11,11 @@
 	
 	
 	<item>
-		<title>Git Specifics</title>
-		<link>http://localhost:1313/coding/git-specifics/</link>
+		<title>Common Git Commands on the Command Line</title>
+		<link>http://localhost:1313/coding/git_cli/</link>
 		<pubDate>Thu, 24 Oct 2024 19:04:47 -0400</pubDate>
 		
-		<guid>http://localhost:1313/coding/git-specifics/</guid>
+		<guid>http://localhost:1313/coding/git_cli/</guid>
 		<description>
 &lt;p&gt;
 Hopefull you have read &lt;a href=&#34;http://localhost:1313/coding/git&#34;&gt;my previous article&lt;/a&gt; on the basics of git. This article will talk about how to use git on the command line. Hopefully this is not too scary, please email me if you have any questions.&lt;/p&gt;
@@ -64,7 +64,7 @@ Common Mistakes
 You might see a bunch or warnings or messages about merge conflicts! This happens when git is trying to sync the files from the repo and finds them to have clashing changes before they &lt;span style=&#34;text-decoration: underline;&#34;&gt;merge&lt;/span&gt; together. To fix them:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open the files with conflicts with your editor&lt;/li&gt;
-&lt;li&gt;Look for &amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD markers&lt;/li&gt;
+&lt;li&gt;Look for &lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD&lt;/code&gt; markers&lt;/li&gt;
 &lt;li&gt;Decide which code to keep&lt;/li&gt;
 &lt;li&gt;Save and commit the fixed files&lt;/li&gt;
 &lt;/ol&gt;
@@ -132,7 +132,7 @@ In summary here are the benefits:&lt;/p&gt;
 	</item>
 	
 	<item>
-		<title>Git Version Control</title>
+		<title>Learning to use Git Version Control</title>
 		<link>http://localhost:1313/coding/git/</link>
 		<pubDate>Thu, 24 Oct 2024 11:42:24 -0400</pubDate>
 		
@@ -270,9 +270,7 @@ Don&amp;#39;t work directly on master, it&amp;#39;s only for stable features&lt;
 		
 		<guid>http://localhost:1313/projects/</guid>
 		<description>&lt;p&gt;
-Welcome to my collection of open-source projects. Beware, not all of these projects are suitable for production use; I thought it would be beneficial to feature them on my site for anyone interested or didactic purposes.&lt;/p&gt;
-&lt;p&gt;
-Article in progress, for now check out &lt;a href=&#34;https://github.com/BardofSprites&#34;&gt;my GitHub&lt;/a&gt;&lt;/p&gt;
+Welcome to my collection of open-source projects. Beware, most if not all of these projects are unsuitable for production use. As the saying goes, it works on my machine. If you want help getting started with one of them, please &lt;a href=&#34;http://localhost:1313/contact&#34;&gt;send me an email&lt;/a&gt;.&lt;/p&gt;
 </description>
 	</item>
 	
@@ -522,23 +520,25 @@ Languages
 &lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-4&#34;&gt;
 &lt;h4 id=&#34;headline-10&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
 Major Modes
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-4&#34;&gt;
-&lt;p&gt;I have a few packages installed for the various programming languauges that I like to dabble in. Here they are in list format, because they don&amp;#39;t a lot to talk about.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;clojure-mode&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;haskell-mode&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ada-mode&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Emacs comes with a lot of major modes, but not for languages like Haskell, Clojure, and Ada. I sometimes program with these, so I need to have them installed for auto completion and auto indentation.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-4&#34;&gt;
 &lt;h4 id=&#34;headline-11&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
-Repl - Cider, Sly, Geiser
+Repls
 &lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;Since I program in several lisp languages, I use repl-driven development. I use Cider, Sly, Geiser for my language repls.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cider - Clojure&lt;/li&gt;
+&lt;li&gt;Sly - Common Lisp, always SBCL&lt;/li&gt;
+&lt;li&gt;Geiser - various scheme dialects. I mainly use Gauche repl but sometimes Racket&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=0DLdQ6yb7h8&#34;&gt;Here&lt;/a&gt; is a video that showcases how Sly works for Common Lisp.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -552,9 +552,13 @@ Language Server (LSP)
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-13&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
 Completion
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Completion in Emacs has always been a struggle for me. I only recently figured it out. At first I was like, I don&amp;#39;t need it. Then I realized I wanted it and then I couldn&amp;#39;t set it up. Then I gave up and said, &amp;#34;well I never needed you anyway&amp;#34;. Finally, I figured it out and won&amp;#39;t touch it for fear of it breaking.&lt;/p&gt;
+&lt;p&gt;
+I essentially use the same setup as Protesilaos that he describes in &lt;a href=&#34;https://protesilaos.com/emacs/dotemacs#h:15edf2c3-4419-4101-928a-6e224958a741&#34;&gt;this part of his configuration&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-14&#34;&gt;
@@ -574,9 +578,6 @@ Writing
 &lt;h3 id=&#34;headline-16&#34;&gt;
 org-mode
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;Org mode is one of the pillars of Emacs. It is not just a markdown clone&lt;/p&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-17&#34;&gt;
@@ -585,95 +586,65 @@ denote
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-18&#34;&gt;
-denote-menu and denote-explore
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-19&#34;&gt;
 Editing extensions
 &lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-19&#34;&gt;
+Time Management and Scheduling
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-19&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I presented at EmacsConf 2024 to talk about my student workflow for Emacs. You can view my presentation &lt;a href=&#34;https://emacsconf.org/2024/talks/students/&#34;&gt;here&lt;/a&gt;. I show exactly how I use Emacs + Org mode as a student using demos and explanations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-20&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
-Time Management and Scheduling
+Media
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-20&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div id=&#34;outline-container-headline-21&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-21&#34;&gt;
-todo.org file
+Multimedia with EMMS
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-21&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have written an article about how I use/setup EMMS &lt;a href=&#34;http://localhost:1313/coding/emms&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-22&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-22&#34;&gt;
-&lt;code&gt;tmr&lt;/code&gt;
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-22&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;&lt;code&gt;tmr&lt;/code&gt; is a simple package for managing timers. I use it to tell when I need to get up and walk around after studying for around 60 min.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-23&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-23&#34;&gt;
 &lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
-Media
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-23&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-24&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-24&#34;&gt;
-Multimedia with EMMS
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-25&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-25&#34;&gt;
 RSS Feeds with elfeed
 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-23&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-23&#34;&gt;
+IRC
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-23&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Irc is pretty simple chat protocol. I don&amp;#39;t use it very often, but it is important to at least know how to use it for open source project discussion.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-24&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-24&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+&amp;#34;Frivoulous&amp;#34; Items
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-24&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-25&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-25&#34;&gt;
+Modus and Ef Themes
+&lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-25&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;elfeed-org and goodies&lt;/p&gt;
+&lt;p&gt;As I stated in my &lt;a href=&#34;http://localhost:1313/enjoy/programs&#34;&gt;opinionated list of programs&lt;/a&gt;, I like to &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-26&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-26&#34;&gt;
-Emails with notmuch 
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-27&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-27&#34;&gt;
-IRC
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-28&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-28&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
-&amp;#34;Frivoulous&amp;#34; Items
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-28&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-29&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-29&#34;&gt;
-Modus and Ef Themes
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-29&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;As I stated in my &lt;a href=&#34;http://localhost:1313/enjoy/programs&#34;&gt;opinionated list of programs&lt;/a&gt;, I like to &lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-30&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-30&#34;&gt;
 Fontaine
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-31&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-31&#34;&gt;
-Spacious Padding
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-32&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-32&#34;&gt;
-Cursory
 &lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -996,7 +967,7 @@ Introduction
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-I am known as bardman online. I am a 17 year old student/programmer hobbyist.
+I am known as bardman online. I am a 18 year old student/programmer hobbyist.
 I enjoy free and open source software, a nice cup of tea, and sweaters.&lt;/p&gt;
 &lt;p&gt;
 

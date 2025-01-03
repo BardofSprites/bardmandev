@@ -7,7 +7,7 @@
 	<link rel='stylesheet' type='text/css' href='/style.css'>
 	{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
 	{{ end -}}
-	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+	<!-- <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}"> -->
 	{{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
 	{{ end -}}
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,9 @@
 <body>
 {{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
 <main>
-<header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
+  <header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1>
+    <!-- <h2 class="subtitle">{{ .Summary }}</h2> -->
+  </header>
 <article>
 {{ block "main" . }}
 {{ .Content }}

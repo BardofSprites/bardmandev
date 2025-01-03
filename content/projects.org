@@ -1,7 +1,6 @@
 #+TITLE: Projects
 #+date: 2024-10-23T19:24:06-0400
+#+summary: A list of my current projects
 
-Welcome to my collection of open-source projects. Beware, not all of these projects are suitable for production use; I thought it would be beneficial to feature them on my site for anyone interested or didactic purposes.
+Welcome to my collection of open-source projects. Beware, most if not all of these projects are unsuitable for production use. As the saying goes, it works on my machine. If you want help getting started with one of them, please [[/contact][send me an email]].
 
-
-Article in progress, for now check out [[https://github.com/BardofSprites][my GitHub]]

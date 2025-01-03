@@ -6,8 +6,7 @@
 	<link rel='alternate' type='application/rss+xml' title="bardman&#39;s website RSS" href='/index.xml'>
 	<link rel='stylesheet' type='text/css' href='/style.css'>
 	<link rel="icon" href="/favicon.ico">
-	<meta name="description" content="Prefrace I use Emacs everyday on all of my computers. It is my favorite program on my computer. I use it for school and personal use, and only on Linux. I have a separate configuration on my Emacs repository on the minimal branch that is lighter weight for my school computer.
-General Packages Editing Extensions expand-region: This extension is really useful for selecting text. It&#39;s like a dwim solution for selecting text.">
+	
 	<meta name="keywords" content="91, 67, 111, 100, 105, 110, 103, 44, 32, 69, 109, 97, 99, 115, 93">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
@@ -15,7 +14,9 @@ General Packages Editing Extensions expand-region: This extension is really usef
 </head>
 <body>
 <main>
-<header><h1 id="tag_My Emacs Workflow For Programming, Notetaking, and Much More">My Emacs Workflow For Programming, Notetaking, and Much More</h1></header>
+  <header><h1 id="tag_My Emacs Workflow For Programming, Notetaking, and Much More">My Emacs Workflow For Programming, Notetaking, and Much More</h1>
+    
+  </header>
 <article>
 
 
@@ -101,23 +102,25 @@ Languages
 <div id="outline-text-headline-9" class="outline-text-3">
 <div id="outline-container-headline-10" class="outline-4">
 <h4 id="headline-10">
-<span class="todo status-todo">TODO</span>
 Major Modes
 </h4>
 <div id="outline-text-headline-10" class="outline-text-4">
-<p>I have a few packages installed for the various programming languauges that I like to dabble in. Here they are in list format, because they don&#39;t a lot to talk about.</p>
-<ol>
-<li><code>clojure-mode</code></li>
-<li><code>haskell-mode</code></li>
-<li><code>ada-mode</code></li>
-</ol>
+<p>Emacs comes with a lot of major modes, but not for languages like Haskell, Clojure, and Ada. I sometimes program with these, so I need to have them installed for auto completion and auto indentation.</p>
 </div>
 </div>
 <div id="outline-container-headline-11" class="outline-4">
 <h4 id="headline-11">
-<span class="todo status-todo">TODO</span>
-Repl - Cider, Sly, Geiser
+Repls
 </h4>
+<div id="outline-text-headline-11" class="outline-text-4">
+<p>Since I program in several lisp languages, I use repl-driven development. I use Cider, Sly, Geiser for my language repls.</p>
+<ul>
+<li>Cider - Clojure</li>
+<li>Sly - Common Lisp, always SBCL</li>
+<li>Geiser - various scheme dialects. I mainly use Gauche repl but sometimes Racket</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=0DLdQ6yb7h8">Here</a> is a video that showcases how Sly works for Common Lisp.</p>
+</div>
 </div>
 </div>
 </div>
@@ -131,9 +134,13 @@ Language Server (LSP)
 </div>
 <div id="outline-container-headline-13" class="outline-3">
 <h3 id="headline-13">
-<span class="todo status-todo">TODO</span>
 Completion
 </h3>
+<div id="outline-text-headline-13" class="outline-text-3">
+<p>Completion in Emacs has always been a struggle for me. I only recently figured it out. At first I was like, I don&#39;t need it. Then I realized I wanted it and then I couldn&#39;t set it up. Then I gave up and said, &#34;well I never needed you anyway&#34;. Finally, I figured it out and won&#39;t touch it for fear of it breaking.</p>
+<p>
+I essentially use the same setup as Protesilaos that he describes in <a href="https://protesilaos.com/emacs/dotemacs#h:15edf2c3-4419-4101-928a-6e224958a741">this part of his configuration</a>.</p>
+</div>
 </div>
 <div id="outline-container-headline-14" class="outline-3">
 <h3 id="headline-14">
@@ -153,9 +160,6 @@ Writing
 <h3 id="headline-16">
 org-mode
 </h3>
-<div id="outline-text-headline-16" class="outline-text-3">
-<p>Org mode is one of the pillars of Emacs. It is not just a markdown clone</p>
-</div>
 </div>
 <div id="outline-container-headline-17" class="outline-3">
 <h3 id="headline-17">
@@ -164,95 +168,65 @@ denote
 </div>
 <div id="outline-container-headline-18" class="outline-3">
 <h3 id="headline-18">
-denote-menu and denote-explore
-</h3>
-</div>
-<div id="outline-container-headline-19" class="outline-3">
-<h3 id="headline-19">
 Editing extensions
 </h3>
 </div>
 </div>
 </div>
+<div id="outline-container-headline-19" class="outline-2">
+<h2 id="headline-19">
+Time Management and Scheduling
+</h2>
+<div id="outline-text-headline-19" class="outline-text-2">
+<p>I presented at EmacsConf 2024 to talk about my student workflow for Emacs. You can view my presentation <a href="https://emacsconf.org/2024/talks/students/">here</a>. I show exactly how I use Emacs + Org mode as a student using demos and explanations.</p>
+</div>
+</div>
 <div id="outline-container-headline-20" class="outline-2">
 <h2 id="headline-20">
-<span class="todo status-todo">TODO</span>
-Time Management and Scheduling
+Media
 </h2>
 <div id="outline-text-headline-20" class="outline-text-2">
 <div id="outline-container-headline-21" class="outline-3">
 <h3 id="headline-21">
-todo.org file
+Multimedia with EMMS
 </h3>
+<div id="outline-text-headline-21" class="outline-text-3">
+<p>I have written an article about how I use/setup EMMS <a href="/coding/emms">here</a>.</p>
+</div>
 </div>
 <div id="outline-container-headline-22" class="outline-3">
 <h3 id="headline-22">
-<code>tmr</code>
-</h3>
-<div id="outline-text-headline-22" class="outline-text-3">
-<p><code>tmr</code> is a simple package for managing timers. I use it to tell when I need to get up and walk around after studying for around 60 min.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-23" class="outline-2">
-<h2 id="headline-23">
 <span class="todo status-todo">TODO</span>
-Media
-</h2>
-<div id="outline-text-headline-23" class="outline-text-2">
-<div id="outline-container-headline-24" class="outline-3">
-<h3 id="headline-24">
-Multimedia with EMMS
-</h3>
-</div>
-<div id="outline-container-headline-25" class="outline-3">
-<h3 id="headline-25">
 RSS Feeds with elfeed
 </h3>
+</div>
+<div id="outline-container-headline-23" class="outline-3">
+<h3 id="headline-23">
+IRC
+</h3>
+<div id="outline-text-headline-23" class="outline-text-3">
+<p>Irc is pretty simple chat protocol. I don&#39;t use it very often, but it is important to at least know how to use it for open source project discussion.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-24" class="outline-2">
+<h2 id="headline-24">
+<span class="todo status-todo">TODO</span>
+&#34;Frivoulous&#34; Items
+</h2>
+<div id="outline-text-headline-24" class="outline-text-2">
+<div id="outline-container-headline-25" class="outline-3">
+<h3 id="headline-25">
+Modus and Ef Themes
+</h3>
 <div id="outline-text-headline-25" class="outline-text-3">
-<p>elfeed-org and goodies</p>
+<p>As I stated in my <a href="/enjoy/programs">opinionated list of programs</a>, I like to </p>
 </div>
 </div>
 <div id="outline-container-headline-26" class="outline-3">
 <h3 id="headline-26">
-Emails with notmuch 
-</h3>
-</div>
-<div id="outline-container-headline-27" class="outline-3">
-<h3 id="headline-27">
-IRC
-</h3>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-28" class="outline-2">
-<h2 id="headline-28">
-<span class="todo status-todo">TODO</span>
-&#34;Frivoulous&#34; Items
-</h2>
-<div id="outline-text-headline-28" class="outline-text-2">
-<div id="outline-container-headline-29" class="outline-3">
-<h3 id="headline-29">
-Modus and Ef Themes
-</h3>
-<div id="outline-text-headline-29" class="outline-text-3">
-<p>As I stated in my <a href="/enjoy/programs">opinionated list of programs</a>, I like to </p>
-</div>
-</div>
-<div id="outline-container-headline-30" class="outline-3">
-<h3 id="headline-30">
 Fontaine
-</h3>
-</div>
-<div id="outline-container-headline-31" class="outline-3">
-<h3 id="headline-31">
-Spacious Padding
-</h3>
-</div>
-<div id="outline-container-headline-32" class="outline-3">
-<h3 id="headline-32">
-Cursory
 </h3>
 </div>
 </div>

@@ -1,15 +1,11 @@
 @font-face {
-    font-family: Rubik Regular;
-    src: url(/fonts/Rubik/Rubik-Regular.ttf);
+    font-family: Noto Sans;
+    src: url(/fonts/Noto/NotoSans-Regular.ttf);
 }
 
-@font-face {
-    font-family: Roboto Slab;
-    src: url(/fonts/RobotoSlab/RobotoSlab-all.ttf);
-}
-
-body{ 
-    font-family: Rubik Regular;
+body{
+    /* font-family: Rubik Regular; */
+    font-family: Noto Sans;
     background: #000000;
     color: #ffffff;
 }
@@ -44,8 +40,13 @@ img {
     width: 50%;
 }
 
+.subtitle {
+    color:#989898;
+    font-style: italic;
+}
+
 header h1 {
-    font-family: Roboto Slab;
+    font-family: Noto Sans;
     text-align: center;
     /* font-size: 35 px; */
     color: #6ae4b9;
@@ -53,7 +54,7 @@ header h1 {
 }
 
 h3 {
-    font-family: Roboto Slab;
+    font-family: Noto Sans;
     color: #d2b580;
 }
 
@@ -79,6 +80,11 @@ p {
 
 code {
     font-size: 18px;
+}
+
+.src {
+    border-top: 5px solid #1e1e1e;
+    border-bottom: 5px solid #1e1e1e;
 }
 
 footer {

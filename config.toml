@@ -11,9 +11,6 @@ theme = 'lugo'
     relatedtext = "Related"
     favicon = "/favicon.ico"
 
-    # datesinlist = true
-    # authorinlist = true
-
     nextprev = false
     taglist = false
     showrss = true

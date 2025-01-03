@@ -37,43 +37,45 @@ Snippets are a really helpful way of reducing time spent retyping the same thing
 
 * Programming
 ** Languages
-*** TODO Major Modes
-I have a few packages installed for the various programming languauges that I like to dabble in. Here they are in list format, because they don't a lot to talk about.
+*** Major Modes
+Emacs comes with a lot of major modes, but not for languages like Haskell, Clojure, and Ada. I sometimes program with these, so I need to have them installed for auto completion and auto indentation.
 
-1. ~clojure-mode~
-2. ~haskell-mode~
-3. ~ada-mode~
+*** Repls
+Since I program in several lisp languages, I use repl-driven development. I use Cider, Sly, Geiser for my language repls.
 
-*** TODO Repl - Cider, Sly, Geiser
++ Cider - Clojure
++ Sly - Common Lisp, always SBCL
++ Geiser - various scheme dialects. I mainly use Gauche repl but sometimes Racket
+
+[[https://www.youtube.com/watch?v=0DLdQ6yb7h8][Here]] is a video that showcases how Sly works for Common Lisp.
+
 
 ** Language Server (LSP)
 Eglot just works, and it's built into Emacs. I mainly use it with clangd for C++. I don't really need it for other langs.
 
-** TODO Completion
+** Completion
+Completion in Emacs has always been a struggle for me. I only recently figured it out. At first I was like, I don't need it. Then I realized I wanted it and then I couldn't set it up. Then I gave up and said, "well I never needed you anyway". Finally, I figured it out and won't touch it for fear of it breaking.
+
+I essentially use the same setup as Protesilaos that he describes in [[https://protesilaos.com/emacs/dotemacs#h:15edf2c3-4419-4101-928a-6e224958a741][this part of his configuration]].
 
 ** TODO Git
 
 * TODO Writing
 ** org-mode
-Org mode is one of the pillars of Emacs. It is not just a markdown clone
 ** denote
-** denote-menu and denote-explore
 ** Editing extensions
 
-* TODO Time Management and Scheduling
-** todo.org file
-** ~tmr~
-~tmr~ is a simple package for managing timers. I use it to tell when I need to get up and walk around after studying for around 60 min.
+* Time Management and Scheduling
+I presented at EmacsConf 2024 to talk about my student workflow for Emacs. You can view my presentation [[https://emacsconf.org/2024/talks/students/][here]]. I show exactly how I use Emacs + Org mode as a student using demos and explanations.
 
-* TODO Media
+* Media
 ** Multimedia with EMMS
-** RSS Feeds with elfeed
-elfeed-org and goodies
-** Emails with notmuch 
+I have written an article about how I use/setup EMMS [[/coding/emms][here]].
+** TODO RSS Feeds with elfeed
 ** IRC
+Irc is pretty simple chat protocol. I don't use it very often, but it is important to at least know how to use it for open source project discussion.
+
 * TODO "Frivoulous" Items
 ** Modus and Ef Themes
 As I stated in my [[/enjoy/programs][opinionated list of programs]], I like to 
 ** Fontaine
-** Spacious Padding
-** Cursory

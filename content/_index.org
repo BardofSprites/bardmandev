@@ -1,5 +1,6 @@
 #+title: Bardman's website
 #+author: Bardman
+#+summary: "Here is a summary"
 
 * Important pages
 + [[about][About Me]]
