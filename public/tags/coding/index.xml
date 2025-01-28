@@ -2,13 +2,166 @@
   <channel>
 	<title>bardman&#39;s website</title>
 	<link>http://localhost:1313/tags/coding/</link>
-	<description>Recent content in [Coding] on bardman&#39;s website</description>
+	<description>Recent content in Coding on bardman&#39;s website</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Thu, 23 Nov 2023 00:00:00 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/tags/coding/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>Boox Notes, Linux and Emacs</title>
+		<link>http://localhost:1313/general/boox-and-emacs/</link>
+		<pubDate>Mon, 27 Jan 2025 18:36:33 -0500</pubDate>
+		
+		<guid>http://localhost:1313/general/boox-and-emacs/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Introduction
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I recently got a BOOX Go 10.3 e-ink tablet this past Christmas. I use this device to take notes that require handwriting (Math/Physics), and annotating/reading a lot of notes/books/documents.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/boox-3.jpg&#34; title=&#34;BOOX tablet with orange case&#34; style=&#34;width:50%&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;details class=&#34;warning&#34;&gt;
+  &lt;summary&gt;🚩 &lt;span style=&#34;text-decoration: underline;&#34;&gt;A note about the BOOX company&lt;/span&gt; 🚩&lt;/summary&gt;
+  &lt;p&gt;
+BOOX is a Chinese company that specializes in E-ink tablets that run Android. They have continued to violate the GPL license of Android by not releasing source code to their custom build. I don&amp;#39;t like that they violate GPL, but sacrificing privacy sometimes necessary for convenience. As far as I know, there isn&amp;#39;t a free and open source e-ink tablet with all the same features.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://appsec.space/posts/onyx-boox-go-10.3/&#34;&gt;Here is a guide on how to de-spook your tablet&lt;/a&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Benefits of Android OS
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Because this tablet runs android (which is a heavily modified Linux) we can do a lot of &amp;#34;Linux-y&amp;#34; things with it. I can run &lt;code class=&#34;verbatim&#34;&gt;syncthing&lt;/code&gt;, GNU Emacs, and &lt;code class=&#34;verbatim&#34;&gt;scrcpy&lt;/code&gt; on it. I have sideloaded fdroid which is my app store. I don&amp;#39;t log in to google or the BOOX sync service. I created zero accounts for this device. If enough interest is gathered, I can release an article about my setup.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/boox-4.jpg&#34; title=&#34;BOOX tablet with orange case&#34; style=&#34;width:50%&#34;&gt;&lt;figcaption&gt;Running GNU Emacs 30 from Fdroid&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Default notes app export
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;The default notes app has the ability to export notes to pdf after saving. I use syncthing to access these new documents. It was super easy to set up&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+Organizing with epic Emacs tools
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;A big dilemma with handwriting notes is that they are hard to search. I devised a plan to organize these notes using &lt;a href=&#34;https://protesilaos.com/emacs/denote&#34;&gt;denote&lt;/a&gt; (org-mode), &lt;a href=&#34;https://github.com/vedang/pdf-tools&#34;&gt;pdftools&lt;/a&gt;, and &lt;a href=&#34;https://github.com/fuxialexander/org-pdftools&#34;&gt;org-pdftools&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Methodology
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+I start with one main file, I call it pdf-notes. This will be the main hub. Next I created other files for certain subjects. These have the keywords: pdfs and meta. They are &lt;em&gt;&amp;#34;notes about notes&amp;#34;&lt;/em&gt; thus &lt;em&gt;&amp;#34;meta&amp;#34;&lt;/em&gt; notes about pdfs.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/pdf-notes.png&#34; title=&#34;dired buffer in Emacs &#34;&gt;&lt;figcaption&gt;A dired buffer with all my pdf meta-notes&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The main note contains a heading for table of contents, and a heading for the actual content of the files. Both are generated with &lt;code&gt;denote-org-extras-dblock-insert-links&lt;/code&gt; and &lt;code&gt;denote-org-extras-dblock-insert-files&lt;/code&gt;. All of the blue underlines are org links to pdfs (from org-pdftools) that are in a syncthing folder on my pc. I can open up the link and start reading my notes again. I also use &lt;code&gt;consult-outline&lt;/code&gt; and &lt;code&gt;consult-line&lt;/code&gt; to fuzzy search around these files when needed.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;details&gt;
+
+  &lt;h2&gt;&lt;summary&gt;Examples&lt;/summary&gt;&lt;h2&gt;
+  &lt;div class=&#34;gallery-content&#34;&gt;
+
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/pdf-notes-landing.png&#34; title=&#34;landing page for all pdf notes&#34; style=&#34;max-height:550px&#34;&gt;&lt;/figure&gt;
+
+
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/pdf-notes-subject.png&#34; style=&#34;max-height:550px&#34;&gt;&lt;/figure&gt;
+
+
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/pdf-notes-example.png&#34; style=&#34;max-height:550px&#34;&gt;&lt;/figure&gt;
+
+
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/boox-2.jpg&#34; style=&#34;max-height:550px&#34;&gt;&lt;/figure&gt;
+
+
+ 
+  &lt;/div&gt;
+&lt;/details&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>My EmacsConf 2024 Presentation</title>
+		<link>http://localhost:1313/coding/emacsconf-2024/</link>
+		<pubDate>Sun, 08 Dec 2024 17:37:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/coding/emacsconf-2024/</guid>
+		<description>
+&lt;p&gt;
+TLDR: I had gave a talk for EmacsConf 2024 about student workflows.&lt;/p&gt;
+&lt;p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ofUQMq8ZK3U?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Links
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://emacsconf.org/2024/talks/students/&#34;&gt;Talk on EmacsConf.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Https://www.youtube.com/watch?v=7WTIKv5g6mw&#34;&gt;Official EmacsConf video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1enIJIW2P_w&#34;&gt;Official EmacsConf Q/A&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Motivation for talk
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;There is a lot of great content out there for all kinds of Emacs things, but it&amp;#39;s all jumbled around. If you don&amp;#39;t know what you want or where to look it&amp;#39;s scary. When I was learning Emacs, I could have been spared from too much tinkering (even though it&amp;#39;s fun) if someone had pointed me in the right direction. This presentation was a point in the right direction to students who want to get started with Emacs. It&amp;#39;s become increasingly often for me to see students and fans of &lt;a href=&#34;https://www.youtube.com/@jvscholz&#34;&gt;James Scholz&lt;/a&gt; (whom I also admire) to try using DOOM Emacs after seeing his videos. If people do try Emacs, I would be sad if they left because they couldn&amp;#39;t find their workflow. After all, Emacs can have almost &lt;span style=&#34;text-decoration: underline;&#34;&gt;any&lt;/span&gt; kind of workflow if you invest time into it.&lt;/p&gt;
+&lt;p&gt;
+Although their great, they don&amp;#39;t give a strong direction/recommendation on how to use Emacs. Starting out with Emacs can be very daunting because there are almost &amp;#34;too many&amp;#34; options. My talk presents the ones that I have settled with (for now). Hopefully students watch it and decide to try Emacs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+How I made it
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I created the slideshow using org-mode&amp;#39;s export to beamer. Beamer is a LaTeX presentation software that has great formatting. I recorded a voice over of me going reading through the rough script/outline I had made from that file. Afterwards, I recorded my screen flipping through the slideshow and doing the demos, combining the video with the audio in Kdenlive.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>Common Git Commands on the Command Line</title>
@@ -967,8 +1120,7 @@ Introduction
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
-I am known as bardman online. I am a 18 year old student/programmer hobbyist.
-I enjoy free and open source software, a nice cup of tea, and sweaters.&lt;/p&gt;
+I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
 &lt;p&gt;
 
 &lt;figure class=&#34;about-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/catwithscarf.jpg&#34; title=&#34;not my image&#34;&gt;&lt;/figure&gt;
@@ -992,7 +1144,7 @@ I enjoy free and open source software, a nice cup of tea, and sweaters.&lt;/p&gt
 &lt;/ul&gt;
 &lt;p&gt;I get a lot of emails, but I will try to respond within 48 hours.&lt;/p&gt;
 &lt;p&gt;
-I do not use much social media.&lt;/p&gt;
+I&amp;#39;m not on instagram, facebook, snapchat, twitter, or most social media&lt;/p&gt;
 &lt;p&gt;
 &lt;strong&gt;Matrix:&lt;/strong&gt; @bardman:matrix.org&lt;/p&gt;
 &lt;p&gt;

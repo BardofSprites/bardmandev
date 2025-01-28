@@ -1,0 +1,49 @@
+#+title: Boox Notes, Linux and Emacs
+#+date: 2025-01-27T18:36:33-0500
+#+type: publication
+#+tags: [Emacs, Linux, Notetaking]
+#+toc: true
+
+* Introduction
+I recently got a BOOX Go 10.3 e-ink tablet this past Christmas. I use this device to take notes that require handwriting (Math/Physics), and annotating/reading a lot of notes/books/documents.
+
+{{< img class="centered-image" style="width:50%" src="/img/boox-3.jpg" mouse="BOOX tablet with orange case">}}
+
+{{< details class="warning" summary="🚩 _A note about the BOOX company_ 🚩" >}}
+BOOX is a Chinese company that specializes in E-ink tablets that run Android. They have continued to violate the GPL license of Android by not releasing source code to their custom build. I don't like that they violate GPL, but sacrificing privacy sometimes necessary for convenience. As far as I know, there isn't a free and open source e-ink tablet with all the same features.
+
+[[https://appsec.space/posts/onyx-boox-go-10.3/][Here is a guide on how to de-spook your tablet]]
+{{< /details >}}
+
+* Benefits of Android OS
+Because this tablet runs android (which is a heavily modified Linux) we can do a lot of "Linux-y" things with it. I can run =syncthing=, GNU Emacs, and =scrcpy= on it. I have sideloaded fdroid which is my app store. I don't log in to google or the BOOX sync service. I created zero accounts for this device. If enough interest is gathered, I can release an article about my setup.
+
+{{< img class="centered-image" style="width:50%" caption="Running GNU Emacs 30 from Fdroid" src="/img/boox-4.jpg" mouse="BOOX tablet with orange case">}}
+
+* Default notes app export
+The default notes app has the ability to export notes to pdf after saving. I use syncthing to access these new documents. It was super easy to set up
+
+* Organizing with epic Emacs tools
+A big dilemma with handwriting notes is that they are hard to search. I devised a plan to organize these notes using [[https://protesilaos.com/emacs/denote][denote]] (org-mode), [[https://github.com/vedang/pdf-tools][pdftools]], and [[https://github.com/fuxialexander/org-pdftools][org-pdftools]].
+
+** Methodology
+
+I start with one main file, I call it pdf-notes. This will be the main hub. Next I created other files for certain subjects. These have the keywords: pdfs and meta. They are /"notes about notes"/ thus /"meta"/ notes about pdfs.
+
+{{< img class="centered-image" caption="A dired buffer with all my pdf meta-notes" src="/img/pdf-notes.png" mouse="dired buffer in Emacs ">}}
+
+The main note contains a heading for table of contents, and a heading for the actual content of the files. Both are generated with ~denote-org-extras-dblock-insert-links~ and ~denote-org-extras-dblock-insert-files~. All of the blue underlines are org links to pdfs (from org-pdftools) that are in a syncthing folder on my pc. I can open up the link and start reading my notes again. I also use ~consult-outline~ and ~consult-line~ to fuzzy search around these files when needed.
+
+** Examples
+
+{{< gallery class="gallery" summary="open to see images" open="false" >}}
+
+{{< img class="centered-image" style="max-height:550px" src="/img/pdf-notes-landing.png" mouse="landing page for all pdf notes" caption="Main meta note">}}
+
+{{< img class="centered-image" style="max-height:550px" src="/img/pdf-notes-subject.png" caption="Specific subject note" >}}
+
+{{< img class="centered-image" style="max-height:550px" src="/img/pdf-notes-example.png" caption="side by side" >}}
+
+{{< img class="centered-image" style="max-height:550px" src="/img/boox-2.jpg" caption="same note but irl">}}
+
+{{< /gallery >}}

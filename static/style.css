@@ -6,6 +6,7 @@
 body{
     /* font-family: Rubik Regular; */
     font-family: Noto Sans;
+    font-size: 18px;
     background: #000000;
     color: #ffffff;
 }
@@ -40,51 +41,82 @@ img {
     width: 50%;
 }
 
+.warning {
+    border: 10px solid #3a0c14;
+    background: #3a0c14;
+}
+
 .subtitle {
     color:#989898;
     font-style: italic;
+    text-align: center;
 }
 
 header h1 {
     font-family: Noto Sans;
     text-align: center;
-    /* font-size: 35 px; */
-    color: #6ae4b9;
+    font-size: 35px;
+    color: #ffffff;
     /* text-decoration: underline; */
+}
+
+h2 {
+    font-family: Noto Sans;
+    color: #d2b580;
+    font-size: 30px;
 }
 
 h3 {
     font-family: Noto Sans;
-    color: #d2b580;
+    color: #82b0ec;
+    font-size: 22px;
 }
 
 h4 {
-    color: #82b0ec;
+    color: #feacd0;
+    font-size: 18px;
 }
 
 h5 {
-    color: #feacd0;
-}
-
-h6 {
     color: #ff9580;
 }
 
-h7 {
+h6 {
     color: #9ac8e0;
+}
+
+h7 {
+    color: #989898;
 }
 
 p {
     font-size: 18px;
 }
 
-code {
-    font-size: 18px;
+body code:not(pre code) {
+    color: #6ae4b9;
+}
+
+.verbatim {
+    color: #f78fe7;
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .src {
     border-top: 5px solid #1e1e1e;
     border-bottom: 5px solid #1e1e1e;
+}
+
+#TableOfContents {
+    border-top: 5px solid #1e1e1e;
+    border-bottom: 5px solid #1e1e1e;
+}
+
+.gallery {
+    border: 10px solid #1e1e1e;
+    background: #1e1e1e;
 }
 
 footer {

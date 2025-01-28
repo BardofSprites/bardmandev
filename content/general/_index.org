@@ -1,0 +1,5 @@
+#+TITLE: General
+#+type: landing
+#+tags: general
+
+{{< landing-publications tag="general">}}

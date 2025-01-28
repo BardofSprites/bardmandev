@@ -1,4 +1,5 @@
 #+TITLE: Notes
+#+type:landing
 
 These are a selection of notes that I am willing to share. I'm sharing them for a reason, but try not to just rip them off as your own. I like to put time into information that I am going to share. That being said, there can be mistakes. Please [[/contact][contact]] me if you find any mistakes.
 

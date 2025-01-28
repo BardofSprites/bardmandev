@@ -1,6 +1,6 @@
 #+title: Bardman's website
 #+author: Bardman
-#+summary: "Here is a summary"
+#+type: landing
 
 * Important pages
 + [[about][About Me]]
@@ -10,14 +10,14 @@
 * Latest publications
 {{< publications >}}
 * Main content indices
+** [[/general/][General]]
+#+begin_quote
+Any article that doesn't fit in below categories
+#+end_quote
+
 ** [[/coding/][Coding]]
 #+begin_quote
 articles pertaining to GNU Emacs, programming, and general computing
-#+end_quote
-
-** [[/mind/][Mind]]
-#+begin_quote
-Serendipitous thoughts
 #+end_quote
 
 ** [[/notes/][Notes]]

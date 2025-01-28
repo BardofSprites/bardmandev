@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/emacs-linux-notetaking/</loc>
+    <lastmod>2025-01-27T18:36:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-01-27T18:36:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/general/boox-and-emacs/</loc>
+    <lastmod>2025-01-27T18:36:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/general/</loc>
+    <lastmod>2025-01-27T18:36:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/general/</loc>
+    <lastmod>2025-01-27T18:36:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-01-27T18:36:33-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/coding-emacs/</loc>
+    <lastmod>2024-12-08T17:37:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/coding/emacsconf-2024/</loc>
+    <lastmod>2024-12-08T17:37:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/coding-robotics/</loc>
     <lastmod>2024-10-24T19:04:47-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-24T19:04:47-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/coding/git_cli/</loc>
-    <lastmod>2024-10-24T19:04:47-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-10-24T19:04:47-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/coding/git/</loc>
@@ -50,9 +68,6 @@
     <loc>http://localhost:1313/coding/</loc>
     <lastmod>2024-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/coding-emacs/</loc>
-    <lastmod>2024-08-04T22:37:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/coding/emms/</loc>
     <lastmod>2024-08-04T22:37:00+00:00</lastmod>
   </url><url>
@@ -76,8 +91,6 @@
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
-  </url><url>
-    <loc>http://localhost:1313/mind/</loc>
   </url><url>
     <loc>http://localhost:1313/robotics/</loc>
   </url>

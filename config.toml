@@ -27,3 +27,8 @@ theme = 'lugo'
         lineNumbersInTable = true
         noClasses = true
         tabWidth = 2
+    [markup.tableOfContents]
+        endLevel = 3
+        ordered = true
+        startLevel = 2
+

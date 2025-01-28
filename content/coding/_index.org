@@ -1,5 +1,6 @@
 #+title: Coding
 #+date: [2024-08-06 17:20]
+#+type: landing
 #+tags: coding
 
 {{< landing-content tag="Coding" >}}
