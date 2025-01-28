@@ -2,4 +2,4 @@
 #+type: landing
 #+tags: general
 
-{{< landing-publications tag="general">}}
+{{< landing-publications tag="General">}}

@@ -1,7 +1,7 @@
 #+title: Boox Notes, Linux and Emacs
 #+date: 2025-01-27T18:36:33-0500
 #+type: publication
-#+tags: [Emacs, Linux, Notetaking]
+#+tags: [General, Emacs, Linux, Notetaking]
 #+toc: true
 
 * Introduction
