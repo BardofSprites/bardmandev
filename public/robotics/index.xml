@@ -10,6 +10,85 @@
 	
 	
 	<item>
+		<title>Top 5 Tempel.el Snippets For Emacs</title>
+		<link>http://localhost:1313/coding/top-snippets/</link>
+		<pubDate>Sat, 01 Feb 2025 17:00:21 -0500</pubDate>
+		
+		<guid>http://localhost:1313/coding/top-snippets/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Introduction
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/minad/tempel&#34;&gt;Tempel.el&lt;/a&gt; is a package written by Daniel Mendler, a developer of many projects (many of which are fantastic Emacs packages). It provides a way to define text snippets with lisp-like syntax. You can embed Emacs Lisp code into the snippets to obtain programmatically obtained efficiency.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s based off of the ancient tempo library from Emacs, but it&amp;#39;s modernized and updated. I&amp;#39;ve never tried plain tempo, but it&amp;#39;s one of Emacs&amp;#39;s several ancient text-templating systems.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+Setup
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;The setup for tempel is very simple. Here is my configuration for the package:&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;use-package&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:ensure&lt;/span&gt; t
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:demand&lt;/span&gt; t
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; Require trigger prefix before template name when completing.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:bind&lt;/span&gt; ((&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;M-i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-complete&lt;/span&gt;) &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; Alternative tempel-expand&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;M-S-i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-insert&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:init&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; Setup completion at point&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-setup-capf&lt;/span&gt; ()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; Add the Tempel Capf to `completion-at-point-functions&amp;#39;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; `tempel-expand&amp;#39; only triggers on exact matches. Alternatively use&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; `tempel-complete&amp;#39; if you want to see all matches, but then you&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; should also configure `tempel-trigger-prefix&amp;#39;, such that Tempel&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; does not trigger too often when you don&amp;#39;t expect it. NOTE: We add&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; `tempel-expand&amp;#39; *before* the main programming mode Capf, such&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; that it will be tried first.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#f78fe7&#34;&gt;setq-local&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;completion-at-point-functions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#feacd0&#34;&gt;cons&lt;/span&gt; &lt;span style=&#34;color:#feacd0&#34;&gt;#&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-expand&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#00d3d0&#34;&gt;completion-at-point-functions&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:hook&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ((&lt;span style=&#34;color:#00d3d0&#34;&gt;conf-mode&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-setup-capf&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#00d3d0&#34;&gt;prog-mode&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-setup-capf&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#00d3d0&#34;&gt;text-mode&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-setup-capf&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-path&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;~/.emacs.d/tempel-snippets.el&amp;#34;&lt;/span&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Next, create a &lt;code&gt;temple-snippets.el&lt;/code&gt; file in your &lt;code&gt;.emacs.d&lt;/code&gt; directory and type away.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Defining a snippet
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;In my &lt;code&gt;tempel.snippets.el&lt;/code&gt; file, I have 25 snippets. You can look at it on my &lt;a href=&#34;https://github.com/BardofSprites/.emacs.d&#34;&gt;emacs configuration&lt;/a&gt;. The structure of the file is like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;desired-mode-for-snippet (eg. fundamental, org, c++)
+(snippet-name &amp;#34;snippet body&amp;#34;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+#1 &lt;code&gt;today&lt;/code&gt;
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;(today (format-time-string &amp;#34;%Y-%m-%d&amp;#34;))&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Boox Notes, Linux and Emacs</title>
 		<link>http://localhost:1313/general/boox-and-emacs/</link>
 		<pubDate>Mon, 27 Jan 2025 18:36:33 -0500</pubDate>
@@ -126,8 +205,11 @@ Examples
 TLDR: I had gave a talk for EmacsConf 2024 about student workflows.&lt;/p&gt;
 &lt;p&gt;
 
+
+    
     &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ofUQMq8ZK3U?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ofUQMq8ZK3U?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
     &lt;/div&gt;
 &lt;/p&gt;
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
@@ -158,24 +240,6 @@ How I made it
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;I created the slideshow using org-mode&amp;#39;s export to beamer. Beamer is a LaTeX presentation software that has great formatting. I recorded a voice over of me going reading through the rough script/outline I had made from that file. Afterwards, I recorded my screen flipping through the slideshow and doing the demos, combining the video with the audio in Kdenlive.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-	</item>
-	
-	<item>
-		<title>C&#43;&#43; Development in Emacs</title>
-		<link>http://localhost:1313/emacs-cpp/</link>
-		<pubDate>Thu, 21 Nov 2024 10:27:47 -0500</pubDate>
-		
-		<guid>http://localhost:1313/emacs-cpp/</guid>
-		<description>
-&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-1&#34;&gt;
-Introduction
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;This article is meant to summarize all the concepts from: &lt;a href=&#34;https://tuhdo.github.io/c-ide.html&#34;&gt;this article&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1169,6 +1233,8 @@ I&amp;#39;m not on instagram, facebook, snapchat, twitter, or most social media&
 &lt;strong&gt;IRC:&lt;/strong&gt; bardman@irc.libera.chat&lt;/p&gt;
 &lt;p&gt;
 matrix or email is probably more reliable way to reach me, i don&amp;#39;t check irc often.&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;YouTube:&lt;/strong&gt; &lt;a href=&#34;https://www.youtube.com/@bardmandev&#34;&gt;https://www.youtube.com/@bardmandev&lt;/a&gt;&lt;/p&gt;
 </description>
 	</item>
 	

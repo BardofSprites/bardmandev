@@ -1,16 +1,23 @@
 #+TITLE: Contact Me
-#+type: section
+#+type: basic
+#+type
 
-*Email:*
+* Email:
 + develop.bard at gmail dot com is my main public email
 + For classmates, please use my school email; if you are supposed to know, you know.
 
 I get a lot of emails, but I will try to respond within 48 hours.
 
+* Social Media
 I'm not on instagram, facebook, snapchat, twitter, or most social media
+
+* Other messaging
 
 *Matrix:* @bardman:matrix.org
 
 *IRC:* bardman@irc.libera.chat
 
 matrix or email is probably more reliable way to reach me, i don't check irc often.
+
+* YouTube
+https://www.youtube.com/@bardmandev

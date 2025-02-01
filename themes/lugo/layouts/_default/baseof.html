@@ -19,10 +19,10 @@
     <main>
       <header>
         <h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1>
-        {{if ne .Type "landing"}}
+        {{if not (or (eq .Type "landing") (eq .Type "basic"))}}
         <p class="subtitle">{{ .Date | time.Format "2006-01-02 Mon" }}</p>
         {{end}}
-        {{ if not (or (eq .Type "landing") (eq .Type "note")) }}
+        {{ if not (or (eq .Type "landing") (eq .Type "note") (eq .Type "basic")) }}
         <h2> Table of Contents </h2>
         {{ .Page.TableOfContents }}
         {{end}}

@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/emacs-linux-notetaking/</loc>
-    <lastmod>2025-01-27T18:36:33-05:00</lastmod>
+    <loc>http://localhost:1313/tags/coding-emacs/</loc>
+    <lastmod>2025-02-01T17:00:21-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-01T17:00:21-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-02-01T17:00:21-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/coding/top-snippets/</loc>
+    <lastmod>2025-02-01T17:00:21-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/general-emacs-linux-notetaking/</loc>
     <lastmod>2025-01-27T18:36:33-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/general/boox-and-emacs/</loc>
@@ -17,20 +26,8 @@
     <loc>http://localhost:1313/general/</loc>
     <lastmod>2025-01-27T18:36:33-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-01-27T18:36:33-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/coding-emacs/</loc>
-    <lastmod>2024-12-08T17:37:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/coding/emacsconf-2024/</loc>
     <lastmod>2024-12-08T17:37:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/codingemacs/</loc>
-    <lastmod>2024-11-21T10:27:47-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/emacs-cpp/</loc>
-    <lastmod>2024-11-21T10:27:47-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/coding-robotics/</loc>
     <lastmod>2024-10-24T19:04:47-04:00</lastmod>
