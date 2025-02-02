@@ -1,0 +1,36 @@
+<!-- layouts/shortcodes/landing-content.html -->
+{{ $notes := where .Site.RegularPages "Type" "note" }}
+{{ $pubs := where .Site.RegularPages "Type" "publication" }}
+
+<section class="all-content">
+
+  <h2>All Publications</h2>
+  <ul class="publication-list">
+    {{ range (sort $pubs "Date" "desc") }}
+    <li class="publication-item">
+      <article>
+        {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+        <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .Params.authors }}
+        <div class="authors">
+          {{ delimit . ", " " and " }}
+        </div>
+        {{ end }}
+      </article>
+    </li>
+    {{ end }}
+  </ul>
+
+  <h2>All Notes</h2>
+  <ul class="note-list">
+    {{ range (sort $notes "Date" "desc") }}
+    <li class="note-item">
+      <article>
+        {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+        <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </article>
+    </li>
+    {{ end }}
+  </ul>
+
+</section>

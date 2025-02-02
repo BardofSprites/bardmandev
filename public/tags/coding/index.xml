@@ -69,21 +69,96 @@ Next, create a &lt;code&gt;temple-snippets.el&lt;/code&gt; file in your &lt;code
 Defining a snippet
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;In my &lt;code&gt;tempel.snippets.el&lt;/code&gt; file, I have 25 snippets. You can look at it on my &lt;a href=&#34;https://github.com/BardofSprites/.emacs.d&#34;&gt;emacs configuration&lt;/a&gt;. The structure of the file is like this:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;desired-mode-for-snippet (eg. fundamental, org, c++)
-(snippet-name &amp;#34;snippet body&amp;#34;)&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;In my &lt;code&gt;tempel.snippets.el&lt;/code&gt; file, I have around 24 snippets. You can look at it on my &lt;a href=&#34;https://github.com/BardofSprites/.emacs.d&#34;&gt;emacs configuration&lt;/a&gt;. The structure of the file is like this:&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;desired-mode-for-snippet&lt;/span&gt; &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; (eg. fundamental, org, c++)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#00d3d0&#34;&gt;snippet-name&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;snippet body&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-4&#34;&gt;
-#1 &lt;code&gt;today&lt;/code&gt;
+Top 5 Snippets
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;(today (format-time-string &amp;#34;%Y-%m-%d&amp;#34;))&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+#1 - &lt;code&gt;up&lt;/code&gt;
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;This is my most used snippet. I use it all the time for when I need to make a use-package declaration in my Emacs configuration.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#00d3d0&#34;&gt;up&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;(use-package &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;:ensure t&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&amp;gt;&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;configuration&lt;/span&gt;) &lt;span style=&#34;color:#00d3d0&#34;&gt;q&lt;/span&gt;&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+#2 - &lt;code&gt;today&lt;/code&gt;
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;today evaluates the native Emacs function &lt;code&gt;format-time-string&lt;/code&gt;. This is a great example of how tempel can use existing functions in it&amp;#39;s snippets.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#00d3d0&#34;&gt;today&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;%Y-%m-%d&amp;#34;&lt;/span&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+#3 - &lt;code&gt;begin&lt;/code&gt;
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Begin starts a LaTeX begin macro for formatting anything. When you type begin, it moves you to the brackets and then you can fill out both ends of the begin at once with equation, center, aligned, etc.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#00d3d0&#34;&gt;begin&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;\\begin{&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;env&lt;/span&gt;) &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;r&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;\\end{&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;env&lt;/span&gt;) &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;}&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
+#4 - &lt;code&gt;mode&lt;/code&gt;
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Emacs has &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/emacs/Specifying-File-Variables.html&#34;&gt;a feature&lt;/a&gt; for adding local file variables with a prop line at the beginning of files. I use this to give a mode to files without an extension like scheme scripts I write.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#00d3d0&#34;&gt;mode&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;-*- mode: &amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;mode&lt;/span&gt;) &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34; -*-&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-9&#34;&gt;
+#5 - Programming-related snippets
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;These are things I would type anyway while programming that are condensed. They could probably be converted into &lt;code&gt;abbrev-mode&lt;/code&gt; expansions, but I just cooked these up quickly while I was working.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00d3d0&#34;&gt;sh-mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#00d3d0&#34;&gt;!&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;#!/usr/bin/bash&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;q&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00d3d0&#34;&gt;perl-mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#00d3d0&#34;&gt;!&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;#!/usr/bin/perl&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;use strict;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;use warnings;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;q&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00d3d0&#34;&gt;c++-mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#feacd0&#34;&gt;log&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;std::cout &amp;lt;&amp;lt; \&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;\&amp;#34; &amp;lt;&amp;lt; std::endl;&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-10&#34;&gt;
+Conclusion
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Snippets/templates are a really useful way to speed up your text-editing. If you&amp;#39;re going to repeat typing something a bunch, you might as well make a snippet for it.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-11&#34;&gt;
+Yasnippet
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I used to use &lt;a href=&#34;https://github.com/joaotavora/yasnippet&#34;&gt;yasnippet&lt;/a&gt; (probably the most popular snippet package), but I realized it&amp;#39;s not for me because I didn&amp;#39;t like making a new file for every snippet. I was too lazy to figure out the syntax to make my own, so I switched to tempel. I could probably still use it, but I&amp;#39;ll use what works.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1214,28 +1289,187 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
 	</item>
 	
 	<item>
+		<title>All Content</title>
+		<link>http://localhost:1313/content/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/content/</guid>
+		<description>&lt;p&gt;
+
+
+
+
+&lt;section class=&#34;all-content&#34;&gt;
+
+  &lt;h2&gt;All Publications&lt;/h2&gt;
+  &lt;ul class=&#34;publication-list&#34;&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2025-02-01 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/top-snippets/&#34;&gt;Top 5 Tempel.el Snippets For Emacs&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2025-01-27 Monday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/general/boox-and-emacs/&#34;&gt;Boox Notes, Linux and Emacs&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-12-08 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/emacsconf-2024/&#34;&gt;My EmacsConf 2024 Presentation&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/git_cli/&#34;&gt;Common Git Commands on the Command Line&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/git/&#34;&gt;Learning to use Git Version Control&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-08-04 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/emms/&#34;&gt;EMMS: Emacs Multimedia System&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-05-22 Wednesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/workflow/&#34;&gt;My Emacs Workflow For Programming, Notetaking, and Much More&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2023-11-23 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/programs/&#34;&gt;Programs I Use&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+  &lt;h2&gt;All Notes&lt;/h2&gt;
+  &lt;ul class=&#34;note-list&#34;&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-18 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/center-of-mass/&#34;&gt;Center of Mass Notes&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-18 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/springs/&#34;&gt;Springs&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-18 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/friction/&#34;&gt;Friction&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-08-15 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/vectors/&#34;&gt;Vectors&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-08-13 Tuesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/kinematic-equations/&#34;&gt;Kinematic Equations&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2023-10-28 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/currying/&#34;&gt;Currying&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/section&gt;
+&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Contact Me</title>
 		<link>http://localhost:1313/contact/</link>
 		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 		
 		<guid>http://localhost:1313/contact/</guid>
-		<description>&lt;p&gt;
-&lt;strong&gt;Email:&lt;/strong&gt;&lt;/p&gt;
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Email:
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;develop.bard at gmail dot com is my main public email&lt;/li&gt;
 &lt;li&gt;For classmates, please use my school email; if you are supposed to know, you know.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I get a lot of emails, but I will try to respond within 48 hours.&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m not on instagram, facebook, snapchat, twitter, or most social media&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Social Media
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I&amp;#39;m not on instagram, facebook, snapchat, twitter, or most social media&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Other messaging
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;
 &lt;strong&gt;Matrix:&lt;/strong&gt; @bardman:matrix.org&lt;/p&gt;
 &lt;p&gt;
 &lt;strong&gt;IRC:&lt;/strong&gt; bardman@irc.libera.chat&lt;/p&gt;
 &lt;p&gt;
 matrix or email is probably more reliable way to reach me, i don&amp;#39;t check irc often.&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;YouTube:&lt;/strong&gt; &lt;a href=&#34;https://www.youtube.com/@bardmandev&#34;&gt;https://www.youtube.com/@bardmandev&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+YouTube
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@bardmandev&#34;&gt;https://www.youtube.com/@bardmandev&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
 	</item>
 	

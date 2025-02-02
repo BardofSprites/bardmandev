@@ -10,6 +10,9 @@
 * Latest publications
 {{< publications >}}
 * Main content indices
+** [[/content/][All]]
+All of my articles in one place
+
 ** [[/general/][General]]
 #+begin_quote
 Any article that doesn't fit in below categories
