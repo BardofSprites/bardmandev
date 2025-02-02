@@ -11,7 +11,9 @@
 {{< publications >}}
 * Main content indices
 ** [[/content/][All]]
+#+begin_quote
 All of my articles in one place
+#+end_quote
 
 ** [[/general/][General]]
 #+begin_quote
