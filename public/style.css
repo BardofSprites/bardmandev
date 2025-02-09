@@ -161,3 +161,90 @@ footer {
 .includetitle {
     font-size: 20px;
 }
+
+
+/* Sidebar styles */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+.sidebar-header {
+    text-align: center;
+}
+
+.sidebar-header a {
+    color: #c8d4df;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.sidebar-header a:hover {
+    background-color: #c7d4df;
+    color: #1e1e1e;
+}
+
+.sidebar-header small {
+    color: #9099d9;
+    display: block;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    color: #c8d4df;
+    text-decoration: none;
+    display: inline;
+    padding: 5px;
+}
+
+#sidebar ul li a:hover {
+    background-color: #c7d4df;
+    color: #1e1e1e;
+}
+
+/* Main content should be pushed to the right to avoid being hidden behind the sidebar */
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Responsive: Turn sidebar into top nav on smaller screens */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #sidebar ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    #sidebar ul li {
+        display: inline;
+        padding: 10px;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}

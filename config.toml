@@ -7,6 +7,12 @@ pygmentsCodefences = true
 pygmentsStyle = "modus-vivendi"
 theme = 'lugo'
 
+[menu]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10        
+
 [params]
     relatedtext = "Related"
     favicon = "/favicon.ico"

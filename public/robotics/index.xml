@@ -1298,174 +1298,123 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
 
 
 
+&lt;section class=&#34;all-content&#34;&gt;
 
-&lt;section class=&#34;tagged-content&#34;&gt;
-  
-  
-
-  
-  
-    
-    
-    
-      
-    
-      
-    
-    
-  
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-  
-    
-    
-    
-      
-    
-      
-    
-    
-  
-    
-    
-    
-      
-    
-      
-    
-    
-  
-    
-    
-    
-      
-    
-      
-    
-    
-  
-    
-    
-    
-      
-    
-      
-    
-    
-  
-    
-    
-    
-      
-    
-      
-    
-    
-  
-    
-    
-    
-      
-    
-    
-  
-
-  &lt;h2&gt; Publications&lt;/h2&gt;
-  
+  &lt;h2&gt;All Publications&lt;/h2&gt;
   &lt;ul class=&#34;publication-list&#34;&gt;
     
-      
-      
-      
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
         
-      
+        &lt;span&gt;2025-02-01 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/top-snippets/&#34;&gt;Top 5 Tempel.el Snippets For Emacs&lt;/a&gt;
         
-      
-      
+      &lt;/article&gt;
+    &lt;/li&gt;
     
-      
-      
-      
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
         
-      
+        &lt;span&gt;2025-01-27 Monday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/general/boox-and-emacs/&#34;&gt;Boox Notes, Linux and Emacs&lt;/a&gt;
         
-      
-        
-      
-        
-      
-      
+      &lt;/article&gt;
+    &lt;/li&gt;
     
-      
-      
-      
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
         
-      
+        &lt;span&gt;2024-12-08 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/emacsconf-2024/&#34;&gt;My EmacsConf 2024 Presentation&lt;/a&gt;
         
-      
-      
+      &lt;/article&gt;
+    &lt;/li&gt;
     
-      
-      
-      
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
         
-      
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/git_cli/&#34;&gt;Common Git Commands on the Command Line&lt;/a&gt;
         
-      
-      
+      &lt;/article&gt;
+    &lt;/li&gt;
     
-      
-      
-      
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
         
-      
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/git/&#34;&gt;Learning to use Git Version Control&lt;/a&gt;
         
-      
-      
+      &lt;/article&gt;
+    &lt;/li&gt;
     
-      
-      
-      
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
         
-      
+        &lt;span&gt;2024-08-04 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/emms/&#34;&gt;EMMS: Emacs Multimedia System&lt;/a&gt;
         
-      
-      
+      &lt;/article&gt;
+    &lt;/li&gt;
     
-      
-      
-      
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
         
-      
+        &lt;span&gt;2024-05-22 Wednesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/workflow/&#34;&gt;My Emacs Workflow For Programming, Notetaking, and Much More&lt;/a&gt;
         
-      
-      
+      &lt;/article&gt;
+    &lt;/li&gt;
     
-      
-      
-      
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
         
-      
-      
+        &lt;span&gt;2023-11-23 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/programs/&#34;&gt;Programs I Use&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
     
   &lt;/ul&gt;
 
-  
-  
-
-  
-    &lt;p&gt;No publications found with tag &#34;&#34;&lt;/p&gt;
-  
+  &lt;h2&gt;All Notes&lt;/h2&gt;
+  &lt;ul class=&#34;note-list&#34;&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-18 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/center-of-mass/&#34;&gt;Center of Mass Notes&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-18 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/springs/&#34;&gt;Springs&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-18 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/friction/&#34;&gt;Friction&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-08-15 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/vectors/&#34;&gt;Vectors&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-08-13 Tuesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/kinematic-equations/&#34;&gt;Kinematic Equations&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2023-10-28 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/currying/&#34;&gt;Currying&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
 
 &lt;/section&gt;
 &lt;/p&gt;

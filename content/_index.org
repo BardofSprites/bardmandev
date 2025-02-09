@@ -1,12 +1,8 @@
 #+title: Bardman's website
 #+author: Bardman
 #+type: landing
+#+menus: "nav"
 
-* Important pages
-+ [[about][About Me]]
-+ [[/contact][Contact me]]
-+ [[/projects][Projects]]
-  
 * Latest publications
 {{< publications >}}
 * Main content indices
