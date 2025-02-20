@@ -12,12 +12,20 @@ I get a lot of emails, but I will try to respond within 48 hours.
 I'm not on instagram, facebook, snapchat, twitter, or most social media
 
 * Other messaging
+** XMPP
+bardman@07f.de
 
-*Matrix:* @bardman:matrix.org
+What is this?
 
-*IRC:* bardman@irc.libera.chat
+** IRC:
+bardman@irc.libera.chat
 
-matrix or email is probably more reliable way to reach me, i don't check irc often.
+XMPP is probably the best way to reach me, I don't have an IRC client on my phone.
+
+** Matrix:
++@bardman:matrix.org+
+
+I don't like matrix anymore, my account will stay but it is unlikely that I will answer
 
 * YouTube
 https://www.youtube.com/@bardmandev

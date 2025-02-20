@@ -1,0 +1,51 @@
+#+TITLE: EMMS: Emacs Multimedia System
+#+DATE: 2024-08-04T22:37:00+00:00
+#+type: publication
+#+tags: [Technology, Emacs, Software]
+
+* Description
+From the official page: 
+#+begin_quote
+Emms is the Emacs Multimedia System. Emms displays and plays multimedia from within GNU/Emacs using a variety of external players and from different sources.
+
+...
+
+Emms can run as a minimalist player and controlled with a handful of M-x Emacs commands, or a fully-fledged, interactive media browser. Emms can display album art, play streaming audio, tag music files, search for lyrics, provide MPD connectivity, control the volume, and more. 
+#+end_quote
+I cannot describe it better, this tool exemplifies the Emacs golden standard for extensibility and practicality.
+
+* Installation
+EMMS is official GNU software, which means that it is available through the [[https://elpa.gnu.org/][GNU ELPA]] repository.
+
+EMMS uses an external player, so you will need one. MPV is what I use, but you can use VLC, MPD, and others (as described in the manual).
+
+* Example Configuration
+This is a simple ~use-package~ declaration that sets up some simple keybinds.
+#+begin_src lisp
+  (use-package emms
+    :ensure t
+    :bind
+    (:map emms-playlist-mode-map
+          ("M-<f8>" . emms-browser)
+          ("A" . emms-add-directory)
+          ("T" . emms-add-directory-tree)
+          ("F" . emms-add-file)
+          ("U" . emms-add-url)
+          ("L" . emms-toggle-repeat-track)
+          ("<mouse-3>" . emms-pause)
+          ("<SPC>" . emms-pause))
+    :bind ("<f8>" . emms))
+#+end_src
+
+* How I Like To Use It
+I have my music saved as mp3 files. Sometimes I download longer mixes from YouTube with ~yt-dlp~ as mp4 or webm (usually mp4). I don't need much in a multimedia player, and EMMS provides it.
+
+Normally my process for playing music is like this:
+1. Open emms with ~<f8>~.
+2. Click the ~A~ key to add a subdirectory in from my music library.
+3. Then I pick the song I want to listen to and start working.
+
+{{< img class="centered-image" src="/img/emms-demo.gif" caption="EMMS Browser in action, sorry for the FFMPEG artifacts." mouse="">}}
+
+* References and Documentation
++ [[https://www.gnu.org/software/emms/][Official Manual]]

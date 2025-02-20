@@ -36,6 +36,16 @@
         <h2> Table of Contents </h2>
         {{ .Page.TableOfContents }}
         {{end}}
+        {{if not (or (eq .Type "landing") (eq .Type "basic"))}}
+        {{ with .Params.tags }}
+        <p class="subtitle">Tags:
+          {{ range $index, $tag := split . ", " }}
+          {{ if $index }}, {{ end }}{{ $tag }}
+          {{ end }}
+        </p>
+        {{ end }}
+        {{end}}
+
       </header>
       <article>
         {{ block "main" . }}

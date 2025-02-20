@@ -6,3 +6,23 @@
 I am known as bardman online. I am a 18 year old student/programmer.
 
 {{< img class="about-image" src="/img/catwithscarf.jpg" caption="" mouse="not my image">}}
+
+* 2025 Reading Backlog
+Since the beginning of the year I have been trying to get into the habit of reading a bit everyday. These are the books that I will begin/currently am/completed reading in 2025. I have this here for anyone with enough time to meander around my website.
+
+** In Progress
+1. Pachinko - Min Jin Lee
+2. Christ the Eternal Tao - Hieromonk Damascene
+3. Братья Карамазовы - Фёдор Достоевский
+
+** Finished
+1. Kokoro - Natsume Soseki (=2025-02-11 Tue=)
+   
+** Planned to Read
+1. Sanshiro - Natsume Soseki
+2. Kusamakura - Natsume Soseki
+3. Идиот - Фёдор Достоевский
+4. Преступление и Наказание - Фёдор Достоевский
+5. 2666 - Roberto Picador
+6. Dune Messiah - Frank Herbert
+

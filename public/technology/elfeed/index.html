@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Elfeed: Absorbing Media With Emacs | bardman&#39;s website</title>
+    <link rel="canonical" href="http://localhost:1313/">
+    <link rel='alternate' type='application/rss+xml' title="bardman&#39;s website RSS" href='/index.xml'>
+    <link rel='stylesheet' type='text/css' href='/style.css'>
+    <link rel="icon" href="/favicon.ico">
+    
+    <meta name="keywords" content="91, 84, 101, 99, 104, 110, 111, 108, 111, 103, 121, 44, 32, 69, 109, 97, 99, 115, 44, 32, 83, 111, 102, 116, 119, 97, 114, 101, 93">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <nav id="sidebar">
+      <ul>
+        <div class="sidebar-header">
+          <a href="http://localhost:1313/">Bardman.dev</a>
+          <small> Home page </small>
+        </div>
+        <li><a href="/about/">About Me</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/projects/">Projects</a></li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <h1 id="tag_Elfeed: Absorbing media with Emacs">Elfeed: Absorbing media with Emacs</h1>
+        
+        <p class="subtitle">2025-02-11 Tue</p>
+        
+        
+        <h2> Table of Contents </h2>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">Description</a>
+</li>
+<li><a href="#headline-2">Installation/Setup</a>
+</li>
+<li><a href="#headline-3">How I Like To Use It</a>
+<ul>
+<li><a href="#headline-4">Elfeed-org</a>
+</li>
+<li><a href="#headline-5">YouTube Feed</a>
+</li>
+<li><a href="#headline-6">Watching YouTube with Elfeed + EMMS</a>
+</li>
+<li><a href="#headline-7">Demonstration</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-8">References and Documentation</a>
+</li>
+</ul>
+</nav>
+        
+        
+        
+        <p class="subtitle">Tags:
+          
+          [Technology
+          
+          , Emacs
+          
+          , Software]
+          
+        </p>
+        
+        
+
+      </header>
+      <article>
+        
+        
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Description
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>From the GitHub README:</p>
+<blockquote>
+<p>Elfeed is an extensible web feed reader for Emacs, supporting both Atom and RSS.</p>
+</blockquote>
+<p>
+
+<figure class="centered-image"><figcaption>My elfeed configuration that is browsing emacs articles</figcaption><img src="/img/elfeed-feed.png" title="elfeed is awesome 😉" style="width:75%"></figure>
+</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Installation/Setup
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>Elfeed is available on <a href="https://melpa.org">melpa</a>.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>  (<span style="color:#f78fe7">use-package</span> <span style="color:#00d3d0">elfeed</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f78fe7">:ensure</span> t
+</span></span><span style="display:flex;"><span>    <span style="color:#f78fe7">:config</span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#00d3d0">global-set-key</span> (<span style="color:#00d3d0">kbd</span> <span style="color:#79a8ff">&#34;C-c r&#34;</span>) <span style="color:#79a8ff">&#39;elfeed</span>)
+</span></span><span style="display:flex;"><span>    (<span style="color:#f78fe7">setq</span> <span style="color:#00d3d0">elfeed-search-filter</span> <span style="color:#79a8ff">&#34;+unread&#34;</span>)
+</span></span><span style="display:flex;"><span>  )</span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
+<h2 id="headline-3">
+How I Like To Use It
+</h2>
+<div id="outline-text-headline-3" class="outline-text-2">
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Elfeed-org
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>I subscribe to too many feeds to keep them all in one emacs <code>setq</code> option list. I would rather have them in a text file that can be read by <code>elfeed-org</code>.</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+YouTube Feed
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>I try to not get stuck browsing YouTube for hours and using RSS is one of the methods that helps me limit my usage. Not many people know that each YouTube channel has it&#39;s own RSS feed that anyone can subscribe to. The way that I am able to discover them is using a find RSS feed extension. The one that I prefer at the moment is <a href="https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/">FeedBro</a> because it&#39;s the one works. It sucks that it&#39;s proprietary, but I don&#39;t even use it that often (only for scraping the RSS feeds from websites like YouTube that don&#39;t show them).</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Watching YouTube with Elfeed + EMMS
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>I have already written an article about <a href="/technology/emms">GNU EMMS</a>, the excellent Emacs media player. In addition to local files like video/audio I can stream videos with mpv (already bundled with <code>yt-dlp</code> for that).</p>
+<p>
+The big thing that I hated doing was copying the url from elfeed and then opening a terminal and then running mpv with the url and then finally getting to watch the video. But what if I wanted to watch another? Well then I would have to go back and open elfeed and copy the url and then…you get the idea.</p>
+<p>
+What I wanted was to run a keybind on an elfeed entry that links to YouTube and to automatically spawn a process that plays it in mpv.  That&#39;s what <code>(bard/play-elfeed-video)</code> does.</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>  (<span style="color:#f78fe7">defun</span> <span style="color:#00d3d0">bard/play-elfeed-video</span> ()
+</span></span><span style="display:flex;"><span>  <span style="color:#79a8ff">&#34;Play the URL of the entry at point in mpv if it&#39;s a YouTube video.&#34;</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#f78fe7">interactive</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#f78fe7">let</span> ((<span style="color:#00d3d0">entry</span> (<span style="color:#00d3d0">elfeed-search-selected</span> <span style="color:#f78fe7">:single</span>)))
+</span></span><span style="display:flex;"><span>    (<span style="color:#f78fe7">if</span> <span style="color:#00d3d0">entry</span>
+</span></span><span style="display:flex;"><span>        (<span style="color:#f78fe7">let</span> ((<span style="color:#00d3d0">url</span> (<span style="color:#00d3d0">elfeed-entry-link</span> <span style="color:#00d3d0">entry</span>)))
+</span></span><span style="display:flex;"><span>          (<span style="color:#f78fe7">if</span> (<span style="color:#f78fe7">and</span> <span style="color:#00d3d0">url</span> (<span style="color:#00d3d0">string-match-p</span> <span style="color:#79a8ff">&#34;https?://\\(www\\.\\)?youtube\\.com\\|youtu\\.be&#34;</span> <span style="color:#00d3d0">url</span>))
+</span></span><span style="display:flex;"><span>              (<span style="color:#f78fe7">progn</span>
+</span></span><span style="display:flex;"><span>                (<span style="color:#00d3d0">async-shell-command</span> (<span style="color:#feacd0">format</span> <span style="color:#79a8ff">&#34;mpv &#39;%s&#39;&#34;</span> <span style="color:#00d3d0">url</span>))
+</span></span><span style="display:flex;"><span>                (<span style="color:#00d3d0">elfeed-search-untag-all-unread</span>))
+</span></span><span style="display:flex;"><span>            (<span style="color:#feacd0">message</span> <span style="color:#79a8ff">&#34;The URL is not a YouTube link: %s&#34;</span> <span style="color:#00d3d0">url</span>)))
+</span></span><span style="display:flex;"><span>      (<span style="color:#feacd0">message</span> <span style="color:#79a8ff">&#34;No entry selected in Elfeed.&#34;</span>))))</span></span></code></pre></div>
+</div>
+<p>
+But then I thought, what if I want to use my good friend EMMS? I sometimes want to make a backlog and save it to a playlist or have them play automatically in succession. That&#39;s when I made this function:</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>  (<span style="color:#f78fe7">defun</span> <span style="color:#00d3d0">bard/add-video-emms-queue</span> ()
+</span></span><span style="display:flex;"><span>    <span style="color:#79a8ff">&#34;Play the URL of the entry at point in mpv if it&#39;s a YouTube video. Add it to EMMS queue.&#34;</span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#f78fe7">interactive</span>)
+</span></span><span style="display:flex;"><span>    (<span style="color:#f78fe7">let</span> ((<span style="color:#00d3d0">entry</span> (<span style="color:#00d3d0">elfeed-search-selected</span> <span style="color:#f78fe7">:single</span>)))
+</span></span><span style="display:flex;"><span>      (<span style="color:#f78fe7">if</span> <span style="color:#00d3d0">entry</span>
+</span></span><span style="display:flex;"><span>          (<span style="color:#f78fe7">let</span> ((<span style="color:#00d3d0">url</span> (<span style="color:#00d3d0">elfeed-entry-link</span> <span style="color:#00d3d0">entry</span>)))
+</span></span><span style="display:flex;"><span>            (<span style="color:#f78fe7">if</span> (<span style="color:#f78fe7">and</span> <span style="color:#00d3d0">url</span> (<span style="color:#00d3d0">string-match-p</span> <span style="color:#79a8ff">&#34;https?://\\(www\\.\\)?youtube\\.com\\|youtu\\.be&#34;</span> <span style="color:#00d3d0">url</span>))
+</span></span><span style="display:flex;"><span>                (<span style="color:#f78fe7">let*</span> ((<span style="color:#00d3d0">playlist-name</span> <span style="color:#79a8ff">&#34;Watch Later&#34;</span>)
+</span></span><span style="display:flex;"><span>                       (<span style="color:#00d3d0">playlist-buffer</span> (<span style="color:#feacd0">get-buffer</span> (<span style="color:#feacd0">format</span> <span style="color:#79a8ff">&#34; *%s*&#34;</span> <span style="color:#00d3d0">playlist-name</span>))))
+</span></span><span style="display:flex;"><span>                  (<span style="color:#f78fe7">unless</span> <span style="color:#00d3d0">playlist-buffer</span>
+</span></span><span style="display:flex;"><span>                    (<span style="color:#f78fe7">setq</span> <span style="color:#00d3d0">playlist-buffer</span> (<span style="color:#00d3d0">emms-playlist-new</span> (<span style="color:#feacd0">format</span> <span style="color:#79a8ff">&#34; *%s*&#34;</span> <span style="color:#00d3d0">playlist-name</span>))))
+</span></span><span style="display:flex;"><span>                  (<span style="color:#00d3d0">emms-playlist-set-playlist-buffer</span> <span style="color:#00d3d0">playlist-buffer</span>)
+</span></span><span style="display:flex;"><span>                  (<span style="color:#00d3d0">emms-add-url</span> <span style="color:#00d3d0">url</span>)
+</span></span><span style="display:flex;"><span>                  (<span style="color:#00d3d0">elfeed-search-untag-all-unread</span>)
+</span></span><span style="display:flex;"><span>                  (<span style="color:#feacd0">message</span> <span style="color:#79a8ff">&#34;Added YouTube video to EMMS playlist: %s&#34;</span> <span style="color:#00d3d0">url</span>))
+</span></span><span style="display:flex;"><span>              (<span style="color:#feacd0">message</span> <span style="color:#79a8ff">&#34;The URL is not a YouTube link: %s&#34;</span> <span style="color:#00d3d0">url</span>)))
+</span></span><span style="display:flex;"><span>        (<span style="color:#feacd0">message</span> <span style="color:#79a8ff">&#34;No entry selected in Elfeed.&#34;</span>))))</span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Demonstration
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<p>First I open Elfeed to a video that I want to view, then I run <code>bard/add-video-emms-queue</code> for each entry I want to add to my queue (bound to <code>C-c C-e</code>). After that I open EMMS (bound to <code>&lt;f8&gt;</code>). Then I click enter on the video and hooray it&#39;s playing. I can even save to a playlist and replay later.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+References and Documentation
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<ul>
+<li><a href="https://github.com/BardofSprites/.emacs.d/blob/master/bard-elisp/bard-web.el">My Emacs Lisp Functions For Sending Elfeed Videos to EMMS</a></li>
+<li><a href="https://github.com/skeeto/elfeed">https://github.com/skeeto/elfeed</a></li>
+<li><a href="https://github.com/remyhonig/elfeed-org">https://github.com/remyhonig/elfeed-org</a></li>
+<li><a href="https://github.com/yt-dlp/yt-dlp">https://github.com/yt-dlp/yt-dlp</a></li>
+</ul>
+</div>
+</div>
+
+        
+        </article>
+    </main>
+    
+    <footer>
+      <a href="http://localhost:1313/">http://localhost:1313/</a>
+      <br><br>
+      <p>
+        <a href="https://gnu.org/software/emacs"> <img src="/img/madewithemacs.png" style="max-height:2.2em"></a>
+        <a href="https://www.gnu.org/fun/jokes/gospel.en.html"> <img src="/img/saint-button.png" style="max-height:2.2em"></a><a href="/index.xml"><img src="/rss.svg" style="max-height:2.2em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+      </p>
+    </footer>
+    
+  </body>
+</html>

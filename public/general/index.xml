@@ -5,17 +5,157 @@
 	<description>Recent content in General on bardman&#39;s website</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Mon, 27 Jan 2025 18:36:33 -0500</lastBuildDate>
     
         <atom:link href="http://localhost:1313/general/index.xml" rel="self" type="application/rss+xml" />
 	
 	
 	<item>
+		<title>Reading List</title>
+		<link>http://localhost:1313/readling-list/</link>
+		<pubDate>Tue, 18 Feb 2025 19:45:17 -0500</pubDate>
+		
+		<guid>http://localhost:1313/readling-list/</guid>
+		<description></description>
+	</item>
+	
+	<item>
+		<title>Elfeed: Absorbing media with Emacs</title>
+		<link>http://localhost:1313/technology/elfeed/</link>
+		<pubDate>Tue, 11 Feb 2025 15:19:09 -0500</pubDate>
+		
+		<guid>http://localhost:1313/technology/elfeed/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Description
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;From the GitHub README:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Elfeed is an extensible web feed reader for Emacs, supporting both Atom and RSS.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;My elfeed configuration that is browsing emacs articles&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/elfeed-feed.png&#34; title=&#34;elfeed is awesome 😉&#34; style=&#34;width:75%&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Installation/Setup
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Elfeed is available on &lt;a href=&#34;https://melpa.org&#34;&gt;melpa&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;use-package&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:ensure&lt;/span&gt; t
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#00d3d0&#34;&gt;global-set-key&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;kbd&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;C-c r&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#39;elfeed&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-filter&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;+unread&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+How I Like To Use It
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Elfeed-org
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I subscribe to too many feeds to keep them all in one emacs &lt;code&gt;setq&lt;/code&gt; option list. I would rather have them in a text file that can be read by &lt;code&gt;elfeed-org&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+YouTube Feed
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I try to not get stuck browsing YouTube for hours and using RSS is one of the methods that helps me limit my usage. Not many people know that each YouTube channel has it&amp;#39;s own RSS feed that anyone can subscribe to. The way that I am able to discover them is using a find RSS feed extension. The one that I prefer at the moment is &lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/&#34;&gt;FeedBro&lt;/a&gt; because it&amp;#39;s the one works. It sucks that it&amp;#39;s proprietary, but I don&amp;#39;t even use it that often (only for scraping the RSS feeds from websites like YouTube that don&amp;#39;t show them).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Watching YouTube with Elfeed + EMMS
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have already written an article about &lt;a href=&#34;http://localhost:1313/technology/emms&#34;&gt;GNU EMMS&lt;/a&gt;, the excellent Emacs media player. In addition to local files like video/audio I can stream videos with mpv (already bundled with &lt;code&gt;yt-dlp&lt;/code&gt; for that).&lt;/p&gt;
+&lt;p&gt;
+The big thing that I hated doing was copying the url from elfeed and then opening a terminal and then running mpv with the url and then finally getting to watch the video. But what if I wanted to watch another? Well then I would have to go back and open elfeed and copy the url and then…you get the idea.&lt;/p&gt;
+&lt;p&gt;
+What I wanted was to run a keybind on an elfeed entry that links to YouTube and to automatically spawn a process that plays it in mpv.  That&amp;#39;s what &lt;code&gt;(bard/play-elfeed-video)&lt;/code&gt; does.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;bard/play-elfeed-video&lt;/span&gt; ()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Play the URL of the entry at point in mpv if it&amp;#39;s a YouTube video.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;interactive&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;let&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-selected&lt;/span&gt; &lt;span style=&#34;color:#f78fe7&#34;&gt;:single&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        (&lt;span style=&#34;color:#f78fe7&#34;&gt;let&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-entry-link&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#f78fe7&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f78fe7&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;string-match-p&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;https?://\\(www\\.\\)?youtube\\.com\\|youtu\\.be&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              (&lt;span style=&#34;color:#f78fe7&#34;&gt;progn&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                (&lt;span style=&#34;color:#00d3d0&#34;&gt;async-shell-command&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;format&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;mpv &amp;#39;%s&amp;#39;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-untag-all-unread&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;The URL is not a YouTube link: %s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;No entry selected in Elfeed.&amp;#34;&lt;/span&gt;))))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+But then I thought, what if I want to use my good friend EMMS? I sometimes want to make a backlog and save it to a playlist or have them play automatically in succession. That&amp;#39;s when I made this function:&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;bard/add-video-emms-queue&lt;/span&gt; ()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Play the URL of the entry at point in mpv if it&amp;#39;s a YouTube video. Add it to EMMS queue.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;interactive&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;let&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-selected&lt;/span&gt; &lt;span style=&#34;color:#f78fe7&#34;&gt;:single&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#f78fe7&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#f78fe7&#34;&gt;let&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-entry-link&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            (&lt;span style=&#34;color:#f78fe7&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f78fe7&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;string-match-p&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;https?://\\(www\\.\\)?youtube\\.com\\|youtu\\.be&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                (&lt;span style=&#34;color:#f78fe7&#34;&gt;let*&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-name&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Watch Later&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                       (&lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-buffer&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;get-buffer&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;format&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34; *%s*&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-name&lt;/span&gt;))))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#f78fe7&#34;&gt;unless&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-buffer&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    (&lt;span style=&#34;color:#f78fe7&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-buffer&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;emms-playlist-new&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;format&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34; *%s*&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-name&lt;/span&gt;))))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#00d3d0&#34;&gt;emms-playlist-set-playlist-buffer&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-buffer&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#00d3d0&#34;&gt;emms-add-url&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-untag-all-unread&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Added YouTube video to EMMS playlist: %s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;The URL is not a YouTube link: %s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;No entry selected in Elfeed.&amp;#34;&lt;/span&gt;))))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Demonstration
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;First I open Elfeed to a video that I want to view, then I run &lt;code&gt;bard/add-video-emms-queue&lt;/code&gt; for each entry I want to add to my queue (bound to &lt;code&gt;C-c C-e&lt;/code&gt;). After that I open EMMS (bound to &lt;code&gt;&amp;lt;f8&amp;gt;&lt;/code&gt;). Then I click enter on the video and hooray it&amp;#39;s playing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-8&#34;&gt;
+References and Documentation
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/BardofSprites/.emacs.d/blob/master/bard-elisp/bard-web.el&#34;&gt;My Emacs Lisp Functions For Sending Elfeed Videos to EMMS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/skeeto/elfeed&#34;&gt;https://github.com/skeeto/elfeed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/remyhonig/elfeed-org&#34;&gt;https://github.com/remyhonig/elfeed-org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yt-dlp/yt-dlp&#34;&gt;https://github.com/yt-dlp/yt-dlp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Top 5 Tempel.el Snippets For Emacs</title>
-		<link>http://localhost:1313/coding/top-snippets/</link>
+		<link>http://localhost:1313/technology/top-snippets/</link>
 		<pubDate>Sat, 01 Feb 2025 17:00:21 -0500</pubDate>
 		
-		<guid>http://localhost:1313/coding/top-snippets/</guid>
+		<guid>http://localhost:1313/technology/top-snippets/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -166,10 +306,10 @@ Yasnippet
 	
 	<item>
 		<title>Boox Notes, Linux and Emacs</title>
-		<link>http://localhost:1313/general/boox-and-emacs/</link>
+		<link>http://localhost:1313/technology/boox-and-emacs/</link>
 		<pubDate>Mon, 27 Jan 2025 18:36:33 -0500</pubDate>
 		
-		<guid>http://localhost:1313/general/boox-and-emacs/</guid>
+		<guid>http://localhost:1313/technology/boox-and-emacs/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -272,10 +412,10 @@ Examples
 	
 	<item>
 		<title>My EmacsConf 2024 Presentation</title>
-		<link>http://localhost:1313/coding/emacsconf-2024/</link>
+		<link>http://localhost:1313/technology/emacsconf-2024/</link>
 		<pubDate>Sun, 08 Dec 2024 17:37:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/coding/emacsconf-2024/</guid>
+		<guid>http://localhost:1313/technology/emacsconf-2024/</guid>
 		<description>
 &lt;p&gt;
 TLDR: I had gave a talk for EmacsConf 2024 about student workflows.&lt;/p&gt;
@@ -323,13 +463,13 @@ How I made it
 	
 	<item>
 		<title>Common Git Commands on the Command Line</title>
-		<link>http://localhost:1313/coding/git_cli/</link>
+		<link>http://localhost:1313/technology/git_cli/</link>
 		<pubDate>Thu, 24 Oct 2024 19:04:47 -0400</pubDate>
 		
-		<guid>http://localhost:1313/coding/git_cli/</guid>
+		<guid>http://localhost:1313/technology/git_cli/</guid>
 		<description>
 &lt;p&gt;
-Hopefull you have read &lt;a href=&#34;http://localhost:1313/coding/git&#34;&gt;my previous article&lt;/a&gt; on the basics of git. This article will talk about how to use git on the command line. Hopefully this is not too scary, please email me if you have any questions.&lt;/p&gt;
+Hopefull you have read &lt;a href=&#34;http://localhost:1313/technology/git&#34;&gt;my previous article&lt;/a&gt; on the basics of git. This article will talk about how to use git on the command line. Hopefully this is not too scary, please email me if you have any questions.&lt;/p&gt;
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
 Commits
@@ -444,10 +584,10 @@ In summary here are the benefits:&lt;/p&gt;
 	
 	<item>
 		<title>Learning to use Git Version Control</title>
-		<link>http://localhost:1313/coding/git/</link>
+		<link>http://localhost:1313/technology/git/</link>
 		<pubDate>Thu, 24 Oct 2024 11:42:24 -0400</pubDate>
 		
-		<guid>http://localhost:1313/coding/git/</guid>
+		<guid>http://localhost:1313/technology/git/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -657,10 +797,10 @@ Here are the notes for Center of Mass as of 2024-10-23 Wed 19:02.&lt;/p&gt;
 	
 	<item>
 		<title>EMMS: Emacs Multimedia System</title>
-		<link>http://localhost:1313/coding/emms/</link>
+		<link>http://localhost:1313/technology/emms/</link>
 		<pubDate>Sun, 04 Aug 2024 22:37:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/coding/emms/</guid>
+		<guid>http://localhost:1313/technology/emms/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -744,10 +884,10 @@ References and Documentation
 	
 	<item>
 		<title>My Emacs Workflow For Programming, Notetaking, and Much More</title>
-		<link>http://localhost:1313/coding/workflow/</link>
+		<link>http://localhost:1313/technology/workflow/</link>
 		<pubDate>Wed, 22 May 2024 16:09:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/coding/workflow/</guid>
+		<guid>http://localhost:1313/technology/workflow/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -755,6 +895,14 @@ Prefrace
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;I use Emacs everyday on all of my computers. It is my favorite program on my computer. I use it for school and personal use, and only on Linux. I have a separate configuration on my &lt;a href=&#34;https://github.com/BardofSprites/.emacs.d&#34;&gt;Emacs repository&lt;/a&gt; on the minimal branch that is lighter weight for my school computer.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;details class=&#34;warning&#34;&gt;
+  &lt;summary&gt;🚩 &lt;span style=&#34;text-decoration: underline;&#34;&gt;A warning about this article&lt;/span&gt; 🚩&lt;/summary&gt;
+  &lt;p&gt;
+Although this article explains a most of what I do in Emacs, I am always finding new ways to do different things. I don&amp;#39;t have just one color theme that I use (I try to stick to at least one per day). There are also many new things that I am learning when the need arises (e.g. how to use table calculations in org-mode). I can&amp;#39;t possible document all of them, but I will try to show cool things on &lt;a href=&#34;https://www.youtube.com/@bardmandev&#34;&gt;my YouTube channel&lt;/a&gt;.&lt;/p&gt;
+&lt;/details&gt;
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
@@ -782,66 +930,45 @@ Editing Extensions
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
-Refractoring Tools with wgrep and substitute
+Snippets with tempel
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;My workflow for large text operations was completely copied from &lt;a href=&#34;https://irreal.org/blog/?p=3638&#34;&gt;this irreal post&lt;/a&gt;. Basically the idea is this:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;Call grep/rgrep/consult-grep to get a list of every occurrence of the function name. If consult-grep, use embark to export to buffer.&lt;/li&gt;
-&lt;li&gt;Call wgrep so that you can edit the rgrep output and have the results reflected in the original files.&lt;/li&gt;
-&lt;li&gt;Call substitute or query-replace-regexp to change every instance of the function name at once.&lt;/li&gt;
-&lt;li&gt;Quit wgrep, writing the changes back to the files.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Snippets are a really helpful way of reducing time spent retyping the same things over and over again. I use snippets for common phrases and elisp functions that I type often.&lt;/p&gt;
+&lt;p&gt;
+I wrote an article about my favorite snippets &lt;a href=&#34;http://localhost:1313/technology/top-snippets&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-5&#34;&gt;
 &lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
-Snippets with tempel
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;Snippets are a really helpful way of reducing time spent retyping the same things over and over again. I use snippets for common phrases and elisp functions that I type often.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-6&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
 File Management with dired
 &lt;/h3&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-7&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
-Window Management
-&lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-8&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
 Programming
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-9&#34;&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
 Languages
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-4&#34;&gt;
-&lt;h4 id=&#34;headline-10&#34;&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-8&#34;&gt;
 Major Modes
 &lt;/h4&gt;
-&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;p&gt;Emacs comes with a lot of major modes, but not for languages like Haskell, Clojure, and Ada. I sometimes program with these, so I need to have them installed for auto completion and auto indentation.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-4&#34;&gt;
-&lt;h4 id=&#34;headline-11&#34;&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-9&#34;&gt;
 Repls
 &lt;/h4&gt;
-&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;p&gt;Since I program in several lisp languages, I use repl-driven development. I use Cider, Sly, Geiser for my language repls.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Cider - Clojure&lt;/li&gt;
@@ -853,110 +980,91 @@ Repls
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-12&#34;&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-10&#34;&gt;
 Language Server (LSP)
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;Eglot just works, and it&amp;#39;s built into Emacs. I mainly use it with clangd for C++. I don&amp;#39;t really need it for other langs.&lt;/p&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Eglot just works, and it&amp;#39;s built into Emacs. I mainly use it with clangd for C++. I don&amp;#39;t really need it for other languages.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-13&#34;&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-11&#34;&gt;
 Completion
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;Completion in Emacs has always been a struggle for me. I only recently figured it out. At first I was like, I don&amp;#39;t need it. Then I realized I wanted it and then I couldn&amp;#39;t set it up. Then I gave up and said, &amp;#34;well I never needed you anyway&amp;#34;. Finally, I figured it out and won&amp;#39;t touch it for fear of it breaking.&lt;/p&gt;
-&lt;p&gt;
-I essentially use the same setup as Protesilaos that he describes in &lt;a href=&#34;https://protesilaos.com/emacs/dotemacs#h:15edf2c3-4419-4101-928a-6e224958a741&#34;&gt;this part of his configuration&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-14&#34;&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-12&#34;&gt;
 &lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
 Git
 &lt;/h3&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-15&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
-Writing
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-13&#34;&gt;
+Note taking, Time Management, and Scheduling
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I presented at EmacsConf 2024 to talk about my student workflow for Emacs. You can view article about my presentation &lt;a href=&#34;http://localhost:1313/technology/emacsconf-2024&#34;&gt;here&lt;/a&gt;. I show exactly how I use Emacs + Org mode as a student using demos and explanations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-14&#34;&gt;
+Media
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-14&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-15&#34;&gt;
+Multimedia with EMMS
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have written an article about how I use/setup EMMS &lt;a href=&#34;http://localhost:1313/technology/emms&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-16&#34;&gt;
-org-mode
+RSS Feeds with elfeed
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have written an article about how I use/setup Elfeed &lt;a href=&#34;http://localhost:1313/technology/elfeed&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-17&#34;&gt;
-denote
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-18&#34;&gt;
-Editing extensions
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-19&#34;&gt;
-Time Management and Scheduling
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-19&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;I presented at EmacsConf 2024 to talk about my student workflow for Emacs. You can view my presentation &lt;a href=&#34;https://emacsconf.org/2024/talks/students/&#34;&gt;here&lt;/a&gt;. I show exactly how I use Emacs + Org mode as a student using demos and explanations.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-20&#34;&gt;
-Media
-&lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-20&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-21&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-21&#34;&gt;
-Multimedia with EMMS
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-21&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;I have written an article about how I use/setup EMMS &lt;a href=&#34;http://localhost:1313/coding/emms&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-22&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-22&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
-RSS Feeds with elfeed
-&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-23&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-23&#34;&gt;
 IRC
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-23&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-17&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;Irc is pretty simple chat protocol. I don&amp;#39;t use it very often, but it is important to at least know how to use it for open source project discussion.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-24&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-24&#34;&gt;
-&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
-&amp;#34;Frivoulous&amp;#34; Items
+&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-18&#34;&gt;
+Aesthetics
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-24&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-25&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-25&#34;&gt;
+&lt;div id=&#34;outline-text-headline-18&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-19&#34;&gt;
 Modus and Ef Themes
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-25&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;As I stated in my &lt;a href=&#34;http://localhost:1313/enjoy/programs&#34;&gt;opinionated list of programs&lt;/a&gt;, I like to &lt;/p&gt;
 &lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-20&#34;&gt;
+Gruber Darker
+&lt;/h3&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-26&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-26&#34;&gt;
+&lt;div id=&#34;outline-container-headline-21&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-21&#34;&gt;
 Fontaine
 &lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-21&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Fontaine is a really simple package for font templates. You can see them in my emacs config.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -965,10 +1073,10 @@ Fontaine
 	
 	<item>
 		<title>Programs I Use</title>
-		<link>http://localhost:1313/coding/programs/</link>
+		<link>http://localhost:1313/technology/programs/</link>
 		<pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/coding/programs/</guid>
+		<guid>http://localhost:1313/technology/programs/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -1091,7 +1199,7 @@ Why Do I Have Two Browsers?
 Text Editor: GNU Emacs
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;This has been text editor of choice since I found DOOM emacs in 2022. I really like the extensible nature of Emacs lisp and the packages that are avaiable. If you want to here more about my Emacs workflow, click &lt;a href=&#34;http://localhost:1313/coding/workflow&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This has been text editor of choice since I found DOOM emacs in 2022. I really like the extensible nature of Emacs lisp and the packages that are avaiable. If you want to here more about my Emacs workflow, click &lt;a href=&#34;http://localhost:1313/technology/workflow&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
@@ -1190,10 +1298,10 @@ Image Viewer - nsxiv
 	
 	<item>
 		<title>Currying</title>
-		<link>http://localhost:1313/coding/currying/</link>
+		<link>http://localhost:1313/technology/currying/</link>
 		<pubDate>Sat, 28 Oct 2023 21:20:00 -0400</pubDate>
 		
-		<guid>http://localhost:1313/coding/currying/</guid>
+		<guid>http://localhost:1313/technology/currying/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -1285,6 +1393,51 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+2025 Reading Backlog
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Since the beginning of the year I have been trying to get into the habit of reading a bit everyday. These are the books that I will begin/currently am/completed reading in 2025. I have this here for anyone with enough time to meander around my website.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+In Progress
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Pachinko - Min Jin Lee&lt;/li&gt;
+&lt;li&gt;Christ the Eternal Tao - Hieromonk Damascene&lt;/li&gt;
+&lt;li&gt;Братья Карамазовы - Фёдор Достоевский&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Finished
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Kokoro - Natsume Soseki (&lt;code class=&#34;verbatim&#34;&gt;2025-02-11 Tue&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Planned to Read
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Sanshiro - Natsume Soseki&lt;/li&gt;
+&lt;li&gt;Kusamakura - Natsume Soseki&lt;/li&gt;
+&lt;li&gt;Идиот - Фёдор Достоевский&lt;/li&gt;
+&lt;li&gt;Преступление и Наказание - Фёдор Достоевский&lt;/li&gt;
+&lt;li&gt;2666 - Roberto Picador&lt;/li&gt;
+&lt;li&gt;Dune Messiah - Frank Herbert&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
 	</item>
 	
@@ -1307,7 +1460,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2025-02-01 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/top-snippets/&#34;&gt;Top 5 Tempel.el Snippets For Emacs&lt;/a&gt;
+        &lt;span&gt;2025-02-11 Tuesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/elfeed/&#34;&gt;Elfeed: Absorbing media with Emacs&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1315,7 +1468,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2025-01-27 Monday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/general/boox-and-emacs/&#34;&gt;Boox Notes, Linux and Emacs&lt;/a&gt;
+        &lt;span&gt;2025-02-01 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/top-snippets/&#34;&gt;Top 5 Tempel.el Snippets For Emacs&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1323,7 +1476,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-12-08 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/emacsconf-2024/&#34;&gt;My EmacsConf 2024 Presentation&lt;/a&gt;
+        &lt;span&gt;2025-01-27 Monday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/boox-and-emacs/&#34;&gt;Boox Notes, Linux and Emacs&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1331,7 +1484,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/git_cli/&#34;&gt;Common Git Commands on the Command Line&lt;/a&gt;
+        &lt;span&gt;2024-12-08 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/emacsconf-2024/&#34;&gt;My EmacsConf 2024 Presentation&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1339,7 +1492,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/git/&#34;&gt;Learning to use Git Version Control&lt;/a&gt;
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/git_cli/&#34;&gt;Common Git Commands on the Command Line&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1347,7 +1500,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-08-04 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/emms/&#34;&gt;EMMS: Emacs Multimedia System&lt;/a&gt;
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/git/&#34;&gt;Learning to use Git Version Control&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1355,7 +1508,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-05-22 Wednesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/workflow/&#34;&gt;My Emacs Workflow For Programming, Notetaking, and Much More&lt;/a&gt;
+        &lt;span&gt;2024-08-04 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/emms/&#34;&gt;EMMS: Emacs Multimedia System&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1363,7 +1516,15 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2023-11-23 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/programs/&#34;&gt;Programs I Use&lt;/a&gt;
+        &lt;span&gt;2024-05-22 Wednesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/workflow/&#34;&gt;My Emacs Workflow For Programming, Notetaking, and Much More&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2023-11-23 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/programs/&#34;&gt;Programs I Use&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1411,7 +1572,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;note-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2023-10-28 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/currying/&#34;&gt;Currying&lt;/a&gt;
+        &lt;span&gt;2023-10-28 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/currying/&#34;&gt;Currying&lt;/a&gt;
       &lt;/article&gt;
     &lt;/li&gt;
     
@@ -1454,19 +1615,43 @@ Social Media
 Other messaging
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+XMPP
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;bardman@07f.de&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;Matrix:&lt;/strong&gt; @bardman:matrix.org&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;IRC:&lt;/strong&gt; bardman@irc.libera.chat&lt;/p&gt;
-&lt;p&gt;
-matrix or email is probably more reliable way to reach me, i don&amp;#39;t check irc often.&lt;/p&gt;
+What is this?&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-4&#34;&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+IRC:
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;bardman@irc.libera.chat&lt;/p&gt;
+&lt;p&gt;
+XMPP is probably the best way to reach me, I don&amp;#39;t have an IRC client on my phone.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Matrix:
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;&lt;del&gt;@bardman:matrix.org&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t like matrix anymore, my account will stay but it is unlikely that I will answer&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-7&#34;&gt;
 YouTube
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@bardmandev&#34;&gt;https://www.youtube.com/@bardmandev&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;

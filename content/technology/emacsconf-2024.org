@@ -1,0 +1,21 @@
+#+TITLE: My EmacsConf 2024 Presentation
+#+DATE: 2024-12-08T17:37:00+00:00
+#+type: publication
+#+tags: [Technology, Emacs]
+
+TLDR: I had gave a talk for EmacsConf 2024 about student workflows.
+
+{{< youtube ofUQMq8ZK3U >}}
+ 
+* Links
++ [[https://emacsconf.org/2024/talks/students/][Talk on EmacsConf.org]]
++ [[Https://www.youtube.com/watch?v=7WTIKv5g6mw][Official EmacsConf video]]
++ [[https://www.youtube.com/watch?v=1enIJIW2P_w][Official EmacsConf Q/A]]
+
+* Motivation for talk
+There is a lot of great content out there for all kinds of Emacs things, but it's all jumbled around. If you don't know what you want or where to look it's scary. When I was learning Emacs, I could have been spared from too much tinkering (even though it's fun) if someone had pointed me in the right direction. This presentation was a point in the right direction to students who want to get started with Emacs. It's become increasingly often for me to see students and fans of [[https://www.youtube.com/@jvscholz][James Scholz]] (whom I also admire) to try using DOOM Emacs after seeing his videos. If people do try Emacs, I would be sad if they left because they couldn't find their workflow. After all, Emacs can have almost _any_ kind of workflow if you invest time into it.
+
+Although their great, they don't give a strong direction/recommendation on how to use Emacs. Starting out with Emacs can be very daunting because there are almost "too many" options. My talk presents the ones that I have settled with (for now). Hopefully students watch it and decide to try Emacs.
+
+* How I made it
+I created the slideshow using org-mode's export to beamer. Beamer is a LaTeX presentation software that has great formatting. I recorded a voice over of me going reading through the rough script/outline I had made from that file. Afterwards, I recorded my screen flipping through the slideshow and doing the demos, combining the video with the audio in Kdenlive.

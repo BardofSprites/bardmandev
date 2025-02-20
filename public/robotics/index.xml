@@ -11,10 +11,10 @@
 	
 	<item>
 		<title>Top 5 Tempel.el Snippets For Emacs</title>
-		<link>http://localhost:1313/coding/top-snippets/</link>
+		<link>http://localhost:1313/technology/top-snippets/</link>
 		<pubDate>Sat, 01 Feb 2025 17:00:21 -0500</pubDate>
 		
-		<guid>http://localhost:1313/coding/top-snippets/</guid>
+		<guid>http://localhost:1313/technology/top-snippets/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -271,10 +271,10 @@ Examples
 	
 	<item>
 		<title>My EmacsConf 2024 Presentation</title>
-		<link>http://localhost:1313/coding/emacsconf-2024/</link>
+		<link>http://localhost:1313/technology/emacsconf-2024/</link>
 		<pubDate>Sun, 08 Dec 2024 17:37:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/coding/emacsconf-2024/</guid>
+		<guid>http://localhost:1313/technology/emacsconf-2024/</guid>
 		<description>
 &lt;p&gt;
 TLDR: I had gave a talk for EmacsConf 2024 about student workflows.&lt;/p&gt;
@@ -322,10 +322,10 @@ How I made it
 	
 	<item>
 		<title>Common Git Commands on the Command Line</title>
-		<link>http://localhost:1313/coding/git_cli/</link>
+		<link>http://localhost:1313/technology/git_cli/</link>
 		<pubDate>Thu, 24 Oct 2024 19:04:47 -0400</pubDate>
 		
-		<guid>http://localhost:1313/coding/git_cli/</guid>
+		<guid>http://localhost:1313/technology/git_cli/</guid>
 		<description>
 &lt;p&gt;
 Hopefull you have read &lt;a href=&#34;http://localhost:1313/coding/git&#34;&gt;my previous article&lt;/a&gt; on the basics of git. This article will talk about how to use git on the command line. Hopefully this is not too scary, please email me if you have any questions.&lt;/p&gt;
@@ -443,10 +443,10 @@ In summary here are the benefits:&lt;/p&gt;
 	
 	<item>
 		<title>Learning to use Git Version Control</title>
-		<link>http://localhost:1313/coding/git/</link>
+		<link>http://localhost:1313/technology/git/</link>
 		<pubDate>Thu, 24 Oct 2024 11:42:24 -0400</pubDate>
 		
-		<guid>http://localhost:1313/coding/git/</guid>
+		<guid>http://localhost:1313/technology/git/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -656,10 +656,10 @@ Here are the notes for Center of Mass as of 2024-10-23 Wed 19:02.&lt;/p&gt;
 	
 	<item>
 		<title>EMMS: Emacs Multimedia System</title>
-		<link>http://localhost:1313/coding/emms/</link>
+		<link>http://localhost:1313/technology/emms/</link>
 		<pubDate>Sun, 04 Aug 2024 22:37:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/coding/emms/</guid>
+		<guid>http://localhost:1313/technology/emms/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -743,10 +743,10 @@ References and Documentation
 	
 	<item>
 		<title>My Emacs Workflow For Programming, Notetaking, and Much More</title>
-		<link>http://localhost:1313/coding/workflow/</link>
+		<link>http://localhost:1313/technology/workflow/</link>
 		<pubDate>Wed, 22 May 2024 16:09:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/coding/workflow/</guid>
+		<guid>http://localhost:1313/technology/workflow/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -964,10 +964,10 @@ Fontaine
 	
 	<item>
 		<title>Programs I Use</title>
-		<link>http://localhost:1313/coding/programs/</link>
+		<link>http://localhost:1313/technology/programs/</link>
 		<pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
 		
-		<guid>http://localhost:1313/coding/programs/</guid>
+		<guid>http://localhost:1313/technology/programs/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -1189,10 +1189,10 @@ Image Viewer - nsxiv
 	
 	<item>
 		<title>Currying</title>
-		<link>http://localhost:1313/coding/currying/</link>
+		<link>http://localhost:1313/technology/currying/</link>
 		<pubDate>Sat, 28 Oct 2023 21:20:00 -0400</pubDate>
 		
-		<guid>http://localhost:1313/coding/currying/</guid>
+		<guid>http://localhost:1313/technology/currying/</guid>
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
@@ -1306,7 +1306,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2025-02-01 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/top-snippets/&#34;&gt;Top 5 Tempel.el Snippets For Emacs&lt;/a&gt;
+        &lt;span&gt;2025-02-01 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/top-snippets/&#34;&gt;Top 5 Tempel.el Snippets For Emacs&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1322,7 +1322,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-12-08 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/emacsconf-2024/&#34;&gt;My EmacsConf 2024 Presentation&lt;/a&gt;
+        &lt;span&gt;2024-12-08 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/emacsconf-2024/&#34;&gt;My EmacsConf 2024 Presentation&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1330,7 +1330,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/git_cli/&#34;&gt;Common Git Commands on the Command Line&lt;/a&gt;
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/git_cli/&#34;&gt;Common Git Commands on the Command Line&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1338,7 +1338,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/git/&#34;&gt;Learning to use Git Version Control&lt;/a&gt;
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/git/&#34;&gt;Learning to use Git Version Control&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1346,7 +1346,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-08-04 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/emms/&#34;&gt;EMMS: Emacs Multimedia System&lt;/a&gt;
+        &lt;span&gt;2024-08-04 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/emms/&#34;&gt;EMMS: Emacs Multimedia System&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1354,7 +1354,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2024-05-22 Wednesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/workflow/&#34;&gt;My Emacs Workflow For Programming, Notetaking, and Much More&lt;/a&gt;
+        &lt;span&gt;2024-05-22 Wednesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/workflow/&#34;&gt;My Emacs Workflow For Programming, Notetaking, and Much More&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1362,7 +1362,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2023-11-23 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/programs/&#34;&gt;Programs I Use&lt;/a&gt;
+        &lt;span&gt;2023-11-23 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/programs/&#34;&gt;Programs I Use&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
@@ -1410,7 +1410,7 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
     &lt;li class=&#34;note-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2023-10-28 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/coding/currying/&#34;&gt;Currying&lt;/a&gt;
+        &lt;span&gt;2023-10-28 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/currying/&#34;&gt;Currying&lt;/a&gt;
       &lt;/article&gt;
     &lt;/li&gt;
     
@@ -1453,19 +1453,43 @@ Social Media
 Other messaging
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+XMPP
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;bardman@07f.de&lt;/p&gt;
 &lt;p&gt;
-&lt;strong&gt;Matrix:&lt;/strong&gt; @bardman:matrix.org&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;IRC:&lt;/strong&gt; bardman@irc.libera.chat&lt;/p&gt;
-&lt;p&gt;
-matrix or email is probably more reliable way to reach me, i don&amp;#39;t check irc often.&lt;/p&gt;
+What is this?&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-4&#34;&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+IRC:
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;bardman@irc.libera.chat&lt;/p&gt;
+&lt;p&gt;
+XMPP is probably the best way to reach me, I don&amp;#39;t have an IRC client on my phone.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Matrix:
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;&lt;del&gt;@bardman:matrix.org&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t like matrix anymore, my account will stay but it is unlikely that I will answer&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-7&#34;&gt;
 YouTube
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@bardmandev&#34;&gt;https://www.youtube.com/@bardmandev&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;

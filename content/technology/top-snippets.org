@@ -1,0 +1,100 @@
+#+title: Top 5 Tempel.el Snippets For Emacs
+#+date: 2025-02-01T17:00:21-0500
+#+type: publication
+#+tags: [Technology, Emacs]
+
+* Introduction
+[[https://github.com/minad/tempel][Tempel.el]] is a package written by Daniel Mendler, a developer of many projects (many of which are fantastic Emacs packages). It provides a way to define text snippets with lisp-like syntax. You can embed Emacs Lisp code into the snippets to obtain programmatically obtained efficiency.
+
+It's based off of the ancient tempo library from Emacs, but it's modernized and updated. I've never tried plain tempo, but it's one of Emacs's several ancient text-templating systems.
+
+** Setup
+The setup for tempel is very simple. Here is my configuration for the package:
+
+#+begin_src emacs-lisp
+  (use-package tempel
+    :ensure t
+    :demand t
+    ;; Require trigger prefix before template name when completing.
+    :bind (("M-i" . tempel-complete) ;; Alternative tempel-expand
+           ("M-S-i" . tempel-insert))
+    :init
+
+    ;; Setup completion at point
+    (defun tempel-setup-capf ()
+      ;; Add the Tempel Capf to `completion-at-point-functions'.
+      ;; `tempel-expand' only triggers on exact matches. Alternatively use
+      ;; `tempel-complete' if you want to see all matches, but then you
+      ;; should also configure `tempel-trigger-prefix', such that Tempel
+      ;; does not trigger too often when you don't expect it. NOTE: We add
+      ;; `tempel-expand' *before* the main programming mode Capf, such
+      ;; that it will be tried first.
+      (setq-local completion-at-point-functions
+                  (cons #'tempel-expand
+                        completion-at-point-functions)))
+
+    :hook
+    ((conf-mode . tempel-setup-capf)
+     (prog-mode . tempel-setup-capf)
+     (text-mode . tempel-setup-capf))
+    :config
+    (setq tempel-path "~/.emacs.d/tempel-snippets.el"))
+#+end_src
+
+Next, create a ~temple-snippets.el~ file in your ~.emacs.d~ directory and type away.
+
+** Defining a snippet
+In my ~tempel.snippets.el~ file, I have around 24 snippets. You can look at it on my [[https://github.com/BardofSprites/.emacs.d][emacs configuration]]. The structure of the file is like this:
+
+#+begin_src emacs-lisp
+desired-mode-for-snippet ;; (eg. fundamental, org, c++)
+(snippet-name "snippet body")
+#+end_src emacs-lisp
+
+* Top 5 Snippets
+
+** #1 - ~up~
+This is my most used snippet. I use it all the time for when I need to make a use-package declaration in my Emacs configuration.
+
+#+begin_src emacs-lisp
+(up "(use-package "p n> ":ensure t" n> (s configuration) q")")
+#+end_src
+
+** #2 - ~today~
+today evaluates the native Emacs function ~format-time-string~. This is a great example of how tempel can use existing functions in it's snippets.
+
+#+begin_src emacs-lisp
+(today (format-time-string "%Y-%m-%d"))
+#+end_src
+
+** #3 - ~begin~
+Begin starts a LaTeX begin macro for formatting anything. When you type begin, it moves you to the brackets and then you can fill out both ends of the begin at once with equation, center, aligned, etc.
+#+begin_src emacs-lisp
+  (begin "\\begin{" (s env) "}" r> n> "\\end{" (s env) "}")
+#+end_src
+
+** #4 - ~mode~
+Emacs has [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Specifying-File-Variables.html][a feature]] for adding local file variables with a prop line at the beginning of files. I use this to give a mode to files without an extension like scheme scripts I write.
+
+#+begin_src emacs-lisp
+(mode "-*- mode: " (s mode) " -*-")
+#+end_src
+
+** #5 - Programming-related snippets
+These are things I would type anyway while programming that are condensed. They could probably be converted into ~abbrev-mode~ expansions, but I just cooked these up quickly while I was working.
+
+#+begin_src emacs-lisp
+  sh-mode
+  (! & "#!/usr/bin/bash" n q)
+  perl-mode
+  (! & "#!/usr/bin/perl" n "use strict;" n "use warnings;" n n q)
+  c++-mode
+  (log "std::cout << \"" p "\" << std::endl;")
+#+end_src
+
+* Conclusion
+Snippets/templates are a really useful way to speed up your text-editing. If you're going to repeat typing something a bunch, you might as well make a snippet for it.
+
+** Yasnippet
+I used to use [[https://github.com/joaotavora/yasnippet][yasnippet]] (probably the most popular snippet package), but I realized it's not for me because I didn't like making a new file for every snippet. I was too lazy to figure out the syntax to make my own, so I switched to tempel. I could probably still use it, but I'll use what works.
+

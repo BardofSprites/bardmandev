@@ -1,0 +1,1663 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+	<title>bardman&#39;s website</title>
+	<link>http://localhost:1313/tags/technology-robotics/</link>
+	<description>Recent content in [Technology, Robotics] on bardman&#39;s website</description>
+	<generator>Hugo -- gohugo.io</generator>
+	<language>en-us</language>
+	<lastBuildDate>Thu, 24 Oct 2024 19:04:47 -0400</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/tags/technology-robotics/index.xml" rel="self" type="application/rss+xml" />
+	
+	
+	<item>
+		<title>Reading List</title>
+		<link>http://localhost:1313/readling-list/</link>
+		<pubDate>Tue, 18 Feb 2025 19:45:17 -0500</pubDate>
+		
+		<guid>http://localhost:1313/readling-list/</guid>
+		<description></description>
+	</item>
+	
+	<item>
+		<title>Elfeed: Absorbing media with Emacs</title>
+		<link>http://localhost:1313/technology/elfeed/</link>
+		<pubDate>Tue, 11 Feb 2025 15:19:09 -0500</pubDate>
+		
+		<guid>http://localhost:1313/technology/elfeed/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Description
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;From the GitHub README:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Elfeed is an extensible web feed reader for Emacs, supporting both Atom and RSS.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;My elfeed configuration that is browsing emacs articles&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/elfeed-feed.png&#34; title=&#34;elfeed is awesome 😉&#34; style=&#34;width:75%&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Installation/Setup
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Elfeed is available on &lt;a href=&#34;https://melpa.org&#34;&gt;melpa&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;use-package&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:ensure&lt;/span&gt; t
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#00d3d0&#34;&gt;global-set-key&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;kbd&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;C-c r&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#39;elfeed&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-filter&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;+unread&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  )&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+How I Like To Use It
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Elfeed-org
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I subscribe to too many feeds to keep them all in one emacs &lt;code&gt;setq&lt;/code&gt; option list. I would rather have them in a text file that can be read by &lt;code&gt;elfeed-org&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+YouTube Feed
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I try to not get stuck browsing YouTube for hours and using RSS is one of the methods that helps me limit my usage. Not many people know that each YouTube channel has it&amp;#39;s own RSS feed that anyone can subscribe to. The way that I am able to discover them is using a find RSS feed extension. The one that I prefer at the moment is &lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/&#34;&gt;FeedBro&lt;/a&gt; because it&amp;#39;s the one works. It sucks that it&amp;#39;s proprietary, but I don&amp;#39;t even use it that often (only for scraping the RSS feeds from websites like YouTube that don&amp;#39;t show them).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Watching YouTube with Elfeed + EMMS
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have already written an article about &lt;a href=&#34;http://localhost:1313/technology/emms&#34;&gt;GNU EMMS&lt;/a&gt;, the excellent Emacs media player. In addition to local files like video/audio I can stream videos with mpv (already bundled with &lt;code&gt;yt-dlp&lt;/code&gt; for that).&lt;/p&gt;
+&lt;p&gt;
+The big thing that I hated doing was copying the url from elfeed and then opening a terminal and then running mpv with the url and then finally getting to watch the video. But what if I wanted to watch another? Well then I would have to go back and open elfeed and copy the url and then…you get the idea.&lt;/p&gt;
+&lt;p&gt;
+What I wanted was to run a keybind on an elfeed entry that links to YouTube and to automatically spawn a process that plays it in mpv.  That&amp;#39;s what &lt;code&gt;(bard/play-elfeed-video)&lt;/code&gt; does.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;bard/play-elfeed-video&lt;/span&gt; ()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Play the URL of the entry at point in mpv if it&amp;#39;s a YouTube video.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;interactive&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;let&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-selected&lt;/span&gt; &lt;span style=&#34;color:#f78fe7&#34;&gt;:single&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        (&lt;span style=&#34;color:#f78fe7&#34;&gt;let&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-entry-link&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#f78fe7&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f78fe7&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;string-match-p&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;https?://\\(www\\.\\)?youtube\\.com\\|youtu\\.be&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              (&lt;span style=&#34;color:#f78fe7&#34;&gt;progn&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                (&lt;span style=&#34;color:#00d3d0&#34;&gt;async-shell-command&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;format&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;mpv &amp;#39;%s&amp;#39;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-untag-all-unread&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;The URL is not a YouTube link: %s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;No entry selected in Elfeed.&amp;#34;&lt;/span&gt;))))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+But then I thought, what if I want to use my good friend EMMS? I sometimes want to make a backlog and save it to a playlist or have them play automatically in succession. That&amp;#39;s when I made this function:&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;bard/add-video-emms-queue&lt;/span&gt; ()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Play the URL of the entry at point in mpv if it&amp;#39;s a YouTube video. Add it to EMMS queue.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;interactive&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;let&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-selected&lt;/span&gt; &lt;span style=&#34;color:#f78fe7&#34;&gt;:single&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#f78fe7&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#f78fe7&#34;&gt;let&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-entry-link&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;entry&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            (&lt;span style=&#34;color:#f78fe7&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f78fe7&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;string-match-p&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;https?://\\(www\\.\\)?youtube\\.com\\|youtu\\.be&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                (&lt;span style=&#34;color:#f78fe7&#34;&gt;let*&lt;/span&gt; ((&lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-name&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Watch Later&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                       (&lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-buffer&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;get-buffer&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;format&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34; *%s*&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-name&lt;/span&gt;))))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#f78fe7&#34;&gt;unless&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-buffer&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    (&lt;span style=&#34;color:#f78fe7&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-buffer&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;emms-playlist-new&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;format&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34; *%s*&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-name&lt;/span&gt;))))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#00d3d0&#34;&gt;emms-playlist-set-playlist-buffer&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;playlist-buffer&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#00d3d0&#34;&gt;emms-add-url&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#00d3d0&#34;&gt;elfeed-search-untag-all-unread&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Added YouTube video to EMMS playlist: %s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;The URL is not a YouTube link: %s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;url&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        (&lt;span style=&#34;color:#feacd0&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;No entry selected in Elfeed.&amp;#34;&lt;/span&gt;))))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Demonstration
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;First I open Elfeed to a video that I want to view, then I run &lt;code&gt;bard/add-video-emms-queue&lt;/code&gt; for each entry I want to add to my queue (bound to &lt;code&gt;C-c C-e&lt;/code&gt;). After that I open EMMS (bound to &lt;code&gt;&amp;lt;f8&amp;gt;&lt;/code&gt;). Then I click enter on the video and hooray it&amp;#39;s playing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-8&#34;&gt;
+References and Documentation
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/BardofSprites/.emacs.d/blob/master/bard-elisp/bard-web.el&#34;&gt;My Emacs Lisp Functions For Sending Elfeed Videos to EMMS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/skeeto/elfeed&#34;&gt;https://github.com/skeeto/elfeed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/remyhonig/elfeed-org&#34;&gt;https://github.com/remyhonig/elfeed-org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yt-dlp/yt-dlp&#34;&gt;https://github.com/yt-dlp/yt-dlp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Top 5 Tempel.el Snippets For Emacs</title>
+		<link>http://localhost:1313/technology/top-snippets/</link>
+		<pubDate>Sat, 01 Feb 2025 17:00:21 -0500</pubDate>
+		
+		<guid>http://localhost:1313/technology/top-snippets/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Introduction
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/minad/tempel&#34;&gt;Tempel.el&lt;/a&gt; is a package written by Daniel Mendler, a developer of many projects (many of which are fantastic Emacs packages). It provides a way to define text snippets with lisp-like syntax. You can embed Emacs Lisp code into the snippets to obtain programmatically obtained efficiency.&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s based off of the ancient tempo library from Emacs, but it&amp;#39;s modernized and updated. I&amp;#39;ve never tried plain tempo, but it&amp;#39;s one of Emacs&amp;#39;s several ancient text-templating systems.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+Setup
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;The setup for tempel is very simple. Here is my configuration for the package:&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#f78fe7&#34;&gt;use-package&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:ensure&lt;/span&gt; t
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:demand&lt;/span&gt; t
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; Require trigger prefix before template name when completing.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:bind&lt;/span&gt; ((&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;M-i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-complete&lt;/span&gt;) &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; Alternative tempel-expand&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;M-S-i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-insert&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:init&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; Setup completion at point&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;defun&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-setup-capf&lt;/span&gt; ()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; Add the Tempel Capf to `completion-at-point-functions&amp;#39;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; `tempel-expand&amp;#39; only triggers on exact matches. Alternatively use&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; `tempel-complete&amp;#39; if you want to see all matches, but then you&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; should also configure `tempel-trigger-prefix&amp;#39;, such that Tempel&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; does not trigger too often when you don&amp;#39;t expect it. NOTE: We add&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; `tempel-expand&amp;#39; *before* the main programming mode Capf, such&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; that it will be tried first.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      (&lt;span style=&#34;color:#f78fe7&#34;&gt;setq-local&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;completion-at-point-functions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  (&lt;span style=&#34;color:#feacd0&#34;&gt;cons&lt;/span&gt; &lt;span style=&#34;color:#feacd0&#34;&gt;#&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-expand&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                        &lt;span style=&#34;color:#00d3d0&#34;&gt;completion-at-point-functions&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:hook&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ((&lt;span style=&#34;color:#00d3d0&#34;&gt;conf-mode&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-setup-capf&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#00d3d0&#34;&gt;prog-mode&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-setup-capf&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     (&lt;span style=&#34;color:#00d3d0&#34;&gt;text-mode&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-setup-capf&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f78fe7&#34;&gt;:config&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#f78fe7&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;tempel-path&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;~/.emacs.d/tempel-snippets.el&amp;#34;&lt;/span&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Next, create a &lt;code&gt;temple-snippets.el&lt;/code&gt; file in your &lt;code&gt;.emacs.d&lt;/code&gt; directory and type away.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Defining a snippet
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;In my &lt;code&gt;tempel.snippets.el&lt;/code&gt; file, I have around 24 snippets. You can look at it on my &lt;a href=&#34;https://github.com/BardofSprites/.emacs.d&#34;&gt;emacs configuration&lt;/a&gt;. The structure of the file is like this:&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;desired-mode-for-snippet&lt;/span&gt; &lt;span style=&#34;color:#a8a8a8&#34;&gt;;; (eg. fundamental, org, c++)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#00d3d0&#34;&gt;snippet-name&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;snippet body&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+Top 5 Snippets
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+#1 - &lt;code&gt;up&lt;/code&gt;
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;This is my most used snippet. I use it all the time for when I need to make a use-package declaration in my Emacs configuration.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#00d3d0&#34;&gt;up&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;(use-package &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;:ensure t&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&amp;gt;&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;configuration&lt;/span&gt;) &lt;span style=&#34;color:#00d3d0&#34;&gt;q&lt;/span&gt;&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;)&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+#2 - &lt;code&gt;today&lt;/code&gt;
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;today evaluates the native Emacs function &lt;code&gt;format-time-string&lt;/code&gt;. This is a great example of how tempel can use existing functions in it&amp;#39;s snippets.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#00d3d0&#34;&gt;today&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;%Y-%m-%d&amp;#34;&lt;/span&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+#3 - &lt;code&gt;begin&lt;/code&gt;
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Begin starts a LaTeX begin macro for formatting anything. When you type begin, it moves you to the brackets and then you can fill out both ends of the begin at once with equation, center, aligned, etc.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#00d3d0&#34;&gt;begin&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;\\begin{&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;env&lt;/span&gt;) &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;r&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;\\end{&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;env&lt;/span&gt;) &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;}&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
+#4 - &lt;code&gt;mode&lt;/code&gt;
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Emacs has &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/emacs/Specifying-File-Variables.html&#34;&gt;a feature&lt;/a&gt; for adding local file variables with a prop line at the beginning of files. I use this to give a mode to files without an extension like scheme scripts I write.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#00d3d0&#34;&gt;mode&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;-*- mode: &amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#00d3d0&#34;&gt;s&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;mode&lt;/span&gt;) &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34; -*-&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-9&#34;&gt;
+#5 - Programming-related snippets
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;These are things I would type anyway while programming that are condensed. They could probably be converted into &lt;code&gt;abbrev-mode&lt;/code&gt; expansions, but I just cooked these up quickly while I was working.&lt;/p&gt;
+&lt;div class=&#34;src src-emacs-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00d3d0&#34;&gt;sh-mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#00d3d0&#34;&gt;!&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;#!/usr/bin/bash&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;q&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00d3d0&#34;&gt;perl-mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#00d3d0&#34;&gt;!&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;#!/usr/bin/perl&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;use strict;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;use warnings;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;n&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;q&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00d3d0&#34;&gt;c++-mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#feacd0&#34;&gt;log&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;std::cout &amp;lt;&amp;lt; \&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;\&amp;#34; &amp;lt;&amp;lt; std::endl;&amp;#34;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-10&#34;&gt;
+Conclusion
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Snippets/templates are a really useful way to speed up your text-editing. If you&amp;#39;re going to repeat typing something a bunch, you might as well make a snippet for it.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-11&#34;&gt;
+Yasnippet
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I used to use &lt;a href=&#34;https://github.com/joaotavora/yasnippet&#34;&gt;yasnippet&lt;/a&gt; (probably the most popular snippet package), but I realized it&amp;#39;s not for me because I didn&amp;#39;t like making a new file for every snippet. I was too lazy to figure out the syntax to make my own, so I switched to tempel. I could probably still use it, but I&amp;#39;ll use what works.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Boox Notes, Linux and Emacs</title>
+		<link>http://localhost:1313/technology/boox-and-emacs/</link>
+		<pubDate>Mon, 27 Jan 2025 18:36:33 -0500</pubDate>
+		
+		<guid>http://localhost:1313/technology/boox-and-emacs/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Introduction
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I recently got a BOOX Go 10.3 e-ink tablet this past Christmas. I use this device to take notes that require handwriting (Math/Physics), and annotating/reading a lot of notes/books/documents.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/boox-3.jpg&#34; title=&#34;BOOX tablet with orange case&#34; style=&#34;width:50%&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;details class=&#34;warning&#34;&gt;
+  &lt;summary&gt;🚩 &lt;span style=&#34;text-decoration: underline;&#34;&gt;A note about the BOOX company&lt;/span&gt; 🚩&lt;/summary&gt;
+  &lt;p&gt;
+BOOX is a Chinese company that specializes in E-ink tablets that run Android. They have continued to violate the GPL license of Android by not releasing source code to their custom build. I don&amp;#39;t like that they violate GPL, but sacrificing privacy sometimes necessary for convenience. As far as I know, there isn&amp;#39;t a free and open source e-ink tablet with all the same features.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://appsec.space/posts/onyx-boox-go-10.3/&#34;&gt;Here is a guide on how to de-spook your tablet&lt;/a&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Benefits of Android OS
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Because this tablet runs android (which is a heavily modified Linux) we can do a lot of &amp;#34;Linux-y&amp;#34; things with it. I can run &lt;code class=&#34;verbatim&#34;&gt;syncthing&lt;/code&gt;, GNU Emacs, and &lt;code class=&#34;verbatim&#34;&gt;scrcpy&lt;/code&gt; on it. I have sideloaded fdroid which is my app store. I don&amp;#39;t log in to google or the BOOX sync service. I created zero accounts for this device. If enough interest is gathered, I can release an article about my setup.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;Running GNU Emacs 30 from Fdroid&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/boox-4.jpg&#34; title=&#34;BOOX tablet with orange case&#34; style=&#34;width:50%&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Default notes app export
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;The default notes app has the ability to export notes to pdf after saving. I use syncthing to access these new documents. It was super easy to set up&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+Organizing with epic Emacs tools
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;A big dilemma with handwriting notes is that they are hard to search. I devised a plan to organize these notes using &lt;a href=&#34;https://protesilaos.com/emacs/denote&#34;&gt;denote&lt;/a&gt; (org-mode), &lt;a href=&#34;https://github.com/vedang/pdf-tools&#34;&gt;pdftools&lt;/a&gt;, and &lt;a href=&#34;https://github.com/fuxialexander/org-pdftools&#34;&gt;org-pdftools&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Methodology
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+I start with one main file, I call it pdf-notes. This will be the main hub. Next I created other files for certain subjects. These have the keywords: pdfs and meta. They are &lt;em&gt;&amp;#34;notes about notes&amp;#34;&lt;/em&gt; thus &lt;em&gt;&amp;#34;meta&amp;#34;&lt;/em&gt; notes about pdfs.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;A dired buffer with all my pdf meta-notes&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/pdf-notes.png&#34; title=&#34;dired buffer in Emacs &#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The main note contains a heading for table of contents, and a heading for the actual content of the files. Both are generated with &lt;code&gt;denote-org-extras-dblock-insert-links&lt;/code&gt; and &lt;code&gt;denote-org-extras-dblock-insert-files&lt;/code&gt;. All of the blue underlines are org links to pdfs (from org-pdftools) that are in a syncthing folder on my pc. I can open up the link and start reading my notes again. I also use &lt;code&gt;consult-outline&lt;/code&gt; and &lt;code&gt;consult-line&lt;/code&gt; to fuzzy search around these files when needed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Examples
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+
+&lt;details class=&#34;gallery&#34;&gt;
+  &lt;summary&gt;open to see images&lt;/summary&gt;
+  
+
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;Main meta note&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/pdf-notes-landing.png&#34; title=&#34;landing page for all pdf notes&#34; style=&#34;max-height:550px&#34;&gt;&lt;/figure&gt;
+
+
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;Specific subject note&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/pdf-notes-subject.png&#34; style=&#34;max-height:550px&#34;&gt;&lt;/figure&gt;
+
+
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;side by side&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/pdf-notes-example.png&#34; style=&#34;max-height:550px&#34;&gt;&lt;/figure&gt;
+
+
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;same note but irl&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/boox-2.jpg&#34; style=&#34;max-height:550px&#34;&gt;&lt;/figure&gt;
+
+
+&lt;/details&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>My EmacsConf 2024 Presentation</title>
+		<link>http://localhost:1313/technology/emacsconf-2024/</link>
+		<pubDate>Sun, 08 Dec 2024 17:37:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/technology/emacsconf-2024/</guid>
+		<description>
+&lt;p&gt;
+TLDR: I had gave a talk for EmacsConf 2024 about student workflows.&lt;/p&gt;
+&lt;p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ofUQMq8ZK3U?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Links
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://emacsconf.org/2024/talks/students/&#34;&gt;Talk on EmacsConf.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Https://www.youtube.com/watch?v=7WTIKv5g6mw&#34;&gt;Official EmacsConf video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1enIJIW2P_w&#34;&gt;Official EmacsConf Q/A&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Motivation for talk
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;There is a lot of great content out there for all kinds of Emacs things, but it&amp;#39;s all jumbled around. If you don&amp;#39;t know what you want or where to look it&amp;#39;s scary. When I was learning Emacs, I could have been spared from too much tinkering (even though it&amp;#39;s fun) if someone had pointed me in the right direction. This presentation was a point in the right direction to students who want to get started with Emacs. It&amp;#39;s become increasingly often for me to see students and fans of &lt;a href=&#34;https://www.youtube.com/@jvscholz&#34;&gt;James Scholz&lt;/a&gt; (whom I also admire) to try using DOOM Emacs after seeing his videos. If people do try Emacs, I would be sad if they left because they couldn&amp;#39;t find their workflow. After all, Emacs can have almost &lt;span style=&#34;text-decoration: underline;&#34;&gt;any&lt;/span&gt; kind of workflow if you invest time into it.&lt;/p&gt;
+&lt;p&gt;
+Although their great, they don&amp;#39;t give a strong direction/recommendation on how to use Emacs. Starting out with Emacs can be very daunting because there are almost &amp;#34;too many&amp;#34; options. My talk presents the ones that I have settled with (for now). Hopefully students watch it and decide to try Emacs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+How I made it
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I created the slideshow using org-mode&amp;#39;s export to beamer. Beamer is a LaTeX presentation software that has great formatting. I recorded a voice over of me going reading through the rough script/outline I had made from that file. Afterwards, I recorded my screen flipping through the slideshow and doing the demos, combining the video with the audio in Kdenlive.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Common Git Commands on the Command Line</title>
+		<link>http://localhost:1313/technology/git_cli/</link>
+		<pubDate>Thu, 24 Oct 2024 19:04:47 -0400</pubDate>
+		
+		<guid>http://localhost:1313/technology/git_cli/</guid>
+		<description>
+&lt;p&gt;
+Hopefull you have read &lt;a href=&#34;http://localhost:1313/technology/git&#34;&gt;my previous article&lt;/a&gt; on the basics of git. This article will talk about how to use git on the command line. Hopefully this is not too scary, please email me if you have any questions.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Commits
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Let&amp;#39;s say you&amp;#39;re working on the basic pushbot code. You want to add forward/backward movement first, then turning.&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# first, write your initial drive code&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# after testing that basic driving works:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git add src/drive.cpp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git commit -m &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Add basic forward/backward movement&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# later, you add turning functionality&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# after testing that turning works:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git add src/drive.cpp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git commit -m &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Add left/right turning functions&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Think of commits like save points. Each commit represents a working state of your code. If your turning code breaks something, you can always go back to the previous commit where just driving worked.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Pulling
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Before starting any work, you have to sync your local (on your computer) repo with the remote repo (GitHub). To do that, you have to run git pull. Before starting your work for the day always run:&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git checkout master
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git pull origin master&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+After running this you will have a up-to-date version of the master branch and you are ready to work.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Common Mistakes
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;If you forget to pull and make changes run:&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git pull origin master&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+You might see a bunch or warnings or messages about merge conflicts! This happens when git is trying to sync the files from the repo and finds them to have clashing changes before they &lt;span style=&#34;text-decoration: underline;&#34;&gt;merge&lt;/span&gt; together. To fix them:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the files with conflicts with your editor&lt;/li&gt;
+&lt;li&gt;Look for &lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD&lt;/code&gt; markers&lt;/li&gt;
+&lt;li&gt;Decide which code to keep&lt;/li&gt;
+&lt;li&gt;Save and commit the fixed files&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;The nuclear option:&lt;/strong&gt;
+You can delete your changes by resetting the branch. This is outside the scope of this basic guide, but you can shoot me an email or ask me in person.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Stashing
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Pushing
+&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
+Branches
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Here&amp;#39;s a practical example of branches:&lt;/p&gt;
+&lt;p&gt;
+Let&amp;#39;s say you had a main/master branch that has all of the features for a basic pushbot (driving, turning). Later, your team decides that they want to experiment with a claw design. This would be a good time to make a new branch.&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# start from the master/main branch&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git checkout master
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# create your new branch&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git checkout -b feature/clawbot&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Now you can safely make commits without affecting the master branch. If you mess up the clawbot branch, you can delete it without breaking the stable part of your code that you know already works.&lt;/p&gt;
+&lt;p&gt;
+In summary here are the benefits:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Safety&lt;/li&gt;
+&lt;li&gt;Easy to abandon/delete&lt;/li&gt;
+&lt;li&gt;You can work in parallel on a feature while a teammate is doing something else&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here&amp;#39;s a final example of a branch workflow:&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# create branch&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git checkout -b feature/clawbot
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# make changes, test changes, add and commit them&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git add src/clawbot.cpp
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git commit -m &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;Add clawbot feature&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# push feature branch to share with others on remote repo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git push origin feature/clawbot
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a8a8a8&#34;&gt;# once you&amp;#39;re done, you can do a pull request to merge it into master&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git checkout master
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  git merge feature/clawbot&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Learning to use Git Version Control</title>
+		<link>http://localhost:1313/technology/git/</link>
+		<pubDate>Thu, 24 Oct 2024 11:42:24 -0400</pubDate>
+		
+		<guid>http://localhost:1313/technology/git/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Basics of Git
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+What is Git?
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Git is used to track different versions of files. It is useful for group projects, ensuring that everyone can work on it without overwriting each other. &lt;strong&gt;Think of it as the tracker of the multiverse versions of your files; it can manipulate the timelines&lt;/strong&gt;. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Why Learn it?
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;It makes it a lot easier to keep track of changes between people.&lt;/li&gt;
+&lt;li&gt;Easy to back up&lt;/li&gt;
+&lt;li&gt;You can rollback changes that broke something&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Essential Git Concepts
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-5&#34;&gt;
+Repository (Repo)
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;A project folder that Git watches. It contains all the files in your project and their histories. Can be local or put on remote platform like GitHub/GitLab.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-6&#34;&gt;
+Commits
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;A commit is a snapshot that you make of committed files at a specific point in time. The basic structure of a commit contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unique identifier (hash)&lt;/li&gt;
+&lt;li&gt;timestamp/author&lt;/li&gt;
+&lt;li&gt;commit message describing what was changed (&lt;strong&gt;VERY IMPORTANT&lt;/strong&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can think of them as saves in the video game that can go back to.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-7&#34;&gt;
+Branches
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;Branches work exactly like the parallel universes you see in movies. When you want to work on a major feature (by adding commits), you would typically create a new branch.&lt;/p&gt;
+&lt;p&gt;
+Create new branches to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;add a new feature&lt;/li&gt;
+&lt;li&gt;fix a lot of bugs&lt;/li&gt;
+&lt;li&gt;experiment with something&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is a bit more specifics of branches later.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-8&#34;&gt;
+Common Workflows
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;This section describes the general overview of how git would be used without getting into the specifics on commands, those will come later.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-9&#34;&gt;
+Starting a new project
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a repo on GitHub&lt;/li&gt;
+&lt;li&gt;Clone it to your computer (follow instructions it shows you)&lt;/li&gt;
+&lt;li&gt;Add your files&lt;/li&gt;
+&lt;li&gt;Commit and push changes to remote repo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-10&#34;&gt;
+Working on existing project
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Clone repo&lt;/li&gt;
+&lt;li&gt;Create a new branch for your feature&lt;/li&gt;
+&lt;li&gt;Make your changes, commit regularly&lt;/li&gt;
+&lt;li&gt;Push your branch to remote&lt;/li&gt;
+&lt;li&gt;Create pull request to merge into master&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-11&#34;&gt;
+Best Practices
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Commit often, this allows for rolling back changes
+This is still within reason, like don&amp;#39;t commit grammar changes to comments separately&lt;/li&gt;
+&lt;li&gt;Write clear commit messages
+Explain what you did so the owner of the repo can tell what&amp;#39;s going on&lt;/li&gt;
+&lt;li&gt;Use branches in a group setting
+Don&amp;#39;t work directly on master, it&amp;#39;s only for stable features&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Projects</title>
+		<link>http://localhost:1313/projects/</link>
+		<pubDate>Wed, 23 Oct 2024 19:24:06 -0400</pubDate>
+		
+		<guid>http://localhost:1313/projects/</guid>
+		<description>&lt;p&gt;
+Welcome to my collection of open-source projects. Beware, most if not all of these projects are unsuitable for production use. As the saying goes, it works on my machine. If you want help getting started with one of them, please &lt;a href=&#34;http://localhost:1313/contact&#34;&gt;send me an email&lt;/a&gt;.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Center of Mass Notes</title>
+		<link>http://localhost:1313/notes/center-of-mass/</link>
+		<pubDate>Fri, 18 Oct 2024 21:31:32 -0400</pubDate>
+		
+		<guid>http://localhost:1313/notes/center-of-mass/</guid>
+		<description>&lt;p&gt;
+Here are the notes for Center of Mass as of 2024-10-23 Wed 19:02.&lt;/p&gt;
+&lt;p&gt;
+&lt;iframe src=&#34;http://localhost:1313/pdfs/center-of-mass.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; style=&#34;border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Springs</title>
+		<link>http://localhost:1313/notes/springs/</link>
+		<pubDate>Fri, 18 Oct 2024 13:44:44 -0400</pubDate>
+		
+		<guid>http://localhost:1313/notes/springs/</guid>
+		<description>&lt;p&gt;
+Here are the notes for springs as of 2024-10-18.&lt;/p&gt;
+&lt;p&gt;
+&lt;iframe src=&#34;http://localhost:1313/pdfs/springs.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; style=&#34;border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Friction</title>
+		<link>http://localhost:1313/notes/friction/</link>
+		<pubDate>Fri, 18 Oct 2024 13:27:57 -0400</pubDate>
+		
+		<guid>http://localhost:1313/notes/friction/</guid>
+		<description>&lt;p&gt;
+Here are the notes for Friction as of 2024-10-18.&lt;/p&gt;
+&lt;p&gt;
+&lt;iframe src=&#34;http://localhost:1313/pdfs/friction.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; style=&#34;border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Vectors</title>
+		<link>http://localhost:1313/notes/vectors/</link>
+		<pubDate>Thu, 15 Aug 2024 13:00:00 -0400</pubDate>
+		
+		<guid>http://localhost:1313/notes/vectors/</guid>
+		<description>&lt;p&gt;
+Here are the notes on vectors as of 2024-08-15 Thu.&lt;/p&gt;
+&lt;p&gt;
+&lt;iframe src=&#34;http://localhost:1313/pdfs/vectors.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; style=&#34;border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Kinematic Equations</title>
+		<link>http://localhost:1313/notes/kinematic-equations/</link>
+		<pubDate>Tue, 13 Aug 2024 14:50:00 -0400</pubDate>
+		
+		<guid>http://localhost:1313/notes/kinematic-equations/</guid>
+		<description>&lt;p&gt;
+Here are the notes for Center of Mass as of 2024-10-23 Wed 19:02.&lt;/p&gt;
+&lt;p&gt;
+&lt;iframe src=&#34;http://localhost:1313/pdfs/the-kinematic-equations.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; style=&#34;border: none;&#34;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>EMMS: Emacs Multimedia System</title>
+		<link>http://localhost:1313/technology/emms/</link>
+		<pubDate>Sun, 04 Aug 2024 22:37:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/technology/emms/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Description
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;From the official page: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Emms is the Emacs Multimedia System. Emms displays and plays multimedia from within GNU/Emacs using a variety of external players and from different sources.&lt;/p&gt;
+&lt;p&gt;
+…&lt;/p&gt;
+&lt;p&gt;
+Emms can run as a minimalist player and controlled with a handful of M-x Emacs commands, or a fully-fledged, interactive media browser. Emms can display album art, play streaming audio, tag music files, search for lyrics, provide MPD connectivity, control the volume, and more. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I cannot describe it better, this tool exemplifies the Emacs golden standard for extensibility and practicality.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Installation
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;EMMS is official GNU software, which means that it is available through the &lt;a href=&#34;https://elpa.gnu.org/&#34;&gt;GNU ELPA&lt;/a&gt; repository.&lt;/p&gt;
+&lt;p&gt;
+EMMS uses an external player, so you will need one. MPV is what I use, but you can use VLC, MPD, and others (as described in the manual).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Example Configuration
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;This is a simple &lt;code&gt;use-package&lt;/code&gt; declaration that sets up some simple keybinds.&lt;/p&gt;
+&lt;div class=&#34;src src-lisp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-lisp&#34; data-lang=&#34;lisp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  (&lt;span style=&#34;color:#feacd0&#34;&gt;use-package&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#79a8ff&#34;&gt;:ensure&lt;/span&gt; t
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#79a8ff&#34;&gt;:bind&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    (&lt;span style=&#34;color:#79a8ff&#34;&gt;:map&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms-playlist-mode-map&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;M-&amp;lt;f8&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms-browser&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms-add-directory&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;T&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms-add-directory-tree&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;F&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms-add-file&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;U&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms-add-url&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;L&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms-toggle-repeat-track&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;&amp;lt;mouse-3&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms-pause&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;&amp;lt;SPC&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms-pause&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#79a8ff&#34;&gt;:bind&lt;/span&gt; (&lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;&amp;lt;f8&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;emms&lt;/span&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+How I Like To Use It
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I have my music saved as mp3 files. Sometimes I download longer mixes from YouTube with &lt;code&gt;yt-dlp&lt;/code&gt; as mp4 or webm (usually mp4). I don&amp;#39;t need much in a multimedia player, and EMMS provides it.&lt;/p&gt;
+&lt;p&gt;
+Normally my process for playing music is like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open emms with &lt;code&gt;&amp;lt;f8&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;code&gt;A&lt;/code&gt; key to add a subdirectory in from my music library.&lt;/li&gt;
+&lt;li&gt;Then I pick the song I want to listen to and start working.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;EMMS Browser in action, sorry for the FFMPEG artifacts.&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/emms-demo.gif&#34;&gt;&lt;/figure&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-5&#34;&gt;
+References and Documentation
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/emms/&#34;&gt;Official Manual&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>My Emacs Workflow For Programming, Notetaking, and Much More</title>
+		<link>http://localhost:1313/technology/workflow/</link>
+		<pubDate>Wed, 22 May 2024 16:09:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/technology/workflow/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Prefrace
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I use Emacs everyday on all of my computers. It is my favorite program on my computer. I use it for school and personal use, and only on Linux. I have a separate configuration on my &lt;a href=&#34;https://github.com/BardofSprites/.emacs.d&#34;&gt;Emacs repository&lt;/a&gt; on the minimal branch that is lighter weight for my school computer.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;details class=&#34;warning&#34;&gt;
+  &lt;summary&gt;🚩 &lt;span style=&#34;text-decoration: underline;&#34;&gt;A warning about this article&lt;/span&gt; 🚩&lt;/summary&gt;
+  &lt;p&gt;
+Although this article explains a most of what I do in Emacs, I am always finding new ways to do different things. I don&amp;#39;t have just one color theme that I use (I try to stick to at least one per day). There are also many new things that I am learning when the need arises (e.g. how to use table calculations in org-mode). I can&amp;#39;t possible document all of them, but I will try to show cool things on &lt;a href=&#34;https://www.youtube.com/@bardmandev&#34;&gt;my YouTube channel&lt;/a&gt;.&lt;/p&gt;
+&lt;/details&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+General Packages
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Editing Extensions
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;&lt;strong&gt;expand-region:&lt;/strong&gt; This extension is really useful for selecting text. It&amp;#39;s like a dwim solution for selecting text. You can repeatedly run the same key-sequence (I use C-=) and select a larger amount of text for every tool.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;expand-region&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/expand-region.gif&#34; title=&#34;expand-region&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;tempel:&lt;/strong&gt; This is a package for snippets. You can define text snippets in a lisp-like syntax. It&amp;#39;s very conventient for quick snippets like this:&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;tempel snippets&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/snippet.gif&#34; title=&#34;tempel snippets&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Snippets with tempel
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Snippets are a really helpful way of reducing time spent retyping the same things over and over again. I use snippets for common phrases and elisp functions that I type often.&lt;/p&gt;
+&lt;p&gt;
+I wrote an article about my favorite snippets &lt;a href=&#34;http://localhost:1313/technology/top-snippets&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+File Management with dired
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
+Programming
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Languages
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-8&#34;&gt;
+Major Modes
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;Emacs comes with a lot of major modes, but not for languages like Haskell, Clojure, and Ada. I sometimes program with these, so I need to have them installed for auto completion and auto indentation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-9&#34;&gt;
+Repls
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;Since I program in several lisp languages, I use repl-driven development. I use Cider, Sly, Geiser for my language repls.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cider - Clojure&lt;/li&gt;
+&lt;li&gt;Sly - Common Lisp, always SBCL&lt;/li&gt;
+&lt;li&gt;Geiser - various scheme dialects. I mainly use Gauche repl but sometimes Racket&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=0DLdQ6yb7h8&#34;&gt;Here&lt;/a&gt; is a video that showcases how Sly works for Common Lisp.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-10&#34;&gt;
+Language Server (LSP)
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Eglot just works, and it&amp;#39;s built into Emacs. I mainly use it with clangd for C++. I don&amp;#39;t really need it for other languages.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-11&#34;&gt;
+Completion
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Completion in Emacs has always been a struggle for me. I only recently figured it out. At first I was like, I don&amp;#39;t need it. Then I realized I wanted it and then I couldn&amp;#39;t set it up. Then I gave up and said, &amp;#34;well I never needed you anyway&amp;#34;. Finally, I figured it out and won&amp;#39;t touch it for fear of it breaking.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-12&#34;&gt;
+&lt;span class=&#34;todo status-todo&#34;&gt;TODO&lt;/span&gt;
+Git
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-13&#34;&gt;
+Note taking, Time Management, and Scheduling
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I presented at EmacsConf 2024 to talk about my student workflow for Emacs. You can view article about my presentation &lt;a href=&#34;http://localhost:1313/technology/emacsconf-2024&#34;&gt;here&lt;/a&gt;. I show exactly how I use Emacs + Org mode as a student using demos and explanations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-14&#34;&gt;
+Media
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-14&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-15&#34;&gt;
+Multimedia with EMMS
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have written an article about how I use/setup EMMS &lt;a href=&#34;http://localhost:1313/technology/emms&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-16&#34;&gt;
+RSS Feeds with elfeed
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have written an article about how I use/setup Elfeed &lt;a href=&#34;http://localhost:1313/technology/elfeed&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-17&#34;&gt;
+IRC
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-17&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Irc is pretty simple chat protocol. I don&amp;#39;t use it very often, but it is important to at least know how to use it for open source project discussion.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-18&#34;&gt;
+Aesthetics
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-18&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-19&#34;&gt;
+Modus and Ef Themes
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-20&#34;&gt;
+Gruber Darker
+&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-21&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-21&#34;&gt;
+Fontaine
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-21&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Fontaine is a really simple package for font templates. You can see them in my emacs config.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Programs I Use</title>
+		<link>http://localhost:1313/technology/programs/</link>
+		<pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/technology/programs/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Philosophy For Programs
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+1. Functionality
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I want my programs to be minimal, but not the point of being completely featureless. I&amp;#39;m can&amp;#39;t use a TTY for browsing the modern web. I&amp;#39;m also don&amp;#39;t need to use the behemoth that is the Gnome desktop environment. I use something in between these two.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+2. Bloat
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+I use many of its features, and it is basically like a secondary operating system. It does make computing fun and efficient so I will continue using it despite its few flaws.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+3. Aesthetically Pleasing
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;The main reason why I got into Linux was to make my desktop look nice (no really). I stayed because of the utilities that are commonly associated with it. The programs I use should not be ugly and clunky.&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t go as extreme as the average hyprland zoomer and make my windows 30% opacity with rounded corners and animations, or the boomer with default themes for everything. I like to keep my programs functionally aesthetic.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Why Choose These Tools Over Windows/MacOS
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I can&amp;#39;t change many default behaviours of these proprietary operating systems. I want to enjoy using my computer. The tools that make my computing experience enjoyable work best on linux. If I didn&amp;#39;t have a choice, like in a work environment, I would have to comply. However, my preference would still be for Linux.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
+Main Programs
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+Operating System
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;GNU/Linux is my favorite choice for desktop computing. In the past I have used: PopOs!, Manjaro, ArcoLinux, Debian, Ubuntu Server.&lt;/p&gt;
+&lt;p&gt;
+I settled with Debian and Gentoo as my main choices. Gentoo for my desktop and laptop, Debian 12 for my home server.&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Pros of Debian:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;quick to setup and easy to maintain&lt;/li&gt;
+&lt;li&gt;wide range of avaiable software/drivers&lt;/li&gt;
+&lt;li&gt;stable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons of Debian&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;systemd&lt;/li&gt;
+&lt;li&gt;not as minimal as Gentoo&lt;/li&gt;
+&lt;li&gt;outdated versions of some packages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Pros of Gentoo:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ability to meticulously control everything about your system → how unstable/stable it is, how minimal it is, and so on&lt;/li&gt;
+&lt;li&gt;compiling packages may increase performance&lt;/li&gt;
+&lt;li&gt;more init system choices (systemd, openrc, etc)&lt;/li&gt;
+&lt;li&gt;more benefits &lt;a href=&#34;https://wiki.gentoo.org/wiki/Benefits_of_Gentoo&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons of Gentoo&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;not easy to setup/maintain for most people&lt;/li&gt;
+&lt;li&gt;a pretty significant time investment&lt;/li&gt;
+&lt;li&gt;takes a long time to install (might be my fault)&lt;/li&gt;
+&lt;li&gt;compiling packages can take a long time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
+Web Browsing: Firefox and Librewolf
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;These are easy to use and don&amp;#39;t eat up as much RAM as chromium. They are also both free and open source which makes it easier to install them on linux.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-9&#34;&gt;
+Extensions/Addons
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;I don&amp;#39;t use many extensions. Bitwarden is a password manager that I highly recommend. I also really like Tridactyl, a vim browsing extension. It provides vim bindings for actions like clicking on links, switching tabs, scrolling, etc. It&amp;#39;s great because I never have to touch my mouse &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-10&#34;&gt;
+Aesthetics
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;Both browsers can use a userChrome.css for customizing the interface. I use the &lt;a href=&#34;https://github.com/Dook97/firefox-qutebrowser-userchrome&#34;&gt;i3wm lookalike theme&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-11&#34;&gt;
+Why Do I Have Two Browsers?
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;I like to seperate school/home browsing. Also some websites, like twitch.tv, don&amp;#39;t allow Librewolf users to log in because the browser is &lt;em&gt;&amp;#34;unsupported&amp;#34;&lt;/em&gt; even though I can watch streams perfectly fine. In this case I just use Firefox as a backup.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-12&#34;&gt;
+Text Editor: GNU Emacs
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;This has been text editor of choice since I found DOOM emacs in 2022. I really like the extensible nature of Emacs lisp and the packages that are avaiable. If you want to here more about my Emacs workflow, click &lt;a href=&#34;http://localhost:1313/technology/workflow&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-13&#34;&gt;
+Window Manager - DWM
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have jumped between different WMs. First preconfigured dwm on arcolinux, then i3, then xmonad, and then to Luke Smith&amp;#39;s dwm with my own configurations.&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t see myself moving away from dwm anytime soon. Every feature that Luke patched in was exactly what I needed. The only things I changed were the keybinds because a lot of them were overly redundant.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;open windows: Emacs and Librewolf editing this article&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/dwm.png&#34; title=&#34;dwm window manager&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-14&#34;&gt;
+Media
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-14&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;&lt;strong&gt;MPV:&lt;/strong&gt; I use this to play video files that I download from the internet/produce myself. It never lags and the UI is functionally minimal. I don&amp;#39;t customize it or script it with the Lua programming language. I use mpv to play video files from the command line.&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Emacs:&lt;/strong&gt; Emacs has a package called EMMS (Emacs Multi Media System) that I have been using since my start with DOOM Emacs. It uses MPV to play music/videos with Emacs. It&amp;#39;s very convenient as a music player because you can create playlists with Emacs text buffers. &lt;a href=&#34;http://localhost:1313/emacs/emms&#34;&gt;Here&lt;/a&gt; is a more extensive description of my multimedia workflow with Emacs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-15&#34;&gt;
+Utilities
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-16&#34;&gt;
+Terminal - ST Suckless Terminal
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Suckless terminal (st): It is fast, never crashes, minimal, and full of features. Since it is a suckless tool, you start with the original codebase and can add patches to it.&lt;/p&gt;
+&lt;p&gt;
+I never really felt the need to deeply customize it from the ground up as people have already done the hard work for me. I just cloned Luke Smith&amp;#39;s fork and changed the fonts and colors. It is patched to have support for Xresources themeing, changing font scale, scrolling, and much more.&lt;/p&gt;
+&lt;p&gt;
+I also have URxvt installed and customized as a backup incase something breaks one day because it offers almost the same experience. They look identical with certain customizations. The reaason I don&amp;#39;t use it is because I don&amp;#39;t know perl make it more extensible with scripts.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;dired with hidden mode on to reduce clutter&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/stterm.png&#34; title=&#34;st terminal&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-17&#34;&gt;
+File Manager - Emacs Dired
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-17&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;It&amp;#39;s pretty basic and easy to use. It is just a text buffer in Emacs that you can manipulate with its built-in functions. You can even generate thumbnails with it if you are in a directory with pictures with image-dired. Because its part of Emacs, it benefits from the extensibility of it.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;tmux windows: terminal, btop, and plain terminal&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/dired.png&#34; title=&#34;st terminal&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-18&#34;&gt;
+dmenu
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-18&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;dmenu stands for dynamic menu. A user can input options with stdin and select one with dmenu and get an output to stdout.&lt;/p&gt;
+&lt;p&gt;
+This is useful for scripts like my dired_selector scripts that gives me a selection of predefined directories and when I choose one, it opens a dired buffer in Emacs with that directory.&lt;/p&gt;
+&lt;p&gt;
+dmenu can also be used as a launcher for programs in a minimalist window manager. The options are nearly limitless.&lt;/p&gt;
+&lt;p&gt;
+Because this is suckless software, features can be added in. The only patches I have added are the Xresources, center, and lineheight patches that make it look nice.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-19&#34;&gt;
+Notification Daemon - dunst
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-19&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;dunst is a minimal notification daemon. I don&amp;#39;t really get a lot of notifications, but it&amp;#39;s there for when I do. You can add sounds to it, rice it, script it and much more. Check out &lt;a href=&#34;https://dunst-project.org/&#34;&gt;the dunst project website&lt;/a&gt; to learn about more of its features.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-20&#34;&gt;
+Image Viewer - nsxiv
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-20&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;nsxiv is a pretty basic image viewer. It has a nice gallery mode and I made it able to select/set my wallpaper with a feh script. It has stdin/stdout capabilities, just like most other suckless software.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Currying</title>
+		<link>http://localhost:1313/technology/currying/</link>
+		<pubDate>Sat, 28 Oct 2023 21:20:00 -0400</pubDate>
+		
+		<guid>http://localhost:1313/technology/currying/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Currying
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div class=&#34;src src-haskell&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-haskell&#34; data-lang=&#34;haskell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;inc&lt;/span&gt; x &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; x&lt;span style=&#34;color:#00d3d0&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#00bcff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;inc&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;inc&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;inc&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a8a8a8&#34;&gt;-- input of a function and a parameter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;map&lt;/span&gt; inc [&lt;span style=&#34;color:#00bcff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#00d3d0&#34;&gt;..&lt;/span&gt;&lt;span style=&#34;color:#00bcff&#34;&gt;10&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;add&lt;/span&gt; (x,y) &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; x&lt;span style=&#34;color:#00d3d0&#34;&gt;+&lt;/span&gt;y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;add&lt;/span&gt; (&lt;span style=&#34;color:#00bcff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#00bcff&#34;&gt;3&lt;/span&gt;) &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+Curried function
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-3&#34;&gt;
+Takes inputs just like add, but takes arguments one at a time rather than in a pair
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;div class=&#34;src src-haskell&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-haskell&#34; data-lang=&#34;haskell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;addCurry&lt;/span&gt; x y &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; x&lt;span style=&#34;color:#00d3d0&#34;&gt;+&lt;/span&gt;y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;addCurry&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Purpose
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Don&amp;#39;t need to give all inputs when calling, so you can partially apply it&lt;/li&gt;
+&lt;li&gt;add won&amp;#39;t work with only one input, but addCurry will&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-5&#34;&gt;
+Think of it like a cash machine
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Cash machine needs your debit card&lt;/li&gt;
+&lt;li&gt;then your pin&lt;/li&gt;
+&lt;li&gt;then your amount of money as a request&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;src src-haskell&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-haskell&#34; data-lang=&#34;haskell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a8a8a8&#34;&gt;-- Always gives £ 100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;cm&lt;/span&gt; card pin request &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a8a8a8&#34;&gt;-- also defined with lambda expressions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#feacd0&#34;&gt;cm&lt;/span&gt; &lt;span style=&#34;color:#00d3d0&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#feacd0&#34;&gt;\&lt;/span&gt;card &lt;span style=&#34;color:#00d3d0&#34;&gt;-&amp;gt;&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;\&lt;/span&gt;pin &lt;span style=&#34;color:#00d3d0&#34;&gt;-&amp;gt;&lt;/span&gt; (&lt;span style=&#34;color:#feacd0&#34;&gt;\&lt;/span&gt;request &lt;span style=&#34;color:#00d3d0&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#00bcff&#34;&gt;100&lt;/span&gt;))&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>About</title>
+		<link>http://localhost:1313/about/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/about/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Introduction
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;
+I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;about-image&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/catwithscarf.jpg&#34; title=&#34;not my image&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+2025 Reading Backlog
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Since the beginning of the year I have been trying to get into the habit of reading a bit everyday. These are the books that I will begin/currently am/completed reading in 2025. I have this here for anyone with enough time to meander around my website.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+In Progress
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Pachinko - Min Jin Lee&lt;/li&gt;
+&lt;li&gt;Christ the Eternal Tao - Hieromonk Damascene&lt;/li&gt;
+&lt;li&gt;Братья Карамазовы - Фёдор Достоевский&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Finished
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Kokoro - Natsume Soseki (&lt;code class=&#34;verbatim&#34;&gt;2025-02-11 Tue&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Planned to Read
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;Sanshiro - Natsume Soseki&lt;/li&gt;
+&lt;li&gt;Kusamakura - Natsume Soseki&lt;/li&gt;
+&lt;li&gt;Идиот - Фёдор Достоевский&lt;/li&gt;
+&lt;li&gt;Преступление и Наказание - Фёдор Достоевский&lt;/li&gt;
+&lt;li&gt;2666 - Roberto Picador&lt;/li&gt;
+&lt;li&gt;Dune Messiah - Frank Herbert&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>All Content</title>
+		<link>http://localhost:1313/content/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/content/</guid>
+		<description>&lt;p&gt;
+
+
+
+
+&lt;section class=&#34;all-content&#34;&gt;
+
+  &lt;h2&gt;All Publications&lt;/h2&gt;
+  &lt;ul class=&#34;publication-list&#34;&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2025-02-11 Tuesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/elfeed/&#34;&gt;Elfeed: Absorbing media with Emacs&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2025-02-01 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/top-snippets/&#34;&gt;Top 5 Tempel.el Snippets For Emacs&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2025-01-27 Monday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/boox-and-emacs/&#34;&gt;Boox Notes, Linux and Emacs&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-12-08 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/emacsconf-2024/&#34;&gt;My EmacsConf 2024 Presentation&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/git_cli/&#34;&gt;Common Git Commands on the Command Line&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-24 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/git/&#34;&gt;Learning to use Git Version Control&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-08-04 Sunday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/emms/&#34;&gt;EMMS: Emacs Multimedia System&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-05-22 Wednesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/workflow/&#34;&gt;My Emacs Workflow For Programming, Notetaking, and Much More&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2023-11-23 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/programs/&#34;&gt;Programs I Use&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+  &lt;h2&gt;All Notes&lt;/h2&gt;
+  &lt;ul class=&#34;note-list&#34;&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-18 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/center-of-mass/&#34;&gt;Center of Mass Notes&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-18 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/springs/&#34;&gt;Springs&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-10-18 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/friction/&#34;&gt;Friction&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-08-15 Thursday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/vectors/&#34;&gt;Vectors&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2024-08-13 Tuesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/notes/kinematic-equations/&#34;&gt;Kinematic Equations&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+    &lt;li class=&#34;note-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2023-10-28 Saturday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/currying/&#34;&gt;Currying&lt;/a&gt;
+      &lt;/article&gt;
+    &lt;/li&gt;
+    
+  &lt;/ul&gt;
+
+&lt;/section&gt;
+&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Contact Me</title>
+		<link>http://localhost:1313/contact/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/contact/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Email:
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;develop.bard at gmail dot com is my main public email&lt;/li&gt;
+&lt;li&gt;For classmates, please use my school email; if you are supposed to know, you know.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I get a lot of emails, but I will try to respond within 48 hours.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Social Media
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I&amp;#39;m not on instagram, facebook, snapchat, twitter, or most social media&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+Other messaging
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+XMPP
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;bardman@07f.de&lt;/p&gt;
+&lt;p&gt;
+What is this?&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+IRC:
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;bardman@irc.libera.chat&lt;/p&gt;
+&lt;p&gt;
+XMPP is probably the best way to reach me, I don&amp;#39;t have an IRC client on my phone.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Matrix:
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;&lt;del&gt;@bardman:matrix.org&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t like matrix anymore, my account will stay but it is unlikely that I will answer&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-7&#34;&gt;
+YouTube
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/@bardmandev&#34;&gt;https://www.youtube.com/@bardmandev&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	</channel>
+</rss>

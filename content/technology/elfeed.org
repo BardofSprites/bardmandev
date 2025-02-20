@@ -1,0 +1,83 @@
+#+title: Elfeed: Absorbing media with Emacs
+#+date: 2025-02-11T15:19:09-0500
+#+type: publication
+#+tags: [Technology, Emacs, Software]
+
+* Description
+From the GitHub README:
+#+begin_quote
+Elfeed is an extensible web feed reader for Emacs, supporting both Atom and RSS.
+#+end_quote
+
+{{< img class="centered-image" style="width:75%" src="/img/elfeed-feed.png" caption="My elfeed configuration that is browsing emacs articles" mouse="elfeed is awesome 😉">}}
+
+* Installation/Setup
+Elfeed is available on [[https://melpa.org][melpa]].
+
+#+begin_src emacs-lisp
+  (use-package elfeed
+    :ensure t
+    :config
+    (global-set-key (kbd "C-c r") 'elfeed)
+    (setq elfeed-search-filter "+unread")
+  )
+#+end_src
+
+* How I Like To Use It
+** Elfeed-org
+I subscribe to too many feeds to keep them all in one emacs ~setq~ option list. I would rather have them in a text file that can be read by ~elfeed-org~.
+
+** YouTube Feed
+I try to not get stuck browsing YouTube for hours and using RSS is one of the methods that helps me limit my usage. Not many people know that each YouTube channel has it's own RSS feed that anyone can subscribe to. The way that I am able to discover them is using a find RSS feed extension. The one that I prefer at the moment is [[https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/][FeedBro]] because it's the one works. It sucks that it's proprietary, but I don't even use it that often (only for scraping the RSS feeds from websites like YouTube that don't show them).
+
+** Watching YouTube with Elfeed + EMMS
+I have already written an article about [[/technology/emms][GNU EMMS]], the excellent Emacs media player. In addition to local files like video/audio I can stream videos with mpv (already bundled with ~yt-dlp~ for that).
+
+The big thing that I hated doing was copying the url from elfeed and then opening a terminal and then running mpv with the url and then finally getting to watch the video. But what if I wanted to watch another? Well then I would have to go back and open elfeed and copy the url and then...you get the idea.
+
+What I wanted was to run a keybind on an elfeed entry that links to YouTube and to automatically spawn a process that plays it in mpv.  That's what ~(bard/play-elfeed-video)~ does.
+
+#+begin_src emacs-lisp
+  (defun bard/play-elfeed-video ()
+  "Play the URL of the entry at point in mpv if it's a YouTube video."
+  (interactive)
+  (let ((entry (elfeed-search-selected :single)))
+    (if entry
+        (let ((url (elfeed-entry-link entry)))
+          (if (and url (string-match-p "https?://\\(www\\.\\)?youtube\\.com\\|youtu\\.be" url))
+              (progn
+                (async-shell-command (format "mpv '%s'" url))
+                (elfeed-search-untag-all-unread))
+            (message "The URL is not a YouTube link: %s" url)))
+      (message "No entry selected in Elfeed."))))
+#+end_src
+
+But then I thought, what if I want to use my good friend EMMS? I sometimes want to make a backlog and save it to a playlist or have them play automatically in succession. That's when I made this function:
+#+begin_src emacs-lisp
+  (defun bard/add-video-emms-queue ()
+    "Play the URL of the entry at point in mpv if it's a YouTube video. Add it to EMMS queue."
+    (interactive)
+    (let ((entry (elfeed-search-selected :single)))
+      (if entry
+          (let ((url (elfeed-entry-link entry)))
+            (if (and url (string-match-p "https?://\\(www\\.\\)?youtube\\.com\\|youtu\\.be" url))
+                (let* ((playlist-name "Watch Later")
+                       (playlist-buffer (get-buffer (format " *%s*" playlist-name))))
+                  (unless playlist-buffer
+                    (setq playlist-buffer (emms-playlist-new (format " *%s*" playlist-name))))
+                  (emms-playlist-set-playlist-buffer playlist-buffer)
+                  (emms-add-url url)
+                  (elfeed-search-untag-all-unread)
+                  (message "Added YouTube video to EMMS playlist: %s" url))
+              (message "The URL is not a YouTube link: %s" url)))
+        (message "No entry selected in Elfeed."))))
+#+end_src
+
+** Demonstration
+First I open Elfeed to a video that I want to view, then I run ~bard/add-video-emms-queue~ for each entry I want to add to my queue (bound to ~C-c C-e~). After that I open EMMS (bound to ~<f8>~). Then I click enter on the video and hooray it's playing. I can even save to a playlist and replay later.
+
+* References and Documentation
++ [[https://github.com/BardofSprites/.emacs.d/blob/master/bard-elisp/bard-web.el][My Emacs Lisp Functions For Sending Elfeed Videos to EMMS]]
++ https://github.com/skeeto/elfeed
++ https://github.com/remyhonig/elfeed-org
++ https://github.com/yt-dlp/yt-dlp

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>EMMS: Emacs Multimedia System | bardman&#39;s website</title>
+    <link rel="canonical" href="http://localhost:1313/">
+    <link rel='alternate' type='application/rss+xml' title="bardman&#39;s website RSS" href='/index.xml'>
+    <link rel='stylesheet' type='text/css' href='/style.css'>
+    <link rel="icon" href="/favicon.ico">
+    
+    <meta name="keywords" content="91, 84, 101, 99, 104, 110, 111, 108, 111, 103, 121, 44, 32, 69, 109, 97, 99, 115, 44, 32, 83, 111, 102, 116, 119, 97, 114, 101, 93">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <nav id="sidebar">
+      <ul>
+        <div class="sidebar-header">
+          <a href="http://localhost:1313/">Bardman.dev</a>
+          <small> Home page </small>
+        </div>
+        <li><a href="/about/">About Me</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/projects/">Projects</a></li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <h1 id="tag_EMMS: Emacs Multimedia System">EMMS: Emacs Multimedia System</h1>
+        
+        <p class="subtitle">2024-08-04 Sun</p>
+        
+        
+        <h2> Table of Contents </h2>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">Description</a>
+</li>
+<li><a href="#headline-2">Installation</a>
+</li>
+<li><a href="#headline-3">Example Configuration</a>
+</li>
+<li><a href="#headline-4">How I Like To Use It</a>
+</li>
+<li><a href="#headline-5">References and Documentation</a>
+</li>
+</ul>
+</nav>
+        
+        
+        
+        <p class="subtitle">Tags:
+          
+          [Technology
+          
+          , Emacs
+          
+          , Software]
+          
+        </p>
+        
+        
+
+      </header>
+      <article>
+        
+        
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Description
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>From the official page: </p>
+<blockquote>
+<p>Emms is the Emacs Multimedia System. Emms displays and plays multimedia from within GNU/Emacs using a variety of external players and from different sources.</p>
+<p>
+…</p>
+<p>
+Emms can run as a minimalist player and controlled with a handful of M-x Emacs commands, or a fully-fledged, interactive media browser. Emms can display album art, play streaming audio, tag music files, search for lyrics, provide MPD connectivity, control the volume, and more. </p>
+</blockquote>
+<p>I cannot describe it better, this tool exemplifies the Emacs golden standard for extensibility and practicality.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Installation
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>EMMS is official GNU software, which means that it is available through the <a href="https://elpa.gnu.org/">GNU ELPA</a> repository.</p>
+<p>
+EMMS uses an external player, so you will need one. MPV is what I use, but you can use VLC, MPD, and others (as described in the manual).</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
+<h2 id="headline-3">
+Example Configuration
+</h2>
+<div id="outline-text-headline-3" class="outline-text-2">
+<p>This is a simple <code>use-package</code> declaration that sets up some simple keybinds.</p>
+<div class="src src-lisp">
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>  (<span style="color:#feacd0">use-package</span> <span style="color:#00d3d0">emms</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#79a8ff">:ensure</span> t
+</span></span><span style="display:flex;"><span>    <span style="color:#79a8ff">:bind</span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#79a8ff">:map</span> <span style="color:#00d3d0">emms-playlist-mode-map</span>
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;M-&lt;f8&gt;&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-browser</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;A&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-add-directory</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;T&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-add-directory-tree</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;F&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-add-file</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;U&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-add-url</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;L&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-toggle-repeat-track</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;&lt;mouse-3&gt;&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-pause</span>)
+</span></span><span style="display:flex;"><span>          (<span style="color:#79a8ff">&#34;&lt;SPC&gt;&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms-pause</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#79a8ff">:bind</span> (<span style="color:#79a8ff">&#34;&lt;f8&gt;&#34;</span> <span style="color:#00d3d0">.</span> <span style="color:#00d3d0">emms</span>))</span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
+<h2 id="headline-4">
+How I Like To Use It
+</h2>
+<div id="outline-text-headline-4" class="outline-text-2">
+<p>I have my music saved as mp3 files. Sometimes I download longer mixes from YouTube with <code>yt-dlp</code> as mp4 or webm (usually mp4). I don&#39;t need much in a multimedia player, and EMMS provides it.</p>
+<p>
+Normally my process for playing music is like this:</p>
+<ol>
+<li>Open emms with <code>&lt;f8&gt;</code>.</li>
+<li>Click the <code>A</code> key to add a subdirectory in from my music library.</li>
+<li>Then I pick the song I want to listen to and start working.</li>
+</ol>
+
+<figure class="centered-image"><figcaption>EMMS Browser in action, sorry for the FFMPEG artifacts.</figcaption><img src="/img/emms-demo.gif"></figure>
+
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
+<h2 id="headline-5">
+References and Documentation
+</h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<ul>
+<li><a href="https://www.gnu.org/software/emms/">Official Manual</a></li>
+</ul>
+</div>
+</div>
+
+        
+        </article>
+    </main>
+    
+    <footer>
+      <a href="http://localhost:1313/">http://localhost:1313/</a>
+      <br><br>
+      <p>
+        <a href="https://gnu.org/software/emacs"> <img src="/img/madewithemacs.png" style="max-height:2.2em"></a>
+        <a href="https://www.gnu.org/fun/jokes/gospel.en.html"> <img src="/img/saint-button.png" style="max-height:2.2em"></a><a href="/index.xml"><img src="/rss.svg" style="max-height:2.2em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+      </p>
+    </footer>
+    
+  </body>
+</html>

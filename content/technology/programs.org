@@ -1,0 +1,101 @@
+#+title: Programs I Use
+#+date: 2023-11-23T00:00:00+00:00
+#+type: publication
+#+tags: [Technology, Software]
+
+* Philosophy For Programs
+** 1. Functionality
+I want my programs to be minimal, but not the point of being completely featureless. I'm can't use a TTY for browsing the modern web. I'm also don't need to use the behemoth that is the Gnome desktop environment. I use something in between these two.
+** 2. Bloat
+
+I use many of its features, and it is basically like a secondary operating system. It does make computing fun and efficient so I will continue using it despite its few flaws.
+
+** 3. Aesthetically Pleasing
+The main reason why I got into Linux was to make my desktop look nice (no really). I stayed because of the utilities that are commonly associated with it. The programs I use should not be ugly and clunky.
+
+I don't go as extreme as the average hyprland zoomer and make my windows 30% opacity with rounded corners and animations, or the boomer with default themes for everything. I like to keep my programs functionally aesthetic.
+
+** Why Choose These Tools Over Windows/MacOS
+I can't change many default behaviours of these proprietary operating systems. I want to enjoy using my computer. The tools that make my computing experience enjoyable work best on linux. If I didn't have a choice, like in a work environment, I would have to comply. However, my preference would still be for Linux.
+
+* Main Programs
+** Operating System
+GNU/Linux is my favorite choice for desktop computing. In the past I have used: PopOs!, Manjaro, ArcoLinux, Debian, Ubuntu Server.
+
+I settled with Debian and Gentoo as my main choices. Gentoo for my desktop and laptop, Debian 12 for my home server.
+
+*Pros of Debian:*
++ quick to setup and easy to maintain
++ wide range of avaiable software/drivers
++ stable
+  
+*Cons of Debian*:
++ systemd
++ not as minimal as Gentoo
++ outdated versions of some packages
+
+*Pros of Gentoo:*
++ ability to meticulously control everything about your system → how unstable/stable it is, how minimal it is, and so on
++ compiling packages may increase performance
++ more init system choices (systemd, openrc, etc)
++ more benefits [[https://wiki.gentoo.org/wiki/Benefits_of_Gentoo][here]]
+
+*Cons of Gentoo*:
++ not easy to setup/maintain for most people
++ a pretty significant time investment
++ takes a long time to install (might be my fault)
++ compiling packages can take a long time
+
+** Web Browsing: Firefox and Librewolf
+These are easy to use and don't eat up as much RAM as chromium. They are also both free and open source which makes it easier to install them on linux.
+
+*** Extensions/Addons
+I don't use many extensions. Bitwarden is a password manager that I highly recommend. I also really like Tridactyl, a vim browsing extension. It provides vim bindings for actions like clicking on links, switching tabs, scrolling, etc. It's great because I never have to touch my mouse 
+*** Aesthetics
+Both browsers can use a userChrome.css for customizing the interface. I use the [[https://github.com/Dook97/firefox-qutebrowser-userchrome][i3wm lookalike theme]].
+*** Why Do I Have Two Browsers?
+I like to seperate school/home browsing. Also some websites, like twitch.tv, don't allow Librewolf users to log in because the browser is /"unsupported"/ even though I can watch streams perfectly fine. In this case I just use Firefox as a backup.
+
+** Text Editor: GNU Emacs
+This has been text editor of choice since I found DOOM emacs in 2022. I really like the extensible nature of Emacs lisp and the packages that are avaiable. If you want to here more about my Emacs workflow, click [[/technology/workflow][here]].
+
+** Window Manager - DWM
+I have jumped between different WMs. First preconfigured dwm on arcolinux, then i3, then xmonad, and then to Luke Smith's dwm with my own configurations.
+
+I don't see myself moving away from dwm anytime soon. Every feature that Luke patched in was exactly what I needed. The only things I changed were the keybinds because a lot of them were overly redundant.
+
+{{< img class="centered-image" src="/img/dwm.png" caption="open windows: Emacs and Librewolf editing this article" mouse="dwm window manager">}}
+
+* Media
+*MPV:* I use this to play video files that I download from the internet/produce myself. It never lags and the UI is functionally minimal. I don't customize it or script it with the Lua programming language. I use mpv to play video files from the command line.
+
+*Emacs:* Emacs has a package called EMMS (Emacs Multi Media System) that I have been using since my start with DOOM Emacs. It uses MPV to play music/videos with Emacs. It's very convenient as a music player because you can create playlists with Emacs text buffers. [[/emacs/emms][Here]] is a more extensive description of my multimedia workflow with Emacs.
+* Utilities
+** Terminal - ST Suckless Terminal
+Suckless terminal (st): It is fast, never crashes, minimal, and full of features. Since it is a suckless tool, you start with the original codebase and can add patches to it.
+
+I never really felt the need to deeply customize it from the ground up as people have already done the hard work for me. I just cloned Luke Smith's fork and changed the fonts and colors. It is patched to have support for Xresources themeing, changing font scale, scrolling, and much more.
+
+I also have URxvt installed and customized as a backup incase something breaks one day because it offers almost the same experience. They look identical with certain customizations. The reaason I don't use it is because I don't know perl make it more extensible with scripts.
+
+{{< img class="centered-image" src="/img/stterm.png" caption="dired with hidden mode on to reduce clutter" mouse="st terminal">}}
+
+** File Manager - Emacs Dired
+It's pretty basic and easy to use. It is just a text buffer in Emacs that you can manipulate with its built-in functions. You can even generate thumbnails with it if you are in a directory with pictures with image-dired. Because its part of Emacs, it benefits from the extensibility of it.
+
+{{< img class="centered-image" src="/img/dired.png" caption="tmux windows: terminal, btop, and plain terminal" mouse="st terminal">}}
+
+** dmenu
+dmenu stands for dynamic menu. A user can input options with stdin and select one with dmenu and get an output to stdout.
+
+This is useful for scripts like my dired_selector scripts that gives me a selection of predefined directories and when I choose one, it opens a dired buffer in Emacs with that directory.
+
+dmenu can also be used as a launcher for programs in a minimalist window manager. The options are nearly limitless.
+
+Because this is suckless software, features can be added in. The only patches I have added are the Xresources, center, and lineheight patches that make it look nice.
+
+** Notification Daemon - dunst
+dunst is a minimal notification daemon. I don't really get a lot of notifications, but it's there for when I do. You can add sounds to it, rice it, script it and much more. Check out [[https://dunst-project.org/][the dunst project website]] to learn about more of its features.
+
+** Image Viewer - nsxiv
+nsxiv is a pretty basic image viewer. It has a nice gallery mode and I made it able to select/set my wallpaper with a feh script. It has stdin/stdout capabilities, just like most other suckless software.

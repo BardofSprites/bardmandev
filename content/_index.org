@@ -16,17 +16,12 @@ All of my articles in one place
 Any article that doesn't fit in below categories
 #+end_quote
 
-** [[/coding/][Coding]]
+** [[/technology/][Technology]]
 #+begin_quote
-articles pertaining to GNU Emacs, programming, and general computing
+all articles related to technology, programming, and software
 #+end_quote
 
 ** [[/notes/][Notes]]
 #+begin_quote
 Text or PDF notes for various classes or topics ranging from programming to what I'm covering in school.
-#+end_quote
-
-** [[/robotics][Robotics]]
-#+begin_quote
-Content for school VEX robotics team for 2024-2025
 #+end_quote
