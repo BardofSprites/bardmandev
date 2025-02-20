@@ -76,7 +76,7 @@ But then I thought, what if I want to use my good friend EMMS? I sometimes want 
 ** Demonstration
 First I open Elfeed to a video that I want to view, then I run ~bard/add-video-emms-queue~ for each entry I want to add to my queue (bound to ~C-c C-e~). After that I open EMMS (bound to ~<f8>~). Then I click enter on the video and hooray it's playing. I can even save to a playlist and replay later.
 
-{{< youtube PKsBxHTva8Y >}}
+{{< youtube V0c8CPk9LHk >}}
 
 * References and Documentation
 + [[https://github.com/BardofSprites/.emacs.d/blob/master/bard-elisp/bard-web.el][My Emacs Lisp Functions For Sending Elfeed Videos to EMMS]]

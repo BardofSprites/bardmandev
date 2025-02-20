@@ -20,7 +20,7 @@
 	</item>
 	
 	<item>
-		<title>Elfeed: Absorbing media with Emacs</title>
+		<title>Watch YouTube with Emacs Elfeed and GNU EMMS</title>
 		<link>http://localhost:1313/technology/elfeed/</link>
 		<pubDate>Tue, 11 Feb 2025 15:19:09 -0500</pubDate>
 		
@@ -131,6 +131,15 @@ Demonstration
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;First I open Elfeed to a video that I want to view, then I run &lt;code&gt;bard/add-video-emms-queue&lt;/code&gt; for each entry I want to add to my queue (bound to &lt;code&gt;C-c C-e&lt;/code&gt;). After that I open EMMS (bound to &lt;code&gt;&amp;lt;f8&amp;gt;&lt;/code&gt;). Then I click enter on the video and hooray it&amp;#39;s playing. I can even save to a playlist and replay later.&lt;/p&gt;
+&lt;p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/V0c8CPk9LHk?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1461,7 +1470,7 @@ Planned to Read
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;
         
-        &lt;span&gt;2025-02-11 Tuesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/elfeed/&#34;&gt;Elfeed: Absorbing media with Emacs&lt;/a&gt;
+        &lt;span&gt;2025-02-11 Tuesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/elfeed/&#34;&gt;Watch YouTube with Emacs Elfeed and GNU EMMS&lt;/a&gt;
         
       &lt;/article&gt;
     &lt;/li&gt;
