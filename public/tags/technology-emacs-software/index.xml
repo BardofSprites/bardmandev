@@ -130,7 +130,7 @@ But then I thought, what if I want to use my good friend EMMS? I sometimes want 
 Demonstration
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;First I open Elfeed to a video that I want to view, then I run &lt;code&gt;bard/add-video-emms-queue&lt;/code&gt; for each entry I want to add to my queue (bound to &lt;code&gt;C-c C-e&lt;/code&gt;). After that I open EMMS (bound to &lt;code&gt;&amp;lt;f8&amp;gt;&lt;/code&gt;). Then I click enter on the video and hooray it&amp;#39;s playing.&lt;/p&gt;
+&lt;p&gt;First I open Elfeed to a video that I want to view, then I run &lt;code&gt;bard/add-video-emms-queue&lt;/code&gt; for each entry I want to add to my queue (bound to &lt;code&gt;C-c C-e&lt;/code&gt;). After that I open EMMS (bound to &lt;code&gt;&amp;lt;f8&amp;gt;&lt;/code&gt;). Then I click enter on the video and hooray it&amp;#39;s playing. I can even save to a playlist and replay later.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
