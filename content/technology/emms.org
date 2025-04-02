@@ -17,7 +17,7 @@ I cannot describe it better, this tool exemplifies the Emacs golden standard for
 * Installation
 EMMS is official GNU software, which means that it is available through the [[https://elpa.gnu.org/][GNU ELPA]] repository.
 
-EMMS uses an external player, so you will need one. MPV is what I use, but you can use VLC, MPD, and others (as described in the manual).
+EMMS uses an external player, so you will need one. Mpv is what I use, but you can use VLC, MPD, and others (as described in the manual).
 
 * Example Configuration
 This is a simple ~use-package~ declaration that sets up some simple keybinds.
@@ -49,3 +49,6 @@ Normally my process for playing music is like this:
 
 * References and Documentation
 + [[https://www.gnu.org/software/emms/][Official Manual]]
++ [[https://mpv.io/][mpv]]
++ [[https://github.com/yt-dlp/yt-dlp/][yt-dlp]]
++ [[https://github.com/spotDL/spotify-downloader][spotdl]]

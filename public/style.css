@@ -126,6 +126,10 @@ figure {
     background: #1e1e1e;
 }
 
+.footer-button {
+    max-height: 30px;
+}
+
 footer {
     text-align: center ;
     clear: both ;

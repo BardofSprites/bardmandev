@@ -10,6 +10,90 @@
 	
 	
 	<item>
+		<title>Desktop Customization Gallery</title>
+		<link>http://localhost:1313/technology/gallery/</link>
+		<pubDate>Fri, 07 Mar 2025 19:16:52 -0500</pubDate>
+		
+		<guid>http://localhost:1313/technology/gallery/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+FAQ
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+Where are the dots????
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;They are on &lt;a href=&#34;https://github.com/BardofSprites/&#34;&gt;my GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-3&#34;&gt;
+2025
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Xmonad with gruber darker
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Made myself a silly wallpaper to match with the gruber darker theme for fun :)
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;Open window: Emacs writing this article&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/xmonad-1.png&#34; title=&#34;xmonad&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+i3wm
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;open windows: Emacs with Elfeed&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/i3wm-1.png&#34; title=&#34;pretty default i3wm setup&#34;&gt;&lt;/figure&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-6&#34;&gt;
+Summer 2024-2025
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+FVWM
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;I have many themes, the ones in these are &lt;code class=&#34;verbatim&#34;&gt;modus-vivendi&lt;/code&gt; and &lt;code class=&#34;verbatim&#34;&gt;ef-frost&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;open windows: Emacs with Elfeed&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/fvwm-old.png&#34; title=&#34;pretty default i3wm setup&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;open windows: Emacs with Elfeed&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/fvwm-1.png&#34; title=&#34;pretty default i3wm setup&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;open windows: Emacs with Elfeed&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/fvwm-frost.png&#34; title=&#34;pretty default i3wm setup&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;figure class=&#34;centered-image&#34;&gt;&lt;figcaption&gt;open windows: Emacs with Elfeed&lt;/figcaption&gt;&lt;img src=&#34;http://localhost:1313/img/fvwm-frost-horizontal-bar.png&#34; title=&#34;pretty default i3wm setup&#34;&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Reading List</title>
 		<link>http://localhost:1313/readling-list/</link>
 		<pubDate>Tue, 18 Feb 2025 19:45:17 -0500</pubDate>
@@ -834,7 +918,7 @@ Installation
 &lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;EMMS is official GNU software, which means that it is available through the &lt;a href=&#34;https://elpa.gnu.org/&#34;&gt;GNU ELPA&lt;/a&gt; repository.&lt;/p&gt;
 &lt;p&gt;
-EMMS uses an external player, so you will need one. MPV is what I use, but you can use VLC, MPD, and others (as described in the manual).&lt;/p&gt;
+EMMS uses an external player, so you will need one. Mpv is what I use, but you can use VLC, MPD, and others (as described in the manual).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-2&#34;&gt;
@@ -885,6 +969,9 @@ References and Documentation
 &lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.gnu.org/software/emms/&#34;&gt;Official Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mpv.io/&#34;&gt;mpv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yt-dlp/yt-dlp/&#34;&gt;yt-dlp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spotDL/spotify-downloader&#34;&gt;spotdl&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1089,56 +1176,64 @@ Fontaine
 		<description>
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-1&#34;&gt;
-Philosophy For Programs
+Gallery
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-2&#34;&gt;
-1. Functionality
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;I want my programs to be minimal, but not the point of being completely featureless. I&amp;#39;m can&amp;#39;t use a TTY for browsing the modern web. I&amp;#39;m also don&amp;#39;t need to use the behemoth that is the Gnome desktop environment. I use something in between these two.&lt;/p&gt;
+&lt;p&gt;You can view a gallery of my desktop screenshots &lt;a href=&#34;http://localhost:1313/technology/gallery/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+Philosophy For Programs
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
-2. Bloat
+1. Functionality
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;
-I use many of its features, and it is basically like a secondary operating system. It does make computing fun and efficient so I will continue using it despite its few flaws.&lt;/p&gt;
+&lt;p&gt;I want my programs to be minimal, but not the point of being completely featureless. I&amp;#39;m can&amp;#39;t use a TTY for browsing the modern web. I&amp;#39;m also don&amp;#39;t need to use the behemoth that is the Gnome desktop environment. I use something in between these two.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-4&#34;&gt;
-3. Aesthetically Pleasing
+2. Bloat
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+I use many of its features, and it is basically like a secondary operating system. It does make computing fun and efficient so I will continue using it despite its few flaws.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+3. Aesthetically Pleasing
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;The main reason why I got into Linux was to make my desktop look nice (no really). I stayed because of the utilities that are commonly associated with it. The programs I use should not be ugly and clunky.&lt;/p&gt;
 &lt;p&gt;
 I don&amp;#39;t go as extreme as the average hyprland zoomer and make my windows 30% opacity with rounded corners and animations, or the boomer with default themes for everything. I like to keep my programs functionally aesthetic.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-5&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
 Why Choose These Tools Over Windows/MacOS
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;I can&amp;#39;t change many default behaviours of these proprietary operating systems. I want to enjoy using my computer. The tools that make my computing experience enjoyable work best on linux. If I didn&amp;#39;t have a choice, like in a work environment, I would have to comply. However, my preference would still be for Linux.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-6&#34;&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-7&#34;&gt;
 Main Programs
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-7&#34;&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-8&#34;&gt;
 Operating System
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;GNU/Linux is my favorite choice for desktop computing. In the past I have used: PopOs!, Manjaro, ArcoLinux, Debian, Ubuntu Server.&lt;/p&gt;
 &lt;p&gt;
 I settled with Debian and Gentoo as my main choices. Gentoo for my desktop and laptop, Debian 12 for my home server.&lt;/p&gt;
@@ -1169,53 +1264,61 @@ I settled with Debian and Gentoo as my main choices. Gentoo for my desktop and l
 &lt;li&gt;takes a long time to install (might be my fault)&lt;/li&gt;
 &lt;li&gt;compiling packages can take a long time&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-8&#34;&gt;
-Web Browsing: Firefox and Librewolf
-&lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;These are easy to use and don&amp;#39;t eat up as much RAM as chromium. They are also both free and open source which makes it easier to install them on linux.&lt;/p&gt;
 &lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-4&#34;&gt;
 &lt;h4 id=&#34;headline-9&#34;&gt;
-Extensions/Addons
+(2025 addition)
 &lt;/h4&gt;
 &lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;I have started using Artix+openrc on my laptop&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-10&#34;&gt;
+Web Browsing: Firefox and Librewolf
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;These are easy to use and don&amp;#39;t eat up as much RAM as chromium. They are also both free and open source which makes it easier to install them on linux.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-11&#34;&gt;
+Extensions/Addons
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;p&gt;I don&amp;#39;t use many extensions. Bitwarden is a password manager that I highly recommend. I also really like Tridactyl, a vim browsing extension. It provides vim bindings for actions like clicking on links, switching tabs, scrolling, etc. It&amp;#39;s great because I never have to touch my mouse &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-4&#34;&gt;
-&lt;h4 id=&#34;headline-10&#34;&gt;
+&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-12&#34;&gt;
 Aesthetics
 &lt;/h4&gt;
-&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;p&gt;Both browsers can use a userChrome.css for customizing the interface. I use the &lt;a href=&#34;https://github.com/Dook97/firefox-qutebrowser-userchrome&#34;&gt;i3wm lookalike theme&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-11&#34; class=&#34;outline-4&#34;&gt;
-&lt;h4 id=&#34;headline-11&#34;&gt;
+&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-13&#34;&gt;
 Why Do I Have Two Browsers?
 &lt;/h4&gt;
-&lt;div id=&#34;outline-text-headline-11&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-4&#34;&gt;
 &lt;p&gt;I like to seperate school/home browsing. Also some websites, like twitch.tv, don&amp;#39;t allow Librewolf users to log in because the browser is &lt;em&gt;&amp;#34;unsupported&amp;#34;&lt;/em&gt; even though I can watch streams perfectly fine. In this case I just use Firefox as a backup.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-12&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-12&#34;&gt;
+&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-14&#34;&gt;
 Text Editor: GNU Emacs
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-12&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-14&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;This has been text editor of choice since I found DOOM emacs in 2022. I really like the extensible nature of Emacs lisp and the packages that are avaiable. If you want to here more about my Emacs workflow, click &lt;a href=&#34;http://localhost:1313/technology/workflow&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-13&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-13&#34;&gt;
+&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-15&#34;&gt;
 Window Manager - DWM
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-13&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;I have jumped between different WMs. First preconfigured dwm on arcolinux, then i3, then xmonad, and then to Luke Smith&amp;#39;s dwm with my own configurations.&lt;/p&gt;
 &lt;p&gt;
 I don&amp;#39;t see myself moving away from dwm anytime soon. Every feature that Luke patched in was exactly what I needed. The only things I changed were the keybinds because a lot of them were overly redundant.&lt;/p&gt;
@@ -1227,26 +1330,26 @@ I don&amp;#39;t see myself moving away from dwm anytime soon. Every feature that
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-14&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-14&#34;&gt;
+&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-16&#34;&gt;
 Media
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-14&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-2&#34;&gt;
 &lt;p&gt;&lt;strong&gt;MPV:&lt;/strong&gt; I use this to play video files that I download from the internet/produce myself. It never lags and the UI is functionally minimal. I don&amp;#39;t customize it or script it with the Lua programming language. I use mpv to play video files from the command line.&lt;/p&gt;
 &lt;p&gt;
 &lt;strong&gt;Emacs:&lt;/strong&gt; Emacs has a package called EMMS (Emacs Multi Media System) that I have been using since my start with DOOM Emacs. It uses MPV to play music/videos with Emacs. It&amp;#39;s very convenient as a music player because you can create playlists with Emacs text buffers. &lt;a href=&#34;http://localhost:1313/emacs/emms&#34;&gt;Here&lt;/a&gt; is a more extensive description of my multimedia workflow with Emacs.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-15&#34; class=&#34;outline-2&#34;&gt;
-&lt;h2 id=&#34;headline-15&#34;&gt;
+&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-17&#34;&gt;
 Utilities
 &lt;/h2&gt;
-&lt;div id=&#34;outline-text-headline-15&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;div id=&#34;outline-container-headline-16&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-16&#34;&gt;
+&lt;div id=&#34;outline-text-headline-17&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-18&#34;&gt;
 Terminal - ST Suckless Terminal
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-16&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-18&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;Suckless terminal (st): It is fast, never crashes, minimal, and full of features. Since it is a suckless tool, you start with the original codebase and can add patches to it.&lt;/p&gt;
 &lt;p&gt;
 I never really felt the need to deeply customize it from the ground up as people have already done the hard work for me. I just cloned Luke Smith&amp;#39;s fork and changed the fonts and colors. It is patched to have support for Xresources themeing, changing font scale, scrolling, and much more.&lt;/p&gt;
@@ -1258,11 +1361,11 @@ I also have URxvt installed and customized as a backup incase something breaks o
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-17&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-17&#34;&gt;
+&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-19&#34;&gt;
 File Manager - Emacs Dired
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-17&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-19&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;It&amp;#39;s pretty basic and easy to use. It is just a text buffer in Emacs that you can manipulate with its built-in functions. You can even generate thumbnails with it if you are in a directory with pictures with image-dired. Because its part of Emacs, it benefits from the extensibility of it.&lt;/p&gt;
 &lt;p&gt;
 
@@ -1270,11 +1373,11 @@ File Manager - Emacs Dired
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-18&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-18&#34;&gt;
+&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-20&#34;&gt;
 dmenu
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-18&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-20&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;dmenu stands for dynamic menu. A user can input options with stdin and select one with dmenu and get an output to stdout.&lt;/p&gt;
 &lt;p&gt;
 This is useful for scripts like my dired_selector scripts that gives me a selection of predefined directories and when I choose one, it opens a dired buffer in Emacs with that directory.&lt;/p&gt;
@@ -1284,19 +1387,19 @@ dmenu can also be used as a launcher for programs in a minimalist window manager
 Because this is suckless software, features can be added in. The only patches I have added are the Xresources, center, and lineheight patches that make it look nice.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-19&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-19&#34;&gt;
+&lt;div id=&#34;outline-container-headline-21&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-21&#34;&gt;
 Notification Daemon - dunst
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-19&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-21&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;dunst is a minimal notification daemon. I don&amp;#39;t really get a lot of notifications, but it&amp;#39;s there for when I do. You can add sounds to it, rice it, script it and much more. Check out &lt;a href=&#34;https://dunst-project.org/&#34;&gt;the dunst project website&lt;/a&gt; to learn about more of its features.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-20&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-20&#34;&gt;
+&lt;div id=&#34;outline-container-headline-22&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-22&#34;&gt;
 Image Viewer - nsxiv
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-20&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-22&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;nsxiv is a pretty basic image viewer. It has a nice gallery mode and I made it able to select/set my wallpaper with a feh script. It has stdin/stdout capabilities, just like most other suckless software.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1404,15 +1507,37 @@ I am known as bardman online. I am a 18 year old student/programmer.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
 &lt;h2 id=&#34;headline-2&#34;&gt;
-2025 Reading Backlog
+Possible FAQ
 &lt;/h2&gt;
 &lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
-&lt;p&gt;Since the beginning of the year I have been trying to get into the habit of reading a bit everyday. These are the books that I will begin/currently am/completed reading in 2025. I have this here for anyone with enough time to meander around my website.&lt;/p&gt;
 &lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-3&#34;&gt;
-In Progress
+What is your pc setup?
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Costco Gaming PC (HP Pavilion something something)&lt;/li&gt;
+&lt;li&gt;2 monitors&lt;/li&gt;
+&lt;li&gt;cheap chinese keyboard&lt;/li&gt;
+&lt;li&gt;Razr mouse&lt;/li&gt;
+&lt;li&gt;Logitech streamcam that my mom gave me&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/technology/programs/&#34;&gt;Desktop setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+2025 Reading Backlog
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;Since the beginning of the year I have been trying to get into the habit of reading a bit everyday. These are the books that I will begin/currently am/completed reading in 2025. I have this here for anyone with enough time to meander around my website.&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+In Progress
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;Pachinko - Min Jin Lee&lt;/li&gt;
 &lt;li&gt;Christ the Eternal Tao - Hieromonk Damascene&lt;/li&gt;
@@ -1420,21 +1545,21 @@ In Progress
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-4&#34;&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
 Finished
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;Kokoro - Natsume Soseki (&lt;code class=&#34;verbatim&#34;&gt;2025-02-11 Tue&lt;/code&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-5&#34;&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
 Planned to Read
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
 &lt;li&gt;Sanshiro - Natsume Soseki&lt;/li&gt;
 &lt;li&gt;Kusamakura - Natsume Soseki&lt;/li&gt;
@@ -1465,6 +1590,14 @@ Planned to Read
 
   &lt;h2&gt;All Publications&lt;/h2&gt;
   &lt;ul class=&#34;publication-list&#34;&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2025-03-07 Friday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/technology/gallery/&#34;&gt;Desktop Customization Gallery&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
     
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;

@@ -1,0 +1,29 @@
+#+title: Desktop Customization Gallery
+#+date: 2025-03-07T19:16:52-0500
+#+type: publication
+
+* FAQ
+** Where are the dots????
+They are on [[https://github.com/BardofSprites/][my GitHub]]
+
+* 2025
+** Xmonad with gruber darker
+Made myself a silly wallpaper to match with the gruber darker theme for fun :)
+
+{{< img class="centered-image" src="/img/xmonad-2.png" caption="Open window: Emacs writing this article" mouse="xmonad">}}
+
+** i3wm
+{{< img class="centered-image" src="/img/i3wm-1.png" caption="open windows: Emacs with Elfeed" mouse="pretty default i3wm setup">}}
+
+* Summer 2024-2025
+** FVWM
+I have many themes, the ones in these are =modus-vivendi= and =ef-frost=.
+
+{{< img class="centered-image" src="/img/fvwm-old.png" caption="open windows: Emacs with Elfeed" mouse="pretty default i3wm setup">}}
+
+{{< img class="centered-image" src="/img/fvwm-1.png" caption="open windows: Emacs with Elfeed" mouse="pretty default i3wm setup">}}
+
+{{< img class="centered-image" src="/img/fvwm-frost.png" caption="open windows: Emacs with Elfeed" mouse="pretty default i3wm setup">}}
+
+{{< img class="centered-image" src="/img/fvwm-frost-horizontal-bar.png" caption="open windows: Emacs with Elfeed" mouse="pretty default i3wm setup">}}
+

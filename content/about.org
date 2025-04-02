@@ -7,6 +7,15 @@ I am known as bardman online. I am a 18 year old student/programmer.
 
 {{< img class="about-image" src="/img/catwithscarf.jpg" caption="" mouse="not my image">}}
 
+* Possible FAQ
+** What is your pc setup?
++ Costco Gaming PC (HP Pavilion something something)
++ 2 monitors
++ cheap chinese keyboard
++ Razr mouse
++ Logitech streamcam that my mom gave me
++ [[/technology/programs/][Desktop setup]]
+
 * 2025 Reading Backlog
 Since the beginning of the year I have been trying to get into the habit of reading a bit everyday. These are the books that I will begin/currently am/completed reading in 2025. I have this here for anyone with enough time to meander around my website.
 

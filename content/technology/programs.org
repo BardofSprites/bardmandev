@@ -3,6 +3,9 @@
 #+type: publication
 #+tags: [Technology, Software]
 
+* Gallery
+You can view a gallery of my desktop screenshots [[/technology/gallery/][here]].
+
 * Philosophy For Programs
 ** 1. Functionality
 I want my programs to be minimal, but not the point of being completely featureless. I'm can't use a TTY for browsing the modern web. I'm also don't need to use the behemoth that is the Gnome desktop environment. I use something in between these two.
@@ -45,6 +48,10 @@ I settled with Debian and Gentoo as my main choices. Gentoo for my desktop and l
 + a pretty significant time investment
 + takes a long time to install (might be my fault)
 + compiling packages can take a long time
+
+*** (2025 addition)
+I have started using Artix+openrc on my laptop
+
 
 ** Web Browsing: Firefox and Librewolf
 These are easy to use and don't eat up as much RAM as chromium. They are also both free and open source which makes it easier to install them on linux.
