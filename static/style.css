@@ -258,6 +258,13 @@ main {
     main {
         margin-left: 0;
     }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-button {
+        display: none;
+    }
 }
 
 /* Table Styling */
