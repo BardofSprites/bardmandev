@@ -96,15 +96,6 @@ FVWM
 	</item>
 	
 	<item>
-		<title>Reading List</title>
-		<link>http://localhost:1313/readling-list/</link>
-		<pubDate>Tue, 18 Feb 2025 19:45:17 -0500</pubDate>
-		
-		<guid>http://localhost:1313/readling-list/</guid>
-		<description></description>
-	</item>
-	
-	<item>
 		<title>Watch YouTube with Emacs Elfeed and GNU EMMS</title>
 		<link>http://localhost:1313/technology/elfeed/</link>
 		<pubDate>Tue, 11 Feb 2025 15:19:09 -0500</pubDate>
