@@ -1,0 +1,7 @@
+#+TITLE: C++ Development in Emacs
+#+DATE: 2024-11-21T10:27:47-0500
+#+type: publication
+#+tags: [Coding,Emacs]
+
+* Introduction
+This article is meant to summarize all the concepts from: [[https://tuhdo.github.io/c-ide.html][this article]].

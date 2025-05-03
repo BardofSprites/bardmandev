@@ -7,6 +7,13 @@
 They are on [[https://github.com/BardofSprites/][my GitHub]]
 
 * 2025
+** FVWM3 With Gruber Darker on Artix-openrc
+I played with [[https://www.windowmaker.org/][WindowMaker]] for a little bit. I didn't actually end up liking or using it, but I did enjoy the [[https://www.dockapps.net/][dockapps]]. I swallowed these little widgets into the left panel that I have on the side. The bar has wmcore, ~wmacpi~, ~wmamixer~, ~wmusic~, and ~wmclock~. The grid on the top is ~FvwmPager~ and the window list is ~FvwmIconMan~.
+
+The windows shown are Emacs with a lisp project open (so I can look super productive) and a terminal running ~fastfetch~ (I have it aliased to neofetch). I finally wrote an Fvwm colorset when I figured out which colors I like for 
+
+{{< img class="centered-image" src="/img/fvwm3-dockapps.png">}}
+
 ** Xmonad with gruber darker
 Made myself a silly wallpaper to match with the gruber darker theme for fun :)
 
