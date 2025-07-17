@@ -233,12 +233,8 @@ Demonstration
 &lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;p&gt;First I open Elfeed to a video that I want to view, then I run &lt;code&gt;bard/add-video-emms-queue&lt;/code&gt; for each entry I want to add to my queue (bound to &lt;code&gt;C-c C-e&lt;/code&gt;). After that I open EMMS (bound to &lt;code&gt;&amp;lt;f8&amp;gt;&lt;/code&gt;). Then I click enter on the video and hooray it&amp;#39;s playing. I can even save to a playlist and replay later.&lt;/p&gt;
 &lt;p&gt;
-
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/V0c8CPk9LHk?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/V0c8CPk9LHk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
     &lt;/div&gt;
 &lt;/p&gt;
 &lt;/div&gt;
@@ -531,12 +527,8 @@ Examples
 &lt;p&gt;
 TLDR: I had gave a talk for EmacsConf 2024 about student workflows.&lt;/p&gt;
 &lt;p&gt;
-
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ofUQMq8ZK3U?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ofUQMq8ZK3U?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
     &lt;/div&gt;
 &lt;/p&gt;
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
@@ -1575,9 +1567,9 @@ In Progress
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
-&lt;li&gt;Pachinko - Min Jin Lee&lt;/li&gt;
-&lt;li&gt;Christ the Eternal Tao - Hieromonk Damascene&lt;/li&gt;
-&lt;li&gt;Братья Карамазовы - Фёдор Достоевский&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Братья Карамазовы - Фёдор Достоевский&lt;/del&gt; (pause)&lt;/li&gt;
+&lt;li&gt;Sanshiro - Natsume Soseki&lt;/li&gt;
+&lt;li&gt;Monastic Spirituality - Metropolitan Jonah&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1587,6 +1579,7 @@ Finished
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
+&lt;li&gt;Youth of the Apocalypse: And the Last True Rebellion (&lt;code class=&#34;verbatim&#34;&gt;2025-05-22 Thu&lt;/code&gt;) (🌞)&lt;/li&gt;
 &lt;li&gt;Kokoro - Natsume Soseki (&lt;code class=&#34;verbatim&#34;&gt;2025-02-11 Tue&lt;/code&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -1597,12 +1590,13 @@ Planned to Read
 &lt;/h3&gt;
 &lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
 &lt;ol&gt;
-&lt;li&gt;Sanshiro - Natsume Soseki&lt;/li&gt;
 &lt;li&gt;Kusamakura - Natsume Soseki&lt;/li&gt;
 &lt;li&gt;Идиот - Фёдор Достоевский&lt;/li&gt;
 &lt;li&gt;Преступление и Наказание - Фёдор Достоевский&lt;/li&gt;
 &lt;li&gt;2666 - Roberto Picador&lt;/li&gt;
 &lt;li&gt;Dune Messiah - Frank Herbert&lt;/li&gt;
+&lt;li&gt;Pachinko - Min Jin Lee&lt;/li&gt;
+&lt;li&gt;Christ the Eternal Tao - Hieromonk Damascene&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
