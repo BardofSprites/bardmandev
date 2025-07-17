@@ -103,8 +103,8 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/general/</loc>
-  </url><url>
     <loc>http://localhost:1313/general/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/general/</loc>
   </url>
 </urlset>

@@ -13,15 +13,19 @@
   </head>
   <body>
     <nav id="sidebar">
-      <ul>
-        <div class="sidebar-header">
-          <a href="http://localhost:1313/">Bardman.dev</a>
-          <small> Home page </small>
-        </div>
-        <li><a href="/about/">About Me</a></li>
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/projects/">Projects</a></li>
-      </ul>
+      <div class=sidebar-inner>
+        <ul>
+          <div class="sidebar-header">
+            <a href="http://localhost:1313/">Bardman.dev</a>
+            <small> Home page </small>
+          </div>
+          <div class="sidebar-links">
+            <li><a href="/about/">About Me</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/projects/">Projects</a></li>
+          </div>
+        </ul>
+      </div>
     </nav>
     <main>
       <header>
@@ -376,16 +380,18 @@ Some notes are pdfs. These pdfs are are generated with GNU Emacs Org Mode that i
     </main>
     
     <footer>
-      <a href="http://localhost:1313/">http://localhost:1313/</a>
-      <br><br>
-      <p>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/madewithemacs.png"></a>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/made-with-gnu-emacs-the-right-way.gif"></a>
-        <a href="https://linux.org"> <img class="footer-button" src="/img/made-on-gnu-linux.gif"></a>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/site-created-with-emacs.gif"></a>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/powered-by-emacs.gif"></a>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/created-with-emacs.gif"></a><a href="/index.xml"><img class="footer-button" src="/rss.svg" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
-      </p>
+      <div class="footer-container">
+        <a href="http://localhost:1313/">http://localhost:1313/</a>
+        <br><br>
+        <p>
+          <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/madewithemacs.png"></a>
+          <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/made-with-gnu-emacs-the-right-way.gif"></a>
+          <a href="https://linux.org"> <img class="footer-button" src="/img/made-on-gnu-linux.gif"></a>
+          <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/site-created-with-emacs.gif"></a>
+          <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/powered-by-emacs.gif"></a>
+          <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/created-with-emacs.gif"></a><a href="/index.xml"><img class="footer-button" src="/rss.svg" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+        </p>
+      </div>
     </footer>
     
   </body>
