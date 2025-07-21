@@ -45,6 +45,11 @@ img {
     background: #3a0c14;
 }
 
+.note {
+    border: 10px solid #4a4000;
+    background: #4a4000;
+}
+
 .subtitle {
     color:#989898;
     font-style: italic;

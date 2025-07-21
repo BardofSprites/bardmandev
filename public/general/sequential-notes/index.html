@@ -46,13 +46,19 @@
 <ul>
 <li><a href="#headline-5">How howm Inspired Me To Take Another Look</a>
 </li>
-<li><a href="#headline-6">The &#34;New?&#34; System</a>
+<li><a href="#headline-6">The Old System</a>
+</li>
+<li><a href="#headline-7">The &#34;New?&#34; System</a>
 <ul>
-<li><a href="#headline-7">How does this relate to sequence</a>
+<li><a href="#headline-8">The Unconventionally Rigid Way Of Using Sequences</a>
+</li>
+<li><a href="#headline-9">What I Ended Up With</a>
 </li>
 </ul>
 </li>
 </ul>
+</li>
+<li><a href="#headline-10">Conclusion</a>
 </li>
 </ul>
 </nav>
@@ -76,7 +82,15 @@
 Introduction and Background
 </h2>
 <div id="outline-text-headline-1" class="outline-text-2">
-<p>I have been preparing for starting my University journey this fall and with that comes <del>spring</del> summer cleaning of my notes. This is something I kind of look for because it gives me an excuse to reevaluate my workflow for notes. I stay away from this during the school year, <em>typically</em>, but summer time is good for re-evaluating my workflows.</p>
+
+<details class="note">
+  <summary>📝  Please watch protesilaos&#39;s video about both packages before reading this</summary>
+  <p>
+Parts of this article will seem confusing. Especially if you don&#39;t watch the video about sequencing. That one is more important I think to understand the technicalities of what I&#39;m trying to convey.</p>
+</details>
+
+<p>
+I have been preparing for starting my University journey this fall and with that comes <del>spring</del> summer cleaning of my notes. This is something I kind of look for because it gives me an excuse to reevaluate my workflow for notes. I stay away from this during the school year, <em>typically</em>, but summer time is good for re-evaluating my workflows.</p>
 <p>
 Something that was always confusing for me was the usecase for Denote&#39;s <a href="https://protesilaos.com/emacs/denote-sequence">sequence</a> and <a href="https://protesilaos.com/emacs/denote-silo">silo</a> features. I wanted to figure out a way that I could use them. And that is precisely what I achieved recently.</p>
 </div>
@@ -113,27 +127,29 @@ Not the most traditional method
 How I Decided To Use Denote Sequence Functionality
 </h2>
 <div id="outline-text-headline-4" class="outline-text-2">
-<p>NOTE: For the longest time I thought this was the most useless thing ever (no offence. Personally, I just didn&#39;t get it [until now!])</p>
+<p>NOTE: For the longest time I thought this was the most useless thing ever (no offence. I just didn&#39;t get it until now)</p>
 <div id="outline-container-headline-5" class="outline-3">
 <h3 id="headline-5">
 How howm Inspired Me To Take Another Look
 </h3>
 <div id="outline-text-headline-5" class="outline-text-3">
-<p>It was today (date of writing) that I finally figured out how anyone could make sense of a possible use case for this. This surprised me, especially as someone who has loosely &#34;studied&#34; note-taking and organization for about 3 years through YouTube content and blog posts. This insight came up as a random thought that popped up when I was taking an n-th look at <a href="https://github.com/kaorahi/howm/">howm</a>. I think the home page and it&#39;s minimal approach to linking between files was the main drawing factor, but at the end of the day I have a system that already works for me.</p>
+<p>It was today (date of writing) that I finally figured out how anyone could make sense of a possible use case for this. This insight came up as a random thought that popped up when I was pontificating the simplicity of <a href="https://github.com/kaorahi/howm/">howm</a>. I was interested in howm before thanks to this <a href="https://www.youtube.com/watch?v=o1x_UM0HDhE">a video by qnnnp</a>, aka Андрей Суховский, that details his <em>zettlekasten-esque</em> workflow using this tool. I think the home page and it&#39;s minimal approach to linking between files was the main drawing factor, but at the end of the day I have a system that already works for me.</p>
 <p>
-I had recently (in the past year or so) taken up interest in it again because of <a href="https://www.youtube.com/watch?v=o1x_UM0HDhE">a video by qnnnp</a>, aka Андрей Суховский, that details his <em>zettlekasten-esque</em> workflow using this tool. I think that this video is an awesome introduction to an efficient system of note taking in Emacs. He uses a basically default Emacs which I can say is just as cool to me as someone with a <a href="https://tecosaur.github.io/emacs-config/config.pdf">super riced out Emacs system like tecosaur</a> (a 317 page pdf 💀).</p>
-<p>
-Суховский comes at it with the approach of a Картотека system (zettlekasten). He makes physical card notes and then transfers them into the indexing system. There&#39;s something about the simplicity of this (not that my system is complicated) that is satisfying.</p>
+Суховский comes at it with the approach of a Картотека system (zettlekasten). He makes physical card notes and then transfers them into the indexing system. When he shows his methods it seemed a lot more natural and free-flowing than my sort of hierarchical</p>
 <p>
 This video got me thinking again about how my system currently works. And I arrived a this conclusion:</p>
 </div>
 </div>
 <div id="outline-container-headline-6" class="outline-3">
 <h3 id="headline-6">
-The &#34;New?&#34; System
+The Old System
 </h3>
 <div id="outline-text-headline-6" class="outline-text-3">
-<p>Basically when I create a note, a simple process happens:</p>
+<p>Basically I would have notes with a keyword &#34;meta&#34; that would mean they were kind of a link hub for other notes. They used the <code>denote-org</code> feature of <em>dynamic blocks</em> to link a set of notes with a similar keyword (e.g. biology meta note would have links to all biology notes). The fundamental flaw with this is that it&#39;s exactly like any normal workflow in a notebook. You have a notebook for each subject and the concepts contained within never really interact.</p>
+<p>
+Although I wasn&#39;t exactly trying to get a zettlekasten system, I was trying to create something like it that would flow freely. But I had unintentionally done the opposite.</p>
+<p>
+I had done something like this:</p>
 <ol>
 <li>Create a note (with denote prompts like title and keywords)</li>
 <li>
@@ -144,12 +160,20 @@ The &#34;New?&#34; System
 </li>
 <li>Write the note</li>
 </ol>
-<div id="outline-container-headline-7" class="outline-4">
-<h4 id="headline-7">
-How does this relate to sequence
+<p>There are elements of the second step in the process that I can&#39;t exactly explain, but it would just create a rigidity that I no longer want.</p>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+The &#34;New?&#34; System
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<div id="outline-container-headline-8" class="outline-4">
+<h4 id="headline-8">
+The Unconventionally Rigid Way Of Using Sequences
 </h4>
-<div id="outline-text-headline-7" class="outline-text-4">
-<p>Well that&#39;s a good question. The sequence can lie in the second step. I have been organizing notes with their topical <em>meta-note</em> using <a href="https://protesilaos.com/emacs/denote-org">denote-org&#39;s</a> dynamic block automatic linking. But I have realized that a better way of doing this is by trying to incorporate the notes into a possible sequence. As I discover more about a topic I can do this:</p>
+<div id="outline-text-headline-8" class="outline-text-4">
+<p><span style="text-decoration: underline;">When having this epiphany about sequential note taking, I later realized I had actually not had an epiphany.</span> I stumbled upon a <a href="https://share.tube/w/mu7fMr5RWMqetcZRXutSGF">series of videos</a> by Ĝabbo while searching for other example workflows. He explained that the point of the sequence was to <strong>track a series of thoughts</strong>. The way I had thought they were useful for is a hierarchy like this:</p>
 <div class="src src-text">
 <div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>20250716T201152==1--tea-research__research.org
 </span></span><span style="display:flex;"><span>20250123T053843==1=1--effects-of-roasted-green-tea-on-human-responses__research.org
@@ -159,26 +183,44 @@ How does this relate to sequence
 </span></span><span style="display:flex;"><span>   green-tea-the-neural-and-behavioral-effects__research_writing.org</span></span></code></pre></div>
 </div>
 <p>
-<code class="verbatim">Now what is this?</code></p>
+My thought was that the highest level signature (<code>==1</code>) would serve as the top of the hierarchy and subsequent topics stemmed from it. But his is not organic as you would have to reorganize it all the time to get the topical hierarchy in order.</p>
 <p>
-I was doing a research paper project in English class last school year (really just a few months ago). I was researching green tea because it&#39;s something I enjoy. I wrote some annotated bibliographies for sources because it was a requirement for the project. I found today that the above format is the best way to organize them. </p>
-<p>
-It all starts with the first not at the top, it&#39;s the beginning of the sequence (parent). It has the signature of <code>==1</code> which is a &#34;top-level&#34; signature. If I decide to have another sequenced topic, it will start with a <code>==2</code>.</p>
-<p>
-The subsequent notes underneath are children of this main topic of tea research.</p>
-<p>
-So it&#39;s better visualized like this:</p>
+However, this example could be a traditional sequence. I could be writing a note about tea research and then move on to writing some notes on papers I had stumbled upon, continuing <span style="text-decoration: underline;">a line of thinking</span>.</p>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-4">
+<h4 id="headline-9">
+What I Ended Up With
+</h4>
+<div id="outline-text-headline-9" class="outline-text-4">
+<p>A traditional sequence would feels more like a serendipitous and fleeting moment. You are taking notes on something and you feel like your writing is branching away from the main topic. Just make a new sequence (because it stemmed from the original note), and continue writing. In the end you will having something like this:</p>
 <div class="src src-text">
-<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>==1__green-tea-cognition
-</span></span><span style="display:flex;"><span>├── ==1_1__roasted-green-tea-human-responses
-</span></span><span style="display:flex;"><span>├── ==1=2__consumption-and-cognition
-</span></span><span style="display:flex;"><span>├── ==1=3__parieto-frontal-connectivity
-</span></span><span style="display:flex;"><span>├── ==1=4__cognitive-benefits-paper</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>20250717T151648==2--taking-sequential-notes__productivity_writing.org
+</span></span><span style="display:flex;"><span>20250717T151744==2=1--book-notes.org
+</span></span><span style="display:flex;"><span>20250717T151920==2=2--other-note-structures.org
+</span></span><span style="display:flex;"><span>20250717T185559==2=2=1--система-картотека-в-емакс__abstract_productivity.org</span></span></code></pre></div>
+</div>
+<ol>
+<li>I started with a note that I took when following along with the video series  (<code>==2</code>)</li>
+<li>I decided to write about how this new method can be used to take notes on books (<code>==2=1</code>)</li>
+<li>I thought about some other smaller examples of this system (~==2~=2)</li>
+<li>And one of those was a note about Андрей Суховский&#39;s methods (<code>==2=2=1</code>)</li>
+</ol>
+<p>Hopefully you can look at the signatures (==2 being the parent) and see how over time the ideas gradually develop into a train of thought.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
+</div>
+<div id="outline-container-headline-10" class="outline-2">
+<h2 id="headline-10">
+Conclusion
+</h2>
+<div id="outline-text-headline-10" class="outline-text-2">
+<p>At the end of the day, most people will never think about any of this. And that&#39;s fair. Nobody really needs sequences and silos, and there are marginal gains being made through this workflow. But I like doing stuff like this in my free time. Refining my system is something that I find satisfaction in doing. And I want to share with others who may enjoy it as well.</p>
+<p>
+These things don&#39;t make anyone objectively more productive (it may be the opposite). But they do make writing and organization more fluid and can take a lot of the though of it off of your mind. And I supposed that&#39;s enough to keep me tinkering. </p>
 </div>
 </div>
 

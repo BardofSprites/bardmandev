@@ -2,12 +2,169 @@
   <channel>
 	<title>bardman&#39;s website</title>
 	<link>http://localhost:1313/tags/general/</link>
-	<description>Recent content in General on bardman&#39;s website</description>
+	<description>Recent content in [General] on bardman&#39;s website</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
+	<lastBuildDate>Wed, 16 Jul 2025 20:34:17 -0400</lastBuildDate>
     
         <atom:link href="http://localhost:1313/tags/general/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>Note Silos and Sequential Notes</title>
+		<link>http://localhost:1313/general/sequential-notes/</link>
+		<pubDate>Wed, 16 Jul 2025 20:34:17 -0400</pubDate>
+		
+		<guid>http://localhost:1313/general/sequential-notes/</guid>
+		<description>
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-1&#34;&gt;
+Introduction and Background
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;
+
+&lt;details class=&#34;note&#34;&gt;
+  &lt;summary&gt;📝  Please watch protesilaos&amp;#39;s video about both packages before reading this&lt;/summary&gt;
+  &lt;p&gt;
+Parts of this article will seem confusing. Especially if you don&amp;#39;t watch the video about sequencing. That one is more important I think to understand the technicalities of what I&amp;#39;m trying to convey.&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;p&gt;
+I have been preparing for starting my University journey this fall and with that comes &lt;del&gt;spring&lt;/del&gt; summer cleaning of my notes. This is something I kind of look for because it gives me an excuse to reevaluate my workflow for notes. I stay away from this during the school year, &lt;em&gt;typically&lt;/em&gt;, but summer time is good for re-evaluating my workflows.&lt;/p&gt;
+&lt;p&gt;
+Something that was always confusing for me was the usecase for Denote&amp;#39;s &lt;a href=&#34;https://protesilaos.com/emacs/denote-sequence&#34;&gt;sequence&lt;/a&gt; and &lt;a href=&#34;https://protesilaos.com/emacs/denote-silo&#34;&gt;silo&lt;/a&gt; features. I wanted to figure out a way that I could use them. And that is precisely what I achieved recently.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-2&#34;&gt;
+How I Decided To Use Denote Silo Functionality
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;I have a lot of old notes from past classes that I have taken, but rarely reference. I still want to hold onto them. It just feels bad to throw away information that I have synthesized into a way that I understand. I may work on something related to the notes that I took, or take a class with similar topics (e.g. AP United States History notes will apply to an American History course more or less)&lt;/p&gt;
+&lt;p&gt;
+As such, I have created a silo for my old notes in &lt;code&gt;~/Notes/Old Notes&lt;/code&gt; and they have a structure like this:&lt;/p&gt;
+&lt;div class=&#34;src src-sh&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  tree &lt;span style=&#34;color:#79a8ff&#34;&gt;&amp;#34;~/Notes/Old Notes/&amp;#34;&lt;/span&gt; -d -L &lt;span style=&#34;color:#00bcff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  /home/bard/Notes/Old Notes/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ├── Old Notes &lt;span style=&#34;color:#00d3d0&#34;&gt;(&lt;/span&gt;2022-2023&lt;span style=&#34;color:#00d3d0&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ├── Old Notes &lt;span style=&#34;color:#00d3d0&#34;&gt;(&lt;/span&gt;2023-2024&lt;span style=&#34;color:#00d3d0&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  └── Old Notes &lt;span style=&#34;color:#00d3d0&#34;&gt;(&lt;/span&gt;2024-2025&lt;span style=&#34;color:#00d3d0&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00bcff&#34;&gt;4&lt;/span&gt; directories&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Not the most traditional method
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Now I know that this isn&amp;#39;t the way your really &amp;#34;supposed to do it&amp;#34;. The traditional way (as far as Org Roam/denote) would suggest the user to put all of their notes in a single directory. But for me the Old Notes silo is an organizational barrier to &lt;em&gt;let go&lt;/em&gt;  of my old notes. This not only removes the temptation to reorganize them to fit a new note taking convention that I have taken up, but also de-clutters my current working notes directory from quasi-irrelevant ones.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-4&#34;&gt;
+How I Decided To Use Denote Sequence Functionality
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;NOTE: For the longest time I thought this was the most useless thing ever (no offence. I just didn&amp;#39;t get it until now)&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+How howm Inspired Me To Take Another Look
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;It was today (date of writing) that I finally figured out how anyone could make sense of a possible use case for this. This insight came up as a random thought that popped up when I was pontificating the simplicity of &lt;a href=&#34;https://github.com/kaorahi/howm/&#34;&gt;howm&lt;/a&gt;. I was interested in howm before thanks to this &lt;a href=&#34;https://www.youtube.com/watch?v=o1x_UM0HDhE&#34;&gt;a video by qnnnp&lt;/a&gt;, aka Андрей Суховский, that details his &lt;em&gt;zettlekasten-esque&lt;/em&gt; workflow using this tool. I think the home page and it&amp;#39;s minimal approach to linking between files was the main drawing factor, but at the end of the day I have a system that already works for me.&lt;/p&gt;
+&lt;p&gt;
+Суховский comes at it with the approach of a Картотека system (zettlekasten). He makes physical card notes and then transfers them into the indexing system. When he shows his methods it seemed a lot more natural and free-flowing than my sort of hierarchical&lt;/p&gt;
+&lt;p&gt;
+This video got me thinking again about how my system currently works. And I arrived a this conclusion:&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+The Old System
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;Basically I would have notes with a keyword &amp;#34;meta&amp;#34; that would mean they were kind of a link hub for other notes. They used the &lt;code&gt;denote-org&lt;/code&gt; feature of &lt;em&gt;dynamic blocks&lt;/em&gt; to link a set of notes with a similar keyword (e.g. biology meta note would have links to all biology notes). The fundamental flaw with this is that it&amp;#39;s exactly like any normal workflow in a notebook. You have a notebook for each subject and the concepts contained within never really interact.&lt;/p&gt;
+&lt;p&gt;
+Although I wasn&amp;#39;t exactly trying to get a zettlekasten system, I was trying to create something like it that would flow freely. But I had unintentionally done the opposite.&lt;/p&gt;
+&lt;p&gt;
+I had done something like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a note (with denote prompts like title and keywords)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then I think about how it could relate to a possible topic that I have written about before&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Link if necessary&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Write the note&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are elements of the second step in the process that I can&amp;#39;t exactly explain, but it would just create a rigidity that I no longer want.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-7&#34;&gt;
+The &amp;#34;New?&amp;#34; System
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-7&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;div id=&#34;outline-container-headline-8&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-8&#34;&gt;
+The Unconventionally Rigid Way Of Using Sequences
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-8&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;&lt;span style=&#34;text-decoration: underline;&#34;&gt;When having this epiphany about sequential note taking, I later realized I had actually not had an epiphany.&lt;/span&gt; I stumbled upon a &lt;a href=&#34;https://share.tube/w/mu7fMr5RWMqetcZRXutSGF&#34;&gt;series of videos&lt;/a&gt; by Ĝabbo while searching for other example workflows. He explained that the point of the sequence was to &lt;strong&gt;track a series of thoughts&lt;/strong&gt;. The way I had thought they were useful for is a hierarchy like this:&lt;/p&gt;
+&lt;div class=&#34;src src-text&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;20250716T201152==1--tea-research__research.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;20250123T053843==1=1--effects-of-roasted-green-tea-on-human-responses__research.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;20250313T191558==1=2--green-tea-consumption-and-cognitive-function__research.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;20250313T203914==1=3--green-tea-enhances-parieto-frontal-connectivity__research.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;20250313T213601==1=4--the-cognitive-benefits-of-
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   green-tea-the-neural-and-behavioral-effects__research_writing.org&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+My thought was that the highest level signature (&lt;code&gt;==1&lt;/code&gt;) would serve as the top of the hierarchy and subsequent topics stemmed from it. But his is not organic as you would have to reorganize it all the time to get the topical hierarchy in order.&lt;/p&gt;
+&lt;p&gt;
+However, this example could be a traditional sequence. I could be writing a note about tea research and then move on to writing some notes on papers I had stumbled upon, continuing &lt;span style=&#34;text-decoration: underline;&#34;&gt;a line of thinking&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-9&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;headline-9&#34;&gt;
+What I Ended Up With
+&lt;/h4&gt;
+&lt;div id=&#34;outline-text-headline-9&#34; class=&#34;outline-text-4&#34;&gt;
+&lt;p&gt;A traditional sequence would feels more like a serendipitous and fleeting moment. You are taking notes on something and you feel like your writing is branching away from the main topic. Just make a new sequence (because it stemmed from the original note), and continue writing. In the end you will having something like this:&lt;/p&gt;
+&lt;div class=&#34;src src-text&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#fff;background-color:#000;-moz-tab-size:2;-o-tab-size:2;tab-size:2;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;20250717T151648==2--taking-sequential-notes__productivity_writing.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;20250717T151744==2=1--book-notes.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;20250717T151920==2=2--other-note-structures.org
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;20250717T185559==2=2=1--система-картотека-в-емакс__abstract_productivity.org&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;I started with a note that I took when following along with the video series  (&lt;code&gt;==2&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;I decided to write about how this new method can be used to take notes on books (&lt;code&gt;==2=1&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;I thought about some other smaller examples of this system (~==2~=2)&lt;/li&gt;
+&lt;li&gt;And one of those was a note about Андрей Суховский&amp;#39;s methods (&lt;code&gt;==2=2=1&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Hopefully you can look at the signatures (==2 being the parent) and see how over time the ideas gradually develop into a train of thought.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-10&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;headline-10&#34;&gt;
+Conclusion
+&lt;/h2&gt;
+&lt;div id=&#34;outline-text-headline-10&#34; class=&#34;outline-text-2&#34;&gt;
+&lt;p&gt;At the end of the day, most people will never think about any of this. And that&amp;#39;s fair. Nobody really needs sequences and silos, and there are marginal gains being made through this workflow. But I like doing stuff like this in my free time. Refining my system is something that I find satisfaction in doing. And I want to share with others who may enjoy it as well.&lt;/p&gt;
+&lt;p&gt;
+These things don&amp;#39;t make anyone objectively more productive (it may be the opposite). But they do make writing and organization more fluid and can take a lot of the though of it off of your mind. And I supposed that&amp;#39;s enough to keep me tinkering. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>Desktop Customization Gallery</title>
@@ -1619,6 +1776,14 @@ Planned to Read
 
   &lt;h2&gt;All Publications&lt;/h2&gt;
   &lt;ul class=&#34;publication-list&#34;&gt;
+    
+    &lt;li class=&#34;publication-item&#34;&gt;
+      &lt;article&gt;
+        
+        &lt;span&gt;2025-07-16 Wednesday&lt;/span&gt; - &lt;a href=&#34;http://localhost:1313/general/sequential-notes/&#34;&gt;Note Silos and Sequential Notes&lt;/a&gt;
+        
+      &lt;/article&gt;
+    &lt;/li&gt;
     
     &lt;li class=&#34;publication-item&#34;&gt;
       &lt;article&gt;

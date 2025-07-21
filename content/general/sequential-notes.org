@@ -1,0 +1,92 @@
+#+title: Note Silos and Sequential Notes
+#+date: 2025-07-16T20:34:17-0400
+#+type: publication
+#+tags: [General]
+
+* Introduction and Background
+{{< details class="note" summary="📝  Please watch protesilaos's video about both packages before reading this" >}}
+Parts of this article will seem confusing. Especially if you don't watch the video about sequencing. That one is more important I think to understand the technicalities of what I'm trying to convey.
+{{< /details >}}
+
+I have been preparing for starting my University journey this fall and with that comes +spring+ summer cleaning of my notes. This is something I kind of look for because it gives me an excuse to reevaluate my workflow for notes. I stay away from this during the school year, /typically/, but summer time is good for re-evaluating my workflows.
+
+Something that was always confusing for me was the usecase for Denote's [[https://protesilaos.com/emacs/denote-sequence][sequence]] and [[https://protesilaos.com/emacs/denote-silo][silo]] features. I wanted to figure out a way that I could use them. And that is precisely what I achieved recently.
+
+* How I Decided To Use Denote Silo Functionality
+I have a lot of old notes from past classes that I have taken, but rarely reference. I still want to hold onto them. It just feels bad to throw away information that I have synthesized into a way that I understand. I may work on something related to the notes that I took, or take a class with similar topics (e.g. AP United States History notes will apply to an American History course more or less)
+
+As such, I have created a silo for my old notes in ~~/Notes/Old Notes~ and they have a structure like this:
+
+#+begin_src sh
+  tree "~/Notes/Old Notes/" -d -L 2
+  /home/bard/Notes/Old Notes/
+  ├── Old Notes (2022-2023)
+  ├── Old Notes (2023-2024)
+  └── Old Notes (2024-2025)
+  
+  4 directories
+#+end_src
+
+** Not the most traditional method
+Now I know that this isn't the way your really "supposed to do it". The traditional way (as far as Org Roam/denote) would suggest the user to put all of their notes in a single directory. But for me the Old Notes silo is an organizational barrier to /let go/  of my old notes. This not only removes the temptation to reorganize them to fit a new note taking convention that I have taken up, but also de-clutters my current working notes directory from quasi-irrelevant ones.
+
+* How I Decided To Use Denote Sequence Functionality
+NOTE: For the longest time I thought this was the most useless thing ever (no offence. I just didn't get it until now)
+** How howm Inspired Me To Take Another Look
+It was today (date of writing) that I finally figured out how anyone could make sense of a possible use case for this. This insight came up as a random thought that popped up when I was pontificating the simplicity of [[https://github.com/kaorahi/howm/][howm]]. I was interested in howm before thanks to this [[https://www.youtube.com/watch?v=o1x_UM0HDhE][a video by qnnnp]], aka Андрей Суховский, that details his /zettlekasten-esque/ workflow using this tool. I think the home page and it's minimal approach to linking between files was the main drawing factor, but at the end of the day I have a system that already works for me.
+
+Суховский comes at it with the approach of a Картотека system (zettlekasten). He makes physical card notes and then transfers them into the indexing system. When he shows his methods it seemed a lot more natural and free-flowing than my sort of hierarchical
+
+This video got me thinking again about how my system currently works. And I arrived a this conclusion:
+
+** The Old System
+Basically I would have notes with a keyword "meta" that would mean they were kind of a link hub for other notes. They used the ~denote-org~ feature of /dynamic blocks/ to link a set of notes with a similar keyword (e.g. biology meta note would have links to all biology notes). The fundamental flaw with this is that it's exactly like any normal workflow in a notebook. You have a notebook for each subject and the concepts contained within never really interact.
+
+Although I wasn't exactly trying to get a zettlekasten system, I was trying to create something like it that would flow freely. But I had unintentionally done the opposite.
+
+I had done something like this:
+
+1. Create a note (with denote prompts like title and keywords)
+2. Then I think about how it could relate to a possible topic that I have written about before
+   a. Link if necessary
+3. Write the note
+
+There are elements of the second step in the process that I can't exactly explain, but it would just create a rigidity that I no longer want.
+
+** The "New?" System
+*** The Unconventionally Rigid Way Of Using Sequences
+_When having this epiphany about sequential note taking, I later realized I had actually not had an epiphany._ I stumbled upon a [[https://share.tube/w/mu7fMr5RWMqetcZRXutSGF][series of videos]] by Ĝabbo while searching for other example workflows. He explained that the point of the sequence was to *track a series of thoughts*. The way I had thought they were useful for is a hierarchy like this:
+
+#+begin_src
+20250716T201152==1--tea-research__research.org
+20250123T053843==1=1--effects-of-roasted-green-tea-on-human-responses__research.org
+20250313T191558==1=2--green-tea-consumption-and-cognitive-function__research.org
+20250313T203914==1=3--green-tea-enhances-parieto-frontal-connectivity__research.org
+20250313T213601==1=4--the-cognitive-benefits-of-
+   green-tea-the-neural-and-behavioral-effects__research_writing.org
+#+end_src
+
+My thought was that the highest level signature (~==1~) would serve as the top of the hierarchy and subsequent topics stemmed from it. But his is not organic as you would have to reorganize it all the time to get the topical hierarchy in order.
+
+However, this example could be a traditional sequence. I could be writing a note about tea research and then move on to writing some notes on papers I had stumbled upon, continuing _a line of thinking_.
+*** What I Ended Up With
+A traditional sequence would feels more like a serendipitous and fleeting moment. You are taking notes on something and you feel like your writing is branching away from the main topic. Just make a new sequence (because it stemmed from the original note), and continue writing. In the end you will having something like this:
+
+#+begin_src 
+20250717T151648==2--taking-sequential-notes__productivity_writing.org
+20250717T151744==2=1--book-notes.org
+20250717T151920==2=2--other-note-structures.org
+20250717T185559==2=2=1--система-картотека-в-емакс__abstract_productivity.org
+#+end_src
+
+1. I started with a note that I took when following along with the video series  (~==2~)
+2. I decided to write about how this new method can be used to take notes on books (~==2=1~)
+3. I thought about some other smaller examples of this system (~==2~=2)
+4. And one of those was a note about Андрей Суховский's methods (~==2=2=1~)
+
+Hopefully you can look at the signatures (==2 being the parent) and see how over time the ideas gradually develop into a train of thought.
+
+* Conclusion
+At the end of the day, most people will never think about any of this. And that's fair. Nobody really needs sequences and silos, and there are marginal gains being made through this workflow. But I like doing stuff like this in my free time. Refining my system is something that I find satisfaction in doing. And I want to share with others who may enjoy it as well.
+
+These things don't make anyone objectively more productive (it may be the opposite). But they do make writing and organization more fluid and can take a lot of the though of it off of your mind. And I supposed that's enough to keep me tinkering. 
