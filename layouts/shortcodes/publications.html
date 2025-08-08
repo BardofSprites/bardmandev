@@ -1,7 +1,7 @@
 {{ $pubs := where .Site.RegularPages "Type" "publication" }}
 {{ $notes := where .Site.RegularPages "Type" "note" }}
-{{ $recentPubs := first 10 (sort $pubs "Date" "desc") }}
-{{ $recentNotes := first 10 (sort $notes "Date" "desc") }}
+{{ $recentPubs := first 10 (sort $pubs "Lastmod" "desc") }}
+{{ $recentNotes := first 10 (sort $notes "Lastmod" "desc") }}
 
 <div class="recent-publications-and-notes">
   <h2>Recent Publications</h2>
@@ -11,6 +11,9 @@
         <article>
           {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
           <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ if ne .Lastmod .Date }}
+          <small>(Updated)</small>
+          {{ end }}
           {{ with .Params.authors }}
             <div class="authors">
               {{ delimit . ", " " and " }}
