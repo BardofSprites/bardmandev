@@ -8,6 +8,10 @@
 They are on [[https://github.com/BardofSprites/][my GitHub]]
 
 * 2025
+** NixOS + i3
+{{< img class="centered-image" src="/img/nixos-i3.png" >}}
+{{< img class="centered-image" src="/img/nixos-i3-floating.png" >}}
+
 ** XMonad and Ef Elea Dark Theme
 It's summer time :D
 
