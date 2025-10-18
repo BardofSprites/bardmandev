@@ -44,29 +44,16 @@ body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  margin: 0;
-  background: url('/pixel-city.png') repeat-x;
-  background-size: cover;
-  background-attachment: fixed; /* background stays fixed during scroll */
-  background-position: top left;
-  animation: scroll-bg 200s linear infinite;
-}
-
-@keyframes scroll-bg {
-  from { background-position-x: 0; }
-  to { background-position-x: -2000px; } /* adjust speed/distance */
 }
 
 /* Main content area */
 main {
-  margin: 80px auto 24px; /* add top margin to avoid top nav overlap */
+  margin-left: 240px;
   padding: 24px;
-  max-width: 800px; /* center like normal blog */
-  width: 90%;
+  max-width: 900px;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  background: #1d1d1d;
 }
 
 .updated {
@@ -282,25 +269,19 @@ img {
   height: 100%;
   background-color: #111111;
   border-right: 2px solid #1e1e1e;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  border-right: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   overflow-y: auto;
 }
 #sidebar ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 #sidebar ul li {
   text-align: center;
   padding: 12px 0;
-  align-content: center;
 }
 #sidebar ul li a {
   color: #c8d4df;
@@ -325,6 +306,31 @@ img {
     display: block;
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  #sidebar {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid #1e1e1e;
+  }
+  #sidebar ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #sidebar li{
+	align-content: center;
+  }
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+
 /* Footer */
 footer {
   text-align: center;
@@ -334,8 +340,6 @@ footer {
   color: #888888;
   font-size: 15px;
   border-top: 2px solid #1e1e1e;
-  max-width 900px;
-  background: #000000;
 }
 
 .footer-button {

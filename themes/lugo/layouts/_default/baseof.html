@@ -4,7 +4,11 @@
     <title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
     <link rel="canonical" href="{{ .Site.BaseURL }}">
     <link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
-    <link rel='stylesheet' type='text/css' href='/style.css'>
+    {{ if .IsHome }}
+      <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+    {{ else }}
+      <link rel="stylesheet" href="{{ "sidebar.css" | relURL }}">
+    {{ end }}
     {{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
     {{ end -}}
     <!-- <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}"> -->
@@ -21,9 +25,10 @@
           <a href="{{ .Site.BaseURL }}">Bardman.dev</a>
           <small> Home page </small>
         </div>
+        <li><a href="/projects/">Projects</a></li>
         <li><a href="/about/">About Me</a></li>
         <li><a href="/contact/">Contact</a></li>
-        <li><a href="/projects/">Projects</a></li>
+        <li><a href="https://github.com/BardofSprites/">GitHub</a></li>
       </ul>
     </nav>
     <main>
@@ -60,12 +65,6 @@
       <a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
       <br><br>
       <p>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/madewithemacs.png"></a>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/made-with-gnu-emacs-the-right-way.gif"></a>
-        <a href="https://linux.org"> <img class="footer-button" src="/img/made-on-gnu-linux.gif"></a>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/site-created-with-emacs.gif"></a>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/powered-by-emacs.gif"></a>
-        <a href="https://gnu.org/software/emacs"> <img class="footer-button" src="/img/created-with-emacs.gif"></a>
         {{- if .Param "showrss" }}<a href="/index.xml"><img class="footer-button" src="/rss.svg" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
       </p>
     </footer>
