@@ -9,10 +9,10 @@
     {{ range $recentPubs }}
       <li class="publication-item">
         <article>
-          {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+          {{ $formattedDate := .Lastmod.Format "2006-01-02 Monday" }}
           <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           {{ if ne .Lastmod .Date }}
-          <small>(Updated)</small>
+          <small class="updated">(Updated)</small>
           {{ end }}
           {{ with .Params.authors }}
             <div class="authors">

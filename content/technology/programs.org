@@ -1,5 +1,6 @@
 #+title: Programs I Use
 #+date: 2023-11-23T00:00:00+00:00
+#+lastmod: 2025-10-17T19:17:47-0400
 #+type: publication
 #+tags: [Technology, Software]
 
@@ -25,7 +26,19 @@ I can't change many default behaviours of these proprietary operating systems. I
 ** Operating System
 GNU/Linux is my favorite choice for desktop computing. In the past I have used: PopOs!, Manjaro, ArcoLinux, Debian, Ubuntu Server.
 
-I settled with Debian and Gentoo as my main choices. Gentoo for my desktop and laptop, Debian 12 for my home server.
++I settled with Debian and Gentoo as my main choices. Gentoo for my desktop and laptop, Debian 12 for my home server.+
+
+As of October 2025, I have been using NixOS for a couple months. I like parts of it, others not so much, but I think that it is saving a lot of time. NixOS is not a minimal distribution of Linux, but it provides useful features that make me more productive. I use Gentoo on my desktop for now, but I might switch it to NixOS before the new year.
+
+*Pros of NixOS:*
++ Declarative setup, makes packages somewhat stable
++ Configure system in code, just like n(vim)/Emacs
+
+*Cons of Nixos:*
++ kind of bloated
++ small security concerns, I feel like Gentoo is better with it
++ can't just run ~sudo make install~ whenever I want
++ systemd
 
 *Pros of Debian:*
 + quick to setup and easy to maintain
@@ -67,16 +80,17 @@ I like to seperate school/home browsing. Also some websites, like twitch.tv, don
 This has been text editor of choice since I found DOOM emacs in 2022. I really like the extensible nature of Emacs lisp and the packages that are avaiable. If you want to here more about my Emacs workflow, click [[/technology/workflow][here]].
 
 ** Window Manager - DWM
-I have jumped between different WMs. First preconfigured dwm on arcolinux, then i3, then xmonad, and then to Luke Smith's dwm with my own configurations.
+I have jumped between different WMs. First preconfigured dwm on arcolinux, then i3, then xmonad, and then to Luke Smith's dwm with my own configurations. +I don't see myself moving away from dwm anytime soon.+
 
-I don't see myself moving away from dwm anytime soon. Every feature that Luke patched in was exactly what I needed. The only things I changed were the keybinds because a lot of them were overly redundant.
+I have made several configurations for window managers and I kind of hope between them when I feel like it. Until I write my own wm, there is no perfect one. They don't all have the same features, but one day there will be a wm that is perfect for me. I haven't started working on it, but it will likely be called something like клетка-wm.
 
 {{< img class="centered-image" src="/img/dwm.png" caption="open windows: Emacs and Librewolf editing this article" mouse="dwm window manager">}}
 
 * Media
 *MPV:* I use this to play video files that I download from the internet/produce myself. It never lags and the UI is functionally minimal. I don't customize it or script it with the Lua programming language. I use mpv to play video files from the command line.
 
-*Emacs:* Emacs has a package called EMMS (Emacs Multi Media System) that I have been using since my start with DOOM Emacs. It uses MPV to play music/videos with Emacs. It's very convenient as a music player because you can create playlists with Emacs text buffers. [[/emacs/emms][Here]] is a more extensive description of my multimedia workflow with Emacs.
+*Emacs:* Emacs has a package called EMMS (Emacs Multi Media System) that I have been using since my start with DOOM Emacs. It uses MPV to play music/videos with Emacs. It's very convenient as a music player because you can create playlists with Emacs text buffers. [[/technology/emms][Here]] is a more extensive description of my multimedia workflow with Emacs.
+
 * Utilities
 ** Terminal - ST Suckless Terminal
 Suckless terminal (st): It is fast, never crashes, minimal, and full of features. Since it is a suckless tool, you start with the original codebase and can add patches to it.

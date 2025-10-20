@@ -3,30 +3,50 @@
 
 * Introduction
 
-I am known as bardman online. I am a 18 year old student/programmer.
+I am known as bardman online. I am a 18 year old student/programmer. I am currently studying Computer Science and Engineering.
 
 {{< img class="about-image" src="/img/catwithscarf.jpg" caption="" mouse="not my image">}}
 
 * Possible FAQ
+** Why did you make this site?
+I was inspired by [[https://protesilaos.com/][Protesilaos Stavrou]] and [[https://landchad.net][Luke Smith]] to start my own web page. Having your own web page is a kind of social media, but more customized. I also wanted to make tutorials, and having them written out is a medium that is not often utilized.
+
+Why bother doing any research when you can just ask ChatGPT to find you a perfectly curated and definitely not biased source for a video about the topic you want to be interested in?
 ** What is your pc setup?
 + Costco Gaming PC (HP Pavilion something something)
 + 2 monitors
 + cheap chinese keyboard
 + Razr mouse
 + Logitech streamcam that my mom gave me
-+ [[/technology/programs/][Desktop setup]]
++ Laptop: Thinkpad T480s I bought off eBay for Christmas
++ [[/technology/programs/][software used]]
 
+* Interests
+** Major interests
++ [[/technology/programs/][Software]] (Linux, Emacs, etc)
++ [[/general/stationary][Writing tools]] (pens, pencils, notebooks)
++ Reading
++ Music
++ Russian language, culture, and history
++ Tea
+** Minor Interests
++ Philosophy/Theology
++ Japanese language, culture, and history
++ Yerba Mate
+** Growing interests
++ Competitive Programming
++ Math
 * 2025 Reading Backlog
 Since the beginning of the year I have been trying to get into the habit of reading a bit everyday. These are the books that I will begin/currently am/completed reading in 2025. I have this here for anyone with enough time to meander around my website.
 
 ** In Progress
 1. +Братья Карамазовы - Фёдор Достоевский+ (pause)
 2. Sanshiro - Natsume Soseki
-3. Monastic Spirituality - Metropolitan Jonah
    
 ** Finished
 1. Youth of the Apocalypse: And the Last True Rebellion (=2025-05-22 Thu=) (🌞)
 2. Kokoro - Natsume Soseki (=2025-02-11 Tue=)
+3. Monastic Spirituality - Metropolitan Jonah (=2025-09-30=)
    
 ** Planned to Read
 1. Kusamakura - Natsume Soseki

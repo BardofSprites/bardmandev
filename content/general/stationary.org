@@ -1,0 +1,25 @@
+#+title: Stationary and Writing Instruments
+#+date: 2025-10-17T23:23:17-0400
+#+type: publication
+#+tags: [General]
+
+* Writing Instruments
+** Pencils
+Since elementary school, I've been looking sought ways to make writing on paper more enjoyable. I would randomly find pencils around my house and test them to see which one I liked the most. I still remember my first mechanical pencil that my grandma gave me in 2nd grade. It was a dark green Pentel pencil with a twisting eraser.
+
+In high school I was getting more school supplies and I wanted to get something new. I got a Kokuyo Campus eraser (used up since them), a Zebra Delguard 0.5mm and Uni Kurutoga Advance. Both of these didn't last very long because they were made of plastic — the clip broke on the Delguard and the lead pusher broke on the Kurutoga Advance. It was in around 10th grade when I discovered the
+Rotring 600 and thought about getting one. I searched some more and found the 800 was on sale. I bought it with an Amazon giftcard I had lying around from Microsoft Edge points that I had accumulated before I quit using the browser. It was basically a free pencil that would typically cost $50-$75 without a discount. Ever since I have loved this pencil and it's very durable. I believe this pencil will last a lifetime.
+
+** Pens
+My first fountain pens were given to me by my grandma. They were cheap Chinese pens she bought in bulk. They were really cheap, so the ink feeds were really finicky and I could never get them to work. I started using them around 7th-8th grade, and they felt really nice at the time. But later they stopped working. For the first day school in 12th grade, I decided to get a budget fountain pen. I got the TWISBI Eco and the clip broke because I tried to open it when it was stuck.
+
+** Pictures
+
+{{< img class="centered-image" src="/img/stationary4.png" caption="Left to right: Kaweco AL Sport, Rotring 800, TWSBI Eco, Uniball Zento, Pentel Graphgear 500, Ticonderoga Black; Eraser: Pentel Hi-polymer Eraser">}}
+{{< img class="centered-image" src="/img/stationary3.png" >}}
+
+* Notebooks
+** Traveler's Notebook
+** Pictures
+{{< img class="centered-image" src="/img/stationary2.png" >}}
+{{< img class="centered-image" src="/img/stationary1.png" >}}

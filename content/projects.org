@@ -2,5 +2,150 @@
 #+date: 2024-10-23T19:24:06-0400
 #+summary: A list of my current projects
 
-Welcome to my collection of open-source projects. Beware, most if not all of these projects are unsuitable for production use. As the saying goes, it works on my machine. If you want help getting started with one of them, please [[/contact][send me an email]].
 
+{{< details class="fold" summary="🪶 Background Information" >}}
+Welcome to my collection of open-source projects. Beware, most if not all of
+these projects are unsuitable for production use. If you want help getting
+started with one of them, please [[/contact][send me an email]].
+{{< /details >}}
+
+* conductor
+** Description
+A Haskell music organizer with a metadata composition language
+
+Something like this will produce a [[https://en.wikipedia.org/wiki/M3U][m3u playlist file]] with the tracks that are obtained with the conditions provided:
+#+begin_src haskell
+  songs <- filter(artist == "Nujabes") -- 1. adds Nujabes songs to set
+        || filter(genre == "Hip Hop")  -- 2. adds Hip Hop songs to set
+        && limit(year > 1990)          -- 3. limit the set to songs made after 199   0
+
+  otherSongs <- filter(artist == "Aphex Twin") -- 1. Get all songs by  aphex twin
+             && limit(count == 100)            -- limit number of tracks in playli   st
+
+  result <- write $ union(songs, otherSongs) -- merges the sets together
+#+end_src
+
+I finally decided to make use of the knowledge from watching [[https://www.youtube.com/watch?v=N9RUqGYuGfw][Tsoding's JSON Parser video]]. I implemented parsers using the excellent ~parsec~ library. I think that this project made haskell's real strengths shine when it comes to parsing and writing languages. Although my project is not as complicated as general purpose languages, it goes to show how convenient combinatory parsing is for developers.
+
+** Reflection
+
+* gtfo
+** Description
+This program is designed to organize files based on type written in Haskell.
+
+The sorting will work by creating folders for files based their kind (Document, Music, Video, Image, etc…).
+
+Going from this:
+
+#+begin_src sh
+  /home/user
+   ├── document-1.pdf
+   ├── document-2.pdf
+   ├── document-3.pdf
+   ├── song3.mp3
+   ├── pic-1.jpg
+   ├── pic-2.jpg
+   ├── video-2.mp4
+   ├── pic-3.jpg
+   ├── pic-4.jpg
+   ├── document-4.pdf
+   ├── song1.mp3
+   ├── song2.mp3
+   ├── video-1.mp4
+   ├── video-3.mp4
+   └── video-4.mp4
+
+#+end_src
+
+To this:
+
+#+begin_src sh
+  /home/user
+   ├── Documents
+   │   ├── document-1.pdf
+   │   ├── document-2.pdf
+   │   ├── document-3.pdf
+   │   └── document-4.pdf
+   ├── Pictures
+   │   ├── pic-1.jpg
+   │   ├── pic-2.jpg
+   │   ├── pic-3.jpg
+   │   └── pic-4.jpg
+   ├── Music
+   │   ├── song1.mp3
+   │   ├── song2.mp3
+   │   └── song3.mp3
+   └── Videos
+       ├── video-1.mp4
+       ├── video-2.mp4
+       ├── video-3.mp4
+       └── video-4.mp4
+#+end_src
+
+** Reflection
+This was my first /"serious"/ project that I wrote in Haskell. This went beyond the experience I had come by through doing advent of code in previous years. Wrestling with the build system and external dependencies was not the same struggle as it has been the last couple of years. File system work is pretty complicated in Haskell compared to other languages, but the typing is what made this project really fun to design.
+
+* cd-maker
+** Description
+A program to generate a file system for a cd using m3u playlists and mp3s. It is written in Common Lisp. 
+
+I was going to make this into a script, but is evolving to be a bit more than that, so it is getting its own repo.
+
+The directory structure will look like this:
+
+#+begin_src sh
+  Music
+  └── Disk01
+      ├── 00-Playlists
+      │   ├── playlist1.m3u
+      │   ├── playlist2.m3u
+      │   ├── playlist3.m3u
+      │   └── playlist4.m3u
+      ├── 01-Album name
+      │   ├── cover.jpg
+      │   ├── song1.mp3
+      │   ├── song2.mp3
+      │   └── song3.mp3
+      ├── 02-Album name
+      │   ├── cover.jpg
+      │   ├── song1.mp3
+      │   ├── song2.mp3
+      │   └── song3.mp3
+      └── 03-Album name
+          ├── cover.jpg
+          ├── song1.mp3
+          ├── song2.mp3
+          └── song3.mp3
+#+end_src
+
+
+The playlists will be structured like this:
+#+begin_src sh
+  "/home/user/Music/Disk01/01-Album\ name/song2.mp3"
+  "/home/user/Music/Disk01/03-Album\ name/song3.mp3"
+  "/home/user/Music/Disk01/02-Album\ name/song1.mp3"
+  ...
+#+end_src
+
+Then you can pop the playlist into a CD player and play the playlist.
+
+** Reflection
+
+* robozo - Vex Robotics Code for 2023-2024 Season
+** Description
+** Reflection
+
+* vex-high-steaks - Vex Robotics Code for 2023-2024 Season
+** Description
+** Reflection
+
+* Minor projects
+
+** denote wiki
+
+** Emacs Configuration
+
+** dotfiles and nixos config
+
+** Gruber darker theme fork
+I forked tsoding's gruber darker theme because it was missing some colors in places that I wanted to have from other themes. I didn't make many modifications, but I learned a lot about how Emacs configures color themes. I analyzed other themes like the awesome [[https://github.com/protesilaos/modus-themes][modus-themes]].
