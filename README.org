@@ -1,0 +1,3 @@
+#+TITLE: Bardmandev
+
+My personal website. Written using Hugo, Org mode, CSS, and no javascript
