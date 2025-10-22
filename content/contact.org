@@ -1,6 +1,5 @@
 #+TITLE: Contact Me
 #+type: basic
-#+type
 
 * Email:
 + develop.bard at gmail dot com is my main public email
@@ -13,14 +12,13 @@ I'm not on instagram, facebook, snapchat, twitter, or most social media
 
 * Other messaging
 ** XMPP
-bardman@07f.de
-
-What is this?
++bardman@07f.de+
+I don't check this often either, but here it is anyway.
 
 ** IRC:
 bardman@irc.libera.chat
 
-XMPP is probably the best way to reach me, I don't have an IRC client on my phone.
+Email is probably the best way to reach me, I don't have an IRC client on my phone.
 
 ** Matrix:
 +@bardman:matrix.org+

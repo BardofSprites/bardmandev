@@ -1,5 +1,5 @@
 #+TITLE: Projects
-#+date: 2024-10-23T19:24:06-0400
+#+type: basic
 #+summary: A list of my current projects
 
 
@@ -17,17 +17,17 @@ Something like this will produce a [[https://en.wikipedia.org/wiki/M3U][m3u play
 #+begin_src haskell
   songs <- filter(artist == "Nujabes") -- 1. adds Nujabes songs to set
         || filter(genre == "Hip Hop")  -- 2. adds Hip Hop songs to set
-        && limit(year > 1990)          -- 3. limit the set to songs made after 199   0
+        && limit(year > 1990)          -- 3. limit the set to songs made after 1990
 
   otherSongs <- filter(artist == "Aphex Twin") -- 1. Get all songs by  aphex twin
-             && limit(count == 100)            -- limit number of tracks in playli   st
+             && limit(count == 100)            -- limit number of tracks in playlist
 
   result <- write $ union(songs, otherSongs) -- merges the sets together
 #+end_src
 
 I finally decided to make use of the knowledge from watching [[https://www.youtube.com/watch?v=N9RUqGYuGfw][Tsoding's JSON Parser video]]. I implemented parsers using the excellent ~parsec~ library. I think that this project made haskell's real strengths shine when it comes to parsing and writing languages. Although my project is not as complicated as general purpose languages, it goes to show how convenient combinatory parsing is for developers.
 
-** Reflection
+I have a lot more ideas for the applications of the "query language", I just need more time to work on it...
 
 * gtfo
 ** Description
@@ -127,25 +127,39 @@ The playlists will be structured like this:
   ...
 #+end_src
 
-Then you can pop the playlist into a CD player and play the playlist.
-
-** Reflection
+Burn the playlist to a cd using whatever software. Then, you can pop the playlist into a CD player and play the playlist.
 
 * robozo - Vex Robotics Code for 2023-2024 Season
 ** Description
+This code hosts my driver control and autonomous code for my high school robotics competition called VEX Robotics. It runs on a firmware for the arm robot brain called [[https://wiki.purduesigbots.com/software/vex-programming-software/pros][pros]].
 ** Reflection
+I learned a lot through making this kind of project. I worked closely with my teammates to work on strategy for the competition. This was my first year working with C++ and more advanced VEX programming practices.
 
 * vex-high-steaks - Vex Robotics Code for 2023-2024 Season
-** Description
 ** Reflection
+This was my second year working with C++ and I learned a lot more about common practices. I learned much more about the odometry tracking algorithms and was almost able to develop my own.
+
+* My personal website
+If you are reading this, you are either on my website, peeking through the org files in the website's repository, or something crazy like Internet Archive snapshots (if you are doing that why?).
+
+I write this site in [[https://orgmode.org/][org-mode]] markup and then [[https://gohugo.io/][Hugo]] turns it into a static website. I have taken and heavily modified Luke Smiths [[https://github.com/LukeSmithxyz/lugo][lugo]] theme for Hugo. The colorscheme is more or less an opinionated selection of colors from the [[https://protesilaos.com/assets/images/modus/modus-vivendi-org.png][modus-vivendi color theme]].
+
+The [[/about][about]] page has more regarding the non-technical aspects and motivations behind this site.
 
 * Minor projects
-
 ** denote wiki
+This is a Common Lisp that makes calls to pandoc to display org mode files from [[https://protesilaos.com/emacs/denote][denote]] to html, hosted on a Common Lisp web server called [[https://github.com/fukamachi/ningle][ningle]]. It has some logic for parsing information from the denote file naming scheme, but I haven't gotten around to completing this project.
 
 ** Emacs Configuration
+More about this [[/technology/workflow][here]]
 
 ** dotfiles and nixos config
+The ~dotfiles-stow~ repository is my generic system configuration files. These can be used on any system. It has my shell scripts, some window manager configurations, rc files and more.
+
+~nixos-dotfiles~ has my NixOS configuration (duh). It is quite modulated, so if you are interested just take a look at the repo and read the code. NixOS is not as complicated as I thought, so my configuration is pretty simple. I don't use home-manager for any configurations outside of vim, since my vimrc is really small. I keep my user level packages (browser, mpv, emacs, etc) in the home-manager directory in many modules. The system level packages are in nixos directory. Per-machine settings are in host. pocket is the name of my laptop, and as of October 2025, I am not using NixOS anywhere else.
+
+** Suckless tools forks
+I have personal forks of dmenu, st, dwm, and slock. I did not write these, but I modified the source code for my liking with patches or other changes. My experience with C began with these tools. I have packaged my forks in derivations for NixOS in my ~nixos-dotfiles~ repository.
 
 ** Gruber darker theme fork
 I forked tsoding's gruber darker theme because it was missing some colors in places that I wanted to have from other themes. I didn't make many modifications, but I learned a lot about how Emacs configures color themes. I analyzed other themes like the awesome [[https://github.com/protesilaos/modus-themes][modus-themes]].

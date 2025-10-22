@@ -3,16 +3,19 @@
 
 * Introduction
 
-I am known as bardman online. I am a 18 year old student/programmer. I am currently studying Computer Science and Engineering.
+My name is Daniel Pinkston (not to be confused with [[https://en.wikipedia.org/wiki/Daniel_Pinkston][Daniel Pinkston]]). I am known as bardman online. I am a 18 year old student/programmer. I am currently studying Computer Science and Engineering.
 
-{{< img class="about-image" src="/img/catwithscarf.jpg" caption="" mouse="not my image">}}
+Check the [[/contact/][contact]] page to learn more about how to get in touch with me.
 
 * Possible FAQ
-** Why did you make this site?
+** About this website
+*** Why did you make this site?
 I was inspired by [[https://protesilaos.com/][Protesilaos Stavrou]] and [[https://landchad.net][Luke Smith]] to start my own web page. Having your own web page is a kind of social media, but more customized. I also wanted to make tutorials, and having them written out is a medium that is not often utilized.
+*** How does your site work?
+I write this site in [[https://orgmode.org/][org-mode]] markup and then [[https://gohugo.io/][Hugo]] turns it into a static website. I have taken and heavily modified Luke Smiths [[https://github.com/LukeSmithxyz/lugo][lugo]] theme for Hugo. The colorscheme is more or less the same as [[https://protesilaos.com/assets/images/modus/modus-vivendi-org.png][modus-vivendi]]. The background from the home page is a grey-scaled version of the title screen from Streets of Rage (a video game).
 
-Why bother doing any research when you can just ask ChatGPT to find you a perfectly curated and definitely not biased source for a video about the topic you want to be interested in?
-** What is your pc setup?
+** About Me
+*** What is your pc setup?
 + Costco Gaming PC (HP Pavilion something something)
 + 2 monitors
 + cheap chinese keyboard
@@ -21,19 +24,20 @@ Why bother doing any research when you can just ask ChatGPT to find you a perfec
 + Laptop: Thinkpad T480s I bought off eBay for Christmas
 + [[/technology/programs/][software used]]
 
-* Interests
-** Major interests
+** Interests
+*** Major interests
 + [[/technology/programs/][Software]] (Linux, Emacs, etc)
++ Programming (Haskell, Lisp, etc)
 + [[/general/stationary][Writing tools]] (pens, pencils, notebooks)
 + Reading
 + Music
 + Russian language, culture, and history
 + Tea
-** Minor Interests
+*** Minor Interests
 + Philosophy/Theology
 + Japanese language, culture, and history
 + Yerba Mate
-** Growing interests
+*** Growing interests
 + Competitive Programming
 + Math
 * 2025 Reading Backlog
