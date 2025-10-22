@@ -69,6 +69,11 @@ main {
   background: #1d1d1d;
 }
 
+::selection {
+  background: #7a6100;
+  color: #ffffff;
+}
+
 .updated {
   color: #ffffff;
   padding: 4px;
