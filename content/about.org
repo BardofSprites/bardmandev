@@ -3,7 +3,7 @@
 
 * Introduction
 
-My name is Daniel Pinkston (not to be confused with [[https://en.wikipedia.org/wiki/Daniel_Pinkston][Daniel Pinkston]]). I am known as bardman online. I am a 18 year old student/programmer. I am currently studying Computer Science and Engineering.
+My name is Daniel Pinkston (not to be confused with [[https://en.wikipedia.org/wiki/Daniel_Pinkston][Daniel Pinkston]]). I am known as bardman online. I am a 19 year old student/programmer. I am currently studying Computer Science and Engineering.
 
 Check the [[/contact/][contact]] page to learn more about how to get in touch with me.
 
@@ -56,7 +56,6 @@ Since the beginning of the year I have been trying to get into the habit of read
 1. Kusamakura - Natsume Soseki
 2. Идиот - Фёдор Достоевский
 3. Преступление и Наказание - Фёдор Достоевский
-4. 2666 - Roberto Picador
 5. Dune Messiah - Frank Herbert
 1. Pachinko - Min Jin Lee
 2. Christ the Eternal Tao - Hieromonk Damascene
