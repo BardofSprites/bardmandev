@@ -1,6 +1,5 @@
 <!-- layouts/shortcodes/landing-content.html -->
 {{ $targetTag := .Get "tag" }}
-{{ $notes := where .Site.RegularPages "Type" "note" }}
 {{ $pubs := where .Site.RegularPages "Type" "publication" }}
 
 <section class="tagged-content">

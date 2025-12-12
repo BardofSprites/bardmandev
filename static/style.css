@@ -96,6 +96,11 @@ a:hover {
   border-bottom: 1px solid currentColor;
 }
 
+.tag-small {
+    font-size: 14px;
+    color: #989898;
+}
+
 /* Headings */
 header h1 {
   text-align: center;

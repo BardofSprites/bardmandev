@@ -1,0 +1,15 @@
+{{- $id := .Get "id" -}}
+{{- $title := or (.Get "title") "" -}}
+
+{{- if $id -}}
+<figure class="video-thumb">
+<a href="https://www.youtube.com/watch?v={{ $id }}">
+  <img src="https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg" loading="lazy">
+  {{- with .Get "title" -}}
+  <figcaption>
+    {{- . -}}
+  </figcaption>
+  {{- end -}}
+</a>
+</figure>
+{{- end -}}

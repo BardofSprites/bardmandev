@@ -24,17 +24,21 @@ theme = 'lugo'
     dateFormat = "January 2, 2006"
 
 [markup]
-    [markup.highlight]
-        codeFences = true
-        guessSyntax = false
-        hl_Lines = ""
-        lineNoStart = 1
-        lineNos = false
-        lineNumbersInTable = true
-        noClasses = true
-        tabWidth = 2
-    [markup.tableOfContents]
-        endLevel = 3
-        ordered = true
-        startLevel = 2
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    tabWidth = 2
+
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = true
+    startLevel = 2
