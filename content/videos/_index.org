@@ -1,0 +1,22 @@
+#+title: Videos
+#+date: 2025-12-10T23:50:30-0500
+#+type: landing
+
+{{< landing-content tag="Video" >}}
+
+* Video Index
+{{< video-grid >}}
+
+{{< youtube-thumb id="ZyrPaLL1sJQ" title="Combining Denote and Org Roam To Write Notes - " >}}
+
+{{< youtube-thumb id="X6xYMJiJH8A" title="Dired — The GNU Emacs File Manager (Directory Editor)" >}}
+
+{{< youtube-thumb id="jPqqKCYVGZg" title="Emacs Magical Music Showcase (with EMMS, Embark, and Dired) - YouTube" >}}
+
+{{< youtube-thumb id="fEUQEK_uXk0" title="Image Viewing Workflow with NSXIV + Emacs Lisp + Dired - YouTube" >}}
+
+{{< youtube-thumb id="V0c8CPk9LHk" title="Watch YouTube with Emacs Elfeed and GNU EMMS - YouTube" >}}
+
+{{< youtube-thumb id="ofUQMq8ZK3U" title="EmacsConf 2024 Presentation (reupload) - YouTube" >}}
+
+{{< /video-grid >}}

@@ -3,36 +3,21 @@
 {{ $recentPubs := first 10 (sort $pubs "Lastmod" "desc") }}
 {{ $recentNotes := first 10 (sort $notes "Lastmod" "desc") }}
 
-<div class="recent-publications-and-notes">
-  <h2>Recent Publications</h2>
-  <ul class="publication-list">
-    {{ range $recentPubs }}
-      <li class="publication-item">
-        <article>
-          {{ $formattedDate := .Lastmod.Format "2006-01-02 Monday" }}
-          <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          {{ if ne .Lastmod .Date }}
-          <small class="updated">(Updated)</small>
-          {{ end }}
-          {{ with .Params.authors }}
-            <div class="authors">
-              {{ delimit . ", " " and " }}
-            </div>
-          {{ end }}
-        </article>
-      </li>
-    {{ end }}
-  </ul>
-
-  <h2>Recent Notes</h2>
-  <ul class="note-list">
-    {{ range $recentNotes }}
-      <li class="note-item">
-        <article>
-          {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
-          <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </article>
-      </li>
-    {{ end }}
-  </ul>
-</div>
+<ul class="publication-list">
+  {{ range $recentPubs }}
+    <li class="publication-item">
+      <article>
+        {{ $formattedDate := .Lastmod.Format "2006-01-02 Monday" }}
+        <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ if ne .Lastmod .Date }}
+        <small class="updated">(Updated)</small>
+        {{ end }}
+        {{ with .Params.authors }}
+          <div class="authors">
+            {{ delimit . ", " " and " }}
+          </div>
+        {{ end }}
+      </article>
+    </li>
+  {{ end }}
+</ul>

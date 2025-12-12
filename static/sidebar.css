@@ -148,11 +148,31 @@ body code:not(pre code) {
   margin: 16px 0;
   transition: border-color 0.25s ease;
 }
-.src:hover,
-figure:hover,
-blockquote:hover {
-  border-top-color: #82b0ec;
-  border-bottom-color: #82b0ec;
+
+figure.video-thumb {
+  border: none !important;
+  padding: 0 !important;
+  background: none !important;
+  margin: 0 !important;
+  transition: none !important;
+  display: block;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.video-thumb img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.video-thumb figcaption {
+  font-size: 0.9em;
+  margin-top: 0.4rem;
+  color: #666;
 }
 
 pre, .src {
@@ -359,4 +379,9 @@ footer {
 .footer-button:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+
+.tag-small {
+    font-size: 14px;
+    color: #989898;
 }

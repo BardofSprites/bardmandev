@@ -18,10 +18,10 @@ Any article that doesn't fit in below categories
 
 ** [[/technology/][Technology]]
 #+begin_quote
-all articles related to technology, programming, and software
+All articles related to technology, programming, and software
 #+end_quote
 
-** [[/notes/][Notes]]
+** [[/videos/][Videos]]
 #+begin_quote
-Text or PDF notes for various classes or topics ranging from programming to what I'm covering in school.
+Content relating to my YouTube videos
 #+end_quote

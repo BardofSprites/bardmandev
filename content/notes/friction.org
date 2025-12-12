@@ -1,8 +1,0 @@
-#+TITLE: Friction
-#+date: 2024-10-18T13:27:57-0400
-#+type: note
-#+tags: [AP Physics]
-
-Here are the notes for Friction as of 2024-10-18.
-
-{{< pdf "/pdfs/friction.pdf" "100%" "800px" >}}

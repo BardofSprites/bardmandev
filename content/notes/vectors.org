@@ -1,8 +1,0 @@
-#+TITLE: Vectors
-#+DATE: 2024-08-15T13:00:00-0400
-#+type: note
-#+tags: [Math]
-
-Here are the notes on vectors as of 2024-08-15 Thu.
-
-{{< pdf "/pdfs/vectors.pdf" "100%" "800px" >}}

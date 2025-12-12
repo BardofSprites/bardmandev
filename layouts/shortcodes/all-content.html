@@ -10,27 +10,15 @@
     <li class="publication-item">
       <article>
         {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
-        <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ with .Params.authors }}
-        <div class="authors">
-          {{ delimit . ", " " and " }}
-        </div>
+        <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.tags }}
+        <span class="tag-small">
+          {{ range $index, $tag := split . ", " }}
+          {{ if $index }}, {{ end }}{{ $tag }}
+          {{ end }}
+        </span>
         {{ end }}
       </article>
     </li>
     {{ end }}
   </ul>
-
-  <h2>All Notes</h2>
-  <ul class="note-list">
-    {{ range (sort $notes "Date" "desc") }}
-    <li class="note-item">
-      <article>
-        {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
-        <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </article>
-    </li>
-    {{ end }}
-  </ul>
-
 </section>
