@@ -1,5 +1,4 @@
 #+title: Bardman's website
-#+author: Bardman
 #+type: landing
 #+menus: "nav"
 

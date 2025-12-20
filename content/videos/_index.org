@@ -5,7 +5,11 @@
 {{< landing-content tag="Video" >}}
 
 * Video Index
+Click on the thumbnail to video the video.
+
 {{< image-grid >}}
+
+{{< youtube-thumb id="95WUVP10GG4" title="Process PDFs with Emacs and Org Mode" >}}
 
 {{< youtube-thumb id="ZyrPaLL1sJQ" title="Combining Denote and Org Roam To Write Notes - " >}}
 

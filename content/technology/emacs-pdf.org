@@ -1,7 +1,7 @@
 #+title: Emacs PDF Processing Workflow
 #+date: 2025-12-19T20:13:38-0500
 #+type: publication
-#+tags: [Emacs]
+#+tags: [Emacs, Video]
 #+toc: true
 
 #+begin_emphasis
@@ -30,3 +30,4 @@ I go through each page and type =i= when I want to create a new heading for that
 The ultimate purpose of this process is to reflect on the content and also type it into a more wiki-like structure for my own understanding. This is especially helpful for deep understanding of topics, especially for math. You can read about how I aspire to study math from this external article: [[https://www.math.uh.edu/~dblecher/pf2.html][How to Study Mathematics - Dr. Lawrence Neff Stout]].
 
 * Video Demo
+{{< youtube 95WUVP10GG4 >}}

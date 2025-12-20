@@ -396,11 +396,3 @@ footer {
     border-radius: 6px;
     border: 1px solid #989898;
 }
-
-.emphasis-block a {
-    color: red;
-}
-
-.emphasis-block a:visited {
-    color: #feacd0;
-}
