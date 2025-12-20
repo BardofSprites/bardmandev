@@ -5,7 +5,7 @@
 {{< landing-content tag="Video" >}}
 
 * Video Index
-{{< video-grid >}}
+{{< image-grid >}}
 
 {{< youtube-thumb id="ZyrPaLL1sJQ" title="Combining Denote and Org Roam To Write Notes - " >}}
 
@@ -19,4 +19,4 @@
 
 {{< youtube-thumb id="ofUQMq8ZK3U" title="EmacsConf 2024 Presentation (reupload) - YouTube" >}}
 
-{{< /video-grid >}}
+{{< /image-grid >}}
