@@ -1,0 +1,32 @@
+#+title: Emacs PDF Processing Workflow
+#+date: 2025-12-19T20:13:38-0500
+#+type: publication
+#+tags: [Emacs]
+#+toc: true
+
+#+begin_emphasis
+This post is related to previously discussed topic: [[/technology/boox-and-emacs][Boox Notes, Linux and Emacs]]
+#+end_emphasis
+
+* Purpose of Workflow
+Annotate the pages/sections of a pdf to look back on it later to build a better text note.
+
++ *Input:* PDFs
++ *Output:* structured, annotated notes in org mode
+
+* Workflow
+I was getting ready to write a package to facilitate this workflow, but I found this to be much easier.
+** Step 1: ~org-attach~
+Org attach is included in Emacs as a method for attaching files to org headings using different methods. There are several methods that you can view when you run org-attach. The one that I prefer is =s - Set a specific attachment directort for this entry. Sets DIR property.=
+
+This attaches the file as a property and associated the current heading with the document which will be useful later
+
+The default binding for ~org-attach~ is ~C-c C-a~.
+** Step 2: ~org-noter~
+After step 1 we have an attachment added to our heading, so let's begin annotating with ~org-noter~. I need to do this to process the PDF later when I want to view examples without having to type them out again.
+
+I go through each page and type =i= when I want to create a new heading for that page.
+** Step 3: Refractoring
+The ultimate purpose of this process is to reflect on the content and also type it into a more wiki-like structure for my own understanding. This is especially helpful for deep understanding of topics, especially for math. You can read about how I aspire to study math from this external article: [[https://www.math.uh.edu/~dblecher/pf2.html][How to Study Mathematics - Dr. Lawrence Neff Stout]].
+
+* Video Demo
