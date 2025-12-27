@@ -9,6 +9,58 @@ these projects are unsuitable for production use. If you want help getting
 started with one of them, please [[/contact][send me an email]].
 {{< /details >}}
 
+* Emacs configuration
+
+[[/dotemacs][Separate project page here]]
+
+I spend quite a bit of time working in Emacs and I am in the process of documenting a mountain of custom code that I use in it. Although this isn't a finished product that other's can use, I want to share my configuration as many others have. After all, learning Emacs on your own usually requires looking at what others have previously done.
+
+{{< details summary="Lines of code" >}}
+#+begin_src shell
+  ~/.emacs.d λ cloc bard-emacs-modules/
+        17 text files.
+        17 unique files.
+         0 files ignored.
+
+  github.com/AlDanial/cloc v 2.00  T=0.01 s (1688.5 files/s, 209079.5 lines/s)
+  -------------------------------------------------------------------------------
+  Language                     files          blank        comment           code
+  -------------------------------------------------------------------------------
+  Lisp                            17            262            168           1675
+  -------------------------------------------------------------------------------
+  SUM:                            17            262            168           1675
+  -------------------------------------------------------------------------------
+  ~/.emacs.d λ cloc bard-elisp/
+        13 text files.
+        13 unique files.
+         0 files ignored.
+
+  github.com/AlDanial/cloc v 2.00  T=0.01 s (1338.7 files/s, 233137.0 lines/s)
+  -------------------------------------------------------------------------------
+  Language                     files          blank        comment           code
+  -------------------------------------------------------------------------------
+  Lisp                            13            293            193           1778
+  -------------------------------------------------------------------------------
+  SUM:                            13            293            193           1778
+  -------------------------------------------------------------------------------
+
+  ~/.emacs.d λ cloc init.el early-init.el
+         2 text files.
+         2 unique files.
+         0 files ignored.
+
+  github.com/AlDanial/cloc v 2.00  T=0.00 s (487.1 files/s, 38966.9 lines/s)
+  -------------------------------------------------------------------------------
+  Language                     files          blank        comment           code
+  -------------------------------------------------------------------------------
+  Lisp                             2             33             33             94
+  -------------------------------------------------------------------------------
+  SUM:                             2             33             33             94
+  -------------------------------------------------------------------------------
+#+end_src
+
+{{</details>}}
+
 * conductor
 ** Description
 A Haskell music organizer with a metadata composition language
