@@ -1,13 +1,37 @@
 #+title: Desktop Customization Gallery
 #+date: 2025-03-07T19:16:52-0500
-#+lastmod: 2025-07-29T17:15:13-0400
+#+lastmod: 2025-12-26T20:40:12-0500
 #+type: publication
 
 * FAQ
 ** Where are the dots????
 They are on [[https://github.com/BardofSprites/][my GitHub]]
+** Why are windows floating in twm?
+I think it looks nice for screenshot, but normally the windows are not like that.
 
 * 2025
+** Gruvbox dwm
+I have been using this setup since late October/early November I think. It's funny how the circle goes around and around.
+
+*** Open windows (left to right)
+
+*Image one:*
+
+org-mode document alongside pdf with zen browser opening org-roam-ui
+
+*Image two:*
+
+nsxiv and st terminal running tmux (serving hugo site)
+
+*Image three:*
+
+Emacs lisp buffer opening my [[https://github.com/BardofSprites/denote-roam][denote-roam]] Emacs package, html file, [[/dotemacs][literate Emacs configuration]].
+
+*** Pictures
+{{< img class="centered-image" src="/img/gruvbox-dwm-1.png" >}}
+{{< img class="centered-image" src="/img/gruvbox-dwm-2.png" >}}
+{{< img class="centered-image" src="/img/gruvbox-dwm-3.png" >}}
+
 ** NixOS + i3
 {{< img class="centered-image" src="/img/nixos-i3.png" >}}
 {{< img class="centered-image" src="/img/nixos-i3-floating.png" >}}
