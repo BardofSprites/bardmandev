@@ -3,11 +3,13 @@
 #+summary: A list of my current projects
 
 
-{{< details class="fold" summary="🪶 Background Information" >}}
+#+begin_emphasis
+*🪶 Background Information*:
+
 Welcome to my collection of open-source projects. Beware, most if not all of
 these projects are unsuitable for production use. If you want help getting
 started with one of them, please [[/contact][send me an email]].
-{{< /details >}}
+#+end_emphasis
 
 * Emacs configuration
 

@@ -1,0 +1,11 @@
+#+title: Introducing My Literate Emacs Configuration
+#+date: 2025-12-26T22:03:41-0500
+#+type: publication
+#+tags: [Technology,Emacs] 
+
+* Announcement
+#+begin_emphasis
+Direct link: [[/dotemacs][here]]
+#+end_emphasis
+
+A new page has appeared under my projects section that has my literate Emacs configuration. It's going to be a continuous work-in-progress, but I hope to document most of it before the end of my school break.
