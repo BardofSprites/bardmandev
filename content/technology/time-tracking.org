@@ -1,0 +1,34 @@
+#+title: Tracking Time With Denote Journal and Org Clock
+#+date: 2026-01-09T15:25:35-0500
+#+type: publication
+#+tags: [Emacs, Technology, Organization, Video]
+
+* Introduction
+ I have recently started tracking my time in org mode more. This helps me know whether or not I wasted a lot of time on the computer that day. I have a special heading for "time I wasted loafing about" where I clock in when I want to watch YouTube, for example. For other time spent I make a quick note about what I plan to do. This also helps me stay on track.
+ 
+** Purpose of the workflow
+a) Increase mindfulness about how much time I spend on certain tasks that are productive or unproductive.
+b) Limit how many tasks I accomplish per day by writing down what I think I can actually accomplish on days when I have a large pile of things to do.
+
+* Workflow
+** Step one - Denote journal
+I create my daily file with ~C-c n j~ and clock in or write something that I need to do. I have a template managed by denote. Additionally it is not part of my denote+org-roam system which I talked about extensively [[https://www.youtube.com/watch?v=ZyrPaLL1sJQ&t=4s][in this video]].
+
+Ideally I want to keep track of *all* the time I spend on the computer to find out how much I have wasted on a given day with this file. For now, I want to see just how much time I waste and then focus on minimizing it.
+
+** Step two - decide on task and clock in
+Simply clock in to a task that you want to track time for with ~(org-clock-in)~ and start working! When you finish with the task, clock out with ~(org-clock-out)~. It's very simple. There is a bit more to this however, discuss
+
+You can add effort to items that you want to work on. I think the intended use is to add your time spent, i.e. setting the effort to 0:15 because you want to spend 15 minutes on something. I do this naturally as part of thinking about what I will work on, so this is something that I wanted to show on the mode line as well.
+
+* Modeline info
+In my literate emacs configuration I have a section for showing time tracking in the mode line. It's a custom mode line indicator built in the same style as Protesilaos's modeline. I don't like having the full name of the task cluttering up the modeline, so I made a custom indicator using the same functions that Emacs uses to build the default modeline indicator.
+
+{{< img class="centered-image" src="/img/time-tracking-modeline.png" caption="Time currently spent on the task at hand is 34 minutes." >}}
+
+In the modeline the effort is represented like this:
+{{< img class="centered-image" src="/img/time-tracking-modeline-effort.png" caption="I wanted to spend 50 minutes on a task and it's almost done!" >}}
+
+But if I go over what I intended:
+{{< img class="centered-image" src="/img/time-tracking-modeline-effort-2.png" caption="Oops, I went over the time..." >}}
+
