@@ -198,6 +198,8 @@ If you are reading this, you are either on my website, peeking through the org f
 
 I write this site in [[https://orgmode.org/][org-mode]] markup and then [[https://gohugo.io/][Hugo]] turns it into a static website. I have taken and heavily modified Luke Smiths [[https://github.com/LukeSmithxyz/lugo][lugo]] theme for Hugo. The colorscheme is more or less an opinionated selection of colors from the [[https://protesilaos.com/assets/images/modus/modus-vivendi-org.png][modus-vivendi color theme]].
 
+{{< img class="centered-image" src="/img/site-diagram.png">}}
+
 The [[/about][about]] page has more regarding the non-technical aspects and motivations behind this site.
 
 * Minor projects
