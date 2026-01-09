@@ -1,7 +1,8 @@
 #+title: Emacs PDF Processing Workflow
 #+date: 2025-12-19T20:13:38-0500
+#+lastmod: 2026-01-09T15:37:13-0500
 #+type: publication
-#+tags: [Emacs, Video]
+#+tags: [Emacs, Technology, Organization, Video]
 #+toc: true
 
 #+begin_emphasis
@@ -28,6 +29,11 @@ After step 1 we have an attachment added to our heading, so let's begin annotati
 I go through each page and type =i= when I want to create a new heading for that page.
 ** Step 3: Refractoring
 The ultimate purpose of this process is to reflect on the content and also type it into a more wiki-like structure for my own understanding. This is especially helpful for deep understanding of topics, especially for math. You can read about how I aspire to study math from this external article: [[https://www.math.uh.edu/~dblecher/pf2.html][How to Study Mathematics - Dr. Lawrence Neff Stout]].
+
+* Addendum — 2026-01-09
+I realized that this is essentially an easier to index version of the Cornell Note Taking system. The notes I add to the pdf are like the main body of the note, and the ones I take in the org document are like the marginalia. Since I live in Emacs, this is second process of adding notes about what is on the pages improves the searchability of my notes since I want them to end up in org mode eventually.
+
+By the way, I'm continuing with this workflow because it has been working well since coming back to school after the winter break.
 
 * Video Demo
 {{< youtube 95WUVP10GG4 >}}
