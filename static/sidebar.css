@@ -396,3 +396,65 @@ footer {
     border-radius: 6px;
     border: 1px solid #989898;
 }
+
+.book-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book {
+  position: relative;
+  width: 200px; /* adjust as needed */
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.book img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.book:hover img {
+  transform: scale(1.05);
+}
+
+.book-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.book-overlay span {
+  font-weight: 500;
+  /* font-size: 16px; */
+  line-height: 1.2;
+  color: #fff;
+
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  max-height: 100%;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.book-overlay span {
+  font-size: clamp(12px, 4vw, 16px);
+}
+
+.book:hover .book-overlay {
+  opacity: 1;
+}
