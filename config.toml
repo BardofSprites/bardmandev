@@ -24,6 +24,8 @@ theme = 'lugo'
     dateFormat = "January 2, 2006"
 
 [markup]
+  [markup.org]
+    enable = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true

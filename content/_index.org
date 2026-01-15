@@ -24,3 +24,8 @@ All articles related to technology, programming, and software
 #+begin_quote
 Content relating to my YouTube videos
 #+end_quote
+
+** [[/library/][Library]]
+#+begin_quote
+A collection of books I am reading, will read, or have read. May include succinct reviews if completed.
+#+end_quote

@@ -40,37 +40,5 @@ I write this site in [[https://orgmode.org/][org-mode]] markup and then [[https:
 *** Growing interests
 + Competitive Programming
 + Math
-
-* Reading Backlog
-Since the beginning of the year I have been trying to get into the habit of reading a bit everyday. These are the books that I will begin/currently am/completed reading in 2025. I have this here for anyone with enough time to meander around my website.
-
-** In Progress
-1. Our Thoughts Determine Our Lives - Elder Thaddeus of Vitovnica
-2. Norwegian Wood - Harukia Murakami
-3. A System for Writing - Bob Doto (2024)
-4. Deep Work - Cal Newport
-   
-** Finished
-1. Youth of the Apocalypse: And the Last True Rebellion (=2025-05-22 Thu=) (🌞)
-2. Kokoro - Natsume Soseki (=2025-02-11 Tue=)
-3. Monastic Spirituality - Metropolitan Jonah (=2025-09-30=)
-4. Sanshiro - Natsume Soseki (??? I forgor)
-5. Kafka On The Shore - Haruki Murakami (=2025-11-10=)
-6. Beauty and Sadness - Yasunari Kawabata (=2025-12-28=)
-   
-** Planned to Read
-These are listed in likely order to read next.
-
-1. Откровенные рассказы странника духовному своему отцу
-2. The Narrow Road to the Deep North and Other Travel Sketches - Matsuo Basho
-3. Kusamakura - Natsume Soseki
-4. Digital Minimalism - Cal Newport
-5. Plato - The Republic
-6. Plato - The Politics
-7. Christ the Eternal Tao - Hieromonk Damascene
-8. Братья Карамазовы - Фёдор Достоевский (pause + reread)
-9. Dune Messiah - Frank Herbert
-10. Идиот - Фёдор Достоевский
-11. Преступление и Наказание - Фёдор Достоевский
-12. Pachinko - Min Jin Lee
-13. The Penguin Book of Japanese Verse
+  
+* [[/library/][Reading Backlog]]

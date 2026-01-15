@@ -1,0 +1,45 @@
+#+TITLE: Library
+#+type: landing
+
+#+begin_emphasis
+The items with a star (🌟) on them have short reviews.
+#+end_emphasis
+
+{{< toc-fold >}}
+
+* Finished
+{{< book-gallery >}}
+{{< book src="/img/book-covers/Youth of the Apocalypse.jpg" title="Youth of the Apocalypse" >}}
+{{< book src="/img/book-covers/Kokoro -Natsume Soseki.jpg" title="Kokoro -Natsume Soseki" >}}
+{{< book title="Monastic Spirituality - Metropolitan Jonah" >}}
+{{< book src="/img/book-covers/Sanshiro - Natsume Soseki.jpg" title="Sanshiro - Natsume Soseki" >}}
+{{< book src="/img/book-covers/Kafka on the Shore - Haruki Murakami.jpg" title="Kafka on the Shore - Haruki Murakami" >}}
+{{< book src="/img/book-covers/Beauty and Sadness - Yasunari Kawabata.jpg" title="Beauty and Sadness - Yasunari Kawabata" >}}
+{{< /book-gallery >}}
+
+* In Progress
+{{< book-gallery >}}
+{{< book src="/img/book-covers/Our Thoughts Determine Our Lives - Elder Thaddeus of Vitovnica.jpg" title="Our Thoughts Determine Our Lives - Elder Thaddeus of Vitovnica" >}}
+{{< book src="/img/book-covers/Norwegian Wood - Haruki Murakami.jpg" title="Norwegian Wood - Haruki Murakami" >}}
+{{< book src="/img/book-covers/A System for Writing - Bob Doto.jpg" title="A System for Writing - Bob Doto" >}}
+{{< book src="/img/book-covers/Deep Work - Cal Newport.jpg" title="Deep Work - Cal Newport" >}}
+{{< /book-gallery >}}
+
+* Planned to Read
+These are listed in likely order to read next.
+
+{{< book-gallery >}}
+{{< book src="/img/book-covers/Откровенные рассказы странника духовному своему отцу.jpg" title="Откровенные рассказы странника духовному своему отцу" >}}
+{{< book src="/img/book-covers/The Narrow Road to the Deep North and Other Travel Sketches - Matsuo Basho.jpg" title="The Narrow Road to the Deep North and Other Travel Sketches - Matsuo Basho" >}}
+{{< book src="/img/book-covers/Kusamakura - Natsume Soseki.jpg" title="Kusamakura - Natsume Soseki" >}}
+{{< book src="/img/book-covers/Digital Minimalism - Cal Newport.jpg" title="Digital Minimalism - Cal Newport" >}}
+{{< book src="/img/book-covers/The Republic - Plato.jpg" title="The Republic - Plato" >}}
+{{< book src="/img/book-covers/The Politics - Aristotle.jpg" title="The Politics - Aristotle" >}}
+{{< book src="/img/book-covers/Christ the Eternal Tao - Hieromonk Damascene.jpg" title="Christ the Eternal Tao - Hieromonk Damascene" >}}
+{{< book title="Братья Карамазовы - Фёдор Достоевский (pause + reread)" >}}
+{{< book src="/img/book-covers/Dune Messiah - Frank Herbert.jpg" title="Dune Messiah - Frank Herbert" >}}
+{{< book src="/img/book-covers/Идиот - Фёдор Достоевский.jpg" title="Идиот - Фёдор Достоевский" >}}
+{{< book title="Преступление и Наказание - Фёдор Достоевский" >}}
+{{< book src="/img/book-covers/Pachinko - Min Jin Lee.jpg" title="Pachinko - Min Jin Lee" >}}
+{{< book src="/img/book-covers/The Penguin Book of Japanese Verse.jpg" title="The Penguin Book of Japanese Verse" >}}
+{{< /book-gallery >}}

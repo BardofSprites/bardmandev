@@ -1,6 +1,30 @@
-<div class="book">
-  <img src="{{ .Get "src" }}" alt="{{ .Get "title" }}">
-  <div class="book-overlay">
-    <span class="book-title">{{ .Get "title" }}</span>
-  </div>
+{{ $title := .Get "title" }}
+
+{{/* Take everything before the first dash */}}
+{{ $parts := split $title "-" }}
+{{ $mainTitle := index $parts 0 }}
+
+{{/* Generate slug from main title */}}
+{{ $slug := urlize $mainTitle }}
+
+{{ $reviewPage := site.GetPage (printf "library/%s" $slug) }}
+
+<div class="book {{ if $reviewPage }}has-review{{ end }}">
+  <a href="{{ with $reviewPage }}{{ .RelPermalink }}{{ else }}/404/{{ end }}">
+
+    {{ if .Get "src" }}
+      <img src="{{ .Get "src" }}" alt="{{ $title }}">
+    {{ else }}
+      <img src="/img/book-covers/no-cover.png" alt="{{ $title }}">
+    {{ end }}
+
+    {{ if $reviewPage }}
+      <span class="review-star" aria-hidden="true">🌟</span>
+    {{ end }}
+
+    <div class="book-overlay">
+      <span>{{ $title }}</span>
+    </div>
+
+  </a>
 </div>
