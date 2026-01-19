@@ -1,7 +1,7 @@
 #+TITLE: My EmacsConf 2024 Presentation
 #+DATE: 2024-12-08T17:37:00+00:00
 #+type: publication
-#+tags: [Technology, Emacs]
+#+tags: [Emacs, Technology, Video]
 
 TLDR: I had gave a talk for EmacsConf 2024 about student workflows.
 
