@@ -23,4 +23,6 @@ Click on the thumbnail to video the video.
 
 {{< youtube-thumb id="ofUQMq8ZK3U" title="EmacsConf 2024 Presentation (reupload) - YouTube" >}}
 
+{{< youtube-thumb id="ofm-11LmLJg" title="Tracking Time With Denote Journal and Org Clock - YouTube" >}}
+
 {{< /image-grid >}}
