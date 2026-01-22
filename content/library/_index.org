@@ -15,12 +15,12 @@ The items with a star (🌟) on them have short reviews.
 {{< book src="/img/book-covers/Sanshiro - Natsume Soseki.jpg" title="Sanshiro - Natsume Soseki" >}}
 {{< book src="/img/book-covers/Kafka on the Shore - Haruki Murakami.jpg" title="Kafka on the Shore - Haruki Murakami" >}}
 {{< book src="/img/book-covers/Beauty and Sadness - Yasunari Kawabata.jpg" title="Beauty and Sadness - Yasunari Kawabata" >}}
+{{< book src="/img/book-covers/Norwegian Wood - Haruki Murakami.jpg" title="Norwegian Wood - Haruki Murakami" >}}
 {{< /book-gallery >}}
 
 * In Progress
 {{< book-gallery >}}
 {{< book src="/img/book-covers/Our Thoughts Determine Our Lives - Elder Thaddeus of Vitovnica.jpg" title="Our Thoughts Determine Our Lives - Elder Thaddeus of Vitovnica" >}}
-{{< book src="/img/book-covers/Norwegian Wood - Haruki Murakami.jpg" title="Norwegian Wood - Haruki Murakami" >}}
 {{< book src="/img/book-covers/A System for Writing - Bob Doto.jpg" title="A System for Writing - Bob Doto" >}}
 {{< book src="/img/book-covers/Deep Work - Cal Newport.jpg" title="Deep Work - Cal Newport" >}}
 {{< /book-gallery >}}
