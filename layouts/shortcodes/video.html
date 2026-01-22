@@ -1,0 +1,39 @@
+<!--
+  class: class of the figure
+  link: url the video directs to (optional)
+  src: video source
+  poster: poster image
+  caption: caption
+  mouse: title attribute
+  style: inline CSS styles
+  controls: show controls (default: true)
+  autoplay: autoplay video
+  loop: loop video
+  muted: mute video (required for autoplay)
+  preload: auto | metadata | none
+  -->
+
+<figure class="vid {{ with .Get "class" }}{{ . }}{{ end }}">
+  {{- with .Get "link" }}<a href="{{ . }}">{{ end -}}
+
+  {{- with .Get "caption" -}}
+  <figcaption>
+    {{ . }}
+  </figcaption>
+  {{- end -}}
+
+  <video
+    src="{{ .Get "src" }}"
+    {{ with .Get "poster" }}poster="{{ . }}"{{ end }}
+    {{ with .Get "mouse" }}title="{{ . }}"{{ end }}
+    {{ if ne (.Get "controls") "false" }}controls{{ end }}
+    {{ with .Get "autoplay" }}autoplay{{ end }}
+    {{ with .Get "loop" }}loop{{ end }}
+    {{ with .Get "muted" }}muted{{ end }}
+    {{ with .Get "preload" }}preload="{{ . }}"{{ end }}
+  >
+    Your browser does not support the video tag.
+  </video>
+
+  {{- if .Get "link" }}</a>{{ end -}}
+</figure>

@@ -1,0 +1,14 @@
+#+title: Alternative BOOX Stylus
+#+date: 2026-01-21T15:44:25-0500
+#+type: publication
+#+tags: [Technology, Notetaking]
+
+Recently, I have been using my BOOX tablet much more to take handwritten notes in all my classes. This has increased the wear on the nib, as I use it for roughly 1-3 hours a day, 5 days a week. I have already had the nib for a long time, since I got this device in December of 2024. The wear was so bad I couldn't even take the nib out anymore. It was also writing without me touching the screen, which is apparently a sign of wear on EMR pens (or perhaps static electricity).
+
+{{< video src="/vids/old-stylus.mp4" caption="My old stylus writing 2-3 cm above the surface" >}}
+
+I already wanted a stylus with an eraser button, so I went ahead and purchased a Kindle Premium instead of buying more nibs from BOOX or an alternative company. I had heard that the Kindle Scribe premium pen worked pretty well and I liked the shape it had when I borrowed a friend's (he has a Kindle Scribe).
+
+Today I used it for the first time, and I would like to say that so far it's been a good experience. The button is out of the way so I don't click it accidentally, but it's close enough to comfortably reach. The other end of the stylus also acts as a good tool for bulk erasing. Somehow the button and back of the pen worked for erasing automatically. I not sure how but I'm glad I don't need to charge it. The Kindle stylus is a bit heavier, but also thinner. This is certainly a major enhancement that will allow me to continue facilitating my learning.
+
+{{< img src="/img/new-stylus.jpg" >}}
