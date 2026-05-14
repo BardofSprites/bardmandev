@@ -12,7 +12,7 @@ I get a lot of emails, but I will try to respond within 48 hours.
 This is the main mirror for my projects: https://github.com/BardofSprites.
 
 ** Self hosted Mirror CGit
-This is an alternative mirror for my projects: https://git.bardman.dev.
+This is an alternative mirror for my projects: [[https://git.bardman.dev]].
 
 
 * Social Media
