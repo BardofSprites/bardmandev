@@ -1,0 +1,8 @@
+#+title: Git Mirrors
+#+type: basic
+
+* GitHub
+This is the main mirror for my projects: https://github.com/BardofSprites.
+
+* Self hosted Mirror CGit
+This is an alternative mirror for my projects: https://git.bardman.dev.
