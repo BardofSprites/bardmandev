@@ -1,0 +1,154 @@
+#+title: My Advice for Users Wanting To Switch to Emacs
+#+date: 2026-08-07T18:11:42-0400
+#+type: publication
+#+tags: [Emacs]
+
+#+begin_quote
+I'd like to present to you my newly made absolute guide to Emacs video.
+
+It's around one and a half uh years long.
+
+— Emerald McS. et al., PhD; Emacs User @ University of Texas Instruments
+#+end_quote
+
+* So... Emacs!
+This article is meant as a practical path towards starting with Emacs. It's mainly targeted towards people who already use neovim.
+
+I think [[https://www.youtube.com/watch?v=FLjbKuoBlXs][this video]] should be kind of a mandatory watch for anyone who might be interested in trying out Emacs for real. Maybe it's too long if you just want to play around with org mode.
+
+* Disclaimer
+The need to switch tools all the time is something that I notice more frequently than I would like. I used to do this as well. How do you think I landed on Emacs in the first place? My pipeline went more like Visual Studio Code → Neovim → DOOM Emacs → plain Emacs. And why did I do it in the first place? Well, I switched from neovim for the [[https://github.com/rebelot/kanagawa.nvim][kanagawa.nvim theme]]. And I switched to Emacs for the [[https://github.com/11111000000/tao-theme-emacs][tao theme]]. But what I found was much more interesting than either of these themes. I would advise to not do stuff like me, but I also had a bunch of free time in high school.
+
+Emacs is probably not the next cool thing. But it could be for you, with some effort. Unless you are coming for something specific like org-mode, you're probably better off staying with your current setup. I guess there's nothing wrong with trying it out for a bit.
+
+The above text is more of a TLDW for [[https://www.youtube.com/watch?v=FLjbKuoBlXs][this video]] from Protesilaos about the mindset for switching to Emacs from a (n)vim + tmux worldview.
+
+* Evil mode and default binds
+It's kind of implied for most people that, when they come from (n)vim into Emacs, they should try DOOM or ~evil-mode~. I actually think that if you're going to be serious about learning it, you should play around with vanilla first. The reason why is pretty simple: if all you do is make Emacs into whatever you used before, you won't really "get it" ([[https://youtu.be/FLjbKuoBlXs?t=1943][Relevant commentary about this point]]). 
+
+The smallest, but most important, piece of advice I received for jumping into vanilla Emacs was that basically all of the keybinds are bound with =C-x= and =C-c=. Everything else is either movement-related, or unbound and free to use. The convention in Emacs is to allow the user to bind their personal stuff to =C-c {any single letter e.g. a for agenda}=.
+
+* Resources
+** Tutorials
+*** Protesilaos
+The corner stone of my Emacs learning journey. I would say his videos are the most important part of my switch to vanilla Emacs from DOOM.
+*** Distrotube
+Mostly does videos on Linux, but he does have a sizable collection of videos on DOOM Emacs.
+
+** Emacs RSS Feeds/Websites
++ [[https://sachachua.com/blog/][Sacha Chua]]
++ [[emacs.tv]]
+  An aggregator of recent Emacs YouTube content across creators. It's worth checking for new workflow videos rather than relying on one source.
++ [[https://planet.emacslife.com/][Planet Emacslife]]
++ [[https://protesilaos.com/][Protesilaos's Website]]
++ [[https://www.masteringemacs.org/all-articles][Mastering Emacs]]
++ [[https://emacsconf.org/][EmacsConf presentations]]
+
+* Video Skill Tree
+These are mostly video tutorials/workflow demos. I have the websites/written media in the Resources section.
+
+** Beginner
+*** How to learn
++ Please do the Emacs tutorial. It will make life easier.
++ C-h prefix has a lot to offer for help. (~describe-key~, ~describe-function~, ~describe-mode~, etc)
++ [[https://www.youtube.com/watch?v=qTncc2lI6OI][Protesilaos - Emacs mindset]]
++ [[https://www.youtube.com/watch?v=sRsjvirr1B8][Protesilaos - documentation and feature discovery]]
+  SUPER IMPORTANT: Describes Emacs's self-documenting nature and how to leverage it.
+*** How to configure Emacs
++ [[https://www.youtube.com/watch?v=RaqtzemHFDU][Protesilaos - use-package essentials]] - important for vanilla (IMO)
++ [[https://www.youtube.com/watch?v=qR8JRYr4BKE][Protesilaos - Customizing fonts]]
++ [[https://www.youtube.com/watch?v=Dkoy3NrLN9g][Protesilaos - How to organize your init file]]
+**** Distrotube
++ [[https://www.youtube.com/playlist?list=PL5--8gKSku15e8lXf7aLICFmAHQVo0KXX][Series by distrotube]] - he configures vanilla Emacs from scratch
++ [[https://www.youtube.com/playlist?list=PL5--8gKSku15uYCnmxWPO17Dq6hVabAB4][Another series by distrotube]], mostly related to DOOM Emacs.
+**** System crafters
++ [[https://www.youtube.com/playlist?list=PLEoMzSkcN8oPH1au7H6B7bBJ4ZO7BXjSZ][Emacs from Scratch ("old" version)]]
++ [[https://www.youtube.com/playlist?list=PLEoMzSkcN8oNmd98m_6FoaJseUsa6QGm2][Emacs from Scratch (new and updated version that is a WIP)]]
+*** Text editing
++ [[https://www.youtube.com/watch?v=u1YoF4ycLTY][Protesilaos - Introduction to Registers]]
++ [[https://www.youtube.com/watch?v=TxYGHjKBMUg][Protesilaos - Regex in Emacs]]
++ [[https://www.youtube.com/watch?v=-5yH_8nl9LU][Protesilaos - Keyboard macros in Emacs]]
+  + [[https://www.youtube.com/watch?v=Xm1RmN-wHdg][Subsequent video about editing keyboard macros in Emacs]]
++ [[https://www.youtube.com/watch?v=k5v2iB1FqFw][Protesilaos - transpose text]]
+**** Searching/Completion
++ [[https://www.youtube.com/watch?v=f2mQXNnChwc][Protesilaos - Search and replace basics]]
++ [[https://www.youtube.com/watch?v=zxS3zXwV0PU][Protesilaos - Using occur in practice]]
++ [[https://www.youtube.com/watch?v=d3aaxOqwHhI][Protesilaos - Modern Minibuffer packages]]
+*** Emacs "apps"
++ [[https://www.youtube.com/watch?v=5dlydii7tAU][Protesilaos - Basics of Emacs file manager]]
++ [[https://www.youtube.com/watch?v=2-0OwGTt0dI][Protesilaos - introduction to magit]]
+  Working with git in Emacs
++ [[https://www.youtube.com/watch?v=L0EJeN1fCYw][Protesilaos - Org todo and agenda basics]]
++ [[https://www.youtube.com/watch?v=X6xYMJiJH8A][My video about dired]]
+*** Coding Setup
+The auto completion setup for programming has been the most confusing part of Emacs for me to understand. I think I only recently figured out my setup and got it to a state where it works that way I want it to. That's why this section is a bit more in-depth; hopefully the verbosity will dispel confusion.
+
+**** LSP (Language Server Protocol)
++ Eglot ships built-in with Emacs 29+, so it's the path of least resistance. No extra package needed for basic LSP support.
++ [[https://www.youtube.com/watch?v=Ao_0RxCyxIQ][PizzaTorque - Setting up Basedpyright LSP with Emacs Eglot]] — concrete walkthrough for Python, but the pattern generalizes to other languages
++ ~lsp-mode~ is the older, more feature-heavy alternative to Eglot. More configuration surface, more bells and whistles (better UI popups, more integrations out of the box), but also more to learn and more to break.
++ [[https://www.masteringemacs.org/all-articles][Mastering Emacs]] has solid deep-dive articles comparing Eglot and lsp-mode if you want to actually understand the trade-off.
+**** Completion
++ ~corfu~ + ~cape~ - the minimal, Prot-adjacent completion-at-point UI. Pairs naturally if you're already using ~vertico/consult~ for minibuffer completion. This is the setup that I use
++ ~company-mode~ — the older, more "batteries included" completion framework. Bigger ecosystem of backends, heavier by default.
++ Pick one based on whether you want minimal (corfu) or maximal (company).
+**** Project & Navigation
++ ~project.el~ ships built-in and covers project-wide search, find-file, and compile — often enough on its own without needing ~projectile~.
++ ~projectile~ — the older third-party alternative, still widely used, more configuration knobs.
++ ~magit~ is the pinnacle of git interfaces, pretty much every version copies it. I haven't tried them so I don't know how they compare.
+**** Syntax Highlighting
+Tree-sitter is built into Emacs 29+ (the ~-ts-mode~ variants, e.g. ~python-ts-mode~). Prefer these over the legacy modes when available.
+  
+** Intermediate
++ [[https://www.youtube.com/watch?v=ycyxytk1NAQ&list=PL8Bwba5vnQK14z96Gil86pLMDO2GnOhQ6&index=55][Protesilaos - advanced Org literate configuration]]
++ [[https://www.youtube.com/watch?v=BjhcmRMF9qs][Protesilaos - Basics of Emacs client]]
+*** Org Mode
++ [[https://www.youtube.com/watch?v=UqtBXrzXPgQ][Protesilaos - custom Org agenda]]
+  This is probably one of my favorite videos ever.
++ [[https://www.youtube.com/watch?v=qCdScs4YO8k][Protesilaos - Org Capture]]
++ [[https://www.youtube.com/watch?v=ofUQMq8ZK3U][My EmacsConf presentation]]
++ [[https://www.youtube.com/watch?v=0qHloGTT8XE][Jake B - Org Mode exports to LaTeX]]
++ [[https://www.youtube.com/watch?v=o6rE18Mxu9U][Jake B - Org Clock tables]]
++ [[https://www.youtube.com/watch?v=b97vEEBEcrQ][Joshua Blais - How I use Org-mode to organize my life]]
+*** Note taking workflows
++ [[https://www.youtube.com/playlist?list=PL8Bwba5vnQK0F6gR0AGOQH48xbLRe_qWC][Protesilaos - Denote Playlist]]
++ [[https://www.youtube.com/watch?v=IZX-cDR6IQM][Jvscholz - productivity workflow]]
++ [[https://www.youtube.com/watch?v=ZyrPaLL1sJQ][My super weird combination of denote and org roam]]
+  
+** "Advanced"
+You don't actually have to be super advanced to learn from this, but it might be difficult. These are the more "esoteric" parts of Emacs, in my opinion.
++ [[https://www.youtube.com/watch?v=rjOhJMbA-q0][Protesilaos - display-buffer-alist]]
+  Controlling window behavior with Emacs Lisp
++ [[https://www.youtube.com/watch?v=Qf_DLPIA9Cs][Protesilaos - Writing a custom modeline in Emacs]]
++ [[https://www.youtube.com/watch?v=L1f2tulD9N8][Protesilaos - Introduction to eshell]]
+
+** Emacs Adjacent Content
++ Unironically, videos from Luke Smith about Unix tools[fn:1]
+
+* Other Notable Packages
+** Themes
++ Modus, ef, doric themes
++ Doom Themes (I really like doom-gruvbox)
++ [[https://emacsthemes.com/][Emacs theme gallery]]
+  
+** Editing
++ expand region
++ multiple-cursors
+  
+** Org mode/Note taking
++ Org noter
++ Org Roam
++ Denote and friends
+  There are a bunch of additions under the denote package family like ~denote-citar~ and ~denote-org~.
++ Citar
+  
+** Media
++ pdf-tools
++ EMMS
++ anki-editor
+
+* Conclusion
+If you actually read/watch all of this and you found it helpful or need something else, [[/contact][please reach out]]. Also when you're super deep into the Emacs rabbit-hole you will find [[https://www.youtube.com/watch?v=urcL86UpqZc][this video]] to be peak humor
+
+* Footnotes
+[fn:1]Emacs is can be thought of a ultra-customizable front end for the Unix command line (e.g. ~dired~ as an extension of ls/grep/find) 
