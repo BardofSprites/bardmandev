@@ -37,9 +37,11 @@
         {{if not (or (eq .Type "landing") (eq .Type "basic"))}}
         <p class="subtitle">{{ .Date | time.Format "2006-01-02 Mon" }}</p>
         {{end}}
-        {{ if not (or (eq .Type "landing") (eq .Type "note") (eq .Type "basic") (eq .Type "special")) }}
-        <h2> Table of Contents </h2>
-        {{ .Page.TableOfContents }}
+        {{ if not (or (eq .Type "landing") (eq .Type "note") (eq .Type "basic") (eq .Type "special") (in .Params.tags "Book Review")) }}
+        <details class="toc-fold">
+          <summary>Table of Contents</summary>
+          {{ .Page.TableOfContents }}
+        </details>
         {{end}}
         {{if not (or (eq .Type "landing") (eq .Type "basic"))}}
         {{ with .Params.tags }}
@@ -49,9 +51,8 @@
           {{ end }}
         </p>
         {{ end }}
-        {{end}}
-
       </header>
+        {{end}}
       <article>
         {{ block "main" . }}
         {{ .Content }}

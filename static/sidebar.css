@@ -258,6 +258,11 @@ summary:hover {
     color: #feacd0;
 }
 
+/* table of contents summary */
+.toc-fold summary {
+    font-size: 22px;
+}
+
 /* Tables */
 table {
     width: 100%;
