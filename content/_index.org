@@ -25,6 +25,11 @@ All articles related to technology, programming, and software
 Content relating to my YouTube videos
 #+end_quote
 
+** [[/cookbook/][Cookbook]]
+#+begin_quote
+Recipes that I use to feed myself occasionally.
+#+end_quote
+
 ** [[/library/][Library]]
 #+begin_quote
 A collection of books I am reading, will read, or have read. May include succinct reviews if completed.

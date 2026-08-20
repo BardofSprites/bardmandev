@@ -1,0 +1,19 @@
+#+title: Cookbook and Recipes
+#+type: landing
+#+tags: Cooking
+
+{{< columns >}}
+{{< column >}}
+Personal recipes coming soon...
+for now here are some good resources
+- https://based.cooking/
+- https://www.monasticrepublic.com/en/recipes/
+{{< /column >}}
+
+{{< column >}}
+[[/img/dog-chef.png]]
+{{< /column >}}
+
+{{< /columns >}}
+
+# {{< landing-content tag="Cooking">}}
