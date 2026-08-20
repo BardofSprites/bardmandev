@@ -22,6 +22,7 @@ theme = 'lugo'
     showrss = true
     timezone = "America/New_York"
     dateFormat = "January 2, 2006"
+    categoryTags = ["General", "Technology", "Videos", "Cooking", "Library"]
 
 [markup]
   [markup.org]

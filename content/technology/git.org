@@ -1,7 +1,7 @@
 #+TITLE: Learning to use Git Version Control
 #+DATE: 2024-10-24T11:42:24-0400
 #+type: publication
-#+tags: [Technology, Robotics]
+#+tags[]: Technology Robotics
 
 * Basics of Git
 ** What is Git?

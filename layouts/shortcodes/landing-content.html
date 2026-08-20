@@ -1,46 +1,41 @@
-<!-- layouts/shortcodes/landing-content.html -->
 {{ $targetTag := .Get "tag" }}
 {{ $pubs := where .Site.RegularPages "Type" "publication" }}
+{{ $parent := lower $targetTag }}
 
 <section class="tagged-content">
 
   <h2>All {{ $targetTag | title }} Publications</h2>
 
   <ul class="publication-list">
+
     {{ $found := false }}
 
     {{ range (sort $pubs "Date" "desc") }}
-      {{ $tags := split (.Params.tags | default "") "," }}
-      {{ $cleaned := slice }}
 
-      {{ range $tags }}
-        {{ $cleaned = $cleaned | append (trim . "[] ") }}
-      {{ end }}
+      {{ $tags := .Params.tags | default (slice) }}
 
-      {{ if in $cleaned $targetTag }}
+      {{ if in $tags $targetTag }}
+
         {{ $found = true }}
+
         <li class="publication-item">
           <article>
             {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
             <span>{{ $formattedDate }}</span> -
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 
-            {{ with .Params.tags }}
-              {{ $raw := split . ", " }}
+            {{ if gt (len $tags) 1 }}
               {{ $filtered := slice }}
 
-              {{ range $raw }}
-                {{ $t := trim . "[] " }}
-                {{ if ne $t $targetTag }}
-                  {{ $filtered = $filtered | append $t }}
+              {{ range $tags }}
+                {{ if ne . $targetTag }}
+                  {{ $filtered = $filtered | append . }}
                 {{ end }}
               {{ end }}
 
-              {{ if gt (len $filtered) 0 }}
               <span class="tag-small">
                 [{{ delimit $filtered ", " }}]
               </span>
-              {{ end }}
             {{ end }}
 
             {{ with .Params.authors }}
@@ -50,7 +45,9 @@
             {{ end }}
           </article>
         </li>
+
       {{ end }}
+
     {{ end }}
 
     {{ if not $found }}
@@ -60,3 +57,45 @@
   </ul>
 
 </section>
+
+<h2>Browse Publications by Tag</h2>
+
+{{ $parentItems := false }}
+
+{{ range $name, $items := site.Taxonomies.tags }}
+{{ if eq (lower $name) $parent }}
+{{ $parentItems = $items }}
+{{ end }}
+{{ end }}
+
+{{ if $parentItems }}
+<ul id="tagcloud">
+  {{ range $name, $items := site.Taxonomies.tags }}
+  {{ if ne (lower $name) $parent }}
+
+  {{ $count := 0 }}
+
+  {{ range $items.Pages }}
+  {{ $candidate := . }}
+
+  {{ range $parentItems.Pages }}
+  {{ if eq .RelPermalink $candidate.RelPermalink }}
+  {{ $count = add $count 1 }}
+  {{ end }}
+  {{ end }}
+
+  {{ end }}
+
+  {{ if gt $count 0 }}
+  <li class="tagcloud-item">
+    <a href="{{ $items.Page.RelPermalink }}">
+      {{ $name | title }}
+    </a>
+    <span class="tagcloud-count">{{ $count }}</span>
+  </li>
+  {{ end }}
+
+  {{ end }}
+  {{ end }}
+</ul>
+{{ end }}

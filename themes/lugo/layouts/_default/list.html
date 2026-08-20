@@ -1,7 +1,48 @@
 {{ define "title" -}}
 {{ .Title | title }}
 {{- end }}
+
 {{ define "main" -}}
-{{ .Content }}
+
+{{ if eq .Kind "term" }}
+
+  <ul class="publication-list">
+    {{ range .Pages.ByDate.Reverse }}
+      <li class="publication-item">
+        <article>
+          <span>{{ .Date.Format "2006-01-02 Monday" }}</span> -
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+
+          {{ with .Params.tags }}
+            {{ if gt (len .) 1 }}
+              <span class="tag-small">
+                [{{ delimit . ", " }}]
+              </span>
+            {{ end }}
+          {{ end }}
+        </article>
+      </li>
+    {{ end }}
+  </ul>
+
+{{ else if eq .Type "landing" }}
+
+  {{ .Content }}
+
+{{ else }}
+
+  {{ .Content }}
+
+  <ul>
+    {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a class="basictitle" href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+
+{{ end }}
 
 {{- end }}

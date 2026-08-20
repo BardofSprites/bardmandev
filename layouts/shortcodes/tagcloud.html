@@ -1,41 +1,43 @@
-{{ $parent := .Get 0 }}
-{{ $counts := dict }}
+<h2>Browse Publications by Tag</h2>
 
-{{ if $parent }}
+{{ $parent := lower (.Get 0) }}
 
-  {{ range site.RegularPages }}
-    {{ $tags := trim .Params.tags "[]" }}
-    {{ $tags = split $tags ", " }}
+{{ $parentItems := false }}
 
-    {{ if in $tags $parent }}
+{{ range $name, $items := site.Taxonomies.tags }}
+{{ if eq (lower $name) $parent }}
+{{ $parentItems = $items }}
+{{ end }}
+{{ end }}
 
-      {{ range $tags }}
-        {{ $tag := trim . " " }}
+{{ if $parentItems }}
+<ul id="tagcloud">
+  {{ range $name, $items := site.Taxonomies.tags }}
+  {{ if ne (lower $name) $parent }}
 
-        {{ if and $tag (ne $tag $parent) }}
-          {{ if isset $counts $tag }}
-            {{ $counts = merge $counts (dict $tag (add (index $counts $tag) 1)) }}
-          {{ else }}
-            {{ $counts = merge $counts (dict $tag 1) }}
-          {{ end }}
-        {{ end }}
+  {{ $count := 0 }}
 
-      {{ end }}
+  {{ range $items.Pages }}
+  {{ $candidate := . }}
 
-    {{ end }}
+  {{ range $parentItems.Pages }}
+  {{ if eq .RelPermalink $candidate.RelPermalink }}
+  {{ $count = add $count 1 }}
+  {{ end }}
   {{ end }}
 
-  {{ if gt (len $counts) 0 }}
-    <ul id="tagcloud">
-      {{ range $name, $count := $counts }}
-        <li>
-          <a href="{{ printf "/tags/%s/" ($name | urlize) | relURL }}">
-            {{ $name | title }}
-          </a>
-          <span>({{ $count }})</span>
-        </li>
-      {{ end }}
-    </ul>
   {{ end }}
 
+  {{ if gt $count 0 }}
+  <li class="tagcloud-item">
+    <a href="{{ $items.Page.RelPermalink }}">
+      {{ $name | title }}
+    </a>
+    <span class="tagcloud-count">{{ $count }}</span>
+  </li>
+  {{ end }}
+
+  {{ end }}
+  {{ end }}
+</ul>
 {{ end }}

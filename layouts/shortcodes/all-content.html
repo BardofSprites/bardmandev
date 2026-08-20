@@ -1,24 +1,63 @@
-<!-- layouts/shortcodes/landing-content.html -->
-{{ $notes := where .Site.RegularPages "Type" "note" }}
 {{ $pubs := where .Site.RegularPages "Type" "publication" }}
+{{ $excludedTags := site.Params.categoryTags }}
 
 <section class="all-content">
 
   <h2>All Publications</h2>
+
   <ul class="publication-list">
     {{ range (sort $pubs "Date" "desc") }}
-    <li class="publication-item">
-      <article>
-        {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
-        <span>{{ $formattedDate }}</span> - <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.tags }}
-        <span class="tag-small">
-          {{ range $index, $tag := split . ", " }}
-          {{ if $index }}, {{ end }}{{ $tag }}
+      <li class="publication-item">
+        <article>
+          {{ $formattedDate := .Date.Format "2006-01-02 Monday" }}
+          <span>{{ $formattedDate }}</span> -
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+
+          {{ with .Params.tags }}
+            <span class="tag-small">
+              [{{ delimit . ", " }}]
+            </span>
           {{ end }}
-        </span>
-        {{ end }}
-      </article>
-    </li>
+        </article>
+      </li>
     {{ end }}
   </ul>
+
 </section>
+
+<h2>Browse Publications by Tag</h2>
+
+<ul id="tagcloud">
+  {{ range site.Taxonomies.tags.Alphabetical }}
+
+    {{ $name := .Page.Title }}
+
+    {{ if not (in $excludedTags $name) }}
+
+      {{ $items := . }}
+      {{ $count := 0 }}
+
+      {{ range $items.Pages }}
+        {{ $page := . }}
+
+        {{ range $pubs }}
+          {{ if eq .RelPermalink $page.RelPermalink }}
+            {{ $count = add $count 1 }}
+          {{ end }}
+        {{ end }}
+
+      {{ end }}
+
+      {{ if gt $count 0 }}
+        <li class="tagcloud-item">
+          <a href="{{ $items.Page.RelPermalink }}">
+            {{ $name }}
+          </a>
+          <span class="tagcloud-count">{{ $count }}</span>
+        </li>
+      {{ end }}
+
+    {{ end }}
+
+  {{ end }}
+</ul>

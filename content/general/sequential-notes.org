@@ -1,7 +1,7 @@
 #+title: Note Silos and Sequential Notes
 #+date: 2025-07-16T20:34:17-0400
 #+type: publication
-#+tags: [General]
+#+tags[]: General
 
 * Introduction and Background
 {{< details class="note" summary="📝  Please watch protesilaos's video about both packages before reading this" >}}

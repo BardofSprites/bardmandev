@@ -2,7 +2,7 @@
 #+date: 2023-11-23T00:00:00+00:00
 #+lastmod: 2025-10-17T19:17:47-0400
 #+type: publication
-#+tags: [Technology, Software]
+#+tags[]: Technology Software
 
 * Gallery
 You can view a gallery of my desktop screenshots [[/technology/gallery/][here]].

@@ -1,7 +1,7 @@
 #+TITLE: EMMS: Emacs Multimedia System
 #+DATE: 2024-08-04T22:37:00+00:00
 #+type: publication
-#+tags: [Technology, Emacs, Software]
+#+tags[]: Technology Emacs Software
 
 * Description
 From the official page: 

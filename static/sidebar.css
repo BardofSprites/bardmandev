@@ -492,3 +492,52 @@ footer {
   outline: 2px solid gold;
   outline-offset: -2px;
 }
+
+#tagcloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.tagcloud-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0;
+    padding: 7px 7px;
+    border: 1px solid #2a2a2a;
+    background: #1e1e1e;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.tagcloud-item:hover {
+    background: #1a1a1a;
+    border-color: #82b0ec;
+}
+
+.tagcloud-item a {
+    color: #79a8ff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.tagcloud-item a:visited {
+    color: #79a8ff;
+}
+
+.tagcloud-item a:hover {
+    border-bottom: none;
+}
+
+.tagcloud-count {
+    color: #777777;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+}

@@ -66,9 +66,13 @@
         {{ with .Params.tags }}
         <p class="subtitle">
           Tags:
-          {{ $tags := trim . "[]" }}
-          {{ range $index, $tag := split $tags ", " }}
-          {{ if $index }}, {{ end }}{{ $tag }}
+          {{ range $index, $tag := . }}
+          {{ if $index }}, {{ end }}
+          {{ with site.Taxonomies.tags.Get $tag }}
+          <a href="{{ .Page.RelPermalink }}">{{ $tag }}</a>
+          {{ else }}
+          {{ $tag }}
+          {{ end }}
           {{ end }}
         </p>
         {{ end }}

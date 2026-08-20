@@ -1,7 +1,7 @@
 #+TITLE: Common Git Commands on the Command Line
 #+DATE: 2024-10-24T19:04:47-0400
 #+type: publication
-#+tags: [Technology, Robotics]
+#+tags[]: Technology Robotics
 
 Hopefull you have read [[/technology/git][my previous article]] on the basics of git. This article will talk about how to use git on the command line. Hopefully this is not too scary, please email me if you have any questions.
 

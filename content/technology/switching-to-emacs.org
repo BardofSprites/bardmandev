@@ -1,7 +1,7 @@
 #+title: My Advice for Users Wanting To Switch to Emacs
 #+date: 2026-08-07T18:11:42-0400
 #+type: publication
-#+tags: [Emacs]
+#+tags[]: Emacs
 
 #+begin_quote
 I'd like to present to you my newly made absolute guide to Emacs video.
@@ -151,4 +151,4 @@ You don't actually have to be super advanced to learn from this, but it might be
 If you actually read/watch all of this and you found it helpful or need something else, [[/contact][please reach out]]. Also when you're super deep into the Emacs rabbit-hole you will find [[https://www.youtube.com/watch?v=urcL86UpqZc][this video]] to be peak humor
 
 * Footnotes
-[fn:1]Emacs is can be thought of a ultra-customizable front end for the Unix command line (e.g. ~dired~ as an extension of ls/grep/find) 
+[fn:1] Emacs is can be thought of a ultra-customizable front end for the Unix command line (e.g. ~dired~ as an extension of ls/grep/find) 

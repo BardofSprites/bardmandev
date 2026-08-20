@@ -1,7 +1,7 @@
 #+title: Tracking Time With Denote Journal and Org Clock
 #+date: 2026-01-18T23:44:46-0500
 #+type: publication
-#+tags: [Emacs, Technology, Organization, Video]
+#+tags[]: Emacs Technology Organization Video
 
 * Introduction
  I have recently started tracking my time in org mode more. This helps me know whether or not I wasted a lot of time on the computer that day. I have a special heading for "time I wasted loafing about" where I clock in when I want to watch YouTube, for example. For other time spent I make a quick note about what I plan to do. This also helps me stay on track.

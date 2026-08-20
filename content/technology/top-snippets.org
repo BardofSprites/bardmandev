@@ -1,7 +1,7 @@
 #+title: Top 5 Tempel.el Snippets For Emacs
 #+date: 2025-02-01T17:00:21-0500
 #+type: publication
-#+tags: [Technology, Emacs]
+#+tags[]: Technology Emacs
 
 * Introduction
 [[https://github.com/minad/tempel][Tempel.el]] is a package written by Daniel Mendler, a developer of many projects (many of which are fantastic Emacs packages). It provides a way to define text snippets with lisp-like syntax. You can embed Emacs Lisp code into the snippets to obtain programmatically obtained efficiency.
