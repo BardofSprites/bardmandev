@@ -1,0 +1,41 @@
+{{ $parent := .Get 0 }}
+{{ $counts := dict }}
+
+{{ if $parent }}
+
+  {{ range site.RegularPages }}
+    {{ $tags := trim .Params.tags "[]" }}
+    {{ $tags = split $tags ", " }}
+
+    {{ if in $tags $parent }}
+
+      {{ range $tags }}
+        {{ $tag := trim . " " }}
+
+        {{ if and $tag (ne $tag $parent) }}
+          {{ if isset $counts $tag }}
+            {{ $counts = merge $counts (dict $tag (add (index $counts $tag) 1)) }}
+          {{ else }}
+            {{ $counts = merge $counts (dict $tag 1) }}
+          {{ end }}
+        {{ end }}
+
+      {{ end }}
+
+    {{ end }}
+  {{ end }}
+
+  {{ if gt (len $counts) 0 }}
+    <ul id="tagcloud">
+      {{ range $name, $count := $counts }}
+        <li>
+          <a href="{{ printf "/tags/%s/" ($name | urlize) | relURL }}">
+            {{ $name | title }}
+          </a>
+          <span>({{ $count }})</span>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+{{ end }}

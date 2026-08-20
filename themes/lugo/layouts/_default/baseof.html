@@ -5,14 +5,14 @@
     <link rel="canonical" href="{{ .Site.BaseURL }}">
     <link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
     {{ if .IsHome }}
-      <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "style.css" | relURL }}">
     {{ else }}
-      <link rel="stylesheet" href="{{ "sidebar.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "sidebar.css" | relURL }}">
     {{ end }}
     {{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
     {{ end -}}
     <!-- <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}"> -->
-    {{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+    {{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags}}{{ delimit . ", " }}{{ end }}">
     {{ end -}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
@@ -34,25 +34,48 @@
     <main>
       <header>
         <h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1>
-        {{if not (or (eq .Type "landing") (eq .Type "basic"))}}
-        <p class="subtitle">{{ .Date | time.Format "2006-01-02 Mon" }}</p>
-        {{end}}
-        {{ if not (or (eq .Type "landing") (eq .Type "note") (eq .Type "basic") (eq .Type "special") (in .Params.tags "Book Review")) }}
+
+        {{ if eq .Kind "term" }}
+
+        <p class="subtitle">
+          {{ len .Pages }} item{{ if ne (len .Pages) 1 }}s{{ end }}
+        </p>
+
+        {{ else }}
+
+        {{ if not (or (eq .Type "landing") (eq .Type "basic")) }}
+        <p class="subtitle">
+          {{ .Date | time.Format "2006-01-02 Mon" }}
+        </p>
+        {{ end }}
+
+        {{ if not (or
+        (eq .Type "landing")
+        (eq .Type "note")
+        (eq .Type "basic")
+        (eq .Type "special")
+        (in .Params.tags "Book Review")
+        ) }}
         <details class="toc-fold">
           <summary>Table of Contents</summary>
           {{ .Page.TableOfContents }}
         </details>
-        {{end}}
-        {{if not (or (eq .Type "landing") (eq .Type "basic"))}}
+        {{ end }}
+
+        {{ if not (or (eq .Type "landing") (eq .Type "basic")) }}
         {{ with .Params.tags }}
-        <p class="subtitle">Tags:
-          {{ range $index, $tag := split . ", " }}
+        <p class="subtitle">
+          Tags:
+          {{ $tags := trim . "[]" }}
+          {{ range $index, $tag := split $tags ", " }}
           {{ if $index }}, {{ end }}{{ $tag }}
           {{ end }}
         </p>
         {{ end }}
+        {{ end }}
+
+        {{ end }}
       </header>
-        {{end}}
       <article>
         {{ block "main" . }}
         {{ .Content }}
